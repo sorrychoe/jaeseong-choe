@@ -13,7 +13,7 @@ jaeseong-choe/
 ├── server.js
 ├── package.json
 ├── package-lock.json
-├── procfile
+├── Procfile
 ├── .env
 └── README.md
 ```
