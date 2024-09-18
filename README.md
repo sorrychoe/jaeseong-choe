@@ -14,6 +14,6 @@ jaeseong-choe/
 ├── package.json
 ├── package-lock.json
 ├── Procfile
-├── .env
+├── .gitignore
 └── README.md
 ```
