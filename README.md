@@ -3,7 +3,7 @@
 ### Directory
 
 ```zsh
-cirriculum-vitae/
+jaeseong-choe/
 │
 ├── public/
 │   ├── index.html
@@ -12,7 +12,8 @@ cirriculum-vitae/
 │
 ├── server.js
 ├── package.json
+├── package-lock.json
+├── procfile
 ├── .env
 └── README.md
-
 ```
