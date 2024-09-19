@@ -13,7 +13,6 @@ jaeseong-choe/
 ├── server.js
 ├── package.json
 ├── package-lock.json
-├── Procfile
 ├── .gitignore
 └── README.md
 ```
