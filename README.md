@@ -1,4 +1,4 @@
-# About Jaeseong Choe
+# Jaeseong-Choe
 
 ### Directory
 
