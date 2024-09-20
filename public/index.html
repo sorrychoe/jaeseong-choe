@@ -6,6 +6,7 @@
     <title>My CV</title>
     <link rel="stylesheet" href="style.css">
     <!-- <link rel="icon" href="favicon.ico"> -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -26,7 +27,7 @@
     </header>
 
     <!-- About Me Section -->
-    <section id="about">
+    <section id="about" data-aos="fade-up">
         <div class="container">
             <h2>About Me</h2>
             <p align="center">I'm interested in analyzing discourse represented at Mass & New Media.</p>
@@ -37,7 +38,7 @@
     </section>
 
     <!-- Education Section -->
-    <section id="education">
+    <section id="education" data-aos="fade-up" data-aos-delay="100">
         <div class="container">
             <h2>Education</h2>
             <div class="education-item">
@@ -56,7 +57,7 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience">
+    <section id="experience" data-aos="fade-up" data-aos-delay="200">
         <div class="container">
             <h2>Experience</h2>
             <div class="experience-item">
@@ -85,49 +86,280 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills">
+    <section id="skills" data-aos="fade-up" data-aos-delay="300">
         <div class="container">
             <h2>Skills</h2>
             <ul class="skills-list">
-                <li><img height="32" width="32" src="https://cdn.simpleicons.org/R/FFFFFF" align="left"/></li>
-                <li><img height="32" width="32" src="https://cdn.simpleicons.org/python/FFFFFF" align="left"/></li>
-                <li><img height="32" width="32" src="https://cdn.simpleicons.org/Julia/FFFFFF" align="left"/></li>
-                <li><img height="32" width="32" src="https://cdn.simpleicons.org/Go/FFFFFF" align="left"/></li>
-                <li><img height="32" width="32" src="https://cdn.simpleicons.org/HTML5/FFFFFF" align="left"/></li>
-                <li><img height="32" width="32" src="https://cdn.simpleicons.org/CSS3/FFFFFF" align="left"/></li>
-                <li><img height="32" width="32" src="https://cdn.simpleicons.org/JavaScript/FFFFFF" align="left"/></li>
-                <li><img height="32" width="32" src="https://cdn.simpleicons.org/Tidyverse/FFFFFF" align="left"/></li>
-                <li><img height="32" width="32" src="https://cdn.simpleicons.org/Plotly/FFFFFF" align="left"/></li>
-                <li><img height="32" width="32" src="https://cdn.simpleicons.org/scikitlearn/FFFFFF" align="left"/></li>
-                <li><img height="32" width="32" src="https://cdn.simpleicons.org/Pytorch/FFFFFF" align="left"/></li>
-                <li><img height="32" width="32" src="https://cdn.simpleicons.org/Dask/FFFFFF" align="left"/></li>
-                <li><img height="32" width="32" src="https://cdn.simpleicons.org/Fastapi/FFFFFF" align="left"/></li>
-                <li><img height="32" width="32" src="https://cdn.simpleicons.org/Flask/FFFFFF" align="left"/></li>
-                <li><img height="32" width="32" src="https://cdn.simpleicons.org/Selenium/FFFFFF" align="left"/></li>
-                <li><img height="32" width="32" src="https://cdn.simpleicons.org/Express/FFFFFF" align="left"/></li>
-                <li><img height="32" width="32" src="https://cdn.simpleicons.org/React/FFFFFF" align="left"/></li>
-                <li><img height="32" width="32" src="https://cdn.simpleicons.org/Mysql/FFFFFF" align="left"/></li>
-                <li><img height="32" width="32" src="https://cdn.simpleicons.org/postgresql/FFFFFF" align="left"/></li>
-                <li><img height="32" width="32" src="https://cdn.simpleicons.org/mongodb/FFFFFF" align="left"/></li>
-                <li><img height="32" width="32" src="https://cdn.simpleicons.org/redis/FFFFFF" align="left"/></li>
-                <li><img height="32" width="32" src="https://cdn.simpleicons.org/neo4j/FFFFFF" align="left"/></li>
-                <li><img height="32" width="32" src="https://cdn.simpleicons.org/Docker/FFFFFF" align="left"/></li>
-                <li><img height="32" width="32" src="https://cdn.simpleicons.org/linux/FFFFFF" align="left"/></li>
-                <li><img height="32" width="32" src="https://cdn.simpleicons.org/amazonwebservices/FFFFFF" align="left"/></li>  
-                <li><img height="32" width="32" src="https://cdn.simpleicons.org/Git/FFFFFF" align="left"/></li>
-                <li><img height="32" width="32" src="https://cdn.simpleicons.org/Github/FFFFFF" align="left"/></li>
-                <li><img height="32" width="32" src="https://cdn.simpleicons.org/githubactions/FFFFFF" align="left"/></li>
-                <li><img height="32" width="32" src="https://cdn.simpleicons.org/neovim/FFFFFF" align="left"/></li>
-                <li><img height="32" width="32" src="https://cdn.simpleicons.org/rstudioide/FFFFFF" align="left"/></li>
-                <li><img height="32" width="32" src="https://cdn.simpleicons.org/jupyter/FFFFFF" align="left"/></li>
-                <li><img height="32" width="32" src="https://cdn.simpleicons.org/googlecolab/FFFFFF" align="left"/></li>
-                <li><img height="32" width="32" src="https://cdn.simpleicons.org/Tableau/FFFFFF" align="left"/></li>
+                <li>
+                    <div class="overlay-container">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/R/FFFFFF" align="left" class="skill-icon animated-image"/>
+                        <div class="overlay">
+                            <div class="overlay-text">R</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay-container">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/python/FFFFFF" align="left" class="skill-icon animated-image"/>
+                        <div class="overlay">
+                            <div class="overlay-text">Python</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay-container">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/Julia/FFFFFF" align="left" class="skill-icon animated-image"/>
+                        <div class="overlay">
+                            <div class="overlay-text">Julia</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay-container">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/Go/FFFFFF" align="left" class="skill-icon animated-image"/>
+                        <div class="overlay">
+                            <div class="overlay-text">Go</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay-container">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/HTML5/FFFFFF" align="left" class="skill-icon animated-image"/>
+                        <div class="overlay">
+                            <div class="overlay-text">HTML5</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay-container">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/CSS3/FFFFFF" align="left" class="skill-icon animated-image"/>
+                        <div class="overlay">
+                            <div class="overlay-text">CSS3</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay-container">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/JavaScript/FFFFFF" align="left" class="skill-icon animated-image"/>
+                        <div class="overlay">
+                            <div class="overlay-text">JavaScript</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay-container">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/Tidyverse/FFFFFF" align="left" class="skill-icon animated-image"/>
+                        <div class="overlay">
+                            <div class="overlay-text">Tidyverse</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay-container">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/Plotly/FFFFFF" align="left" class="skill-icon animated-image"/>
+                        <div class="overlay">
+                            <div class="overlay-text">Plotly</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay-container">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/scikitlearn/FFFFFF" align="left" class="skill-icon animated-image"/>
+                        <div class="overlay">
+                            <div class="overlay-text">Scikit Learn</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay-container">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/Pytorch/FFFFFF" align="left" class="skill-icon animated-image"/>
+                        <div class="overlay">
+                            <div class="overlay-text">Pytorch</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay-container">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/Dask/FFFFFF" align="left" class="skill-icon animated-image"/>
+                        <div class="overlay">
+                            <div class="overlay-text">Dask</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay-container">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/Fastapi/FFFFFF" align="left" class="skill-icon animated-image"/>
+                        <div class="overlay">
+                            <div class="overlay-text">Fastapi</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay-container">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/Flask/FFFFFF" align="left" class="skill-icon animated-image"/>
+                        <div class="overlay">
+                            <div class="overlay-text">Flask</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay-container">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/Selenium/FFFFFF" align="left" class="skill-icon animated-image"/>
+                        <div class="overlay">
+                            <div class="overlay-text">Selenium</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay-container">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/Express/FFFFFF" align="left" class="skill-icon animated-image"/>
+                        <div class="overlay">
+                            <div class="overlay-text">Express.js</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay-container">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/React/FFFFFF" align="left" class="skill-icon animated-image"/>
+                        <div class="overlay">
+                            <div class="overlay-text">React.js</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay-container">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/Mysql/FFFFFF" align="left" class="skill-icon animated-image"/>
+                        <div class="overlay">
+                            <div class="overlay-text">MySQL</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay-container">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/postgresql/FFFFFF" align="left" class="skill-icon animated-image"/>
+                        <div class="overlay">
+                            <div class="overlay-text">PostgreSQL</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay-container">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/mongodb/FFFFFF" align="left" class="skill-icon animated-image"/>
+                        <div class="overlay">
+                            <div class="overlay-text">MongoDB</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay-container">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/redis/FFFFFF" align="left" class="skill-icon animated-image"/>
+                        <div class="overlay">
+                            <div class="overlay-text">Redis</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay-container">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/neo4j/FFFFFF" align="left" class="skill-icon animated-image"/>
+                        <div class="overlay">
+                            <div class="overlay-text">Neo4j</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay-container">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/Docker/FFFFFF" align="left" class="skill-icon animated-image"/>
+                        <div class="overlay">
+                            <div class="overlay-text">Docker</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay-container">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/linux/FFFFFF" align="left" class="skill-icon animated-image"/>
+                        <div class="overlay">
+                            <div class="overlay-text">Linux</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay-container">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/amazonwebservices/FFFFFF" align="left" class="skill-icon animated-image"/>
+                        <div class="overlay">
+                            <div class="overlay-text">AWS</div>
+                        </div>
+                    </div>
+                </li>  
+                <li>
+                    <div class="overlay-container">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/Git/FFFFFF" align="left" class="skill-icon animated-image"/>
+                        <div class="overlay">
+                            <div class="overlay-text">Git</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay-container">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/Github/FFFFFF" align="left" class="skill-icon animated-image"/>
+                        <div class="overlay">
+                            <div class="overlay-text">Github</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay-container">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/githubactions/FFFFFF" align="left" class="skill-icon animated-image"/>
+                        <div class="overlay">
+                            <div class="overlay-text">Github Action</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay-container">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/neovim/FFFFFF" align="left" class="skill-icon animated-image"/>
+                        <div class="overlay">
+                            <div class="overlay-text">Neovim</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay-container">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/rstudioide/FFFFFF" align="left" class="skill-icon animated-image"/>
+                        <div class="overlay">
+                            <div class="overlay-text">Rstudio</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay-container">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/jupyter/FFFFFF" align="left" class="skill-icon animated-image"/>
+                        <div class="overlay">
+                            <div class="overlay-text">Jupyter</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay-container">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/googlecolab/FFFFFF" align="left" class="skill-icon animated-image"/>
+                        <div class="overlay">
+                            <div class="overlay-text">Google Colab</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay-container">
+                        <img height="32" width="32" src="https://cdn.simpleicons.org/Tableau/FFFFFF" align="left" class="skill-icon animated-image"/>
+                        <div class="overlay">
+                            <div class="overlay-text">Tableau</div>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
+    <section id="projects" data-aos="fade-up" data-aos-delay="400">
         <div class="container">
             <h2>Projects</h2>
             <div class="project-item">
@@ -207,7 +439,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" data-aos="zoom-in">
         <div class="container">
             <h2>Contact Me</h2>
             <form id="contact-form">
@@ -238,11 +470,19 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800, 
+            easing: 'ease-in-out', 
+            once: true,
+        });
+    </script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function(){
             emailjs.init("USER_ID");
         })();
-</script>
+    </script>
 </body>
 </html>
