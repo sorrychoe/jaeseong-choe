@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
             submitButton.textContent = 'Sending...';
 
             // Send POST request to the server
-            const response = await fetch('/contact', {
+            const response = await fetch('/api/contact', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
