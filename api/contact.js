@@ -16,11 +16,16 @@ app.use(bodyParser.json());
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.post('/contact', async (req, res) => {
+module.exports = async (req, res) => {
+    if (req.method !== 'POST') {
+        res.status(405).json({ success: false, message: 'Method Not Allowed' });
+        return;
+    }
     const { name, email, message } = req.body;
 
     if (!name || !email || !message) {
-        return res.status(400).json({ success: false, message: 'Please fill in all fields.' });
+        res.status(400).json({ success: false, message: 'All fields are required.' });
+        return;
     }
 
     try {
@@ -58,15 +63,12 @@ app.post('/contact', async (req, res) => {
 
         // Send email
         let info = await transporter.sendMail(mailOptions);
-
-        console.log('Message sent: %s', info.messageId);
-
         res.status(200).json({ success: true, message: 'Your message has been sent successfully!' });
     } catch (error) {
         console.error('Error sending email:', error);
         res.status(500).json({ success: false, message: 'There was an error sending your message. Please try again later.' });
     }
-});
+};
 
 // Start the server
 const PORT = process.env.PORT || 3000;
