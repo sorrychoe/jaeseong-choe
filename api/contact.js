@@ -2,10 +2,9 @@ const express = require('express');
 const nodemailer = require('nodemailer');
 const path = require('path');
 const bodyParser = require('body-parser');
-const dotenv = require('dotenv');
 const cors = require('cors');
 
-dotenv.config();
+require('dotenv').config();
 
 const app = express();
 
@@ -33,7 +32,7 @@ module.exports = async (req, res) => {
         transporter = nodemailer.createTransport({
             host: process.env.SMTP_HOST,
             port: process.env.SMTP_PORT,
-            secure: process.env.SMTP_SECURE === 'true',
+            secure: process.env.SMTP_PORT == 465,
             auth: {
                 user: process.env.SMTP_USER,
                 pass: process.env.SMTP_PASS,
@@ -85,9 +84,3 @@ module.exports = async (req, res) => {
         res.status(500).json({ success: false, message: 'There was an error sending your message. Please try again later.' });
     }
 };
-
-// Start the server
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-});
