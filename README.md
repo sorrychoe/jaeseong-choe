@@ -4,13 +4,13 @@
 
 ```zsh
 jaeseong-choe/
-│
+├── api/
+│   └── contact.js
 ├── public/
 │   ├── index.html
 │   ├── styles.css
 │   └── script.js
 │
-├── server.js
 ├── package.json
 ├── package-lock.json
 ├── .gitignore
