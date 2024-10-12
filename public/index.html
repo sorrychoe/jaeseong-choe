@@ -4,30 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My CV</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="icon" href="favicon.ico"> -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="bg-dark text-white text-center py-5">
         <div class="container">
             <h1>Jaeseong Choe</h1>
             <p>Opinion Miner | Social Data Analyst | PM & QA Specialist</p>
-            <nav>
-                <ul>
-                    <li><a href="#about">About me</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- About Me Section -->
-    <section id="about" data-aos="fade-up">
+    <section id="about" class="py-5 bg-light">
         <div class="container">
             <h2>About Me</h2>
             <p align="center">I'm interested in analyzing discourse represented at Mass & New Media.</p>
@@ -39,7 +39,7 @@
     </section>
 
     <!-- Education Section -->
-    <section id="education" data-aos="fade-up" data-aos-delay="100">
+    <section id="education" class="py-5 bg-light">
         <div class="container">
             <h2>Education</h2>
             <div class="education-item">
@@ -61,7 +61,7 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" data-aos="fade-up" data-aos-delay="200">
+    <section id="experience" class="py-5 bg-light">
         <div class="container">
             <h2>Experience</h2>
             <div class="experience-item">
@@ -91,7 +91,7 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" data-aos="fade-up" data-aos-delay="200">
+    <section id="skills" class="py-5 bg-light">
         <div class="container">
             <h2>Skills</h2>
             <ul class="skills-list">
@@ -356,7 +356,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" data-aos="fade-up" data-aos-delay="200">
+    <section id="projects" class="py-5 bg-light">
         <div class="container">
             <h2>Projects</h2>
             <div class="project-item">
@@ -437,22 +437,22 @@
     </section>
 
     <!-- Contact Section -->
-<section id="contact" data-aos="fade-up" data-aos-delay="500">
+<section id="contact" class="py-5 bg-light">
     <div class="container">
         <h2>Contact Me</h2>
         <form id="contact-form"> <!-- No action attribute -->
-            <label for="name" data-aos="fade-right" data-aos-delay="100">Name:</label>
-            <input type="text" id="name" name="name" required data-aos="fade-right" data-aos-delay="100">
+            <label for="name" data-aos="fade-right">Name:</label>
+            <input type="text" id="name" name="name" required data-aos="fade-right">
 
-            <label for="email" data-aos="fade-left" data-aos-delay="200">Email:</label>
-            <input type="email" id="email" name="email" required data-aos="fade-left" data-aos-delay="200">
+            <label for="email" data-aos="fade-left">Email:</label>
+            <input type="email" id="email" name="email" required data-aos="fade-left">
 
-            <label for="message" data-aos="fade-right" data-aos-delay="300">Message:</label>
-            <textarea id="message" name="message" rows="5" required data-aos="fade-right" data-aos-delay="300"></textarea>
+            <label for="message" data-aos="fade-right">Message:</label>
+            <textarea id="message" name="message" rows="5" required data-aos="fade-right"></textarea>
 
-            <button type="submit" data-aos="fade-left" data-aos-delay="400">Send Message</button>
+            <button type="submit" data-aos="fade-left">Send Message</button>
         </form>
-        <p id="form-message" data-aos="fade-up" data-aos-delay="500"></p>
+        <p id="form-message" class="py-5 bg-light"></p>
     </div>
 </section>
 
@@ -467,14 +467,12 @@
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
-        AOS.init({
-            duration: 800, 
-            easing: 'ease-in-out', 
-            once: true,
-        });
+        AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
     </script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script type="text/javascript">
