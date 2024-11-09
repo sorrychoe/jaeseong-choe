@@ -4,15 +4,32 @@
 
 ```zsh
 jaeseong-choe/
-├── api/
-│   └── contact.js
-├── public/
-│   ├── index.html
-│   ├── styles.css
-│   └── script.js
-│
-├── package.json
-├── package-lock.json
-├── .gitignore
-└── README.md
+├── README.md
+├── backend
+│   ├── api
+│   │   └── contact.js
+│   ├── package-lock.json
+│   ├── package.json
+│   └── server.js
+└── frontend
+    ├── package-lock.json
+    ├── package.json
+    ├── public
+    │   ├── index.html
+    │   └── robots.txt
+    └── src
+        ├── App.css
+        ├── App.jsx
+        ├── components
+        │   ├── About.jsx
+        │   ├── Contact.jsx
+        │   ├── Education.jsx
+        │   ├── Experience.jsx
+        │   ├── Footer.jsx
+        │   ├── Header.jsx
+        │   ├── Navbar.jsx
+        │   ├── Projects.jsx
+        │   └── Skills.jsx
+        ├── index.css
+        └── index.js
 ```
