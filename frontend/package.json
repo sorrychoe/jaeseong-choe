@@ -11,8 +11,8 @@
     "react-scripts": "4.0.3"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build"
+    "start": "export NODE_OPTIONS=--openssl-legacy-provider && node server.js",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider && nodemon server.js"
   },
   "proxy": "http://localhost:4000",
   "browserslist": {
