@@ -1,4 +1,3 @@
-/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
@@ -47,6 +46,7 @@ nav ul {
 nav ul li {
     display: inline;
     margin: 0 15px;
+    text-align: center;
 }
 
 nav ul li a {
