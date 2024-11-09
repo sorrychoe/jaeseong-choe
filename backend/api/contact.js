@@ -21,6 +21,10 @@ router.post('/', async (req, res) => {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASS,
       },
+      tls: {
+        minVersion: 'TLSv1',
+        ciphers: 'DEFAULT:@SECLEVEL=0',
+      },
     });
   } catch (error) {
     console.error('Error creating transporter:', error);
