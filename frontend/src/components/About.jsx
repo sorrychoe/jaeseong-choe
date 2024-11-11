@@ -1,15 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 function About() {
+
+  useEffect(() => {
+    AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
+  }, []);
+  
   return (
-    <section id="about" className="py-5 bg-light">
+    <section id="about" className="py-5 bg-light" data-aos="fade-up">
       <div className="container">
         <h2>About Me</h2>
-        <p align="center">I'm interested in analyzing discourse represented at Mass & New Media.</p>
-        <p align="center">For data analysis, I'm specialized in Automation & Data Preprocessing.</p>
-        <p align="center">I usually use Statistical Method for Data analytics & Machine Learning.</p>
-        <p align="center">Previously, I worked as a AI Education Project Manager & Data Analyst.</p>
-        <p align="center">Also, I have a Experience of Quality Assurance & Test Automation.</p>
+        <p align="left">Data Specialist of social data analysis with extensive experience in Human Resource Development, Project Management, and Market Analysis</p>
+        <p aline="left">Skilled in transforming complex data into actionable insights through advanced analytics, data visualization, and machine learning.</p>
+        <p align="left">Proven track record in managing projects and improving processes with a data-driven approach.</p>
+        <p align="left">Strong communicator and problem solver with hands-on experience in Project Management and Data Analysis.</p>
       </div>
     </section>
   );

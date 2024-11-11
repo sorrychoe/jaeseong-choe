@@ -1,4 +1,3 @@
-// src/components/Contact.js
 import React, { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -14,7 +13,6 @@ function Contact() {
   const [messageColor, setMessageColor] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // AOS 초기화
   useEffect(() => {
     AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
   }, []);

@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Experience() {
+    useEffect(() => {
+        AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
+      }, []);
   return ( 
-    <section id="experience" class="py-5 bg-light">
+    <section id="experience" class="py-5 bg-light" data-aos="fade-up">
         <div class="container">
             <h2>Experience</h2>
             <div class="experience-item">
                 <h3>Project Manager</h3>
                 <p>Fastcampus | 2023.06 - 2024.02</p>
                 <p>AI Boot Camp 6th & Upstage AI Lab 2nd Planning/Operation Manager</p>
-                <p>HRD Education Data Analyst</p>
+                <p>HRD Data Analyst</p>
             </div>
             <div class="experience-item">
                 <h3>Test Automation Engineer</h3>

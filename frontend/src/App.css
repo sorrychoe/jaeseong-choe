@@ -91,6 +91,11 @@ section h2 {
     color: #666;
 }
 
+.project-item a {
+    display: inline;
+    padding-right: 8px;
+}
+
 /* Skills */
 .skills-list {
     list-style: none;
@@ -165,7 +170,7 @@ section h2 {
     justify-content: center;
     opacity: 0;
     transition: opacity 0.3s ease;
-    border-radius: 7px;
+    border-radius: 8px;
 }
 
 /* Overlay Text */
