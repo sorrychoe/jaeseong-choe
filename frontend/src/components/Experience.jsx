@@ -18,7 +18,7 @@ function Experience() {
             </div>
             <div class="experience-item">
                 <h3>Test Automation Engineer</h3>
-                <p>Makinarocks | 2023.01 - 2023.06 (internship)</p>
+                <p>Makinarocks | 2023.02 - 2023.06 (internship)</p>
                 <p>Test Automation Engineer of Mrx-Link</p>
                 <p>Software QA on products for Data Scientists</p>
             </div>
