@@ -6,33 +6,45 @@ function Experience() {
     useEffect(() => {
         AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
       }, []);
+    const Experiences = [
+        {
+            title: 'Project Manager',
+            company: 'Fastcampus | 2023.06 - 2024.02',
+            description: [
+              { role: 'AI Boot Camp 6th & Upstage AI Lab 2nd Planning/Operation Manager'},
+              { role: 'HRD Education Data Analyst'},
+            ],
+          },
+          {
+            title: 'Test Automation Engineer',
+            company: 'Makinarocks | 2023.02 - 2023.06 (internship)',
+            description: [
+              { role: 'Test Automation Engineer of Mrx-Link'},
+              { role: 'Software QA Engineer of Runway'},
+            ],
+          },
+          {
+            title: 'Learning Manager',
+            company: 'Fastcampus | 2022.06 - 2023.01 (Contract)',
+            description: [
+              { role: 'Seoul Software Academy(SeSAC) Data Analytics Boot Camp Course Operation Manager'},
+              { role: 'HRD Education Data Analyst'},
+            ],
+          },
+    ]
   return ( 
     <section id="experience" class="py-5 bg-light" data-aos="fade-up">
         <div class="container">
             <h2>Experience</h2>
-            <div class="experience-item">
-                <h3>Project Manager</h3>
-                <p>Fastcampus | 2023.06 - 2024.02</p>
-                <p>AI Boot Camp 6th & Upstage AI Lab 2nd Planning/Operation Manager</p>
-                <p>HRD Data Analyst</p>
+            {Experiences.map((experience, index) =>
+            <div class="experience-item" key={index}>
+                <h3>{experience.title}</h3>
+                <p>{experience.company}</p>
+                {Experience.description.map((des, idx) => (
+                <p key={idx}>{des.role}</p>
+                ))}
             </div>
-            <div class="experience-item">
-                <h3>Test Automation Engineer</h3>
-                <p>Makinarocks | 2023.02 - 2023.06 (internship)</p>
-                <p>Test Automation Engineer of Mrx-Link</p>
-                <p>Software QA on products for Data Scientists</p>
-            </div>
-            <div class="experience-item">
-                <h3>Course Assistant</h3>
-                <p>Fastcampus | 2022.12 - 2023.06 (Freelancer)</p>
-                <p>Tableau Online Boot Camp Course Training Coach</p>
-            </div>
-            <div class="experience-item">
-                <h3>Learning Manager</h3>
-                <p>Fastcampus | 2022.06 - 2023.01 (Contract)</p>
-                <p>Seoul Software Academy(SeSAC) Data Analytics Boot Camp Course Training Coach</p>
-                <p>HRD Education Operation Manager</p>
-            </div>
+            )}
         </div>
     </section>
   )
