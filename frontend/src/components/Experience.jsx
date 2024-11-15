@@ -36,7 +36,7 @@ function Experience() {
     <section id="experience" class="py-5 bg-light" data-aos="fade-up">
         <div class="container">
             <h2>Experience</h2>
-            {Experiences.map((experience, index) =>
+            {Experiences.map((experience, index) => (
             <div class="experience-item" key={index}>
                 <h3>{experience.title}</h3>
                 <p>{experience.company}</p>
@@ -44,7 +44,7 @@ function Experience() {
                 <p key={idx}>{des.role}</p>
                 ))}
             </div>
-            )}
+            ))}
         </div>
     </section>
   )
