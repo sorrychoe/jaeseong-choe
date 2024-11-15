@@ -19,8 +19,8 @@ function Experience() {
             title: 'Test Automation Engineer',
             company: 'Makinarocks | 2023.02 - 2023.06 (internship)',
             description: [
-              { role: 'Test Automation Engineer of Mrx-Link'},
-              { role: 'Software QA Engineer of Runway'},
+              { role: 'Test Automation Engineer'},
+              { role: 'Software QA Engineer of product for Data Scientist'},
             ],
           },
           {
@@ -40,8 +40,8 @@ function Experience() {
             <div class="experience-item" key={index}>
                 <h3>{experience.title}</h3>
                 <p>{experience.company}</p>
-                {Experience.description.map((des, idx) => (
-                <p key={idx}>{des.role}</p>
+                {experience.description.map((exp, idx) => (
+                  <p key={idx}>{exp.role}</p>
                 ))}
             </div>
             ))}
