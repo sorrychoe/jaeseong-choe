@@ -16,11 +16,11 @@ function Experience() {
             ],
           },
           {
-            title: 'Test Automation Engineer',
+            title: 'QA Engineer',
             company: 'Makinarocks | 2023.02 - 2023.06 (internship)',
             description: [
-              { role: 'Test Automation Engineer'},
-              { role: 'Software QA Engineer of product for Data Scientist'},
+              { role: 'QA Engineer Focused on Test Automation'},
+              { role: 'Software QA of product for Data Scientist'},
             ],
           },
           {

@@ -42,7 +42,6 @@ function Skills() {
     { name: 'Neovim', icon: 'https://cdn.simpleicons.org/neovim/FFFFFF' },
     { name: 'Rstudio', icon: 'https://cdn.simpleicons.org/rstudioide/FFFFFF' },
     { name: 'Jupyter', icon: 'https://cdn.simpleicons.org/jupyter/FFFFFF' },
-    { name: 'Tableau', icon: 'https://cdn.simpleicons.org/Tableau/FFFFFF' },
   ];
 
   return (
