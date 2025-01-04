@@ -53,8 +53,8 @@ function Skills() {
             <li key={index}>
               <div className="overlay-container">
                 <img
-                  height="34"
-                  width="34"
+                  height="33"
+                  width="33"
                   src={skill.icon}
                   alt={skill.name}
                   className="skill-icon animated-image"
