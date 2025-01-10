@@ -17,7 +17,6 @@ function Skills() {
     { name: 'CSS3', icon: 'https://cdn.simpleicons.org/CSS3/FFFFFF' },
     { name: 'Scikit Learn', icon: 'https://cdn.simpleicons.org/scikitlearn/FFFFFF' },
     { name: 'Pytorch', icon: 'https://cdn.simpleicons.org/Pytorch/FFFFFF' },
-    { name: 'Dask', icon: 'https://cdn.simpleicons.org/Dask/FFFFFF' },
     { name: 'Fastapi', icon: 'https://cdn.simpleicons.org/Fastapi/FFFFFF' },
     { name: 'Flask', icon: 'https://cdn.simpleicons.org/Flask/FFFFFF' },
     { name: 'Tidyverse', icon: 'https://cdn.simpleicons.org/Tidyverse/FFFFFF' },
@@ -31,17 +30,13 @@ function Skills() {
     { name: 'Redis', icon: 'https://cdn.simpleicons.org/redis/FFFFFF' },
     { name: 'Neo4j', icon: 'https://cdn.simpleicons.org/neo4j/FFFFFF' },
     { name: 'Docker', icon: 'https://cdn.simpleicons.org/Docker/FFFFFF' },
-    { name: 'Linux', icon: 'https://cdn.simpleicons.org/linux/FFFFFF' },
-    { name: 'AWS', icon: 'https://cdn.simpleicons.org/amazonwebservices/FFFFFF' },
     { name: 'Git', icon: 'https://cdn.simpleicons.org/Git/FFFFFF' },
     { name: 'Github', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
     { name: 'Github Action', icon: 'https://cdn.simpleicons.org/githubactions/FFFFFF' },
     { name: 'Quarto', icon: 'https://cdn.simpleicons.org/Quarto/FFFFFF' },
     { name: 'Latex', icon: 'https://cdn.simpleicons.org/Latex/FFFFFF' },
     { name: 'Markdown', icon: 'https://cdn.simpleicons.org/Markdown/FFFFFF' },
-    { name: 'Neovim', icon: 'https://cdn.simpleicons.org/neovim/FFFFFF' },
-    { name: 'Rstudio', icon: 'https://cdn.simpleicons.org/rstudioide/FFFFFF' },
-    { name: 'Jupyter', icon: 'https://cdn.simpleicons.org/jupyter/FFFFFF' },
+    { name: 'Tableau', icon: 'https://cdn.simpleicons.org/jupyter/FFFFFF' },
   ];
 
   return (
