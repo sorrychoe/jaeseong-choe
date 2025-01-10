@@ -32,8 +32,22 @@ function Projects() {
         ],
       },
       {
-        title: 'What reality has the economic news column reproduced?',
-        description: "Discourse Analysis Report through Economic Newspaper Columns Written in the President Moon's Governmant",
+        title: 'Topic Modeling Theory',
+        description: "Repository about theory of topic modeling",
+        links: [
+          { href: 'https://github.com/sorrychoe/topic-modeling-theory', icon: 'https://cdn.simpleicons.org/Github/000000' },
+        ],
+      },
+      {
+        title: 'Reproduction analysis of mental illness in the Korean media using BERTopic',
+        description: "Topic Modeling based Content Analysis of Korean media Focused on cases of bipolar disorder, depression, and schizophrenia from 1960 to 2024",
+        links: [
+          { href: 'https://sorrychoe.quarto.pub/bertopic-result-analysis/', icon: 'https://cdn.simpleicons.org/quarto/000000' },
+        ],
+      },
+      {
+        title: 'World reproduced by Economic News',
+        description: "Machine Learning based Discourse Analysis of Korean Economic Press Journal",
         links: [
           { href: 'https://sorrychoe.quarto.pub/economic-columns-analysis/', icon: 'https://cdn.simpleicons.org/quarto/000000' },
           { href: 'https://github.com/sorrychoe/economic_analysis', icon: 'https://cdn.simpleicons.org/Github/000000' },
@@ -41,15 +55,29 @@ function Projects() {
       },
       {
         title: 'How the Media Says Victims',
-        description: "A Report Analysis of the Reproduction of the Media on Inha University Rape Murder Case",
+        description: "Machine Learning based Discourse Analysis of Reproduction of Sexual Crime Murder in Korean Media",
         links: [
           { href: 'https://sorrychoe.quarto.pub/inha_accident_report/', icon: 'https://cdn.simpleicons.org/quarto/000000' },
           { href: 'https://github.com/sorrychoe/inha_accident', icon: 'https://cdn.simpleicons.org/Github/000000' },
         ],
       },
       {
+        title: 'Everything of Handong, from 1995 to 2024',
+        description: "Text Analysis of News about Handong Global University",
+        links: [
+          { href: 'https://github.com/sorrychoe/Everything-of-Handong', icon: 'https://cdn.simpleicons.org/Github/000000' },
+        ],
+      },
+      {
+        title: 'Creationism Chatbot',
+        description: "Chatbot for Creationism course Q&A at Handong University",
+        links: [
+          { href: 'https://github.com/sorrychoe/Creationism_Chatbot', icon: 'https://cdn.simpleicons.org/Github/000000' },
+        ],
+      },
+      {
         title: 'Which neighborhood is the most similar to my neighborhood?',
-        description: "a web page that finds a population distribution similar to the neighborhood in which one lives",
+        description: "Webpage that finds a population distribution similar to the neighborhood in which one lives",
         links: [
           { href: 'https://github.com/sorrychoe/population', icon: 'https://cdn.simpleicons.org/Github/000000' },
         ],

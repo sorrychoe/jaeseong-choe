@@ -16,6 +16,13 @@ function Experience() {
             ],
           },
           {
+            title: 'Course Assistant',
+            company: 'Fastcampus | 2022.12 - 2023.06 (Freelancer)',
+            description: [
+              { role: 'Data Visualization Online Course Practice Coach Using Tableau'},
+            ],
+          },
+          {
             title: 'QA Engineer',
             company: 'Makinarocks | 2023.02 - 2023.06 (internship)',
             description: [
