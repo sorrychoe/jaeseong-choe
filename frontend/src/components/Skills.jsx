@@ -36,7 +36,6 @@ function Skills() {
     { name: 'Quarto', icon: 'https://cdn.simpleicons.org/Quarto/FFFFFF' },
     { name: 'Latex', icon: 'https://cdn.simpleicons.org/Latex/FFFFFF' },
     { name: 'Markdown', icon: 'https://cdn.simpleicons.org/Markdown/FFFFFF' },
-    { name: 'Tableau', icon: 'https://cdn.simpleicons.org/tableau/FFFFFF' },
   ];
 
   return (
