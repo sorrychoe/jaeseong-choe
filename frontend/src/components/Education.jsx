@@ -17,7 +17,6 @@ function Education() {
                 <p>Handong Global University | 2019 - 2025</p>
                 <p>As a student majored in Media & Communication Studies, I studied Mass Media theory & the Cultural Studies.</p> 
                 <p>In particular, I studied with a focus on analyzing socio-cultural phenomena reproduced by the mass media.</p>
-                <p>I conducted a study on the reproduction of mental illness in the Korean media with my graduation thesis.</p>
             </div>
             <div class="education-item">
                 <h3>B.S. in Data Science</h3>
