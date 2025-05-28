@@ -10,7 +10,6 @@ function Skills() {
     { name: 'Python', icon: 'https://cdn.simpleicons.org/python/FFFFFF' },
     { name: 'R', icon: 'https://cdn.simpleicons.org/R/FFFFFF' },
     { name: 'Julia', icon: 'https://cdn.simpleicons.org/Julia/FFFFFF' },
-    { name: 'Go', icon: 'https://cdn.simpleicons.org/Go/FFFFFF' },
     { name: 'JavaScript', icon: 'https://cdn.simpleicons.org/JavaScript/FFFFFF' },
     { name: 'TypeScript', icon: 'https://cdn.simpleicons.org/TypeScript/FFFFFF' },
     { name: 'HTML5', icon: 'https://cdn.simpleicons.org/HTML5/FFFFFF' },
