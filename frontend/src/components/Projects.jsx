@@ -7,42 +7,11 @@ function Projects() {
     AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
   }, []);
   const projects = [
-    {
-      title: 'PyBigkinds',
-      description: 'Bigkinds Data Preprocessing Library for Python',
-      links: [
-        { href: 'https://pypi.org/project/pyBigKinds/', icon: 'https://cdn.simpleicons.org/pypi/000000' },
-        { href: 'https://github.com/sorrychoe/pyBigKinds', icon: 'https://cdn.simpleicons.org/Github/000000' },
-      ],
-    },
-    {
-      title: 'RBigkinds',
-      description: 'Bigkinds Data Preprocessing Library for R',
-      links: [
-        { href: 'https://sorrychoe.github.io/RBigKinds/', icon: 'https://cdn.simpleicons.org/gitbook/000000' },
-        { href: 'https://github.com/sorrychoe/RBigKinds', icon: 'https://cdn.simpleicons.org/Github/000000' },
-      ],
-    },
-    {
-        title: 'covid19today',
-        description: 'Library that informs daily COVID-19 confirmed data',
-        links: [
-          { href: 'https://sorrychoe.github.io/covid19today//', icon: 'https://cdn.simpleicons.org/gitbook/000000' },
-          { href: 'https://github.com/sorrychoe/covid19today', icon: 'https://cdn.simpleicons.org/Github/000000' },
-        ],
-      },
-      {
-        title: 'Topic Modeling Theory',
-        description: "Repository about theory of topic modeling",
-        links: [
-          { href: 'https://github.com/sorrychoe/topic-modeling-theory', icon: 'https://cdn.simpleicons.org/Github/000000' },
-        ],
-      },
       {
         title: 'Reproduction analysis of mental illness in the Korean media using BERTopic',
         description: "Topic Modeling based Content Analysis of Korean media Focused on cases of bipolar disorder, depression, and schizophrenia from 1960 to 2024",
         links: [
-          { href: 'https://sorrychoe.quarto.pub/bertopic-result-analysis/', icon: 'https://cdn.simpleicons.org/quarto/000000' },
+          { href: 'https://sorrychoe.quarto.pub/bertopic-second-result/', icon: 'https://cdn.simpleicons.org/quarto/000000' },
         ],
       },
       {

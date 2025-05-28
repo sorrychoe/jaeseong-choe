@@ -78,20 +78,20 @@ section h2 {
 }
 
 /* Education & Experience Items */
-.education-item, .experience-item, .project-item {
+.education-item, .experience-item, .project-item, .softwarae-item {
     margin-bottom: 30px;
 }
 
-.education-item h3, .experience-item h3, .project-item h3 {
+.education-item h3, .experience-item h3, .project-item h3, .software-item h3 {
     color: #333;
     margin-bottom: 5px;
 }
 
-.education-item p, .experience-item p, .project-item p {
+.education-item p, .experience-item p, .project-item p, .software-item p{
     color: #666;
 }
 
-.project-item a {
+.project-item a, .software-item a {
     display: inline;
     padding-right: 8px;
 }
