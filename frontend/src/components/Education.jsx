@@ -15,14 +15,12 @@ function Education() {
             <div class="education-item">
                 <h3>B.A. in Communication</h3>
                 <p>Handong Global University | 2019 - 2025</p>
-                <p>As a student majored in Media & Communication Studies, I studied Mass Media theory & the Cultural Studies.</p> 
-                <p>In particular, I studied with a focus on analyzing socio-cultural phenomena reproduced by the mass media.</p>
+                <p>Thesis: Analyzing Media Representations of Mental Illness in South Korea: A Case Study of Bipolar Disorder, Depression, and Schizophrenia</p>
             </div>
             <div class="education-item">
                 <h3>B.S. in Data Science</h3>
                 <p>Handong Global University | 2019 - 2025</p>
-                <p>I studied Text Mining & Natural Language Processing with a focus.</p>
-                <p>I have delved deeply into the theory of ML & DL algorithms for more sophisticated model use.</p>
+                <p>Thesis: Growth Prediction Models for European Lettuce in an Aeroponic Environment</p>
             </div>
         </div>
     </section>
