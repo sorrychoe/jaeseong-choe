@@ -2,11 +2,11 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-function softwares() {
+function Softwares() {
   useEffect(() => {
     AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
   }, []);
-  const software = [
+  const softwares = [
       {
         title: 'PyBigkinds',
         description: 'Bigkinds Data Preprocessing Library for Python',
@@ -53,4 +53,4 @@ function softwares() {
   );
 }
 
-export default Software;
+export default Softwares;
