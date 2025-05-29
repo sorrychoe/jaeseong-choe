@@ -29,7 +29,8 @@ jaeseong-choe/
         │   ├── Header.jsx
         │   ├── Navbar.jsx
         │   ├── Projects.jsx
-        │   └── Skills.jsx
+        │   ├── Skills.jsx
+        │   └── Software.jsx
         ├── index.css
         └── index.js
 ```
