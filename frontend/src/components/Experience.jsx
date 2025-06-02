@@ -7,12 +7,20 @@ function Experience() {
         AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
       }, []);
     const Experiences = [
+      {
+            title: 'Research Assistant',
+            company: 'Handong Global University | 2024.12 - 2025.06',
+            description: [
+              { role: 'Research Assistant of Institute for Holistic Intelligence Scholarship and Education Development'},
+              { role: 'Research Assistant of Department of Communication Arts'},
+            ],
+          },
         {
             title: 'Project Manager',
             company: 'Fastcampus | 2023.06 - 2024.02',
             description: [
-              { role: 'AI Boot Camp 6th & Upstage AI Lab 2nd Planning/Operation Manager'},
-              { role: 'HRD Education Data Analyst'},
+              { role: 'Project Manager of AI Boot Camp 6th & Upstage AI Lab 2nd'},
+              { role: 'HRD Data Analyst'},
             ],
           },
           {
@@ -26,7 +34,7 @@ function Experience() {
             title: 'QA Engineer',
             company: 'Makinarocks | 2023.02 - 2023.06 (internship)',
             description: [
-              { role: 'QA Engineer Focused on Test Automation'},
+              { role: 'Test Automation Engineer'},
               { role: 'Software QA of product for Data Scientist'},
             ],
           },
@@ -34,8 +42,8 @@ function Experience() {
             title: 'Learning Manager',
             company: 'Fastcampus | 2022.06 - 2023.01 (Contract)',
             description: [
-              { role: 'Seoul Software Academy(SeSAC) Data Analytics Boot Camp Course Operation Manager'},
-              { role: 'HRD Education Data Analyst'},
+              { role: 'Operation Manager of Data Analytics Boot Camp Course'},
+              { role: 'HRD Data Analyst'},
             ],
           },
     ]
