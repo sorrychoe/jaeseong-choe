@@ -13,9 +13,15 @@ function About() {
     <section id="about" className="py-5 bg-light" data-aos="fade-up">
       <div className="container">
         <h2>About Me</h2>
-        <p align="left">Specialist of social data analysis with extensive experience in Media Research & Human Resource Development</p>
-        <p aline="left">Skilled in transforming complex data into actionable insights through statistical analytics, data visualization, and machine learning.</p>
-        <p align="left">Proven track record in managing projects and improving processes with a data-driven approach.</p>
+        <p align="left">
+          As a <strong>data analyst</strong> specializing in Human Resource Development, I transform VOCs, employee surveys, and market data into actionable insights.
+        </p>
+        <p align="left">
+          As a <strong>communication researcher</strong>, I use computational social-science methods to reveal patterns in media discourse, public opinion, and social dynamics.
+        </p>
+        <p align="left">
+          Bridging practice and research, I offer an interdisciplinary perspective that links real-world challenges with academic rigor.
+        </p>
       </div>
     </section>
   );
