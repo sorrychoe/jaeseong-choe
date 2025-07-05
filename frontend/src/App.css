@@ -78,7 +78,7 @@ section h2 {
 }
 
 /* Education & Experience Items */
-.education-item, .experience-item, .project-item, .softwarae-item {
+.education-item, .experience-item, .project-item, .software-item {
     margin-bottom: 30px;
 }
 
@@ -95,6 +95,8 @@ section h2 {
     display: inline;
     padding-right: 8px;
 }
+
+
 
 /* Skills */
 .skills-list {
