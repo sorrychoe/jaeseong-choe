@@ -7,46 +7,52 @@ function Experience() {
         AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
       }, []);
     const Experiences = [
-      {
-            title: 'Research Assistant',
-            company: 'Handong Global University | 2024.12 - 2025.06',
-            description: [
-              { role: 'Research Assistant of Institute for Holistic Intelligence Scholarship and Education Development'},
-              { role: 'Research Assistant of Department of Communication Arts'},
-            ],
-          },
-        {
-            title: 'Project Manager',
-            company: 'Fastcampus | 2023.06 - 2024.02',
-            description: [
-              { role: 'Project Manager of AI Boot Camp 6th & Upstage AI Lab 2nd'},
-              { role: 'HRD Data Analyst'},
-            ],
+          {
+            "title": "Marketer",
+            "company": "NOL Universe | 2025.07 - Present",
+            "description": [
+              { "role": "Marketing Strategist specializing in OTA growth and innovation" }
+            ]
           },
           {
-            title: 'Course Assistant',
-            company: 'Fastcampus | 2022.12 - 2023.06 (Freelancer)',
-            description: [
-              { role: 'Data Visualization Online Course Practice Coach Using Tableau'},
-            ],
+            "title": "Research Assistant",
+            "company": "Handong Global University | 2024.12 - Present (Freelancer)",
+            "description": [
+              { "role": "Research Assistant, Institute for Holistic Intelligence Scholarship and Education Development" },
+              { "role": "Research Assistant, Department of Communication Arts" }
+            ]
           },
           {
-            title: 'QA Engineer',
-            company: 'Makinarocks | 2023.02 - 2023.06 (internship)',
-            description: [
-              { role: 'Test Automation Engineer'},
-              { role: 'Software QA of product for Data Scientist'},
-            ],
+            "title": "Project Manager",
+            "company": "Fastcampus | 2023.06 - 2024.02",
+            "description": [
+              { "role": "Education PM, AI Boot Camp (6th) & Upstage AI Lab (2nd)" },
+              { "role": "Data Analyst focused on market trends and competitive analysis in the HRD industry" }
+            ]
           },
           {
-            title: 'Learning Manager',
-            company: 'Fastcampus | 2022.06 - 2023.01 (Contract)',
-            description: [
-              { role: 'Operation Manager of Data Analytics Boot Camp Course'},
-              { role: 'HRD Data Analyst'},
-            ],
+            "title": "Course Assistant",
+            "company": "Fastcampus | 2022.12 - 2023.03 (Freelancer)",
+            "description": [
+              { "role": "Practice Coach, Online Data Visualization Course (Tableau)" }
+            ]
           },
-    ]
+          {
+            "title": "QA Engineer",
+            "company": "Makinarocks | 2023.02 - 2023.06 (Internship)",
+            "description": [
+              { "role": "QA Engineer building test automation frameworks and deployment environments for MLOps product"},
+            ]
+          },
+          {
+            "title": "Learning Manager",
+            "company": "Fastcampus | 2022.06 - 2023.01",
+            "description": [
+              { "role": "Program Manager, Data Analytics Boot Camp" },
+            ]
+          }
+        ]
+
   return ( 
     <section id="experience" class="py-5 bg-light" data-aos="fade-up">
         <div class="container">

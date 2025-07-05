@@ -14,7 +14,7 @@ function About() {
       <div className="container">
         <h2>About Me</h2>
         <p align="left">
-          As a <strong>data analyst</strong> specializing in Human Resource Development, I transform VOCs, employee surveys, and market data into actionable insights.
+          As a <strong>data analyst</strong> experienced across Education, Marketing, and QA domains, I translate diverse operational data into actionable insights that drive strategic decisions.
         </p>
         <p align="left">
           As a <strong>communication researcher</strong>, I use computational social-science methods to reveal patterns in media discourse, public opinion, and social dynamics.
