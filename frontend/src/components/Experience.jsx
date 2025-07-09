@@ -8,10 +8,10 @@ function Experience() {
       }, []);
     const Experiences = [
           {
-            "title": "Marketer",
+            "title": "Marketing Innovation Manager",
             "company": "NOL Universe | 2025.07 - Present",
             "description": [
-              { "role": "Marketing Strategist specializing in OTA growth and innovation" }
+              { "role": "Marketing Innovation for OTA growth" }
             ]
           },
           {
