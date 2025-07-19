@@ -11,7 +11,7 @@ function Experience() {
             "title": "Marketing Innovation Manager",
             "company": "NOL Universe | 2025.07 - Present",
             "description": [
-              { "role": "Marketing Innovation for OTA growth" }
+              { "role": "Data Analyst for Marketing Innovation" }
             ]
           },
           {
