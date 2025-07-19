@@ -11,6 +11,7 @@ function Skills() {
     { name: 'Julia', icon: 'https://cdn.simpleicons.org/Julia/FFFFFF' },
     { name: 'Python', icon: 'https://cdn.simpleicons.org/python/FFFFFF' },
     { name: 'JavaScript', icon: 'https://cdn.simpleicons.org/JavaScript/FFFFFF' },
+    { name: 'Apps Script', icon: 'https://cdn.simpleicons.org/googleappsscript/FFFFFF' },
     { name: 'MySQL', icon: 'https://cdn.simpleicons.org/Mysql/FFFFFF' },
     { name: 'Redash', icon: 'https://cdn.simpleicons.org/redash/FFFFFF' },
     { name: 'Databricks', icon: 'https://cdn.simpleicons.org/databricks/FFFFFF' },
@@ -29,7 +30,6 @@ function Skills() {
     { name: 'Linux', icon: 'https://cdn.simpleicons.org/linux/FFFFFF' }, 
     { name: 'Docker', icon: 'https://cdn.simpleicons.org/Docker/FFFFFF' },
     { name: 'Git', icon: 'https://cdn.simpleicons.org/Git/FFFFFF' },
-    { name: 'Github', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
     { name: 'Github Action', icon: 'https://cdn.simpleicons.org/githubactions/FFFFFF' },
   ];
 
