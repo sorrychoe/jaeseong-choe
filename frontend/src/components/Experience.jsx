@@ -8,18 +8,18 @@ function Experience() {
       }, []);
     const Experiences = [
           {
-            "title": "Marketing Innovation Manager",
+            "title": "Marketing Manager",
             "company": "NOL Universe | 2025.07 - Present",
             "description": [
-              { "role": "Data Analyst for Marketing Innovation" }
+              { "role": "Data analysis for Marketing" },
+              { "role": "Marketing Project Management, Cancel-Free" }
             ]
           },
           {
             "title": "Research Assistant",
-            "company": "Handong Global University | 2024.12 - Present (Freelancer)",
+            "company": "Handong Global University | 2024.12 - 2025.06 (Part-time)",
             "description": [
               { "role": "Research Assistant, Institute for Holistic Intelligence Scholarship and Education Development" },
-              { "role": "Research Assistant, Department of Communication Arts" }
             ]
           },
           {
