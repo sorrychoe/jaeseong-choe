@@ -14,10 +14,10 @@ function About() {
       <div className="container">
         <h2>About Me</h2>
         <p align="left">
-          As a <strong>data analyst</strong> experienced across Education, HR and Marketing domains, I translate diverse operational data into actionable insights that drive strategic decisions.
+          As a <strong>data analyst</strong> experienced across HRD, Education and Marketing domains, I translate diverse operational data into actionable insights that drive strategic decisions.
         </p>
         <p align="left">
-          As a <strong>communication researcher</strong>, I use computational social-science methods to reveal patterns in media discourse, public opinion, and social dynamics.
+          As a <strong>social science researcher</strong>, I use computational methods to uncover patterns in media discourse, public opinion, and social behavior.
         </p>
         <p align="left">
           Bridging practice and research, I offer an interdisciplinary perspective that links real-world challenges with academic rigor.
