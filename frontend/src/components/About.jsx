@@ -9,18 +9,19 @@ function About() {
     AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
   }, []);
   
+
   return (
     <section id="about" className="py-5 bg-light" data-aos="fade-up">
       <div className="container">
         <h2>About Me</h2>
         <p align="left">
-          As a <strong>data analyst</strong> experienced across HRD, Education and Marketing domains, I translate diverse operational data into actionable insights that drive strategic decisions.
+          <strong>Data-driven professional</strong> with experience across HRD, Education, and Marketing field.
         </p>
         <p align="left">
-          As a <strong>social science researcher</strong>, I use computational methods to uncover patterns in media discourse, public opinion, and social behavior.
+          <strong>Specialized in computational methods</strong> to uncover patterns in media discourse, public opinion, and social behavior.
         </p>
         <p align="left">
-          Bridging practice and research, I offer an interdisciplinary perspective that links real-world challenges with academic rigor.
+          Passionate about integrating theoretical frameworks with practical applications to drive insights from real-world data.
         </p>
       </div>
     </section>
