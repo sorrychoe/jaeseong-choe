@@ -7,20 +7,14 @@ function Skills() {
     AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
   }, []);
   const skills = [
-    { name: 'R', icon: 'https://cdn.simpleicons.org/R/FFFFFF' },
-    { name: 'Julia', icon: 'https://cdn.simpleicons.org/Julia/FFFFFF' },
     { name: 'Python', icon: 'https://cdn.simpleicons.org/python/FFFFFF' },
     { name: 'JavaScript', icon: 'https://cdn.simpleicons.org/JavaScript/FFFFFF' },
-    { name: 'MySQL', icon: 'https://cdn.simpleicons.org/Mysql/FFFFFF' },
+    { name: 'R', icon: 'https://cdn.simpleicons.org/R/FFFFFF' },
+    { name: 'Julia', icon: 'https://cdn.simpleicons.org/Julia/FFFFFF' },
     { name: 'Redash', icon: 'https://cdn.simpleicons.org/redash/FFFFFF' },
     { name: 'Databricks', icon: 'https://cdn.simpleicons.org/databricks/FFFFFF' },
-    { name: 'Google Analytics', icon: 'https://cdn.simpleicons.org/googleanalytics/FFFFFF' },
-    { name: 'R Studio', icon: 'https://cdn.simpleicons.org/rstudioide/FFFFFF' },
-    { name: 'Jupyter', icon: 'https://cdn.simpleicons.org/jupyter/FFFFFF' },
-    { name: 'Google Colab', icon: 'https://cdn.simpleicons.org/googlecolab/FFFFFF' },
     { name: 'Selenium', icon: 'https://cdn.simpleicons.org/Selenium/FFFFFF' },
     { name: 'Tidyverse', icon: 'https://cdn.simpleicons.org/Tidyverse/FFFFFF' },
-    { name: 'Pandas', icon: 'https://cdn.simpleicons.org/pandas/FFFFFF' },
     { name: 'Scikit Learn', icon: 'https://cdn.simpleicons.org/scikitlearn/FFFFFF' },
     { name: 'Pytorch', icon: 'https://cdn.simpleicons.org/Pytorch/FFFFFF' },
     { name: 'Latex', icon: 'https://cdn.simpleicons.org/Latex/FFFFFF' },

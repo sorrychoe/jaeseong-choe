@@ -11,8 +11,8 @@ function Experience() {
             "title": "Marketing Manager",
             "company": "NOL Universe | 2025.07 - Present",
             "description": [
-              { "role": "Data analysis for Marketing" },
-              { "role": "Marketing Project Management, Cancel-Free" }
+              { "role": "Project Manager of Cancel-Free" },
+              { "role": "Data analysis for Marketing" }
             ]
           },
           {
@@ -27,7 +27,7 @@ function Experience() {
             "company": "Fastcampus | 2023.06 - 2024.02",
             "description": [
               { "role": "Education PM, AI Boot Camp (6th) & Upstage AI Lab (2nd)" },
-              { "role": "Data Analyst focused on market trends and competitive analysis in the HRD industry" }
+              { "role": "Conducted market trend analysis and developed KPI dashboards to support data-driven decision making" }
             ]
           },
           {
@@ -41,14 +41,15 @@ function Experience() {
             "title": "QA Engineer",
             "company": "Makinarocks | 2023.02 - 2023.06 (Internship)",
             "description": [
-              { "role": "QA Engineer building test automation frameworks and deployment environments for MLOps product"},
+              { "role": "QA Engineer, Link & Runway"},
+              { "rold": "Developed test automation frameworks and deployment environments for MLOps products"}
             ]
           },
           {
             "title": "Learning Manager",
             "company": "Fastcampus | 2022.06 - 2023.01",
             "description": [
-              { "role": "Program Manager, Data Analytics Boot Camp" },
+              { "role": "Operation Manager, Data Analytics Boot Camp" },
             ]
           }
         ]
