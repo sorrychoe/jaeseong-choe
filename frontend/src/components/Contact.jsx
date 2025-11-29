@@ -10,7 +10,7 @@ function Contact() {
   });
 
   const [formMessage, setFormMessage] = useState('');
-  const [messageColor, setMessageColor] = useState('');
+  const [isSuccess, setIsSuccess] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   useEffect(() => {
@@ -30,16 +30,15 @@ function Contact() {
 
     const { name, email, message } = formData;
 
-    // 입력 값 검증
     if (!name.trim() || !email.trim() || !message.trim()) {
-      setMessageColor('red');
+      setIsSuccess(false);
       setFormMessage('Please fill in all fields.');
       return;
     }
 
     const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@(([^<>()[\]\\.,;:\s@"]+\.)+[^<>()[\]\\.,;:\s@"]{2,})$/i;
     if (!emailRegex.test(email.trim())) {
-      setMessageColor('red');
+      setIsSuccess(false);
       setFormMessage('Please enter a valid email address.');
       return;
     }
@@ -65,70 +64,82 @@ function Contact() {
       const result = await response.json();
 
       if (response.ok && result.success) {
-        setMessageColor('green');
+        setIsSuccess(true);
         setFormMessage(result.message);
-        setFormData({ name: '', email: '', message: '' }); // 폼 리셋
+        setFormData({ name: '', email: '', message: '' });
       } else {
-        setMessageColor('red');
-        setFormMessage(result.message || 'There was an error sending your message. Please try again later.');
+        setIsSuccess(false);
+        setFormMessage(result.message || 'There was an error sending your message.');
       }
     } catch (error) {
       console.error('Error:', error);
-      setMessageColor('red');
-      setFormMessage('There was an error sending your message. Please try again later.');
+      setIsSuccess(false);
+      setFormMessage('There was an error sending your message.');
     } finally {
       setIsSubmitting(false);
     }
   };
 
   return (
-    <section id="contact" className="py-5 bg-light">
-      <div className="container">
-        <h2>Contact Me</h2>
-        <form id="contact-form" onSubmit={handleSubmit}>
-          <label htmlFor="name" data-aos="fade-right">Name:</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            required
-            data-aos="fade-right"
-            value={formData.name}
-            onChange={handleChange}
-          />
+    <section id="contact" className="py-20 bg-gray-50" data-aos="fade-up">
+      <div className="container mx-auto px-4">
+        <h2 className="text-4xl font-bold text-center mb-16">Contact Me</h2>
+        <div className="max-w-2xl mx-auto">
+          <form onSubmit={handleSubmit} className="bg-white shadow-lg rounded-lg p-8">
+            <div className="mb-6">
+              <label htmlFor="name" className="block text-gray-700 text-sm font-bold mb-2" data-aos="fade-right">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                className="shadow-sm appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
+                data-aos="fade-right"
+                value={formData.name}
+                onChange={handleChange}
+              />
+            </div>
 
-          <label htmlFor="email" data-aos="fade-left">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            data-aos="fade-left"
-            value={formData.email}
-            onChange={handleChange}
-          />
+            <div className="mb-6">
+              <label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2" data-aos="fade-left">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                className="shadow-sm appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
+                data-aos="fade-left"
+                value={formData.email}
+                onChange={handleChange}
+              />
+            </div>
 
-          <label htmlFor="message" data-aos="fade-right">Message:</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="5"
-            required
-            data-aos="fade-right"
-            value={formData.message}
-            onChange={handleChange}
-          ></textarea>
+            <div className="mb-6">
+              <label htmlFor="message" className="block text-gray-700 text-sm font-bold mb-2" data-aos="fade-right">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                className="shadow-sm appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
+                data-aos="fade-right"
+                value={formData.message}
+                onChange={handleChange}
+              ></textarea>
+            </div>
 
-          <button type="submit" data-aos="fade-left" disabled={isSubmitting}>
-            {isSubmitting ? 'Sending...' : 'Send Message'}
-            {isSubmitting && <span className="spinner"></span>}
-          </button>
-        </form>
-        {formMessage && (
-          <p id="form-message" className="py-5 bg-light" style={{ color: messageColor }}>
-            {formMessage}
-          </p>
-        )}
+            <div className="text-center">
+              <button type="submit" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg focus:outline-none focus:shadow-outline transition duration-300 disabled:bg-gray-400" data-aos="fade-up" disabled={isSubmitting}>
+                {isSubmitting ? 'Sending...' : 'Send Message'}
+              </button>
+            </div>
+          </form>
+          {formMessage && (
+            <p className={`text-center mt-6 text-lg ${isSuccess ? 'text-green-600' : 'text-red-600'}`}>
+              {formMessage}
+            </p>
+          )}
+        </div>
       </div>
     </section>
   );

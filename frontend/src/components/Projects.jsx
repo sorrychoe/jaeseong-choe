@@ -61,20 +61,24 @@ function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-5 bg-light" data-aos="fade-up">
-      <div className="container">
-        <h2>Projects</h2>
-        {projects.map((project, index) => (
-          <div className="project-item" key={index}>
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            {project.links.map((link, idx) => (
-              <a href={link.href} target="_blank" rel="noopener noreferrer" key={idx}>
-                <img height="30" width="30" src={link.icon} alt={project.title} />
-              </a>
-            ))}
-          </div>
-        ))}
+    <section id="projects" className="py-20 bg-gray-50" data-aos="fade-up">
+      <div className="container mx-auto px-4">
+        <h2 className="text-4xl font-bold text-center mb-16">Projects</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col" key={index}>
+              <h3 className="text-xl font-bold text-blue-600 mb-2">{project.title}</h3>
+              <p className="text-gray-700 mb-4 flex-grow">{project.description}</p>
+              <div className="flex items-center space-x-4">
+                {project.links.map((link, idx) => (
+                  <a href={link.href} target="_blank" rel="noopener noreferrer" key={idx} className="hover:opacity-75 transition duration-300">
+                    <img height="24" width="24" src={link.icon} alt={project.title} />
+                  </a>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

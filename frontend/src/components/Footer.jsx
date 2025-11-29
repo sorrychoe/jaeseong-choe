@@ -2,14 +2,14 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer className="bg-dark text-white text-center py-3">
-      <div className="container">
-        <p>&copy; 2025 Jaeseong Choe. All rights reserved.</p>
-        <div className="social-links">
-          <a href="https://github.com/sorrychoe" target="_blank" rel="noopener noreferrer">
-            <img height="30" width="30" src='https://cdn.simpleicons.org/Github/FFFFFF' alt='Github' />
+    <footer className="bg-gray-900 text-gray-400 text-center py-8">
+      <div className="container mx-auto px-4">
+        <div className="mb-4">
+          <a href="https://github.com/sorrychoe" target="_blank" rel="noopener noreferrer" className="inline-block hover:opacity-75 transition duration-300">
+            <img height="28" width="28" src='https://cdn.simpleicons.org/Github/FFFFFF' alt='Github' />
           </a>
         </div>
+        <p className="text-sm">&copy; 2025 Jaeseong Choe. All rights reserved.</p>
       </div>
     </footer>
   );
