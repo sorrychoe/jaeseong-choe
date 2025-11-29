@@ -11,8 +11,9 @@ function Experience() {
             "title": "Marketing Manager",
             "company": "NOL Universe | 2025.07 - Present",
             "description": [
-              { "role": "Project Manager of Cancel-Free" },
-              { "role": "Data analysis for Marketing" }
+              { "role": "Data analysis for Marketing" },
+              { "role": "Developed Marketing KPI Dashboard" }, 
+              { "role": "Project Manager of Cancel-Free" }
             ]
           },
           {
