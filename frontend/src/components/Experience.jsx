@@ -56,15 +56,15 @@ function Experience() {
         ]
 
   return ( 
-    <section id="experience" className="py-20 bg-gray-50" data-aos="fade-up">
+    <section id="experience" className="py-20" data-aos="fade-up">
         <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-center mb-16">Experience</h2>
             <div className="max-w-4xl mx-auto">
               {Experiences.map((experience, index) => (
-              <div className="bg-white p-6 rounded-lg shadow-lg mb-8" key={index}>
-                  <h3 className="text-2xl font-bold text-blue-600 mb-1">{experience.title}</h3>
-                  <p className="text-md font-semibold text-gray-600 mb-4">{experience.company}</p>
-                  <ul className="list-disc list-inside text-gray-700 space-y-2">
+              <div className="bg-gray-800 p-6 rounded-lg shadow-lg mb-8 border border-gray-700" key={index}>
+                  <h3 className="text-2xl font-bold text-white mb-1">{experience.title}</h3>
+                  <p className="text-md font-semibold text-gray-400 mb-4">{experience.company}</p>
+                  <ul className="list-disc list-inside text-gray-300 space-y-2">
                     {experience.description.map((exp, idx) => (
                       <li key={idx}>{exp.role || exp.rold}</li>
                     ))}

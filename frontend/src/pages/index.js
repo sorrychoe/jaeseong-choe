@@ -11,7 +11,7 @@ import Footer from '../components/Footer';
 
 function App() {
   return (
-    <div className="bg-gray-100 text-gray-800">
+    <div className="bg-black text-purple-200">
       <Header />
       <About />
       <Experience />

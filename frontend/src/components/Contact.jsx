@@ -81,19 +81,19 @@ function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-50" data-aos="fade-up">
+    <section id="contact" className="py-20" data-aos="fade-up">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-16">Contact Me</h2>
         <div className="max-w-2xl mx-auto">
-          <form onSubmit={handleSubmit} className="bg-white shadow-lg rounded-lg p-8">
+          <form onSubmit={handleSubmit} className="bg-gray-800 shadow-lg rounded-lg p-8 border border-gray-700">
             <div className="mb-6">
-              <label htmlFor="name" className="block text-gray-700 text-sm font-bold mb-2" data-aos="fade-right">Name:</label>
+              <label htmlFor="name" className="block text-gray-300 text-sm font-bold mb-2" data-aos="fade-right">Name:</label>
               <input
                 type="text"
                 id="name"
                 name="name"
                 required
-                className="shadow-sm appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="shadow-sm appearance-none border rounded w-full py-3 px-4 bg-gray-700 text-gray-300 leading-tight focus:outline-none focus:ring-2 focus:ring-purple-500"
                 data-aos="fade-right"
                 value={formData.name}
                 onChange={handleChange}
@@ -101,13 +101,13 @@ function Contact() {
             </div>
 
             <div className="mb-6">
-              <label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2" data-aos="fade-left">Email:</label>
+              <label htmlFor="email" className="block text-gray-300 text-sm font-bold mb-2" data-aos="fade-left">Email:</label>
               <input
                 type="email"
                 id="email"
                 name="email"
                 required
-                className="shadow-sm appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="shadow-sm appearance-none border rounded w-full py-3 px-4 bg-gray-700 text-gray-300 leading-tight focus:outline-none focus:ring-2 focus:ring-purple-500"
                 data-aos="fade-left"
                 value={formData.email}
                 onChange={handleChange}
@@ -115,13 +115,13 @@ function Contact() {
             </div>
 
             <div className="mb-6">
-              <label htmlFor="message" className="block text-gray-700 text-sm font-bold mb-2" data-aos="fade-right">Message:</label>
+              <label htmlFor="message" className="block text-gray-300 text-sm font-bold mb-2" data-aos="fade-right">Message:</label>
               <textarea
                 id="message"
                 name="message"
                 rows="5"
                 required
-                className="shadow-sm appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="shadow-sm appearance-none border rounded w-full py-3 px-4 bg-gray-700 text-gray-300 leading-tight focus:outline-none focus:ring-2 focus:ring-purple-500"
                 data-aos="fade-right"
                 value={formData.message}
                 onChange={handleChange}
@@ -129,13 +129,13 @@ function Contact() {
             </div>
 
             <div className="text-center">
-              <button type="submit" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg focus:outline-none focus:shadow-outline transition duration-300 disabled:bg-gray-400" data-aos="fade-up" disabled={isSubmitting}>
+              <button type="submit" className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg focus:outline-none focus:shadow-outline transition duration-300 disabled:bg-gray-400" data-aos="fade-up" disabled={isSubmitting}>
                 {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
             </div>
           </form>
           {formMessage && (
-            <p className={`text-center mt-6 text-lg ${isSuccess ? 'text-green-600' : 'text-red-600'}`}>
+            <p className={`text-center mt-6 text-lg ${isSuccess ? 'text-green-400' : 'text-red-400'}`}>
               {formMessage}
             </p>
           )}
