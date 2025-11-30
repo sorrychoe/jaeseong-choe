@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import styles from './Skills.module.css';
 
 function Skills() {
   useEffect(() => {
@@ -28,23 +29,23 @@ function Skills() {
   ];
 
   return (
-    <section id="skills" className="py-20" data-aos="fade-up">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-16">Skills</h2>
-        <div className="max-w-4xl mx-auto">
-          <ul className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-8">
+    <section id="skills" className={styles.skills} data-aos="fade-up">
+      <div className="container">
+        <h2 className={styles.title}>Skills</h2>
+        <div className={styles.container}>
+          <ul className={styles.grid}>
             {skills.map((skill, index) => (
-              <li key={index} className="text-center">
-                <div className="bg-gray-800 p-4 rounded-lg shadow-lg flex items-center justify-center h-24 border border-gray-700 hover:bg-gray-700 hover:border-purple-500 transition duration-300">
+              <li key={index} className={styles.skill}>
+                <div className={styles.iconContainer}>
                   <img
                     height="48"
                     width="48"
                     src={skill.icon}
                     alt={skill.name}
-                    className="h-12 w-12 floating-icon"
+                    className={`${styles.icon} floating-icon`}
                   />
                 </div>
-                <p className="mt-2 text-sm font-semibold text-gray-300">{skill.name}</p>
+                <p className={styles.skillName}>{skill.name}</p>
               </li>
             ))}
           </ul>

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import styles from './Projects.module.css';
 
 function Software() {
   useEffect(() => {
@@ -34,18 +35,18 @@ function Software() {
   ];
 
   return (
-    <section id="softwares" className="py-20" data-aos="fade-up">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-16">Software</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section id="softwares" className={styles.projects} data-aos="fade-up">
+      <div className="container">
+        <h2 className={styles.title}>Software</h2>
+        <div className={styles.grid}>
           {softwares.map((software, index) => (
-            <div className="bg-gray-800 rounded-lg shadow-lg p-6 flex flex-col border border-gray-700" key={index}>
-              <h3 className="text-xl font-bold text-white mb-2">{software.title}</h3>
-              <p className="text-gray-300 mb-4 flex-grow">{software.description}</p>
-              <div className="flex items-center space-x-4">
+            <div className={styles.card} key={index}>
+              <h3 className={styles.cardTitle}>{software.title}</h3>
+              <p className={styles.cardDescription}>{software.description}</p>
+              <div className={styles.links}>
                 {software.links.map((link, idx) => (
-                  <a href={link.href} target="_blank" rel="noopener noreferrer" key={idx} className="hover:scale-110 transition-transform duration-300">
-                    <img height="24" width="24" src={link.icon} alt={software.title} className="floating-icon" />
+                  <a href={link.href} target="_blank" rel="noopener noreferrer" key={idx} className={styles.link}>
+                    <img height="24" width="24" src={link.icon} alt={software.title} className={`${styles.icon} floating-icon`} />
                   </a>
                 ))}
               </div>

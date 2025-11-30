@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import styles from './Projects.module.css';
 
 function Projects() {
   useEffect(() => {
@@ -38,13 +39,6 @@ function Projects() {
         ],
       },
       {
-        title: 'Creationism Chatbot',
-        description: "Chatbot for Creationism course Q&A at Handong University",
-        links: [
-          { href: 'https://github.com/sorrychoe/Creationism_Chatbot', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
-        ],
-      },
-      {
         title: 'Which neighborhood is the most similar to my neighborhood?',
         description: "Webpage that finds a population distribution similar to the neighborhood in which one lives",
         links: [
@@ -61,18 +55,18 @@ function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-20" data-aos="fade-up">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-16">Projects</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section id="projects" className={styles.projects} data-aos="fade-up">
+      <div className="container">
+        <h2 className={styles.title}>Projects</h2>
+        <div className={styles.grid}>
           {projects.map((project, index) => (
-            <div className="bg-gray-800 rounded-lg shadow-lg p-6 flex flex-col border border-gray-700" key={index}>
-              <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
-              <p className="text-gray-300 mb-4 flex-grow">{project.description}</p>
-              <div className="flex items-center space-x-4">
+            <div className={styles.card} key={index}>
+              <h3 className={styles.cardTitle}>{project.title}</h3>
+              <p className={styles.cardDescription}>{project.description}</p>
+              <div className={styles.links}>
                 {project.links.map((link, idx) => (
-                  <a href={link.href} target="_blank" rel="noopener noreferrer" key={idx} className="hover:scale-110 transition-transform duration-300">
-                    <img height="24" width="24" src={link.icon} alt={project.title} className="floating-icon" />
+                  <a href={link.href} target="_blank" rel="noopener noreferrer" key={idx} className={styles.link}>
+                    <img height="24" width="24" src={link.icon} alt={project.title} className={`${styles.icon} floating-icon`} />
                   </a>
                 ))}
               </div>

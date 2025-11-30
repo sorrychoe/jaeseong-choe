@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import styles from './Experience.module.css';
 
 function Experience() {
     useEffect(() => {
@@ -56,17 +57,17 @@ function Experience() {
         ]
 
   return ( 
-    <section id="experience" className="py-20" data-aos="fade-up">
-        <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center mb-16">Experience</h2>
-            <div className="max-w-4xl mx-auto">
+    <section id="experience" className={styles.experience} data-aos="fade-up">
+        <div className="container">
+            <h2 className={styles.title}>Experience</h2>
+            <div className={styles.container}>
               {Experiences.map((experience, index) => (
-              <div className="bg-gray-800 p-6 rounded-lg shadow-lg mb-8 border border-gray-700" key={index}>
-                  <h3 className="text-2xl font-bold text-white mb-1">{experience.title}</h3>
-                  <p className="text-md font-semibold text-gray-400 mb-4">{experience.company}</p>
-                  <ul className="list-disc list-inside text-gray-300 space-y-2">
+              <div className={styles.card} key={index}>
+                  <h3 className={styles.cardTitle}>{experience.title}</h3>
+                  <p className={styles.cardCompany}>{experience.company}</p>
+                  <ul className={styles.list}>
                     {experience.description.map((exp, idx) => (
-                      <li key={idx}>{exp.role || exp.rold}</li>
+                      <li className={styles.listItem} key={idx}>{exp.role}</li>
                     ))}
                   </ul>
               </div>

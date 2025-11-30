@@ -1,16 +1,17 @@
 import React from 'react';
+import styles from './Navbar.module.css';
 
 function Navbar() {
   return (
-    <nav className="mt-8">
-      <ul className="flex justify-center flex-wrap gap-4 md:gap-6">
-        <li><a href="#about" className="block bg-gray-800 text-white font-bold px-4 py-2 rounded-lg hover:bg-purple-600 transition duration-300">About me</a></li>
-        <li><a href="#experience" className="block bg-gray-800 text-white font-bold px-4 py-2 rounded-lg hover:bg-purple-600 transition duration-300">Experience</a></li>
-        <li><a href="#education" className="block bg-gray-800 text-white font-bold px-4 py-2 rounded-lg hover:bg-purple-600 transition duration-300">Education</a></li>
-        <li><a href="#skills" className="block bg-gray-800 text-white font-bold px-4 py-2 rounded-lg hover:bg-purple-600 transition duration-300">Skills</a></li>
-        <li><a href="#projects" className="block bg-gray-800 text-white font-bold px-4 py-2 rounded-lg hover:bg-purple-600 transition duration-300">Projects</a></li>
-        <li><a href="#softwares" className="block bg-gray-800 text-white font-bold px-4 py-2 rounded-lg hover:bg-purple-600 transition duration-300">Software</a></li>
-        <li><a href="#contact" className="block bg-gray-800 text-white font-bold px-4 py-2 rounded-lg hover:bg-purple-600 transition duration-300">Contact</a></li>
+    <nav className={styles.nav}>
+      <ul className={styles.list}>
+        <li><a href="#about" className={styles.link}>About me</a></li>
+        <li><a href="#experience" className={styles.link}>Experience</a></li>
+        <li><a href="#education" className={styles.link}>Education</a></li>
+        <li><a href="#skills" className={styles.link}>Skills</a></li>
+        <li><a href="#projects" className={styles.link}>Projects</a></li>
+        <li><a href="#softwares" className={styles.link}>Software</a></li>
+        <li><a href="#contact" className={styles.link}>Contact</a></li>
       </ul>
     </nav>
   );  
