@@ -11,8 +11,8 @@ function About() {
   return (
     <section id="about" className={styles.about} data-aos="fade-up">
       <div className="container">
+        <h2 className={styles.title}>About Me</h2>
         <div className={styles.content}>
-          <h2 className={styles.title}>About Me</h2>
           <div className={styles.textContainer}>
             <p className={styles.text}>
               <strong className={styles.strong}>Data-driven professional</strong> with experience across HRD, Education, and Marketing field.

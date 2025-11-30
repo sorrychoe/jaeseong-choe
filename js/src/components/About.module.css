@@ -5,9 +5,13 @@
 
 .content {
   background-color: #1f2937;
-  border-radius: 0.5rem;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 0.5rem;
   padding: 2rem;
+  border: 1px solid #374151;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 768px) {
@@ -24,9 +28,6 @@
 }
 
 .textContainer {
-  max-width: 48rem;
-  margin-left: auto;
-  margin-right: auto;
   text-align: left;
 }
 
