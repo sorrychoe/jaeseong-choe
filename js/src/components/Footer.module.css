@@ -1,0 +1,29 @@
+.footer {
+  color: #9ca3af;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.iconContainer {
+  margin-bottom: 1rem;
+}
+
+.iconLink {
+  display: inline-block;
+  transition: transform 300ms;
+}
+
+.iconLink:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  display: inline-block;
+  height: 28px;
+  width: 28px;
+}
+
+.copyright {
+  font-size: 0.875rem;
+}
