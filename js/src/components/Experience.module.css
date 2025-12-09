@@ -10,12 +10,6 @@
   margin-bottom: 4rem;
 }
 
-.container {
-  max-width: 56rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .card {
   background-color: #1f2937;
   padding: 1.5rem;
@@ -24,7 +18,7 @@
   margin-bottom: 2rem;
   border: 1px solid #374151;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .logo {
@@ -34,8 +28,10 @@
   object-fit: contain;
 }
 
-.card:last-child {
-  margin-bottom: 0;
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .cardTitle {

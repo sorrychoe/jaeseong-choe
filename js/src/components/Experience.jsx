@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import styles from './Experience.module.css';
@@ -11,7 +12,7 @@ function Experience() {
           {
             "title": "Marketing Manager",
             "company": "NOL Universe | 2025.07 - Present",
-            "logo": "/images/NOL_Universe.png",
+            "logo": "/images/NOL_Universe.jpeg",
             "description": [
               { "role": "Data analysis for Marketing" },
               { "role": "Developed Marketing KPI Dashboard" }, 
@@ -66,10 +67,10 @@ function Experience() {
     <section id="experience" className={styles.experience} data-aos="fade-up">
         <div className="container">
             <h2 className={styles.title}>Experience</h2>
-            <div className={styles.container}>
-              {Experiences.map((experience, index) => (
-              <div className={styles.card} key={index}>
-                  <img src={experience.logo} alt={`${experience.company} Logo`} className={styles.logo} />
+            {Experiences.map((experience, index) => (
+            <div className={styles.card} key={index}>
+                <Image src={experience.logo} alt={`${experience.company} Logo`} className={styles.logo} width={50} height={50} />
+                <div className={styles.content}>
                   <h3 className={styles.cardTitle}>{experience.title}</h3>
                   <p className={styles.cardCompany}>{experience.company}</p>
                   <ul className={styles.list}>
@@ -77,9 +78,9 @@ function Experience() {
                       <li className={styles.listItem} key={idx}>{exp.role}</li>
                     ))}
                   </ul>
-              </div>
-              ))}
+                </div>
             </div>
+            ))}
         </div>
     </section>
   )
