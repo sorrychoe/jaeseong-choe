@@ -11,6 +11,7 @@ function Experience() {
           {
             "title": "Marketing Manager",
             "company": "NOL Universe | 2025.07 - Present",
+            "logo": "/images/NOL_Universe.png",
             "description": [
               { "role": "Data analysis for Marketing" },
               { "role": "Developed Marketing KPI Dashboard" }, 
@@ -20,13 +21,15 @@ function Experience() {
           {
             "title": "Research Assistant",
             "company": "Handong Global University | 2024.12 - 2025.06 (Part-time)",
+            "logo": "/images/Handong_Global_University.png",
             "description": [
               { "role": "Research Assistant, Institute for Holistic Intelligence Scholarship and Education Development" },
             ]
           },
           {
             "title": "Project Manager",
-            "company": "Fastcampus | 2023.06 - 2024.02",
+            "company": "Day1company | 2023.06 - 2024.02",
+            "logo": "/images/day1company.png",
             "description": [
               { "role": "Education PM, AI Boot Camp (6th) & Upstage AI Lab (2nd)" },
               { "role": "Conducted market trend analysis and developed KPI dashboards to support data-driven decision making" }
@@ -34,7 +37,8 @@ function Experience() {
           },
           {
             "title": "Course Assistant",
-            "company": "Fastcampus | 2022.12 - 2023.03 (Freelancer)",
+            "company": "Day1company | 2022.12 - 2023.03 (Freelancer)",
+            "logo": "/images/day1company.png",
             "description": [
               { "role": "Practice Coach, Online Data Visualization Course (Tableau)" }
             ]
@@ -42,6 +46,7 @@ function Experience() {
           {
             "title": "QA Engineer",
             "company": "Makinarocks | 2023.02 - 2023.06 (Internship)",
+            "logo": "/images/makinarocks.jpeg",
             "description": [
               { "role": "QA Engineer, Link & Runway"},
               { "role": "Developed test automation frameworks and deployment environments for MLOps products"}
@@ -49,7 +54,8 @@ function Experience() {
           },
           {
             "title": "Learning Manager",
-            "company": "Fastcampus | 2022.06 - 2023.01",
+            "company": "Day1conmpany | 2022.06 - 2023.01",
+            "logo": "/images/day1company.png",
             "description": [
               { "role": "Operation Manager, Data Analytics Boot Camp" },
             ]
@@ -63,6 +69,7 @@ function Experience() {
             <div className={styles.container}>
               {Experiences.map((experience, index) => (
               <div className={styles.card} key={index}>
+                  <img src={experience.logo} alt={`${experience.company} Logo`} className={styles.logo} />
                   <h3 className={styles.cardTitle}>{experience.title}</h3>
                   <p className={styles.cardCompany}>{experience.company}</p>
                   <ul className={styles.list}>
