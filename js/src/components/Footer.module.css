@@ -12,6 +12,7 @@
 .iconLink {
   display: inline-block;
   transition: transform 300ms;
+  margin: 0 0.5rem;
 }
 
 .iconLink:hover {
@@ -22,6 +23,7 @@
   display: inline-block;
   height: 28px;
   width: 28px;
+  color: white;
 }
 
 .copyright {

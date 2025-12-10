@@ -69,7 +69,7 @@ function Experience() {
             <h2 className={styles.title}>Experience</h2>
             {Experiences.map((experience, index) => (
             <div className={styles.card} key={index}>
-                <Image src={experience.logo} alt={`${experience.company} Logo`} className={styles.logo} width={50} height={50} />
+                <Image src={experience.logo} alt={`${experience.company} Logo`} className={styles.logo} width={100} height={100} objectFit="contain" />
                 <div className={styles.content}>
                   <h3 className={styles.cardTitle}>{experience.title}</h3>
                   <p className={styles.cardCompany}>{experience.company}</p>

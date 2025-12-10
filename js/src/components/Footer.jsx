@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from './Footer.module.css';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { ImBooks } from 'react-icons/im';
 
 function Footer() {
   return (
@@ -7,7 +9,13 @@ function Footer() {
       <div className="container">
         <div className={styles.iconContainer}>
           <a href="https://github.com/sorrychoe" target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
-            <img height="28" width="28" src='https://cdn.simpleicons.org/Github/FFFFFF' alt='Github' className={`${styles.icon} floating-icon`} />
+            <FaGithub className={`${styles.icon} floating-icon`} />
+          </a>
+          <a href="https://www.linkedin.com/in/sorrychoe/" target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
+            <FaLinkedin className={`${styles.icon} floating-icon`} />
+          </a>
+          <a href="https://www.dbpia.co.kr/author/authorDetail?ancId=191880872" target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
+            <ImBooks className={`${styles.icon} floating-icon`} />
           </a>
         </div>
         <p className={styles.copyright}>&copy; 2025 Jaeseong Choe. All rights reserved.</p>
