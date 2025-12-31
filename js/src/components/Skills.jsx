@@ -32,24 +32,22 @@ function Skills() {
     <section id="skills" className={styles.skills} data-aos="fade-up">
       <div className="container">
         <h2 className={styles.title}>Skills</h2>
-        <div className={styles.container}>
-          <ul className={styles.grid}>
-            {skills.map((skill, index) => (
-              <li key={index} className={styles.skill}>
-                <div className={styles.iconContainer}>
-                  <img
-                    height="48"
-                    width="48"
-                    src={skill.icon}
-                    alt={skill.name}
-                    className={`${styles.icon} floating-icon`}
-                  />
-                </div>
-                <p className={styles.skillName}>{skill.name}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <ul className={styles.grid}>
+          {skills.map((skill, index) => (
+            <li key={index} className={styles.skill}>
+              <div className={styles.iconContainer}>
+                <img
+                  height="48"
+                  width="48"
+                  src={skill.icon}
+                  alt={skill.name}
+                  className={`${styles.icon} floating-icon`}
+                />
+              </div>
+              <p className={styles.skillName}>{skill.name}</p>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );

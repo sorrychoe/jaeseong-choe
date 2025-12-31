@@ -10,11 +10,7 @@
   margin-bottom: 4rem;
 }
 
-.container {
-  max-width: 56rem;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 
 .grid {
   display: grid;
