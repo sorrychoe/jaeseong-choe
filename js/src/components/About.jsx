@@ -15,7 +15,7 @@ function About() {
         <div className={styles.content}>
           <div className={styles.textContainer}>
             <p className={styles.text}>
-              <strong className={styles.strong}>Data-driven professional</strong> with experience across HRD, Education, and Marketing field.
+              <strong className={styles.strong}>Data-driven professional</strong> with experience across HRD, Marketing and Research field.
             </p>
             <p className={styles.text}>
               <strong className={styles.strong}>Specialized in computational methods</strong> to uncover patterns in media discourse, public opinion, and social behavior.
