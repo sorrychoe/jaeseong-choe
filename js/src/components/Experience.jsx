@@ -55,7 +55,7 @@ function Experience() {
     },
     {
       "title": "Learning Manager",
-      "company": "Day1conmpany | 2022.06 - 2023.01",
+      "company": "Day1conmpany | 2022.06 - 2023.01(Contract)",
       "logo": "/images/day1company.png",
       "description": [
         { "role": "Operation Manager, Data Analytics Boot Camp" },
