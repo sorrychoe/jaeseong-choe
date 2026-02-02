@@ -56,7 +56,7 @@ function Experience() {
   return (
     <section id="experience" className="section" data-aos="fade-up">
       <div className="container">
-        <h2 className="section-title">Experience</h2>
+        <h2 className="section-title">Experiences</h2>
         {Experiences.map((experience, index) => (
           <div className={`card ${styles.card}`} key={index}>
             <Image src={experience.logo} alt={`${experience.company} Logo`} className={styles.logo} width={100} height={100} objectFit="contain" />

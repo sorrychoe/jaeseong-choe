@@ -37,7 +37,7 @@ function Software() {
   return (
     <section id="softwares" className="section" data-aos="fade-up">
       <div className="container">
-        <h2 className="section-title">Software</h2>
+        <h2 className="section-title">Softwares</h2>
         <div className={styles.grid}>
           {softwares.map((software, index) => (
             <div className={`card ${styles.card}`} key={index}>

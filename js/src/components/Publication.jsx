@@ -37,7 +37,7 @@ function Publication() {
   return (
     <section id="publication" className="section" data-aos="fade-up">
       <div className="container">
-        <h2 className="section-title">Publication</h2>
+        <h2 className="section-title">Publications</h2>
         <div className={styles.grid}>
           {publications.map((publication, index) => (
             <div className={`card ${styles.card}`} key={index}>
