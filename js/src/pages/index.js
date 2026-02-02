@@ -5,7 +5,7 @@ import Education from '../components/Education';
 import Experience from '../components/Experience';
 import Skills from '../components/Skills';
 import Projects from '../components/Projects';
-import Conferences from '../components/Conferences';
+import Publication from '../components/Publication';
 import Software from '../components/Software';
 // import Contact from '../components/Contact';
 import Footer from '../components/Footer';
@@ -19,7 +19,7 @@ function App() {
       <Education />
       <Skills />
       <Projects />
-      <Conferences />
+      <Publication />
       <Software />
       {/* <Contact /> */}
       <Footer />

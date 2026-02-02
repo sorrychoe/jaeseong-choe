@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import styles from './Conferences.module.css';
+import styles from './Publication.module.css';
 
-function Conferences() {
+function Publication() {
   useEffect(() => {
     AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
   }, []);
-  const conferences = [
+  const publications = [
       {
         title: '한국 언론의 정신질환 재현 양상 분석',
         description: '양극성 장애, 우울증, 조현병의 사례를 중심으로',
@@ -35,18 +35,18 @@ function Conferences() {
   ];
 
   return (
-    <section id="conferences" className="section" data-aos="fade-up">
+    <section id="publication" className="section" data-aos="fade-up">
       <div className="container">
-        <h2 className="section-title">Conferences</h2>
+        <h2 className="section-title">Publication</h2>
         <div className={styles.grid}>
-          {conferences.map((conference, index) => (
+          {publications.map((publication, index) => (
             <div className={`card ${styles.card}`} key={index}>
-              <h3 className={styles.cardTitle}>{conference.title}</h3>
-              <p className={styles.cardDescription}>{conference.description}</p>
+              <h3 className={styles.cardTitle}>{publication.title}</h3>
+              <p className={styles.cardDescription}>{publication.description}</p>
               <div className={styles.links}>
-                {conference.links.map((link, idx) => (
+                {publication.links.map((link, idx) => (
                   <a href={link.href} target="_blank" rel="noopener noreferrer" key={idx} className={styles.link}>
-                    <img height="24" width="24" src={link.icon} alt={conference.title} className={`${styles.icon} floating-icon`} />
+                    <img height="24" width="24" src={link.icon} alt={publication.title} className={`${styles.icon} floating-icon`} />
                   </a>
                 ))}
               </div>
@@ -58,4 +58,4 @@ function Conferences() {
   );
 }
 
-export default Conferences;
+export default Publication;
