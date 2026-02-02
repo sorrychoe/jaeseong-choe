@@ -5,8 +5,9 @@ import Education from '../components/Education';
 import Experience from '../components/Experience';
 import Skills from '../components/Skills';
 import Projects from '../components/Projects';
+import Conferences from '../components/Conferences';
 import Software from '../components/Software';
-import Contact from '../components/Contact';
+// import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
 function App() {
@@ -18,8 +19,9 @@ function App() {
       <Education />
       <Skills />
       <Projects />
+      <Conferences />
       <Software />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </div>
   );

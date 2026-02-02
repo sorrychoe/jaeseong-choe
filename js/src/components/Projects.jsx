@@ -9,13 +9,6 @@ function Projects() {
   }, []);
   const projects = [
       {
-        title: 'Reproduction analysis of mental illness in the Korean media using BERTopic',
-        description: "Topic Modeling based Content Analysis of Korean media Focused on cases of bipolar disorder, depression, and schizophrenia from 1960 to 2024",
-        links: [
-          { href: 'https://sorrychoe.quarto.pub/bertopic-second-result/', icon: 'https://cdn.simpleicons.org/quarto/FFFFFF' },
-        ],
-      },
-      {
         title: 'World reproduced by Economic News',
         description: "Machine Learning based Discourse Analysis of Korean Economic Press Journal",
         links: [
@@ -33,9 +26,30 @@ function Projects() {
       },
       {
         title: 'Everything of Handong, from 1995 to 2024',
-        description: "Text Analysis of News about Handong Global University",
+        description: "Structural Topic Modeling approach to News about Handong Global University",
         links: [
           { href: 'https://github.com/sorrychoe/Everything-of-Handong', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+        ],
+      },
+      {
+        title: 'Finding Optimal Vertiport Locations in the Seoul Metropolitan Area',
+        description: "Clustering approach to identify 100 optimal vertiport locations in the Seoul Metropolitan Area.",
+        links: [
+            { href: 'https://github.com/sorrychoe/Finding-Optimal-Vertiport', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+        ],
+      },
+      {
+        title: 'Attrition Analysis Report',
+        description: "Practice of People Analytics",
+        links: [
+          { href: 'https://github.com/sorrychoe/Attrition-Analysis', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+        ],
+      },
+      {
+        title: 'SNS Addition Analysis Report',
+        description: "Practice of Survey Data Analysis",
+        links: [
+          { href: 'https://github.com/sorrychoe/sns-addiction-modeling', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
         ],
       },
       {
@@ -43,13 +57,6 @@ function Projects() {
         description: "Webpage that finds a population distribution similar to the neighborhood in which one lives",
         links: [
           { href: 'https://github.com/sorrychoe/population', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
-        ],
-      },
-      {
-        title: 'Which team had a high probability of winning?',
-        description: "Prediction of League of Legends Winning Rate Using Machine Learning",
-        links: [
-          { href: 'https://github.com/sorrychoe/lol-victory-predict', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
         ],
       },
   ];
