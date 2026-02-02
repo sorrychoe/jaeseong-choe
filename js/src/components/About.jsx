@@ -9,10 +9,10 @@ function About() {
   }, []);
 
   return (
-    <section id="about" className={styles.about} data-aos="fade-up">
+    <section id="about" className="section" data-aos="fade-up">
       <div className="container">
-        <h2 className={styles.title}>About Me</h2>
-        <div className={styles.content}>
+        <h2 className="section-title">About Me</h2>
+        <div className={`card ${styles.content}`}>
           <div className={styles.textContainer}>
             <p className={styles.text}>
               <strong className={styles.strong}>Data-driven professional</strong> with experience across HRD, Marketing and Research field.

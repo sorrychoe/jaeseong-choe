@@ -29,9 +29,9 @@ function Skills() {
   ];
 
   return (
-    <section id="skills" className={styles.skills} data-aos="fade-up">
+    <section id="skills" className="section" data-aos="fade-up">
       <div className="container">
-        <h2 className={styles.title}>Skills</h2>
+        <h2 className="section-title">Skills</h2>
         <ul className={styles.grid}>
           {skills.map((skill, index) => (
             <li key={index} className={styles.skill}>

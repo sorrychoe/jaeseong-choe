@@ -1,15 +1,3 @@
-.education {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-.title {
-  font-size: 2.25rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
 .grid {
   max-width: 56rem;
   margin-left: auto;
@@ -25,12 +13,18 @@
 }
 
 .card {
-  background-color: #1f2937;
+  /* Keep specific styles */
   padding: 1.5rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   text-align: center;
-  border: 1px solid #374151;
+  
+  /* Add transition for hover effect */
+  transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out, border-color 300ms ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px -5px rgba(168, 85, 247, 0.2), 0 8px 10px -6px rgba(168, 85, 247, 0.1);
+  border-color: #a855f7;
 }
 
 .cardTitle {

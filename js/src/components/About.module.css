@@ -1,17 +1,6 @@
-.about {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
 .content {
-  background-color: #1f2937;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  border-radius: 0.5rem;
+  /* Specific override for padding on larger screens */
   padding: 2rem;
-  border: 1px solid #374151;
-  max-width: 42rem;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 @media (min-width: 768px) {
@@ -21,9 +10,7 @@
 }
 
 .title {
-  font-size: 2.25rem;
-  font-weight: 700;
-  text-align: center;
+  /* Specific override for margin-bottom */
   margin-bottom: 2rem;
 }
 

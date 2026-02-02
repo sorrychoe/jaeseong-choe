@@ -35,12 +35,12 @@ function Conferences() {
   ];
 
   return (
-    <section id="conferences" className={styles.conferences} data-aos="fade-up">
+    <section id="conferences" className="section" data-aos="fade-up">
       <div className="container">
-        <h2 className={styles.title}>Conferences</h2>
+        <h2 className="section-title">Conferences</h2>
         <div className={styles.grid}>
           {conferences.map((conference, index) => (
-            <div className={styles.card} key={index}>
+            <div className={`card ${styles.card}`} key={index}>
               <h3 className={styles.cardTitle}>{conference.title}</h3>
               <p className={styles.cardDescription}>{conference.description}</p>
               <div className={styles.links}>

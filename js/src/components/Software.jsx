@@ -26,21 +26,21 @@ function Software() {
         },
         {
             title: 'covid19today',
-            description: 'Library that informs daily COVID-19 confirmed data',
+            description: 'A library for fetching daily confirmed COVID-19 cases.',
             links: [
-            { href: 'https://sorrychoe.github.io/covid19today//', icon: 'https://cdn.simpleicons.org/gitbook/FFFFFF' },
+            { href: 'https.://sorrychoe.github.io/covid19today//', icon: 'https://cdn.simpleicons.org/gitbook/FFFFFF' },
             { href: 'https://github.com/sorrychoe/covid19today', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
             ],
         },
   ];
 
   return (
-    <section id="softwares" className={styles.projects} data-aos="fade-up">
+    <section id="softwares" className="section" data-aos="fade-up">
       <div className="container">
-        <h2 className={styles.title}>Software</h2>
+        <h2 className="section-title">Software</h2>
         <div className={styles.grid}>
           {softwares.map((software, index) => (
-            <div className={styles.card} key={index}>
+            <div className={`card ${styles.card}`} key={index}>
               <h3 className={styles.cardTitle}>{software.title}</h3>
               <p className={styles.cardDescription}>{software.description}</p>
               <div className={styles.links}>

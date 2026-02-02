@@ -14,9 +14,8 @@ function Experience() {
       "company": "NOL Universe | 2025.07 - Present",
       "logo": "/images/NOL_Universe.jpeg",
       "description": [
-        { "role": "Marketing Manager of Cancel-Free" },
-        { "role": "Marketing Data Analyst" },
-        { "role": "Developed Marketing KPI Dashboard of NOL/Interpark/Triple" },
+        { "role": "Marketing Manager of 'Cancel-Free'" },
+        { "role": "Marketing KPI Dashboard Developer" },
       ]
     },
     {
@@ -24,7 +23,7 @@ function Experience() {
       "company": "Handong Global University | 2024.12 - 2025.06 (Part-time)",
       "logo": "/images/Handong_Global_University.png",
       "description": [
-        { "role": "Research Assistant of Institute for Holistic Intelligence Scholarship and Education Development" },
+        { "role": "Computational Methods Research Assistant in Education"},
       ]
     },
     {
@@ -32,8 +31,8 @@ function Experience() {
       "company": "Day1company | 2023.06 - 2024.02",
       "logo": "/images/day1company.png",
       "description": [
-        { "role": "Project Manager of AI Boot Camp (6th) & Upstage AI Lab (2nd)" },
-        { "role": "Developed KPI dashboards about HRD Market" },
+        { "role": "Project Manager for AI Boot Camp (6th) & Upstage AI Lab (2nd)" },
+        { "role": "HRD KPI Dashboard Developer" },
       ]
     },
     {
@@ -41,8 +40,7 @@ function Experience() {
       "company": "Makinarocks | 2023.02 - 2023.06 (Internship)",
       "logo": "/images/makinarocks.jpeg",
       "description": [
-        { "role": "QA Engineer specialized in test automation" },
-        { "role": "Developed test automation frameworks and deployment environments for MLOps products" },
+        { "role": "QA Engineer specialized in Test Automation" },
       ]
     },
     {
@@ -50,17 +48,17 @@ function Experience() {
       "company": "Day1conmpany | 2022.06 - 2023.01(Contract)",
       "logo": "/images/day1company.png",
       "description": [
-        { "role": "Data Analytics Boot Camp Opeartion Manager" },
+        { "role": "Data Analytics Boot Camp Operation Manager" },
       ]
     }
   ]
 
   return (
-    <section id="experience" className={styles.experience} data-aos="fade-up">
+    <section id="experience" className="section" data-aos="fade-up">
       <div className="container">
-        <h2 className={styles.title}>Experience</h2>
+        <h2 className="section-title">Experience</h2>
         {Experiences.map((experience, index) => (
-          <div className={styles.card} key={index}>
+          <div className={`card ${styles.card}`} key={index}>
             <Image src={experience.logo} alt={`${experience.company} Logo`} className={styles.logo} width={100} height={100} objectFit="contain" />
             <div className={styles.content}>
               <h3 className={styles.cardTitle}>{experience.title}</h3>
