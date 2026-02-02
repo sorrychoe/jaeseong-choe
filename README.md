@@ -15,6 +15,8 @@ jaeseong-choe/
 │       ├── components
 │       │   ├── About.jsx
 │       │   ├── About.module.css
+│       │   ├── Conferences.jsx
+│       │   ├── Conferences.module.css
 │       │   ├── Contact.jsx
 │       │   ├── Contact.module.css
 │       │   ├── Education.jsx
