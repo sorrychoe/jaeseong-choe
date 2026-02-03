@@ -14,8 +14,8 @@ function Experience() {
       "company": "NOL Universe | 2025.07 - Present",
       "logo": "/images/NOL_Universe.jpeg",
       "description": [
-        { "role": "Marketing Manager of 'Cancel-Free'" },
-        { "role": "Marketing KPI Dashboard Developer" },
+        { "role": "Marketing Manager - 'Cancel-Free'" },
+        { "role": "Marketing KPI Dashboard Development" },
       ]
     },
     {
@@ -23,7 +23,8 @@ function Experience() {
       "company": "Handong Global University | 2024.12 - 2025.06 (Part-time)",
       "logo": "/images/Handong_Global_University.png",
       "description": [
-        { "role": "Computational Methods Research Assistant in Education"},
+        { "role": "Research Assistant in Education"},
+        { "role": "Quantitative Research using Computational Methods"}
       ]
     },
     {
@@ -32,7 +33,7 @@ function Experience() {
       "logo": "/images/day1company.png",
       "description": [
         { "role": "Project Manager for AI Boot Camp (6th) & Upstage AI Lab (2nd)" },
-        { "role": "HRD KPI Dashboard Developer" },
+        { "role": "HRD KPI Dashboard Development" },
       ]
     },
     {
@@ -40,12 +41,12 @@ function Experience() {
       "company": "Makinarocks | 2023.02 - 2023.06 (Internship)",
       "logo": "/images/makinarocks.jpeg",
       "description": [
-        { "role": "QA Engineer specialized in Test Automation" },
+        { "role": "Selenium-based Test Automation" },
       ]
     },
     {
       "title": "Learning Manager",
-      "company": "Day1conmpany | 2022.06 - 2023.01(Contract)",
+      "company": "Day1company | 2022.06 - 2023.01(Contract)",
       "logo": "/images/day1company.png",
       "description": [
         { "role": "Data Analytics Boot Camp Operation Manager" },
