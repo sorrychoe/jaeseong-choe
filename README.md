@@ -15,8 +15,6 @@ jaeseong-choe/
 │       ├── components
 │       │   ├── About.jsx
 │       │   ├── About.module.css
-│       │   ├── Conferences.jsx
-│       │   ├── Conferences.module.css
 │       │   ├── Contact.jsx
 │       │   ├── Contact.module.css
 │       │   ├── Education.jsx
@@ -31,6 +29,8 @@ jaeseong-choe/
 │       │   ├── Navbar.module.css
 │       │   ├── Projects.jsx
 │       │   ├── Projects.module.css
+│       │   ├── Publication.jsx
+│       │   ├── Publication.module.css
 │       │   ├── Skills.jsx
 │       │   ├── Skills.module.css
 │       │   └── Software.jsx
