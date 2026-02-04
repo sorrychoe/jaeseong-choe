@@ -28,7 +28,7 @@ function Software() {
             title: 'covid19today',
             description: 'A library for fetching daily confirmed COVID-19 cases.',
             links: [
-            { href: 'https.://sorrychoe.github.io/covid19today//', icon: 'https://cdn.simpleicons.org/gitbook/FFFFFF' },
+            { href: 'https://sorrychoe.github.io/covid19today', icon: 'https://cdn.simpleicons.org/gitbook/FFFFFF' },
             { href: 'https://github.com/sorrychoe/covid19today', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
             ],
         },
