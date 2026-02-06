@@ -15,7 +15,7 @@ function Education() {
         <h2 className="section-title">Education</h2>
         <div className={styles.grid}>
           <div className={`card ${styles.card}`}>
-            <h3 className={styles.cardTitle}>B.A. in Communication</h3>
+            <h3 className={styles.cardTitle}>B.A. in Media & Communication</h3>
             <p className={styles.cardSubtitle}>Handong Global University | 2019.3 - 2026.2</p>
           </div>
           <div className={`card ${styles.card}`}>
