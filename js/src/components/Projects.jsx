@@ -42,7 +42,7 @@ function Projects() {
         title: 'Attrition Analysis Report',
         description: "A Practical Application of People Analytics",
         links: [
-          { href: 'https://github.com/sorrychoe/Attrition-Analysis', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+          { href: 'https://github.com/Analytics-for-People/Attrition-Analysis', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
         ],
       },
       {
