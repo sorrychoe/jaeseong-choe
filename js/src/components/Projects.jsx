@@ -8,7 +8,7 @@ function Projects() {
     AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
   }, []);
   const projects = [
-      {
+     {
         title: 'The World as Represented by Economic News',
         description: "A Machine Learning-Based Discourse Analysis of Korean Economic Press Journals",
         links: [
@@ -25,10 +25,10 @@ function Projects() {
         ],
       },
       {
-        title: 'Everything of Handong, from 1995 to 2024',
-        description: "A Structural Topic Modeling Approach to News About Handong Global University",
+        title: 'Which Neighborhood is Most Similar to Mine?',
+        description: "A webpage to find neighborhoods with similar population distributions.",
         links: [
-          { href: 'https://github.com/sorrychoe/Everything-of-Handong', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+          { href: 'https://github.com/sorrychoe/population', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
         ],
       },
       {
@@ -39,26 +39,26 @@ function Projects() {
         ],
       },
       {
+        title: 'Everything of Handong, from 1995 to 2024',
+        description: "A Structural Topic Modeling Approach to News About Handong Global University",
+        links: [
+          { href: 'https://github.com/sorrychoe/Everything-of-Handong', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+        ],
+      },
+      {
         title: 'Attrition Analysis Report',
-        description: "A Practical Application of People Analytics",
+        description: "The Practice of People Analytics",
         links: [
           { href: 'https://github.com/Analytics-for-People/Attrition-Analysis', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
         ],
       },
-      {
-        title: 'SNS Addiction Analysis Report',
-        description: "A Practical Application of Survey Data Analysis",
-        links: [
-          { href: 'https://github.com/sorrychoe/sns-addiction-modeling', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
-        ],
-      },
-      {
-        title: 'Which Neighborhood is Most Similar to Mine?',
-        description: "A webpage to find neighborhoods with similar population distributions.",
-        links: [
-          { href: 'https://github.com/sorrychoe/population', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
-        ],
-      },
+      // {
+      //   title: 'SNS Addiction Analysis Report',
+      //   description: "A Practical Application of Survey Data Analysis",
+      //   links: [
+      //     { href: 'https://github.com/sorrychoe/sns-addiction-modeling', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+      //   ],
+      // },
   ];
 
   return (
