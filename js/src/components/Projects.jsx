@@ -25,10 +25,10 @@ function Projects() {
         ],
       },
       {
-        title: 'Which Neighborhood is Most Similar to Mine?',
-        description: "A webpage to find neighborhoods with similar population distributions.",
+        title: 'Everything of Handong, from 1995 to 2024',
+        description: "A Structural Topic Modeling Approach to News About Handong Global University",
         links: [
-          { href: 'https://github.com/sorrychoe/population', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+          { href: 'https://github.com/sorrychoe/Everything-of-Handong', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
         ],
       },
       {
@@ -39,24 +39,38 @@ function Projects() {
         ],
       },
       {
-        title: 'Everything of Handong, from 1995 to 2024',
-        description: "A Structural Topic Modeling Approach to News About Handong Global University",
+        title: 'Which Neighborhood is Most Similar to Mine?',
+        description: "A webpage to find neighborhoods with similar population distributions.",
         links: [
-          { href: 'https://github.com/sorrychoe/Everything-of-Handong', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+          { href: 'https://github.com/sorrychoe/population', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
         ],
       },
       {
-        title: 'Attrition Analysis Report',
-        description: "The Practice of People Analytics",
+        title: 'SNS Addiction Analysis',
+        description: "A regression-based analysis of student social media addiction using OLS and GMM.",
+        links: [
+          { href: 'https://github.com/sorrychoe/sns-addiction-modeling', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+        ],
+      },
+      {
+        title: 'Attrition Analysis',
+        description: "People Analytics to reduce employee attrition",
         links: [
           { href: 'https://github.com/Analytics-for-People/Attrition-Analysis', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
         ],
       },
       // {
-      //   title: 'SNS Addiction Analysis Report',
-      //   description: "A Practical Application of Survey Data Analysis",
+      //   title: 'HR Performance Prediction',
+      //   description: "Machine Learning based Forecasting for People Analytics",
       //   links: [
-      //     { href: 'https://github.com/sorrychoe/sns-addiction-modeling', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+      //     { href: 'https://github.com/Analytics-for-People/Predictive-HR-Analytics', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+      //   ],
+      // },
+      // {
+      //   title: 'Satisfaction Survey Analysis',
+      //   description: "Statistical Analysis of Survey Data for People Analytics",
+      //   links: [
+      //     { href: 'https://github.com/Analytics-for-People/Satisfaction-Survey-Analysis', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
       //   ],
       // },
   ];
