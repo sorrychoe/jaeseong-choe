@@ -8,7 +8,28 @@ function Projects() {
     AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
   }, []);
   const projects = [
-     {
+      {
+        title: 'Finding Optimal Vertiport Locations in the Seoul Metropolitan Area',
+        description: "A Clustering Approach to Identify 100 Optimal Vertiport Locations in the Seoul Metropolitan Area.",
+        links: [
+            { href: 'https://github.com/sorrychoe/Finding-Optimal-Vertiport', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+        ],
+      },  
+      {
+        title: 'Everything of Handong, from 1995 to 2024',
+        description: "A Structural Topic Modeling Approach to News About Handong Global University",
+        links: [
+          { href: 'https://github.com/sorrychoe/Everything-of-Handong', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+        ],
+      },
+      {
+        title: 'SNS Addiction Analysis',
+        description: "A regression analysis of student social media addiction using OLS and GMM.",
+        links: [
+          { href: 'https://github.com/sorrychoe/sns-addiction-modeling', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+        ],
+      },
+      {
         title: 'The World as Represented by Economic News',
         description: "A Machine Learning-Based Discourse Analysis of Korean Economic Press Journals",
         links: [
@@ -25,31 +46,11 @@ function Projects() {
         ],
       },
       {
-        title: 'Everything of Handong, from 1995 to 2024',
-        description: "A Structural Topic Modeling Approach to News About Handong Global University",
+        title: 'Fake Academic Society',
+        description: "A Text Analysis of South Korean Professors' Participation in Predatory Conferences",
         links: [
-          { href: 'https://github.com/sorrychoe/Everything-of-Handong', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
-        ],
-      },
-      {
-        title: 'Finding Optimal Vertiport Locations in the Seoul Metropolitan Area',
-        description: "A Clustering Approach to Identify 100 Optimal Vertiport Locations in the Seoul Metropolitan Area.",
-        links: [
-            { href: 'https://github.com/sorrychoe/Finding-Optimal-Vertiport', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
-        ],
-      },
-      {
-        title: 'Which Neighborhood is Most Similar to Mine?',
-        description: "A webpage to find neighborhoods with similar population distributions.",
-        links: [
-          { href: 'https://github.com/sorrychoe/population', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
-        ],
-      },
-      {
-        title: 'SNS Addiction Analysis',
-        description: "A regression-based analysis of student social media addiction using OLS and GMM.",
-        links: [
-          { href: 'https://github.com/sorrychoe/sns-addiction-modeling', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+          { href: 'https://sorrychoe.quarto.pub/fake-academic-society', icon: 'https://cdn.simpleicons.org/quarto/FFFFFF' },
+          { href: 'https://github.com/sorrychoe/fake-academic-society', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
         ],
       },
       {
@@ -73,6 +74,13 @@ function Projects() {
       //     { href: 'https://github.com/Analytics-for-People/Satisfaction-Survey-Analysis', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
       //   ],
       // },
+      {
+        title: 'Which Neighborhood is Most Similar to Mine?',
+        description: "A webpage to find neighborhoods with similar population distributions.",
+        links: [
+          { href: 'https://github.com/sorrychoe/population', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+        ],
+      },
   ];
 
   return (
