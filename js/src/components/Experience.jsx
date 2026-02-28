@@ -45,6 +45,14 @@ function Experience() {
       ]
     },
     {
+      "title": "Course Assistant",
+      "company": "Fastcampus | 2022.12 - 2023.03(Freelancer)",
+      "logo": "/images/Fastcampus.png",
+      "description": [
+        { "role": "Practical Coach of KDC Tableau Data Visualization Online Course" },
+      ]
+    },
+    {
       "title": "Learning Manager",
       "company": "Day1company | 2022.06 - 2023.01(Contract)",
       "logo": "/images/day1company.png",
