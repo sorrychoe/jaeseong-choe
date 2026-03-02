@@ -32,7 +32,7 @@ function Experience() {
       "company": "Day1company | 2023.06 - 2024.02",
       "logo": "/images/day1company.png",
       "description": [
-        { "role": "Project Manager for AI Boot Camp (6th) & Upstage AI Lab (2nd)" },
+        { "role": "Project Manager, AI Boot Camp (6th) & Upstage AI Lab (2nd)" },
         { "role": "HRD KPI Dashboard Development" },
       ]
     },
@@ -45,11 +45,11 @@ function Experience() {
       ]
     },
     {
-      "title": "Course Assistant",
+      "title": "Facilitator",
       "company": "Fastcampus | 2022.12 - 2023.03(Freelancer)",
       "logo": "/images/Fastcampus.png",
       "description": [
-        { "role": "Hands-on Coach / Facilitator, KDC Tableau Data Visualization Online Course" },
+        { "role": "Facilitator, KDC Tableau Data Visualization Online Course" },
       ]
     },
     {
@@ -57,7 +57,7 @@ function Experience() {
       "company": "Day1company | 2022.06 - 2023.01(Contract)",
       "logo": "/images/day1company.png",
       "description": [
-        { "role": "Data Analytics Boot Camp Operation Manager" },
+        { "role": "Operation Manager, Data Analytics Boot Camp" },
       ]
     }
   ]
