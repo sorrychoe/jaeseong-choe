@@ -49,7 +49,7 @@ function Experience() {
       "company": "Fastcampus | 2022.12 - 2023.03(Freelancer)",
       "logo": "/images/Fastcampus.png",
       "description": [
-        { "role": "Practical Coach of KDC Tableau Data Visualization Online Course" },
+        { "role": "Hands-on Coach / Facilitator, KDC Tableau Data Visualization Online Course" },
       ]
     },
     {
