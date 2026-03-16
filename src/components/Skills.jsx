@@ -9,8 +9,8 @@ function Skills() {
   }, []);
   const skills = [
     { name: 'R', icon: 'https://cdn.simpleicons.org/R/FFFFFF' },
-    { name: 'Julia', icon: 'https://cdn.simpleicons.org/Julia/FFFFFF' },
     { name: 'Python', icon: 'https://cdn.simpleicons.org/python/FFFFFF' },
+    { name: 'Julia', icon: 'https://cdn.simpleicons.org/Julia/FFFFFF' },
     { name: 'JavaScript', icon: 'https://cdn.simpleicons.org/JavaScript/FFFFFF' },
     { name: 'HTML', icon: 'https://cdn.simpleicons.org/HTML5/FFFFFF' },
     { name: 'CSS', icon: 'https://cdn.simpleicons.org/CSS/FFFFFF' },
