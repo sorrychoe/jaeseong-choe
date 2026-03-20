@@ -10,11 +10,19 @@ function Experience() {
   }, []);
   const Experiences = [
     {
+      "title": "Marketing Data Analyst",
+      "company": "Ascent Korea | 2026.04 - Present (Full-Time)",
+      "logo": "/images/ascentkorea.jpg",
+      "description": [
+        { "role": "Data Analyst specialized in Intent Marketing" },
+      ]
+    },
+    {
       "title": "Marketing Manager",
-      "company": "NOL Universe | 2025.07 - Present",
+      "company": "NOL Universe | 2025.07 - 2026-04 (Contract)",
       "logo": "/images/NOL_Universe.jpeg",
       "description": [
-        { "role": "Marketing Manager - 'Cancel-Free'" },
+        { "role": "Marketing Manager, Cancel-Free" },
         { "role": "Marketing KPI Dashboard Development" },
       ]
     },
@@ -29,7 +37,7 @@ function Experience() {
     },
     {
       "title": "Project Manager",
-      "company": "Day1company | 2023.06 - 2024.02",
+      "company": "Day1company | 2023.06 - 2024.02 (Contract)",
       "logo": "/images/day1company.png",
       "description": [
         { "role": "Project Manager, AI Boot Camp (6th) & Upstage AI Lab (2nd)" },
