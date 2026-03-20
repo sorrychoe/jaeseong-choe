@@ -23,12 +23,33 @@ function Projects() {
         ],
       },
       {
-        title: 'SNS Addiction Analysis',
-        description: "A regression analysis of student social media addiction using OLS and GMM.",
+        title: 'Which Neighborhood is Most Similar to Mine?',
+        description: "A Webpage to find neighborhoods with similar population distributions.",
         links: [
-          { href: 'https://github.com/sorrychoe/sns-addiction-modeling', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+          { href: 'https://github.com/sorrychoe/population', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
         ],
       },
+      {
+        title: 'Attrition Analysis',
+        description: "A Statistical Analysis of HR data to reduce employee attrition",
+        links: [
+          { href: 'https://github.com/Analytics-for-People/Attrition-Analysis', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+        ],
+      },
+      {
+        title: 'Satisfaction Survey Analysis',
+        description: "A Statistical Analysis of Survey Data for People Analytics",
+        links: [
+          { href: 'https://github.com/Analytics-for-People/Satisfaction-Survey-Analysis', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+        ],
+      },
+      // {
+      //   title: 'HR Performance Prediction',
+      //   description: "Machine Learning based Forecasting for People Analytics",
+      //   links: [
+      //     { href: 'https://github.com/Analytics-for-People/Predictive-HR-Analytics', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+      //   ],
+      // },
       {
         title: 'The World as Represented by Economic News',
         description: "A Machine Learning-Based Discourse Analysis of Korean Economic Press Journals",
@@ -43,42 +64,6 @@ function Projects() {
         links: [
           { href: 'https://sorrychoe.quarto.pub/inha_accident_report/', icon: 'https://cdn.simpleicons.org/quarto/FFFFFF' },
           { href: 'https://github.com/sorrychoe/inha_accident', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
-        ],
-      },
-      {
-        title: 'Fake Academic Society',
-        description: "A Text Analysis of South Korean Professors' Participation in Predatory Conferences",
-        links: [
-          { href: 'https://sorrychoe.quarto.pub/fake-academic-society', icon: 'https://cdn.simpleicons.org/quarto/FFFFFF' },
-          { href: 'https://github.com/sorrychoe/fake-academic-society', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
-        ],
-      },
-      {
-        title: 'Attrition Analysis',
-        description: "People Analytics to reduce employee attrition",
-        links: [
-          { href: 'https://github.com/Analytics-for-People/Attrition-Analysis', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
-        ],
-      },
-      // {
-      //   title: 'HR Performance Prediction',
-      //   description: "Machine Learning based Forecasting for People Analytics",
-      //   links: [
-      //     { href: 'https://github.com/Analytics-for-People/Predictive-HR-Analytics', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
-      //   ],
-      // },
-      // {
-      //   title: 'Satisfaction Survey Analysis',
-      //   description: "Statistical Analysis of Survey Data for People Analytics",
-      //   links: [
-      //     { href: 'https://github.com/Analytics-for-People/Satisfaction-Survey-Analysis', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
-      //   ],
-      // },
-      {
-        title: 'Which Neighborhood is Most Similar to Mine?',
-        description: "A webpage to find neighborhoods with similar population distributions.",
-        links: [
-          { href: 'https://github.com/sorrychoe/population', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
         ],
       },
   ];
