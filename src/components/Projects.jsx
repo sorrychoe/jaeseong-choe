@@ -43,29 +43,29 @@ function Projects() {
           { href: 'https://github.com/Analytics-for-People/Satisfaction-Survey-Analysis', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
         ],
       },
+      {
+        title: 'HR Performance Prediction',
+        description: "A Machine Learning based Forecasting for People Analytics",
+        links: [
+          { href: 'https://github.com/Analytics-for-People/Predictive-HR-Analytics', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+        ],
+      },
       // {
-      //   title: 'HR Performance Prediction',
-      //   description: "Machine Learning based Forecasting for People Analytics",
+      //   title: 'The World as Represented by Economic News',
+      //   description: "A Machine Learning-Based Discourse Analysis of Korean Economic Press Journals",
       //   links: [
-      //     { href: 'https://github.com/Analytics-for-People/Predictive-HR-Analytics', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+      //     { href: 'https://sorrychoe.quarto.pub/economic-columns-analysis/', icon: 'https://cdn.simpleicons.org/quarto/FFFFFF' },
+      //     { href: 'https://github.com/sorrychoe/economic_analysis', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
       //   ],
       // },
-      {
-        title: 'The World as Represented by Economic News',
-        description: "A Machine Learning-Based Discourse Analysis of Korean Economic Press Journals",
-        links: [
-          { href: 'https://sorrychoe.quarto.pub/economic-columns-analysis/', icon: 'https://cdn.simpleicons.org/quarto/FFFFFF' },
-          { href: 'https://github.com/sorrychoe/economic_analysis', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
-        ],
-      },
-      {
-        title: 'How the Media Portrays Victims',
-        description: "A Machine Learning-Based Discourse Analysis of the Portrayal of Sexual Crime Murders in Korean Media",
-        links: [
-          { href: 'https://sorrychoe.quarto.pub/inha_accident_report/', icon: 'https://cdn.simpleicons.org/quarto/FFFFFF' },
-          { href: 'https://github.com/sorrychoe/inha_accident', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
-        ],
-      },
+      // {
+      //   title: 'How the Media Portrays Victims',
+      //   description: "A Machine Learning-Based Discourse Analysis of the Portrayal of Sexual Crime Murders in Korean Media",
+      //   links: [
+      //     { href: 'https://sorrychoe.quarto.pub/inha_accident_report/', icon: 'https://cdn.simpleicons.org/quarto/FFFFFF' },
+      //     { href: 'https://github.com/sorrychoe/inha_accident', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+      //   ],
+      // },
   ];
 
   return (
