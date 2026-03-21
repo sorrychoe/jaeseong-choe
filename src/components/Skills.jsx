@@ -14,24 +14,25 @@ function Skills() {
     { name: 'JavaScript', icon: 'https://cdn.simpleicons.org/JavaScript/FFFFFF' },
     { name: 'HTML', icon: 'https://cdn.simpleicons.org/HTML5/FFFFFF' },
     { name: 'CSS', icon: 'https://cdn.simpleicons.org/CSS/FFFFFF' },
+
     { name: 'Tidyverse', icon: 'https://cdn.simpleicons.org/Tidyverse/FFFFFF' },
-    { name: 'Pytorch', icon: 'https://cdn.simpleicons.org/Pytorch/FFFFFF' },
+    { name: 'Pandas', icon: 'https://cdn.simpleicons.org/pandas/FFFFFF' },
+    { name: 'Pytorch', icon: 'https://cdn.simpleicons.org/pytorch/FFFFFF' },
     { name: 'Selenium', icon: 'https://cdn.simpleicons.org/Selenium/FFFFFF' },
-    { name: 'Redash', icon: 'https://cdn.simpleicons.org/redash/FFFFFF' },
+    { name: 'PySpark', icon: 'https://cdn.simpleicons.org/apachespark/FFFFFF' },
     { name: 'Airflow', icon: 'https://cdn.simpleicons.org/apacheairflow/FFFFFF' },
-    { name: 'Databricks', icon: 'https://cdn.simpleicons.org/databricks/FFFFFF' },
-    { name: 'Git', icon: 'https://cdn.simpleicons.org/Git/FFFFFF' },
-    { name: 'Github', icon: 'https://cdn.simpleicons.org/github/FFFFFF' },
-    { name: 'Github Action', icon: 'https://cdn.simpleicons.org/githubactions/FFFFFF' },
-    { name: 'Docker', icon: 'https://cdn.simpleicons.org/Docker/FFFFFF' },
-    { name: 'Linux', icon: 'https://cdn.simpleicons.org/Linux/FFFFFF' },
+
     { name: 'Anaconda', icon: 'https://cdn.simpleicons.org/anaconda/FFFFFF' },
+    { name: 'Git', icon: 'https://cdn.simpleicons.org/Git/FFFFFF' },
+    { name: 'Linux', icon: 'https://cdn.simpleicons.org/gnubash/FFFFFF' },
+    { name: 'Docker', icon: 'https://cdn.simpleicons.org/Docker/FFFFFF' },
+    { name: 'Databricks', icon: 'https://cdn.simpleicons.org/databricks/FFFFFF' },
+    { name: 'Redash', icon: 'https://cdn.simpleicons.org/redash/FFFFFF' },
+
+    { name: 'Jupyter', icon: 'https://cdn.simpleicons.org/jupyter/FFFFFF' },
     { name: 'Quarto', icon: 'https://cdn.simpleicons.org/Quarto/FFFFFF' },
     { name: 'Markdown', icon: 'https://cdn.simpleicons.org/Markdown/FFFFFF' },
     { name: 'Latex', icon: 'https://cdn.simpleicons.org/Latex/FFFFFF' },
-    { name: 'Jupyter', icon: 'https://cdn.simpleicons.org/jupyter/FFFFFF' },
-    { name: 'Google Colab', icon: 'https://cdn.simpleicons.org/googlecolab/FFFFFF' },
-    { name: 'Positron', icon: 'https://cdn.simpleicons.org/posit/FFFFFF' },
   ];
 
   return (
