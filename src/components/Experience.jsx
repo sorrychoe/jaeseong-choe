@@ -11,7 +11,7 @@ function Experience() {
   const Experiences = [
     {
       "title": "Marketing Data Analyst",
-      "company": "Ascent Korea | 2026.04 - Present (Full-Time)",
+      "company": "Ascent AI | 2026.04 - Present (Full-Time)",
       "logo": "/images/ascentkorea.jpg",
       "description": [
         { "role": "Data Analyst specialized in Intent Marketing" },
