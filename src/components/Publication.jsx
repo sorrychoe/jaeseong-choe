@@ -13,6 +13,7 @@ function Publication() {
         description: 'sBERT 임베딩과 K-Means 클러스터링을 활용한 유튜브 쇼츠 댓글분석을 중심으로',
         links: [
           { href: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12731248', icon: 'https://cdn.simpleicons.org/bookstack/FFFFFF' },
+          { href: 'https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003321043', icon: 'https://cdn.simpleicons.org/gitbook/FFFFFF' },
           // { href: 'https://github.com/sorrychoe/', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
         ],
       },
