@@ -10,8 +10,8 @@ function Experience() {
   }, []);
   const Experiences = [
     {
-      "title": "Marketing Data Analyst",
-      "company": "Ascent AI | 2026.04 - Present (Full-Time)",
+      "title": "Data Analyst",
+      "company": "Ascent AI | 2026.04 - Present",
       "logo": "/images/ascentkorea.jpg",
       "description": [
         { "role": "Data Analyst specialized in Intent Marketing" },
@@ -19,7 +19,7 @@ function Experience() {
     },
     {
       "title": "Marketing Manager",
-      "company": "NOL Universe | 2025.07 - 2026-04 (Contract)",
+      "company": "NOL Universe | 2025.07 - 2026-04",
       "logo": "/images/NOL_Universe.jpeg",
       "description": [
         { "role": "Marketing Manager, Cancel-Free" },
