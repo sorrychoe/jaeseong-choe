@@ -9,6 +9,27 @@ function Projects() {
   }, []);
   const projects = [
       {
+        title: 'Finding Optimal Vertiport Locations in the Seoul Metropolitan Area',
+        description: "A Clustering Approach to Identify 100 Optimal Vertiport Locations in the Seoul Metropolitan Area.",
+        links: [
+            { href: 'https://github.com/sorrychoe/Finding-Optimal-Vertiport', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+        ],
+      },  
+      {
+        title: 'Everything of Handong, from 1995 to 2024',
+        description: "A Structural Topic Modeling Approach to News About Handong Global University",
+        links: [
+          { href: 'https://github.com/sorrychoe/Everything-of-Handong', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+        ],
+      },
+      {
+        title: 'About Topic Modeling Theory',
+        description: "A Repository about theory of topic modeling",
+        links: [
+          { href: 'https://github.com/sorrychoe/topic-modeling-theory', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+        ],
+      },
+      {
         title: 'The World as Represented by Economic News',
         description: "A Machine Learning-Based Discourse Analysis of Korean Economic Press Journals",
         links: [
@@ -22,27 +43,6 @@ function Projects() {
         links: [
           { href: 'https://sorrychoe.quarto.pub/inha_accident_report/', icon: 'https://cdn.simpleicons.org/quarto/FFFFFF' },
           { href: 'https://github.com/sorrychoe/inha_accident', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
-        ],
-      },
-      {
-        title: 'About Topic Modeling Theory',
-        description: "A Repository about theory of topic modeling",
-        links: [
-          { href: 'https://github.com/sorrychoe/topic-modeling-theory', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
-        ],
-      },
-      {
-        title: 'Finding Optimal Vertiport Locations in the Seoul Metropolitan Area',
-        description: "A Clustering Approach to Identify 100 Optimal Vertiport Locations in the Seoul Metropolitan Area.",
-        links: [
-            { href: 'https://github.com/sorrychoe/Finding-Optimal-Vertiport', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
-        ],
-      },  
-      {
-        title: 'Everything of Handong, from 1995 to 2024',
-        description: "A Structural Topic Modeling Approach to News About Handong Global University",
-        links: [
-          { href: 'https://github.com/sorrychoe/Everything-of-Handong', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
         ],
       },
       {

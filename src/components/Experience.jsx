@@ -10,20 +10,20 @@ function Experience() {
   }, []);
   const Experiences = [
     {
-      "title": "Data Analyst",
-      "company": "Ascent AI | 2026.04 - Present",
+      "title": "Marketing Data Analyst",
+      "company": "Ascent AI | 2026.04 - Present (Full-Time)",
       "logo": "/images/ascentkorea.jpg",
       "description": [
-        { "role": "Data Analyst specialized in Intent Marketing" },
+        { "role": "Data Analyst specialized in SEO/GEO" },
       ]
     },
     {
       "title": "Marketing Manager",
-      "company": "NOL Universe | 2025.07 - 2026-04",
+      "company": "NOL Universe | 2025.07 - 2026-04 (Contract)",
       "logo": "/images/NOL_Universe.jpeg",
       "description": [
-        { "role": "Marketing Manager, Cancel-Free" },
         { "role": "Marketing KPI Dashboard Development" },
+        { "role": "Operation Manager, Cancel-Free" },
       ]
     },
     {
@@ -54,7 +54,7 @@ function Experience() {
     },
     {
       "title": "Facilitator",
-      "company": "Fastcampus | 2022.12 - 2023.03(Freelancer)",
+      "company": "Fastcampus | 2022.12 - 2023.03 (Freelancer)",
       "logo": "/images/Fastcampus.png",
       "description": [
         { "role": "Facilitator, KDC Tableau Data Visualization Online Course" },
@@ -62,7 +62,7 @@ function Experience() {
     },
     {
       "title": "Learning Manager",
-      "company": "Day1company | 2022.06 - 2023.01(Contract)",
+      "company": "Day1company | 2022.06 - 2023.01 (Contract)",
       "logo": "/images/day1company.png",
       "description": [
         { "role": "Operation Manager, Data Analytics Boot Camp" },

@@ -18,7 +18,7 @@ function Footer() {
             <ImBooks className={`${styles.icon} floating-icon`} />
           </a>
         </div>
-        <p className={styles.copyright}>&copy; 2025 Jaeseong Choe. All rights reserved.</p>
+        <p className={styles.copyright}>&copy; 2026 Jaeseong Choe. All rights reserved.</p>
       </div>
     </footer>
   );
