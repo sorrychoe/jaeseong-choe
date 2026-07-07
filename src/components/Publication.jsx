@@ -9,8 +9,8 @@ function Publication() {
   }, []);
   const publications = [
       {
-        title: '연성화된 신(新)민족주의 공론장과 ‘국뽕’ 콘텐츠의 정동적 수용',
-        description: 'sBERT 임베딩과 K-Means 클러스터링을 활용한 유튜브 쇼츠 댓글분석을 중심으로',
+        title: "Softened Neo-nationalist Public Sphere and Affective Reception of 'Gukppong' Content",
+        description: 'An analysis of YouTube Shorts Comments Using sBERT Embeddings and K-means Clustering',
         links: [
           { href: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12731248', icon: 'https://cdn.simpleicons.org/bookstack/FFFFFF' },
           { href: 'https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003321043', icon: 'https://cdn.simpleicons.org/gitbook/FFFFFF' },
@@ -18,16 +18,17 @@ function Publication() {
         ],
       },
       {
-        title: '한국 언론의 정신질환 재현 양상 분석',
-        description: '양극성 장애, 우울증, 조현병의 사례를 중심으로',
+        title: 'Media Coverage of Mental Illness and the Reproduction of Social Stigma',
+        description: 'An Analysis of Coverage of Bipolar Disorder, Depression and Schizophrenia in Major Korean Newspapers',
         links: [
-          { href: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12241858', icon: 'https://cdn.simpleicons.org/bookstack/FFFFFF' },
+          { href: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12889989', icon: 'https://cdn.simpleicons.org/bookstack/FFFFFF' },
+          { href: 'https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003351985', icon: 'https://cdn.simpleicons.org/gitbook/FFFFFF' },
           // { href: 'https://github.com/sorrychoe/', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
         ],
       },
       {
-        title: '한국 공영방송 논의에서의 공공성 담론 연구',
-        description: '구조적 토픽모델링(STM)을 활용한 언론사 사설 분석을 중심으로',
+        title: 'A Study on Publicness Discourse in the Debate Over Korean Public Broadcasting',
+        description: 'Focusing on an Analysis of News Editorials Using Structural Topic Modeling (STM)',
         links: [
           { href: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12480933', icon: 'https://cdn.simpleicons.org/bookstack/FFFFFF' },
           // { href: 'https://github.com/sorrychoe/', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
