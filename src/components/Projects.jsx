@@ -66,13 +66,13 @@ function Projects() {
           { href: 'https://github.com/Analytics-for-People/Satisfaction-Survey-Analysis', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
         ],
       },
-      {
-        title: 'HR Performance Prediction',
-        description: "A Machine Learning based Forecasting for People Analytics",
-        links: [
-          { href: 'https://github.com/Analytics-for-People/Predictive-HR-Analytics', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
-        ],
-      },
+      // {
+      //   title: 'HR Performance Prediction',
+      //   description: "A Machine Learning based Forecasting for People Analytics",
+      //   links: [
+      //     { href: 'https://github.com/Analytics-for-People/Predictive-HR-Analytics', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+      //   ],
+      // },
   ];
 
   return (
