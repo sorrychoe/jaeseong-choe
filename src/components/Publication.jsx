@@ -9,20 +9,20 @@ function Publication() {
   }, []);
   const publications = [
       {
-        title: "Softened Neo-nationalist Public Sphere and Affective Reception of 'Gukppong' Content",
-        description: 'An analysis of YouTube Shorts Comments Using sBERT Embeddings and K-means Clustering',
-        links: [
-          { href: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12731248', icon: 'https://cdn.simpleicons.org/bookstack/FFFFFF' },
-          { href: 'https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003321043', icon: 'https://cdn.simpleicons.org/gitbook/FFFFFF' },
-          // { href: 'https://github.com/sorrychoe/', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
-        ],
-      },
-      {
         title: 'Media Coverage of Mental Illness and the Reproduction of Social Stigma',
         description: 'An Analysis of Coverage of Bipolar Disorder, Depression and Schizophrenia in Major Korean Newspapers',
         links: [
           { href: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12889989', icon: 'https://cdn.simpleicons.org/bookstack/FFFFFF' },
           { href: 'https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003351985', icon: 'https://cdn.simpleicons.org/gitbook/FFFFFF' },
+          // { href: 'https://github.com/sorrychoe/', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+        ],
+      },
+      {
+        title: "Softened Neo-nationalist Public Sphere and Affective Reception of 'Gukppong' Content",
+        description: 'An analysis of YouTube Shorts Comments Using sBERT Embeddings and K-means Clustering',
+        links: [
+          { href: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12731248', icon: 'https://cdn.simpleicons.org/bookstack/FFFFFF' },
+          { href: 'https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003321043', icon: 'https://cdn.simpleicons.org/gitbook/FFFFFF' },
           // { href: 'https://github.com/sorrychoe/', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
         ],
       },
