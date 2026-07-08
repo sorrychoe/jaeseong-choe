@@ -12,6 +12,7 @@ function Navbar() {
         <li><a href="#publication" className={styles.link}>Publications</a></li>
         <li><a href="#projects" className={styles.link}>Projects</a></li>
         <li><a href="#softwares" className={styles.link}>Softwares</a></li>
+        <li><a href="/cv.pdf" download="Jaeseong_Choe_CV.pdf" className={styles.link}>CV</a></li>
         {/* <li><a href="#contact" className={styles.link}>Contact</a></li> */}
       </ul>
     </nav>

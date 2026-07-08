@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import styles from './About.module.css';
+import { FaGithub, FaLinkedin, FaEnvelope, FaFilePdf } from 'react-icons/fa';
+import { ImBooks } from 'react-icons/im';
 
 function About() {
   useEffect(() => {
@@ -23,6 +25,57 @@ function About() {
             <p className={styles.text}>
               Passionate about integrating theoretical frameworks with practical applications to drive insights from real-world data.
             </p>
+          </div>
+          <div className={styles.buttonContainer} data-aos="fade-up">
+            <div className={styles.socialButtons}>
+              <a
+                href="/cv.pdf"
+                download="Jaeseong_Choe_CV.pdf"
+                className={`${styles.socialButton} ${styles.cv}`}
+                data-tooltip="Download CV (PDF)"
+                aria-label="Download CV"
+              >
+                <FaFilePdf />
+              </a>
+              <a
+                href="https://github.com/sorrychoe"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${styles.socialButton} ${styles.github}`}
+                data-tooltip="GitHub"
+                aria-label="GitHub"
+              >
+                <FaGithub />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/sorrychoe/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${styles.socialButton} ${styles.linkedin}`}
+                data-tooltip="LinkedIn"
+                aria-label="LinkedIn"
+              >
+                <FaLinkedin />
+              </a>
+              <a
+                href="https://www.dbpia.co.kr/author/authorDetail?ancId=723491585"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${styles.socialButton} ${styles.dbpia}`}
+                data-tooltip="DBpia Profile"
+                aria-label="DBpia Profile"
+              >
+                <ImBooks />
+              </a>
+              <a
+                href="#contact"
+                className={`${styles.socialButton} ${styles.email}`}
+                data-tooltip="Email"
+                aria-label="Email"
+              >
+                <FaEnvelope />
+              </a>
+            </div>
           </div>
         </div>
       </div>
