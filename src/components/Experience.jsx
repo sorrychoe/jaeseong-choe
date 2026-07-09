@@ -11,7 +11,7 @@ function Experience() {
   const Experiences = [
     {
       "title": "Marketing Data Analyst",
-      "company": "Ascent AI | 2026.04 - Present",
+      "company": "Ascent AI | 2026.04 - 2026.07 (Full-Time)",
       "logo": "/images/ascentkorea.jpg",
       "description": [
         { "role": "Data Analyst specialized in GEO" },
@@ -19,7 +19,7 @@ function Experience() {
     },
     {
       "title": "Marketing Manager",
-      "company": "NOL Universe | 2025.07 - 2026-04",
+      "company": "NOL Universe | 2025.07 - 2026-04 (Contract)",
       "logo": "/images/NOL_Universe.jpeg",
       "description": [
         { "role": "Marketing KPI Dashboard Development" },
@@ -37,7 +37,7 @@ function Experience() {
     },
     {
       "title": "Project Manager",
-      "company": "Day1company | 2023.06 - 2024.02",
+      "company": "Day1company | 2023.06 - 2024.02 (Contract)",
       "logo": "/images/day1company.png",
       "description": [
         { "role": "Project Manager, AI Boot Camp (6th) & Upstage AI Lab (2nd)" },
@@ -62,7 +62,7 @@ function Experience() {
     },
     {
       "title": "Learning Manager",
-      "company": "Day1company | 2022.06 - 2023.01",
+      "company": "Day1company | 2022.06 - 2023.01 (Contract)",
       "logo": "/images/day1company.png",
       "description": [
         { "role": "Operation Manager, Data Analytics Boot Camp" },
