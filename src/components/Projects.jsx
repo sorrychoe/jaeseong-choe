@@ -30,29 +30,6 @@ function Projects() {
         ],
       },
       {
-        title: 'The World as Represented by Economic News',
-        description: "A Machine Learning-Based Discourse Analysis of Korean Economic Press Journals",
-        links: [
-          { href: 'https://sorrychoe.quarto.pub/economic-columns-analysis/', icon: 'https://cdn.simpleicons.org/quarto/FFFFFF' },
-          { href: 'https://github.com/sorrychoe/economic_analysis', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
-        ],
-      },
-      {
-        title: 'How the Media Portrays Victims',
-        description: "A Machine Learning-Based Discourse Analysis of the Portrayal of Sexual Crime Murders in Korean Media",
-        links: [
-          { href: 'https://sorrychoe.quarto.pub/inha_accident_report/', icon: 'https://cdn.simpleicons.org/quarto/FFFFFF' },
-          { href: 'https://github.com/sorrychoe/inha_accident', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
-        ],
-      },
-      {
-        title: 'Which Neighborhood is Most Similar to Mine?',
-        description: "A Webpage to find neighborhoods with similar population distributions.",
-        links: [
-          { href: 'https://github.com/sorrychoe/population', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
-        ],
-      },
-      {
         title: 'Attrition Analysis',
         description: "A Statistical Analysis of HR data to reduce employee attrition",
         links: [
@@ -66,13 +43,29 @@ function Projects() {
           { href: 'https://github.com/Analytics-for-People/Satisfaction-Survey-Analysis', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
         ],
       },
-      // {
-      //   title: 'HR Performance Prediction',
-      //   description: "A Machine Learning based Forecasting for People Analytics",
-      //   links: [
-      //     { href: 'https://github.com/Analytics-for-People/Predictive-HR-Analytics', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
-      //   ],
-      // },
+      {
+        title: 'Which Neighborhood is Most Similar to Mine?',
+        description: "A Webpage to find neighborhoods with similar population distributions.",
+        links: [
+          { href: 'https://github.com/sorrychoe/population', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+        ],
+      },
+      {
+        title: 'PyBigkinds',
+        description: "Bigkinds Data Preprocessing Library for Python",
+        links: [
+          { href: 'https://pypi.org/project/pyBigKinds/', icon: 'https://cdn.simpleicons.org/pypi/FFFFFF' },
+          { href: 'https://github.com/sorrychoe/pyBigKinds', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+        ],
+      },
+      {
+        title: 'RBigkinds',
+        description: "Bigkinds Data Preprocessing Library for R",
+        links: [
+          { href: 'https://sorrychoe.github.io/RBigKinds/', icon: 'https://cdn.simpleicons.org/gitbook/FFFFFF' },
+          { href: 'https://github.com/sorrychoe/RBigKinds', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+        ],
+      },
   ];
 
   return (

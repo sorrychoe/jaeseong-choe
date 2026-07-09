@@ -6,7 +6,6 @@ import Experience from '../components/Experience';
 import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 import Publication from '../components/Publication';
-import Software from '../components/Software';
 // import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
@@ -20,7 +19,6 @@ function App() {
       <Skills />
       <Publication />
       <Projects />
-      <Software />
       {/* <Contact /> */}
       <Footer />
     </div>
