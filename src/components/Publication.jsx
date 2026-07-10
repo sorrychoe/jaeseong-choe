@@ -14,7 +14,7 @@ function Publication() {
         links: [
           { href: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12889989', icon: 'https://cdn.simpleicons.org/bookstack/FFFFFF' },
           { href: 'https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003351985', icon: 'https://cdn.simpleicons.org/gitbook/FFFFFF' },
-          // { href: 'https://github.com/sorrychoe/', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+          { href: 'https://github.com/sorrychoe/Media_Coverage_of_Mental_Illness', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
         ],
       },
       {
@@ -23,7 +23,7 @@ function Publication() {
         links: [
           { href: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12731248', icon: 'https://cdn.simpleicons.org/bookstack/FFFFFF' },
           { href: 'https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003321043', icon: 'https://cdn.simpleicons.org/gitbook/FFFFFF' },
-          // { href: 'https://github.com/sorrychoe/', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+          { href: 'https://github.com/sorrychoe/softened_neo-nationalism_in_youtube', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
         ],
       },
       {
