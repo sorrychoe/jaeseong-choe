@@ -27,12 +27,12 @@ function Experience() {
       ]
     },
     {
-      "title": "Undergraduate Research Assistant",
+      "title": "Research Assistant",
       "company": "Handong Global University | 2024.12 - 2025.06 (Part-time)",
       "logo": "/images/Handong_Global_University.png",
       "description": [
         { "role": "Research Assistant in Education"},
-        { "role": "Quantitative Research using Computational Methods"}
+        { "role": "Quantitative Research using Computational & Statistical Methods"}
       ]
     },
     {
