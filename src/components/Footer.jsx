@@ -1,7 +1,5 @@
 import React from 'react';
 import styles from './Footer.module.css';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { ImBooks } from 'react-icons/im';
 
 function Footer() {
   return (

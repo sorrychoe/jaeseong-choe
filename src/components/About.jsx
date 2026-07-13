@@ -10,6 +10,32 @@ function About() {
     AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
   }, []);
 
+  const handleDownload = (e) => {
+    e.preventDefault();
+    fetch('/cv.pdf')
+      .then((response) => response.blob())
+      .then((blob) => {
+        const url = window.URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = 'Jaeseong_Choe_CV.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        window.URL.revokeObjectURL(url);
+      })
+      .catch((err) => {
+        console.error('Error downloading the CV:', err);
+        // Fallback
+        const link = document.createElement('a');
+        link.href = '/cv.pdf';
+        link.download = 'Jaeseong_Choe_CV.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      });
+  };
+
   return (
     <section id="about" className="section" data-aos="fade-up">
       <div className="container">
@@ -30,7 +56,7 @@ function About() {
             <div className={styles.socialButtons}>
               <a
                 href="/cv.pdf"
-                download="Jaeseong_Choe_CV.pdf"
+                onClick={handleDownload}
                 className={`${styles.socialButton} ${styles.cv}`}
                 data-tooltip="Download CV (PDF)"
                 aria-label="Download CV"
