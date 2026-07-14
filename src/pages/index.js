@@ -14,11 +14,11 @@ function App() {
     <div className="bg-black text-purple-200">
       <Header />
       <About />
-      <Experience />
-      <Education />
-      <Skills />
       <Publication />
       <Projects />
+      <Skills />
+      <Education />
+      <Experience />
       {/* <Contact /> */}
       <Footer />
     </div>
