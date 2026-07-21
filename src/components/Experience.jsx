@@ -54,8 +54,8 @@ function Experience() {
     },
     {
       "title": "Facilitator",
-      "company": "Fastcampus | 2022.12 - 2023.03 (Freelancer)",
-      "logo": "/images/Fastcampus.png",
+      "company": "Day1company | 2023.02 - 2023.06 (Freelancer)",
+      "logo": "/images/day1company.png",
       "description": [
         { "role": "Facilitator, KDC Tableau Data Visualization Online Course" },
       ]
