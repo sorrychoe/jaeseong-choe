@@ -18,7 +18,7 @@ function Experience() {
       ]
     },
     {
-      "title": "Marketing Manager",
+      "title": "Marketing Data Analyst",
       "company": "NOL Universe | 2025.07 - 2026-04 (Contract)",
       "logo": "/images/NOL_Universe.jpeg",
       "description": [
