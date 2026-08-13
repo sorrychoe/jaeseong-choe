@@ -11,7 +11,7 @@ function Experience() {
   const Experiences = [
     {
       "title": "Marketing Data Analyst",
-      "company": "Ascent AI | 2026.04 - 2026.07",
+      "company": "Ascent AI | 2026.04 - 2026.07 (Full-time)",
       "logo": "/images/ascentkorea.jpg",
       "description": [
         { "role": "Data Analyst specialized in GEO" },
@@ -28,10 +28,9 @@ function Experience() {
     },
     {
       "title": "Research Assistant",
-      "company": "Handong Global University | 2024.12 - 2025.06 (Part-time)",
+      "company": "Handong Global University | 2024.12 - 2025.12 (Part-time)",
       "logo": "/images/Handong_Global_University.png",
       "description": [
-        { "role": "Research Assistant in Education"},
         { "role": "Quantitative Research using Computational & Statistical Methods"}
       ]
     },
