@@ -10,7 +10,7 @@ function Header() {
           Jaeseong Choe
         </h1>
         <p className={styles.subtitle}>
-          Computational Communication Researcher | Data Analyst | Opinion Miner
+          Opinion Miner | Computational Communication Researcher | Data Analyst
         </p>
         <Navbar />
       </div>
