@@ -22,32 +22,11 @@ function Projects() {
           { href: 'https://github.com/sorrychoe/Everything-of-Handong', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
         ],
       },
-      {
-        title: 'About Topic Modeling Theory',
-        description: "A Repository about theory of topic modeling",
+            {
+        title: 'SNS Addiction Analysis',
+        description: "A regression-based analysis of student social media addiction using OLS and GMM",
         links: [
-          { href: 'https://github.com/sorrychoe/topic-modeling-theory', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
-        ],
-      },
-      {
-        title: 'Attrition Analysis',
-        description: "A Statistical Analysis of HR data to reduce employee attrition",
-        links: [
-          { href: 'https://github.com/Analytics-for-People/Attrition-Analysis', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
-        ],
-      },
-      {
-        title: 'Satisfaction Survey Analysis',
-        description: "A Statistical Analysis of Survey Data for People Analytics",
-        links: [
-          { href: 'https://github.com/Analytics-for-People/Satisfaction-Survey-Analysis', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
-        ],
-      },
-      {
-        title: 'Which Neighborhood is Most Similar to Mine?',
-        description: "A Webpage to find neighborhoods with similar population distributions.",
-        links: [
-          { href: 'https://github.com/sorrychoe/population', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+          { href: 'https://github.com/sorrychoe/sns-addiction-modeling', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
         ],
       },
       {
@@ -64,6 +43,34 @@ function Projects() {
         links: [
           { href: 'https://sorrychoe.github.io/RBigKinds/', icon: 'https://cdn.simpleicons.org/gitbook/FFFFFF' },
           { href: 'https://github.com/sorrychoe/RBigKinds', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+        ],
+      },
+      {
+        title: 'Creationism Chatbot',
+        description: "The LLM Chatbot for Creation and Evolution Class Q&A",
+        links: [
+          { href: 'https://github.com/sorrychoe/Creationism_Chatbot', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+        ],
+      }, 
+      {
+        title: 'About Topic Modeling Theory',
+        description: "A Repository about theory of topic modeling",
+        links: [
+          { href: 'https://github.com/sorrychoe/topic-modeling-theory', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+        ],
+      }, 
+      {
+        title: 'Attrition Analysis',
+        description: "A Statistical Analysis of HR data to reduce employee attrition",
+        links: [
+          { href: 'https://github.com/Analytics-for-People/Attrition-Analysis', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
+        ],
+      },
+      {
+        title: 'Satisfaction Survey Analysis',
+        description: "A Statistical Analysis of Survey Data for People Analytics",
+        links: [
+          { href: 'https://github.com/Analytics-for-People/Satisfaction-Survey-Analysis', icon: 'https://cdn.simpleicons.org/Github/FFFFFF' },
         ],
       },
   ];
