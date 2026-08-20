@@ -2,10 +2,11 @@ import React from 'react';
 import styles from './Footer.module.css';
 
 function Footer() {
+  const year = new Date().getFullYear();
   return (
     <footer className={styles.footer}>
       <div className="container">
-        <p className={styles.copyright}>&copy; 2026 Jaeseong Choe. All rights reserved.</p>
+        <p className={styles.copyright}>&copy; {year} Jaeseong Choe. All rights reserved.</p>
       </div>
     </footer>
   );

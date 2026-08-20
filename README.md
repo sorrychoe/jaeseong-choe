@@ -10,23 +10,16 @@ jaeseong-choe/
 ├── next.config.mjs
 ├── package-lock.json
 ├── package.json
+├── archive/            # retired components/pages kept for reference, not part of the build
 ├── public
-│   └── images
-│       ├── Fastcampus.png
-│       ├── Handong_Global_University.png
-│       ├── NOL_Universe.jpeg
-│       ├── day1company.png
-│       └── makinarocks.jpeg
+│   ├── cv.pdf
+│   ├── favicon.svg
+│   ├── robots.txt
+│   └── sitemap.xml
 └── src
     ├── components
     │   ├── About.jsx
     │   ├── About.module.css
-    │   ├── Contact.jsx
-    │   ├── Contact.module.css
-    │   ├── Education.jsx
-    │   ├── Education.module.css
-    │   ├── Experience.jsx
-    │   ├── Experience.module.css
     │   ├── Footer.jsx
     │   ├── Footer.module.css
     │   ├── Header.jsx
@@ -36,15 +29,10 @@ jaeseong-choe/
     │   ├── Projects.jsx
     │   ├── Projects.module.css
     │   ├── Publication.jsx
-    │   ├── Publication.module.css
-    │   ├── Skills.jsx
-    │   ├── Skills.module.css
-    │   └── Software.jsx
+    │   └── Publication.module.css
     ├── pages
     │   ├── _app.js
     │   ├── _document.js
-    │   ├── api
-    │   │   └── contact.js
     │   └── index.js
     └── styles
         ├── app.css
