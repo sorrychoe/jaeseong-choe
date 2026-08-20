@@ -10,7 +10,6 @@ jaeseong-choe/
 ├── next.config.mjs
 ├── package-lock.json
 ├── package.json
-├── archive/            # retired components/pages kept for reference, not part of the build
 ├── public
 │   ├── cv.pdf
 │   ├── favicon.svg
