@@ -23,11 +23,11 @@ function Projects() {
           { href: 'https://github.com/sorrychoe/Everything-of-Handong', icon: 'https://cdn.simpleicons.org/Github/FFFFFF', label: 'GitHub' },
         ],
       },
-            {
-        title: 'SNS Addiction Analysis',
-        description: "A regression-based analysis of student social media addiction using OLS and GMM",
+      {
+        title: 'Creationism Chatbot',
+        description: "The LLM Chatbot for Creation and Evolution Class Q&A",
         links: [
-          { href: 'https://github.com/sorrychoe/sns-addiction-modeling', icon: 'https://cdn.simpleicons.org/Github/FFFFFF', label: 'GitHub' },
+          { href: 'https://github.com/sorrychoe/Creationism_Chatbot', icon: 'https://cdn.simpleicons.org/Github/FFFFFF', label: 'GitHub' },
         ],
       },
       {
@@ -44,13 +44,6 @@ function Projects() {
         links: [
           { href: 'https://sorrychoe.github.io/RBigKinds/', icon: 'https://cdn.simpleicons.org/gitbook/FFFFFF', label: 'Documentation' },
           { href: 'https://github.com/sorrychoe/RBigKinds', icon: 'https://cdn.simpleicons.org/Github/FFFFFF', label: 'GitHub' },
-        ],
-      },
-      {
-        title: 'Creationism Chatbot',
-        description: "The LLM Chatbot for Creation and Evolution Class Q&A",
-        links: [
-          { href: 'https://github.com/sorrychoe/Creationism_Chatbot', icon: 'https://cdn.simpleicons.org/Github/FFFFFF', label: 'GitHub' },
         ],
       },
       {
@@ -72,6 +65,13 @@ function Projects() {
         description: "A Statistical Analysis of Survey Data for People Analytics",
         links: [
           { href: 'https://github.com/Analytics-for-People/Satisfaction-Survey-Analysis', icon: 'https://cdn.simpleicons.org/Github/FFFFFF', label: 'GitHub' },
+        ],
+      },
+      {
+        title: 'SNS Addiction Analysis',
+        description: "A regression-based analysis of student social media addiction",
+        links: [
+          { href: 'https://github.com/sorrychoe/sns-addiction-modeling', icon: 'https://cdn.simpleicons.org/Github/FFFFFF', label: 'GitHub' },
         ],
       },
   ];
