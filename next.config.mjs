@@ -1,3 +1,7 @@
+// Keep non-production Vercel deployments (previews, branch URLs) out of search indexes.
+const isNonProdDeploy =
+  !!process.env.VERCEL_ENV && process.env.VERCEL_ENV !== "production";
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   /* config options here */
@@ -12,14 +16,17 @@ const nextConfig = {
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
           { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
           { key: "Strict-Transport-Security", value: "max-age=63072000; includeSubDomains; preload" },
+          ...(isNonProdDeploy
+            ? [{ key: "X-Robots-Tag", value: "noindex, nofollow" }]
+            : []),
           {
             key: "Content-Security-Policy",
             value: [
               "default-src 'self'",
               "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com",
-              "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+              "style-src 'self' 'unsafe-inline'",
               "img-src 'self' data: https://www.google-analytics.com https://cdn.simpleicons.org",
-              "font-src 'self' data: https://fonts.gstatic.com",
+              "font-src 'self' data:",
               "connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com",
               "frame-ancestors 'none'",
               "base-uri 'self'",

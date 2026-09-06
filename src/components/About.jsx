@@ -94,7 +94,7 @@ function About() {
                 <ImBooks />
               </a>
               <a
-                href="#contact"
+                href="mailto:cjssoote@gmail.com"
                 className={`${styles.socialButton} ${styles.email}`}
                 data-tooltip="Email"
                 aria-label="Email"
