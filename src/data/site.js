@@ -61,12 +61,12 @@ export const publications = [
       '언론의 정신질환 보도 경향과 사회적 낙인의 재생산: 한국 주요 일간지의 양극성 장애, 우울증, 조현병 보도 분석을 중심으로',
     description:
       'An analysis of coverage of bipolar disorder, depression, and schizophrenia in major Korean newspapers.',
-    authors: ['Jae-won Ju', 'Jaeseong Choe'],
+    authors: ['Jaewon Joo', 'Jaeseong Choe'],
     venue: 'Korean Journal of Journalism & Communication Studies',
     venueKo: '한국언론학보',
     year: 2026,
     volume: 'Vol. 70, No. 3',
-    pages: '271–312',
+    pages: '271-312',
     type: 'journal',
     inLanguage: 'ko',
     keywords: [
@@ -77,9 +77,10 @@ export const publications = [
       'Korean newspapers',
     ],
     summary: [
-      'This peer-reviewed study, co-authored with Jae-won Ju and published in the Korean Journal of Journalism & Communication Studies (Vol. 70, No. 3, 2026, pp. 271–312), examines how South Korea’s major daily newspapers have reported on three mental disorders — bipolar disorder, depression, and schizophrenia.',
-      'The analysis combines large-scale word-frequency analysis with deep-learning-based topic modeling over a long-run corpus of Korean newspaper coverage, tracing how clinical and medical vocabulary appears alongside negatively valenced frames such as crime and suicide.',
-      'The findings describe how this co-occurrence of medical and threat-oriented language can reproduce social stigma toward people living with mental illness, and discuss implications for more responsible mental-health reporting.',
+      'In South Korea, media coverage of incidents involving mental illness has been continuous and pervasive, raising concerns that it may foster biased public discourse about specific disorders and reinforce social stigma. This study examines how major news outlets have represented mental illnesses—and how those representations have changed over time—focusing on schizophrenia, depression, and bipolar disorder in articles published by six leading Korean newspapers (Chosun Ilbo, Dong-A Ilbo, Hankyoreh, Kyunghyang Shinmun, Hankook Ilbo, and Seoul Shinmun) from January 1, 1960 to December 31, 2024. The study period begins in 1960, when Western-style psychiatry became institutionally established in Korea and mental illness began circulating as a matter of public discourse through mass media. Using BigKinds, the NAVER News Library, and web crawling, we collected 53,051 articles (6,425 on schizophrenia; 43,719 on depression; 2,907 on bipolar disorder) and conducted TF–IDF word-frequency analysis and BERTopic-based topic modeling to identify dominant representational patterns and their temporal trajectories.',
+      'Across all three disorders, high-frequency terms consistently mixed medical-context words such as ‘mental’, ‘treatment’, and ‘patient’ with negative terms including ‘crime’, ‘suicide’, and ‘incident’. Schizophrenia and bipolar disorder were especially reported through the lens of serious crimes and accidents, while depression coverage was strongly tied to suicide. Using the BERTopic model, schizophrenia coverage was classified into topics including crime-related trials, violent crime, art, and social health issues. Bipolar disorder coverage concentrated on incidents, accidents, and celebrity figures, whereas depression appeared across broader social contexts—including art, pharmaceuticals, social trauma, and sexual violence.',
+      'Temporal analysis revealed that crime- and incident-centered reporting increased markedly following specific triggering events: schizophrenia coverage spiked after the 2016 Gangnam Station murder; depression coverage surged following the 2009 Jang Ja-yeon suicide case and the 2018 Gangseo PC Room murder; and bipolar disorder coverage intensified around high-profile cases involving public figures in 2013 and 2019. Analysis of media partisanship showed that conservative outlets more prominently featured crime- and incident-centered topics in coverage of bipolar disorder and depression. In schizophrenia coverage, however, crime-related topics ranked relatively high across all outlets regardless of political orientation, suggesting that stigmatizing frames around schizophrenia transcend ideological boundaries. Progressive outlets tended to contextualize mental illness within structural and social conditions, while centrist outlets displayed a more pragmatic balance between medical and incident-based framing.',
+      'These reporting patterns risk reinforcing social stigma and distancing individuals with mental illness from appropriate treatment and social support. This study highlights the importance of examining how media representations of mental illness are structured over time, and urges a shift toward more balanced, rights-based, and medically informed reporting on mental health in Korea.',
     ],
     url: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12889989',
     links: [
@@ -108,12 +109,12 @@ export const publications = [
       "연성화된 신(新)민족주의 공론장과 '국뽕' 콘텐츠의 정동적 수용: sBERT 임베딩과 K-Means 클러스터링을 활용한 유튜브 쇼츠 댓글 분석을 중심으로",
     description:
       'An analysis of YouTube Shorts comments using sBERT embeddings and K-means clustering.',
-    authors: ['Jae-won Ju', 'Jaeseong Choe', 'Ji-soo Kim'],
+    authors: ['Jaewon Joo', 'Jaeseong Choe', 'Jisoo Kim'],
     venue: 'The Journal of the Korea Contents Association',
     venueKo: '한국콘텐츠학회논문지',
     year: 2026,
     volume: 'Vol. 26, No. 3',
-    pages: '421–434',
+    pages: '421-434',
     type: 'journal',
     inLanguage: 'ko',
     keywords: [
@@ -124,9 +125,7 @@ export const publications = [
       'K-means clustering',
     ],
     summary: [
-      'Co-authored with Jae-won Ju and Ji-soo Kim and published in The Journal of the Korea Contents Association (Vol. 26, No. 3, 2026, pp. 421–434), this study analyzes how a "softened" neo-nationalist public sphere takes shape in the comment sections of YouTube Shorts.',
-      'Comments on so-called gukppong ("nationalist-pride") videos are encoded with sBERT sentence embeddings and grouped with K-means clustering to surface distinct patterns of affective reception across channels.',
-      'The paper argues that engagement with this content is organized around affective participation in a platform environment that leaves limited room for critical deliberation.',
+      'This study examines how “Gukppong content,” a form of soft nationalism prevalent on YouTube in South Korea, is amplified and reproduced through comment spaces and user participation. Using Sentence-BERT–based embeddings and K-means clustering on top comments from ten channels, the results show that Korean new nationalism is predominantly articulated through antagonism toward external “others,” particularly within culture war–oriented discourse. Moreover, higher author revisit rates in the “culture war/anti-China sentiment” and “historical/political nationalism” clusters reveal the presence of a loyal core user group that actively sustains these discourses. The findings suggest that new nationalist discourse is amplified and consolidated through affective participation in platform environments with limited critical engagement.',
     ],
     url: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12731248',
     links: [
@@ -155,12 +154,12 @@ export const publications = [
       '한국 공영방송 논의에서의 공공성 담론 연구: 구조적 토픽모델링(STM)을 활용한 언론사 사설 분석을 중심으로',
     description:
       'An analysis of news editorials using Structural Topic Modeling (STM).',
-    authors: ['Jae-won Ju', 'Jaeseong Choe'],
-    venue: 'Korean Broadcasting Society Fall Conference 2025',
+    authors: ['Jaewon Joo', 'Jaeseong Choe'],
+    venue: 'Korean Association for Broadcasting & Telecommunication Studies Fall Conference 2025',
     venueKo: '한국방송학회 2025 가을철 정기학술대회',
     year: 2025,
     volume: '',
-    pages: '30–31',
+    pages: '30-31',
     type: 'conference',
     inLanguage: 'ko',
     keywords: [
@@ -171,9 +170,9 @@ export const publications = [
       'Media policy',
     ],
     summary: [
-      'Presented at the Korean Broadcasting Society’s 2025 Fall Conference (with Jae-won Ju), this paper studies how "publicness" (gonggongseong) is discursively constructed in the debate over the future of Korean public service broadcasting.',
-      'Newspaper editorials from multiple outlets are analyzed with Structural Topic Modeling (STM), which links latent topics to document-level covariates such as the publishing outlet.',
-      'The analysis maps how competing definitions of public-broadcasting "publicness" are distributed across the ideological spectrum of the Korean press.',
+      'Presented at the 2025 Fall Conference of Korean Association for Broadcasting & Telecommunication Studies (with prof. Jaewon Joo).',
+      'this paper studies how "publicness"(공공성) is discursively constructed in the debate over the future of Korean public service broadcasting.',
+
     ],
     url: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12480933',
     links: [
