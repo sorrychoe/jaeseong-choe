@@ -1,0 +1,104 @@
+.wrap {
+  min-height: 100vh;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: #a855f7;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.back:hover {
+  text-decoration: underline;
+}
+
+.article {
+  width: 100%;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.8rem;
+  color: #9ca3af;
+  margin: 0 0 0.75rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 0.75rem;
+}
+
+.titleKo {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #d1d5db;
+  margin: 0 0 1.5rem;
+  word-break: keep-all;
+}
+
+.meta {
+  color: #9ca3af;
+  font-size: 0.95rem;
+  margin: 0 0 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #374151;
+}
+
+.body p {
+  line-height: 1.8;
+  margin: 0 0 1.25rem;
+  color: #d1d5db;
+}
+
+.keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.keyword {
+  background-color: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.85rem;
+  color: #c4b5fd;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.linkBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #2d3748;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background-color 300ms;
+}
+
+.linkBtn:hover {
+  background-color: #7c3aed;
+}
