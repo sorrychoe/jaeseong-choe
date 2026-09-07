@@ -66,7 +66,7 @@ function About() {
               <a
                 href="https://github.com/sorrychoe"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="me noopener noreferrer"
                 className={`${styles.socialButton} ${styles.github}`}
                 data-tooltip="GitHub"
                 aria-label="GitHub"
@@ -76,7 +76,7 @@ function About() {
               <a
                 href="https://www.linkedin.com/in/sorrychoe/"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="me noopener noreferrer"
                 className={`${styles.socialButton} ${styles.linkedin}`}
                 data-tooltip="LinkedIn"
                 aria-label="LinkedIn"
@@ -86,7 +86,7 @@ function About() {
               <a
                 href="https://www.dbpia.co.kr/author/authorDetail?ancId=723491585"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="me noopener noreferrer"
                 className={`${styles.socialButton} ${styles.dbpia}`}
                 data-tooltip="DBpia Profile"
                 aria-label="DBpia Profile"
