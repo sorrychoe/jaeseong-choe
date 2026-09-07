@@ -17,7 +17,7 @@ export const LAST_MODIFIED = '2026-09-07';
 // single person so search engines and knowledge graphs resolve them together.
 export const PERSON = {
   name: 'Jaeseong Choe',
-  alternateName: ['최재성', 'Jae-sung Choi', 'Jaesung Choe', 'Choe Jaeseong'],
+  alternateName: ['최재성', 'Jaeseong Choe', 'Choe Jaeseong'],
   jobTitle: 'Computational Communication Researcher',
   email: 'cjssoote@gmail.com',
   affiliation: 'Handong Global University',
@@ -70,11 +70,11 @@ export const publications = [
     type: 'journal',
     inLanguage: 'ko',
     keywords: [
-      'Media discourse',
       'Mental illness',
-      'Social stigma',
+      'Bipolar Disorder',
+      'Schizophrenia',
+      'Depression',
       'Topic modeling',
-      'Korean newspapers',
     ],
     summary: [
       'In South Korea, media coverage of incidents involving mental illness has been continuous and pervasive, raising concerns that it may foster biased public discourse about specific disorders and reinforce social stigma. This study examines how major news outlets have represented mental illnesses—and how those representations have changed over time—focusing on schizophrenia, depression, and bipolar disorder in articles published by six leading Korean newspapers (Chosun Ilbo, Dong-A Ilbo, Hankyoreh, Kyunghyang Shinmun, Hankook Ilbo, and Seoul Shinmun) from January 1, 1960 to December 31, 2024. The study period begins in 1960, when Western-style psychiatry became institutionally established in Korea and mental illness began circulating as a matter of public discourse through mass media. Using BigKinds, the NAVER News Library, and web crawling, we collected 53,051 articles (6,425 on schizophrenia; 43,719 on depression; 2,907 on bipolar disorder) and conducted TF–IDF word-frequency analysis and BERTopic-based topic modeling to identify dominant representational patterns and their temporal trajectories.',
@@ -118,11 +118,13 @@ export const publications = [
     type: 'journal',
     inLanguage: 'ko',
     keywords: [
-      'Neo-nationalism',
+      'Nationalism',
       'YouTube Shorts',
-      'Affective publics',
-      'sBERT embeddings',
-      'K-means clustering',
+      'Comment',
+      'Gukbbong',
+      'sBERT',
+      'K-Means clustering',
+      'KL Divergence'
     ],
     summary: [
       'This study examines how “Gukppong content,” a form of soft nationalism prevalent on YouTube in South Korea, is amplified and reproduced through comment spaces and user participation. Using Sentence-BERT–based embeddings and K-means clustering on top comments from ten channels, the results show that Korean new nationalism is predominantly articulated through antagonism toward external “others,” particularly within culture war–oriented discourse. Moreover, higher author revisit rates in the “culture war/anti-China sentiment” and “historical/political nationalism” clusters reveal the presence of a loyal core user group that actively sustains these discourses. The findings suggest that new nationalist discourse is amplified and consolidated through affective participation in platform environments with limited critical engagement.',
@@ -155,7 +157,7 @@ export const publications = [
     description:
       'An analysis of news editorials using Structural Topic Modeling (STM).',
     authors: ['Jaewon Joo', 'Jaeseong Choe'],
-    venue: 'Korean Association for Broadcasting & Telecommunication Studies Fall Conference 2025',
+    venue: 'Korean Association for Broadcasting & Telecommunication Studies Fall Conference',
     venueKo: '한국방송학회 2025 가을철 정기학술대회',
     year: 2025,
     volume: '',
@@ -287,7 +289,7 @@ export const projects = [
     slug: 'topic-modeling-theory',
     title: 'About Topic Modeling Theory',
     description: 'A repository on the theory of topic modeling.',
-    keywords: ['Topic modeling', 'LDA', 'Methodology notes'],
+    keywords: ['Topic modeling', 'Methodology notes'],
     summary: [
       'A study repository collecting notes and derivations on the theory behind topic models — from Latent Dirichlet Allocation to structural and embedding-based variants.',
       'It is intended as a reference for researchers who want to understand the assumptions and mechanics of the methods rather than only their software interfaces.',
@@ -308,7 +310,6 @@ export const projects = [
     keywords: ['People analytics', 'HR data', 'Statistical modeling'],
     summary: [
       'A people-analytics project that statistically models employee attrition from HR data to identify the factors most associated with turnover.',
-      'The results are framed to inform retention strategy and prioritization of interventions.',
     ],
     links: [
       {
@@ -325,7 +326,6 @@ export const projects = [
     keywords: ['Survey analysis', 'People analytics', 'Statistics'],
     summary: [
       'A statistical analysis of employee satisfaction survey data for people-analytics use.',
-      'It covers scale construction, group comparison, and driver analysis of overall satisfaction.',
     ],
     links: [
       {
@@ -343,7 +343,6 @@ export const projects = [
     keywords: ['Regression', 'Social media', 'Behavioral data'],
     summary: [
       'A regression-based study of social-media addiction among students.',
-      'It examines how usage patterns and demographic factors relate to measured addiction scores.',
     ],
     links: [
       {
