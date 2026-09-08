@@ -303,11 +303,28 @@ export const projects = [
     ],
   },
   {
+    slug: 'sns-addiction-analysis',
+    title: 'SNS Addiction Analysis',
+    description:
+      'A statistical analysis of student social media addiction.',
+    keywords: ['Statistical modeling', 'Social media'],
+    summary: [
+      'This project analyzes factors influencing student social media addiction using regression and clustering techniques. Key predictors include mental health, sleep duration, social media usage, and SNS-related conflicts.',
+    ],
+    links: [
+      {
+        href: 'https://github.com/sorrychoe/sns-addiction-modeling',
+        icon: ICON_GITHUB,
+        label: 'GitHub',
+      },
+    ],
+  },
+  {
     slug: 'attrition-analysis',
     title: 'Attrition Analysis',
     description:
       'A statistical analysis of HR data to reduce employee attrition.',
-    keywords: ['People analytics', 'HR data', 'Statistical modeling'],
+    keywords: ['People analytics', 'Statistical modeling'],
     summary: [
       'A people-analytics project that statistically models employee attrition from HR data to identify the factors most associated with turnover.',
     ],
@@ -323,30 +340,13 @@ export const projects = [
     slug: 'satisfaction-survey-analysis',
     title: 'Satisfaction Survey Analysis',
     description: 'A statistical analysis of survey data for people analytics.',
-    keywords: ['Survey analysis', 'People analytics', 'Statistics'],
+    keywords: ['Survey analysis', 'People analytics'],
     summary: [
       'A statistical analysis of employee satisfaction survey data for people-analytics use.',
     ],
     links: [
       {
         href: 'https://github.com/Analytics-for-People/Satisfaction-Survey-Analysis',
-        icon: ICON_GITHUB,
-        label: 'GitHub',
-      },
-    ],
-  },
-  {
-    slug: 'sns-addiction-analysis',
-    title: 'SNS Addiction Analysis',
-    description:
-      'A regression-based analysis of student social media addiction.',
-    keywords: ['Regression', 'Social media', 'Behavioral data'],
-    summary: [
-      'A regression-based study of social-media addiction among students.',
-    ],
-    links: [
-      {
-        href: 'https://github.com/sorrychoe/sns-addiction-modeling',
         icon: ICON_GITHUB,
         label: 'GitHub',
       },
