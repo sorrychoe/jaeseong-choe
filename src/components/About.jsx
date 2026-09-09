@@ -3,7 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import styles from './About.module.css';
 import { FaGithub, FaLinkedin, FaEnvelope, FaFilePdf } from 'react-icons/fa';
-import { ImBooks } from 'react-icons/im';
+import { BsMortarboardFill } from 'react-icons/bs';
 
 function About() {
   useEffect(() => {
@@ -91,7 +91,7 @@ function About() {
                 data-tooltip="DBpia Profile"
                 aria-label="DBpia Profile"
               >
-                <ImBooks />
+                <BsMortarboardFill />
               </a>
               <a
                 href="mailto:cjssoote@gmail.com"
