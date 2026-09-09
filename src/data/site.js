@@ -11,7 +11,7 @@ export const DESCRIPTION =
   'Jaeseong Choe (최재성) is a data-driven researcher applying computational methods to uncover patterns in media discourse, public opinion, and social behavior.';
 
 // Bump when page content meaningfully changes (used for sitemap <lastmod>).
-export const LAST_MODIFIED = '2026-09-07';
+export const LAST_MODIFIED = '2026-09-09';
 
 // Identity data. alternateName ties the romanizations and the Korean name to a
 // single person so search engines and knowledge graphs resolve them together.
@@ -39,11 +39,16 @@ export const SOCIAL_LINKS = [
 
 // Identity links surfaced in the UI with rel="me" for entity association.
 export const PROFILE_LINKS = [
-  { href: 'https://github.com/sorrychoe', label: 'GitHub' },
-  { href: 'https://www.linkedin.com/in/sorrychoe/', label: 'LinkedIn' },
+  { href: 'https://github.com/sorrychoe', label: 'GitHub', icon: 'github' },
+  {
+    href: 'https://www.linkedin.com/in/sorrychoe/',
+    label: 'LinkedIn',
+    icon: 'linkedin',
+  },
   {
     href: 'https://www.dbpia.co.kr/author/authorDetail?ancId=723491585',
     label: 'DBpia',
+    icon: 'dbpia',
   },
 ];
 

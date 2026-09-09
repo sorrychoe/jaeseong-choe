@@ -34,17 +34,6 @@
   margin-bottom: 1rem;
 }
 
-.link {
-  color: #c4b5fd;
-  font-size: 0.875rem;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.link:hover {
-  text-decoration: underline;
-}
-
 .copyright {
   font-size: 0.875rem;
 }
