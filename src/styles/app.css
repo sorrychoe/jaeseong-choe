@@ -11,18 +11,6 @@ html {
   box-sizing: border-box;
 }
 
-@keyframes float {
-	0% {
-		transform: translatey(0px);
-	}
-	50% {
-		transform: translatey(-10px);
-	}
-	100% {
-		transform: translatey(0px);
-	}
-}
-
 @keyframes float-banner {
 	0% {
 		transform: translatey(0px);
@@ -33,10 +21,6 @@ html {
 	100% {
 		transform: translatey(0px);
 	}
-}
-
-.floating-icon {
-  animation: float 6s ease-in-out infinite;
 }
 
 .floating-banner {

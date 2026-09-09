@@ -52,7 +52,7 @@ function Publication() {
                       width={24}
                       src={link.icon}
                       alt={link.label}
-                      className={`${styles.icon} floating-icon`}
+                      className={styles.icon}
                       unoptimized
                     />
                   </a>
