@@ -340,18 +340,70 @@ export const projects = [
       },
     ],
   },
-    {
-    slug: 'sns-addiction-analysis',
-    title: 'SNS Addiction Analysis',
+  {
+    slug: 'population',
+    title: 'Which Neighborhood Is Most Like Ours?',
     description:
-      'A statistical analysis of student social media addiction.',
-    keywords: ['Statistical modeling', 'Social media'],
+      'A web app that finds the neighborhoods with the most similar age structure.',
+    keywords: ['Web app', 'Demographics', 'Similarity search'],
     summary: [
-      'This project analyzes factors influencing student social media addiction using regression and clustering techniques. Key predictors include mental health, sleep duration, social media usage, and SNS-related conflicts.',
+      'A web application that takes a user’s eup/myeon/dong and returns the neighborhoods whose population distribution is closest to it.',
+      'Matches are ranked by the distance between age-distribution curves, and each result is shown alongside a chart comparing the two neighborhoods.',
     ],
     links: [
       {
-        href: 'https://github.com/sorrychoe/sns-addiction-modeling',
+        href: 'https://github.com/sorrychoe/population',
+        icon: ICON_GITHUB,
+        label: 'GitHub',
+      },
+    ],
+  },
+  {
+    slug: 'slack-weather-message',
+    title: 'Slack Weather Message',
+    description: 'A scheduled bot that posts Naver weather updates to Slack.',
+    keywords: ['Go', 'Web scraping', 'Slack', 'GitHub Actions'],
+    summary: [
+      'A small Go program that scrapes the current weather from Naver and posts it to a Slack channel through an incoming webhook.',
+      'It runs unattended on a GitHub Actions cron schedule (weekday mornings, 7 AM KST) and can be retimed by editing the workflow.',
+    ],
+    links: [
+      {
+        href: 'https://github.com/sorrychoe/slack-weather-message',
+        icon: ICON_GITHUB,
+        label: 'GitHub',
+      },
+    ],
+  },
+  {
+    slug: 'syllabus-crawler',
+    title: 'Syllabus Crawler',
+    description: 'A crawler that extracts syllabus data from Handong’s HISNet system.',
+    keywords: ['Python', 'Selenium', 'Web scraping'],
+    summary: [
+      'A command-line scraper that logs into Handong Global University’s academic information system (HISNet) with credentials entered at runtime and walks the course listings for a selected semester and college.',
+      'For each course with an uploaded syllabus it extracts the course code, title, instructor, course overview, and grading rubric. It auto-installs a matching ChromeDriver and stores no credentials.',
+    ],
+    links: [
+      {
+        href: 'https://github.com/sorrychoe/syllabus-crawler',
+        icon: ICON_GITHUB,
+        label: 'GitHub',
+      },
+    ],
+  },
+  {
+    slug: 'coinpan-crawler',
+    title: 'Coinpan Crawler',
+    description: 'A crawler for the Coinpan discussion board.',
+    keywords: ['Python', 'Selenium', 'Web scraping'],
+    summary: [
+      'A Python scraper that collects posts from the Coinpan free discussion board, letting the user choose the page range from the terminal and exporting the results to date-stamped CSV files.',
+      'The collected data feeds a dashboard for exploring activity on the board.',
+    ],
+    links: [
+      {
+        href: 'https://github.com/sorrychoe/coinpan-crawler',
         icon: ICON_GITHUB,
         label: 'GitHub',
       },
