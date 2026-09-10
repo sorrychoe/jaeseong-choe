@@ -194,6 +194,67 @@ export const publications = [
 
 export const projects = [
   {
+    slug: 'pybigkinds',
+    title: 'PyBigKinds',
+    description: 'A BigKinds data preprocessing library for Python.',
+    keywords: ['Python', 'Text mining', 'BIGKINDS', 'Open source'],
+    summary: [
+      'An open-source Python library that streamlines preprocessing of news datasets exported from BIGKINDS, the Korea Press Foundation’s news analytics service.',
+      'It provides utilities for cleaning, tokenizing, and reshaping BIGKINDS exports for downstream text analysis and topic modeling. The package is published on PyPI.',
+    ],
+    links: [
+      {
+        href: 'https://pypi.org/project/pyBigKinds/',
+        icon: ICON_PYPI,
+        label: 'PyPI',
+      },
+      {
+        href: 'https://github.com/sorrychoe/pyBigKinds',
+        icon: ICON_GITHUB,
+        label: 'GitHub',
+      },
+    ],
+  },
+  {
+    slug: 'rbigkinds',
+    title: 'RBigKinds',
+    description: 'A BigKinds data preprocessing library for R.',
+    keywords: ['R', 'Text mining', 'BIGKINDS', 'Open source'],
+    summary: [
+      'An R package that mirrors PyBigKinds for the R ecosystem, providing a tidy workflow for importing and preprocessing BIGKINDS news exports.',
+      'It prepares corpora for text mining and topic modeling, and ships a documentation site generated with pkgdown.',
+    ],
+    links: [
+      {
+        href: 'https://sorrychoe.github.io/RBigKinds/',
+        icon: ICON_GITBOOK,
+        label: 'Documentation',
+      },
+      {
+        href: 'https://github.com/sorrychoe/RBigKinds',
+        icon: ICON_GITHUB,
+        label: 'GitHub',
+      },
+    ],
+  },
+  {
+    slug: 'creationism-chatbot',
+    title: 'Creationism Chatbot',
+    description: 'An LLM chatbot for Creation and Evolution class Q&A.',
+    keywords: ['LLM', 'Retrieval-augmented generation', 'Education'],
+    summary: [
+      'A retrieval-augmented LLM chatbot built to answer student questions for a university "Creation and Evolution" course.',
+      'It grounds responses in course readings and reference material so that in-class Q&A stays consistent with the assigned curriculum.',
+    ],
+    links: [
+      {
+        href: 'https://github.com/sorrychoe/Creationism_Chatbot',
+        icon: ICON_GITHUB,
+        label: 'GitHub',
+      },
+    ],
+  },
+  {
     slug: 'optimal-vertiport-locations-seoul',
     title: 'Finding Optimal Vertiport Locations in the Seoul Metropolitan Area',
     description:
@@ -229,68 +290,7 @@ export const projects = [
       },
     ],
   },
-  {
-    slug: 'creationism-chatbot',
-    title: 'Creationism Chatbot',
-    description: 'An LLM chatbot for Creation and Evolution class Q&A.',
-    keywords: ['LLM', 'Retrieval-augmented generation', 'Education'],
-    summary: [
-      'A retrieval-augmented LLM chatbot built to answer student questions for a university "Creation and Evolution" course.',
-      'It grounds responses in course readings and reference material so that in-class Q&A stays consistent with the assigned curriculum.',
-    ],
-    links: [
-      {
-        href: 'https://github.com/sorrychoe/Creationism_Chatbot',
-        icon: ICON_GITHUB,
-        label: 'GitHub',
-      },
-    ],
-  },
-  {
-    slug: 'pybigkinds',
-    title: 'PyBigKinds',
-    description: 'A BIGKINDS data preprocessing library for Python.',
-    keywords: ['Python', 'Text mining', 'BIGKINDS', 'Open source'],
-    summary: [
-      'An open-source Python library that streamlines preprocessing of news datasets exported from BIGKINDS, the Korea Press Foundation’s news analytics service.',
-      'It provides utilities for cleaning, tokenizing, and reshaping BIGKINDS exports for downstream text analysis and topic modeling. The package is published on PyPI.',
-    ],
-    links: [
-      {
-        href: 'https://pypi.org/project/pyBigKinds/',
-        icon: ICON_PYPI,
-        label: 'PyPI',
-      },
-      {
-        href: 'https://github.com/sorrychoe/pyBigKinds',
-        icon: ICON_GITHUB,
-        label: 'GitHub',
-      },
-    ],
-  },
-  {
-    slug: 'rbigkinds',
-    title: 'RBigKinds',
-    description: 'A BIGKINDS data preprocessing library for R.',
-    keywords: ['R', 'Text mining', 'BIGKINDS', 'Open source'],
-    summary: [
-      'An R package that mirrors PyBigKinds for the R ecosystem, providing a tidy workflow for importing and preprocessing BIGKINDS news exports.',
-      'It prepares corpora for text mining and topic modeling, and ships a documentation site generated with pkgdown.',
-    ],
-    links: [
-      {
-        href: 'https://sorrychoe.github.io/RBigKinds/',
-        icon: ICON_GITBOOK,
-        label: 'Documentation',
-      },
-      {
-        href: 'https://github.com/sorrychoe/RBigKinds',
-        icon: ICON_GITHUB,
-        label: 'GitHub',
-      },
-    ],
-  },
-  {
+    {
     slug: 'topic-modeling-theory',
     title: 'About Topic Modeling Theory',
     description: 'A repository on the theory of topic modeling.',
@@ -302,23 +302,6 @@ export const projects = [
     links: [
       {
         href: 'https://github.com/sorrychoe/topic-modeling-theory',
-        icon: ICON_GITHUB,
-        label: 'GitHub',
-      },
-    ],
-  },
-  {
-    slug: 'sns-addiction-analysis',
-    title: 'SNS Addiction Analysis',
-    description:
-      'A statistical analysis of student social media addiction.',
-    keywords: ['Statistical modeling', 'Social media'],
-    summary: [
-      'This project analyzes factors influencing student social media addiction using regression and clustering techniques. Key predictors include mental health, sleep duration, social media usage, and SNS-related conflicts.',
-    ],
-    links: [
-      {
-        href: 'https://github.com/sorrychoe/sns-addiction-modeling',
         icon: ICON_GITHUB,
         label: 'GitHub',
       },
@@ -352,6 +335,23 @@ export const projects = [
     links: [
       {
         href: 'https://github.com/Analytics-for-People/Satisfaction-Survey-Analysis',
+        icon: ICON_GITHUB,
+        label: 'GitHub',
+      },
+    ],
+  },
+    {
+    slug: 'sns-addiction-analysis',
+    title: 'SNS Addiction Analysis',
+    description:
+      'A statistical analysis of student social media addiction.',
+    keywords: ['Statistical modeling', 'Social media'],
+    summary: [
+      'This project analyzes factors influencing student social media addiction using regression and clustering techniques. Key predictors include mental health, sleep duration, social media usage, and SNS-related conflicts.',
+    ],
+    links: [
+      {
+        href: 'https://github.com/sorrychoe/sns-addiction-modeling',
         icon: ICON_GITHUB,
         label: 'GitHub',
       },
