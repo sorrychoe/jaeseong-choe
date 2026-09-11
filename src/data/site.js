@@ -5,20 +5,20 @@ export const SITE_URL = (
 ).replace(/\/$/, '');
 
 export const TITLE =
-  'Jaeseong Choe | Opinion Miner & Computational Communication Researcher';
+  'Jaeseong Choe | Data Analyst & Computational Communication Researcher';
 
 export const DESCRIPTION =
   'Jaeseong Choe (최재성) is a data-driven researcher applying computational methods to uncover patterns in media discourse, public opinion, and social behavior.';
 
 // Bump when page content meaningfully changes (used for sitemap <lastmod>).
-export const LAST_MODIFIED = '2026-09-09';
+export const LAST_MODIFIED = '2026-09-12';
 
 // Identity data. alternateName ties the romanizations and the Korean name to a
 // single person so search engines and knowledge graphs resolve them together.
 export const PERSON = {
   name: 'Jaeseong Choe',
   alternateName: ['최재성', 'Jaeseong Choe', 'Choe Jaeseong'],
-  jobTitle: 'Computational Communication Researcher',
+  jobTitle: 'Computational Communication Researcher & Data Analyst',
   email: 'cjssoote@gmail.com',
   affiliation: 'Handong Global University',
   knowsLanguage: ['ko', 'en'],
