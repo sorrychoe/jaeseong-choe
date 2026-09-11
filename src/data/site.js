@@ -238,6 +238,23 @@ export const projects = [
     ],
   },
   {
+    slug: 'topic-modeling-theory',
+    title: 'About Topic Modeling Theory',
+    description: 'A repository on the theory of topic modeling.',
+    keywords: ['Topic modeling', 'Methodology notes'],
+    summary: [
+      'A study repository collecting notes and derivations on the theory behind topic models — from Latent Dirichlet Allocation to structural and embedding-based variants.',
+      'It is intended as a reference for researchers who want to understand the assumptions and mechanics of the methods rather than only their software interfaces.',
+    ],
+    links: [
+      {
+        href: 'https://github.com/sorrychoe/topic-modeling-theory',
+        icon: ICON_GITHUB,
+        label: 'GitHub',
+      },
+    ],
+  },
+  {
     slug: 'creationism-chatbot',
     title: 'Creationism Chatbot',
     description: 'An LLM chatbot for Creation and Evolution class Q&A.',
@@ -249,6 +266,40 @@ export const projects = [
     links: [
       {
         href: 'https://github.com/sorrychoe/Creationism_Chatbot',
+        icon: ICON_GITHUB,
+        label: 'GitHub',
+      },
+    ],
+  },
+  {
+    slug: 'syllabus-crawler',
+    title: 'Syllabus Crawler',
+    description: 'A crawler that extracts syllabus data from Handong’s HISNet system.',
+    keywords: ['Python', 'Selenium', 'Web scraping'],
+    summary: [
+      'A command-line scraper that logs into Handong Global University’s academic information system (HISNet) with credentials entered at runtime and walks the course listings for a selected semester and college.',
+      'For each course with an uploaded syllabus it extracts the course code, title, instructor, course overview, and grading rubric. It auto-installs a matching ChromeDriver and stores no credentials.',
+    ],
+    links: [
+      {
+        href: 'https://github.com/sorrychoe/syllabus-crawler',
+        icon: ICON_GITHUB,
+        label: 'GitHub',
+      },
+    ],
+  },
+  {
+    slug: 'slack-weather-message',
+    title: 'Slack Weather Message',
+    description: 'A scheduled bot that posts Naver weather updates to Slack.',
+    keywords: ['Go', 'Web scraping', 'Slack', 'GitHub Actions'],
+    summary: [
+      'A small Go program that scrapes the current weather from Naver and posts it to a Slack channel through an incoming webhook.',
+      'It runs unattended on a GitHub Actions cron schedule (weekday mornings, 7 AM KST) and can be retimed by editing the workflow.',
+    ],
+    links: [
+      {
+        href: 'https://github.com/sorrychoe/slack-weather-message',
         icon: ICON_GITHUB,
         label: 'GitHub',
       },
@@ -284,24 +335,7 @@ export const projects = [
     ],
     links: [
       {
-        href: 'https://github.com/sorrychoe/Everything-of-Handong',
-        icon: ICON_GITHUB,
-        label: 'GitHub',
-      },
-    ],
-  },
-    {
-    slug: 'topic-modeling-theory',
-    title: 'About Topic Modeling Theory',
-    description: 'A repository on the theory of topic modeling.',
-    keywords: ['Topic modeling', 'Methodology notes'],
-    summary: [
-      'A study repository collecting notes and derivations on the theory behind topic models — from Latent Dirichlet Allocation to structural and embedding-based variants.',
-      'It is intended as a reference for researchers who want to understand the assumptions and mechanics of the methods rather than only their software interfaces.',
-    ],
-    links: [
-      {
-        href: 'https://github.com/sorrychoe/topic-modeling-theory',
+        href: 'https://github.com/TMT2/Everything-of-Handong',
         icon: ICON_GITHUB,
         label: 'GitHub',
       },
@@ -335,75 +369,6 @@ export const projects = [
     links: [
       {
         href: 'https://github.com/Analytics-for-People/Satisfaction-Survey-Analysis',
-        icon: ICON_GITHUB,
-        label: 'GitHub',
-      },
-    ],
-  },
-  {
-    slug: 'population',
-    title: 'Which Neighborhood Is Most Like Ours?',
-    description:
-      'A web app that finds the neighborhoods with the most similar age structure.',
-    keywords: ['Web app', 'Demographics', 'Similarity search'],
-    summary: [
-      'A web application that takes a user’s eup/myeon/dong and returns the neighborhoods whose population distribution is closest to it.',
-      'Matches are ranked by the distance between age-distribution curves, and each result is shown alongside a chart comparing the two neighborhoods.',
-    ],
-    links: [
-      {
-        href: 'https://github.com/sorrychoe/population',
-        icon: ICON_GITHUB,
-        label: 'GitHub',
-      },
-    ],
-  },
-  {
-    slug: 'slack-weather-message',
-    title: 'Slack Weather Message',
-    description: 'A scheduled bot that posts Naver weather updates to Slack.',
-    keywords: ['Go', 'Web scraping', 'Slack', 'GitHub Actions'],
-    summary: [
-      'A small Go program that scrapes the current weather from Naver and posts it to a Slack channel through an incoming webhook.',
-      'It runs unattended on a GitHub Actions cron schedule (weekday mornings, 7 AM KST) and can be retimed by editing the workflow.',
-    ],
-    links: [
-      {
-        href: 'https://github.com/sorrychoe/slack-weather-message',
-        icon: ICON_GITHUB,
-        label: 'GitHub',
-      },
-    ],
-  },
-  {
-    slug: 'syllabus-crawler',
-    title: 'Syllabus Crawler',
-    description: 'A crawler that extracts syllabus data from Handong’s HISNet system.',
-    keywords: ['Python', 'Selenium', 'Web scraping'],
-    summary: [
-      'A command-line scraper that logs into Handong Global University’s academic information system (HISNet) with credentials entered at runtime and walks the course listings for a selected semester and college.',
-      'For each course with an uploaded syllabus it extracts the course code, title, instructor, course overview, and grading rubric. It auto-installs a matching ChromeDriver and stores no credentials.',
-    ],
-    links: [
-      {
-        href: 'https://github.com/sorrychoe/syllabus-crawler',
-        icon: ICON_GITHUB,
-        label: 'GitHub',
-      },
-    ],
-  },
-  {
-    slug: 'coinpan-crawler',
-    title: 'Coinpan Crawler',
-    description: 'A crawler for the Coinpan discussion board.',
-    keywords: ['Python', 'Selenium', 'Web scraping'],
-    summary: [
-      'A Python scraper that collects posts from the Coinpan free discussion board, letting the user choose the page range from the terminal and exporting the results to date-stamped CSV files.',
-      'The collected data feeds a dashboard for exploring activity on the board.',
-    ],
-    links: [
-      {
-        href: 'https://github.com/sorrychoe/coinpan-crawler',
         icon: ICON_GITHUB,
         label: 'GitHub',
       },
