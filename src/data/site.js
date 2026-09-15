@@ -272,23 +272,6 @@ export const projects = [
     ],
   },
   {
-    slug: 'syllabus-crawler',
-    title: 'Syllabus Crawler',
-    description: 'A crawler that extracts syllabus data from Handong’s HISNet system.',
-    keywords: ['Python', 'Selenium', 'Web scraping'],
-    summary: [
-      'A command-line scraper that logs into Handong Global University’s academic information system (HISNet) with credentials entered at runtime and walks the course listings for a selected semester and college.',
-      'For each course with an uploaded syllabus it extracts the course code, title, instructor, course overview, and grading rubric. It auto-installs a matching ChromeDriver and stores no credentials.',
-    ],
-    links: [
-      {
-        href: 'https://github.com/sorrychoe/syllabus-crawler',
-        icon: ICON_GITHUB,
-        label: 'GitHub',
-      },
-    ],
-  },
-  {
     slug: 'slack-weather-message',
     title: 'Slack Weather Message',
     description: 'A scheduled bot that posts Naver weather updates to Slack.',
@@ -300,6 +283,23 @@ export const projects = [
     links: [
       {
         href: 'https://github.com/sorrychoe/slack-weather-message',
+        icon: ICON_GITHUB,
+        label: 'GitHub',
+      },
+    ],
+  },
+  {
+    slug: 'syllabus-crawler',
+    title: 'Syllabus Crawler',
+    description: 'A crawler that extracts syllabus data from Handong’s HISNet system.',
+    keywords: ['Python', 'Selenium', 'Web scraping'],
+    summary: [
+      'A command-line scraper that logs into Handong Global University’s academic information system (HISNet) with credentials entered at runtime and walks the course listings for a selected semester and college.',
+      'For each course with an uploaded syllabus it extracts the course code, title, instructor, course overview, and grading rubric. It auto-installs a matching ChromeDriver and stores no credentials.',
+    ],
+    links: [
+      {
+        href: 'https://github.com/sorrychoe/syllabus-crawler',
         icon: ICON_GITHUB,
         label: 'GitHub',
       },
