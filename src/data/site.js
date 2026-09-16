@@ -196,11 +196,11 @@ export const projects = [
   {
     slug: 'pybigkinds',
     title: 'PyBigKinds',
-    description: 'A BigKinds data preprocessing library for Python.',
+    description: 'A low-code Python toolkit for analyzing BigKinds news exports.',
     keywords: ['Python', 'Text mining', 'BIGKINDS', 'Open source'],
     summary: [
-      'An open-source Python library that streamlines preprocessing of news datasets exported from BIGKINDS, the Korea Press Foundation’s news analytics service.',
-      'It provides utilities for cleaning, tokenizing, and reshaping BIGKINDS exports for downstream text analysis and topic modeling. The package is published on PyPI.',
+      'An open-source Python library that turns exports from BIGKINDS — the Korea Press Foundation’s news database — into ready-to-use dataframes, with utilities for cleaning, tokenizing, and reshaping the raw data for downstream text analysis and topic modeling.',
+      'Built-in functions such as press_counter() and keywords_wordcloud() chart outlet-level publication counts and keyword word clouds with Korean-font support out of the box, so a raw export becomes a visualization in a few lines. Published on PyPI.',
     ],
     links: [
       {
@@ -218,11 +218,11 @@ export const projects = [
   {
     slug: 'rbigkinds',
     title: 'RBigKinds',
-    description: 'A BigKinds data preprocessing library for R.',
+    description: 'A low-code R package for analyzing BigKinds news exports.',
     keywords: ['R', 'Text mining', 'BIGKINDS', 'Open source'],
     summary: [
-      'An R package that mirrors PyBigKinds for the R ecosystem, providing a tidy workflow for importing and preprocessing BIGKINDS news exports.',
-      'It prepares corpora for text mining and topic modeling, and ships a documentation site generated with pkgdown.',
+      'An R package that mirrors PyBigKinds for the R ecosystem, giving researchers a tidy, low-code workflow for importing and preprocessing BIGKINDS news exports straight from Excel.',
+      'Functions such as press_counter() and keyword_dataframe() summarize article counts by outlet and rank keyword frequencies, preparing corpora for text mining and topic modeling. The package ships a documentation site generated with pkgdown.',
     ],
     links: [
       {
@@ -237,83 +237,32 @@ export const projects = [
       },
     ],
   },
-  {
-    slug: 'topic-modeling-theory',
-    title: 'About Topic Modeling Theory',
-    description: 'A repository on the theory of topic modeling.',
-    keywords: ['Topic modeling', 'Methodology notes'],
-    summary: [
-      'A study repository collecting notes and derivations on the theory behind topic models — from Latent Dirichlet Allocation to structural and embedding-based variants.',
-      'It is intended as a reference for researchers who want to understand the assumptions and mechanics of the methods rather than only their software interfaces.',
-    ],
-    links: [
-      {
-        href: 'https://github.com/sorrychoe/topic-modeling-theory',
-        icon: ICON_GITHUB,
-        label: 'GitHub',
-      },
-    ],
-  },
-  {
-    slug: 'creationism-chatbot',
-    title: 'Creationism Chatbot',
-    description: 'An LLM chatbot for Creation and Evolution class Q&A.',
-    keywords: ['LLM', 'Retrieval-augmented generation', 'Education'],
-    summary: [
-      'A retrieval-augmented LLM chatbot built to answer student questions for a university "Creation and Evolution" course.',
-      'It grounds responses in course readings and reference material so that in-class Q&A stays consistent with the assigned curriculum.',
-    ],
-    links: [
-      {
-        href: 'https://github.com/sorrychoe/Creationism_Chatbot',
-        icon: ICON_GITHUB,
-        label: 'GitHub',
-      },
-    ],
-  },
-  {
-    slug: 'slack-weather-message',
-    title: 'Slack Weather Message',
-    description: 'A scheduled bot that posts Naver weather updates to Slack.',
-    keywords: ['Go', 'Web scraping', 'Slack', 'GitHub Actions'],
-    summary: [
-      'A small Go program that scrapes the current weather from Naver and posts it to a Slack channel through an incoming webhook.',
-      'It runs unattended on a GitHub Actions cron schedule (weekday mornings, 7 AM KST) and can be retimed by editing the workflow.',
-    ],
-    links: [
-      {
-        href: 'https://github.com/sorrychoe/slack-weather-message',
-        icon: ICON_GITHUB,
-        label: 'GitHub',
-      },
-    ],
-  },
-  {
-    slug: 'syllabus-crawler',
-    title: 'Syllabus Crawler',
-    description: 'A crawler that extracts syllabus data from Handong’s HISNet system.',
-    keywords: ['Python', 'Selenium', 'Web scraping'],
-    summary: [
-      'A command-line scraper that logs into Handong Global University’s academic information system (HISNet) with credentials entered at runtime and walks the course listings for a selected semester and college.',
-      'For each course with an uploaded syllabus it extracts the course code, title, instructor, course overview, and grading rubric. It auto-installs a matching ChromeDriver and stores no credentials.',
-    ],
-    links: [
-      {
-        href: 'https://github.com/sorrychoe/syllabus-crawler',
-        icon: ICON_GITHUB,
-        label: 'GitHub',
-      },
-    ],
-  },
+  // {
+  //   slug: 'topic-modeling-theory',
+  //   title: 'About Topic Modeling Theory',
+  //   description: 'Seven notebooks covering the theory behind major topic models.',
+  //   keywords: ['Topic modeling', 'Methodology notes'],
+  //   summary: [
+  //     'A study repository pairing theoretical notes with runnable Jupyter notebooks for seven topic-modeling approaches: Latent Dirichlet Allocation, Dynamic Topic Model, Topics Over Time, Correlated Topic Model, Structural Topic Model, Biterm Topic Model, and BERTopic.',
+  //     'Each notebook is self-contained and moves from foundational LDA concepts to neural, embedding-based methods, so it doubles as a reference for the assumptions behind each model and a working code example, rather than only a description of its software interface.',
+  //   ],
+  //   links: [
+  //     {
+  //       href: 'https://github.com/sorrychoe/topic-modeling-theory',
+  //       icon: ICON_GITHUB,
+  //       label: 'GitHub',
+  //     },
+  //   ],
+  // },
   {
     slug: 'optimal-vertiport-locations-seoul',
     title: 'Finding Optimal Vertiport Locations in the Seoul Metropolitan Area',
     description:
-      'A clustering approach to identify 100 optimal vertiport locations in the Seoul metropolitan area.',
+      'A K-Means clustering study siting 100 vertiports across Seoul.',
     keywords: ['Clustering', 'Urban Air Mobility', 'Geospatial analysis'],
     summary: [
-      'A spatial clustering study that identifies 100 candidate vertiport sites for urban air mobility across the Seoul metropolitan area.',
-      'Demand-related geographic features are clustered to propose location sets that balance coverage and accessibility. The analysis pipeline and results are available on GitHub.',
+      'A spatial clustering study that combines GIS-based land-use filtering with weighted demand points from commuting patterns and worker population to site 100 candidate vertiports for urban air mobility across the Seoul metropolitan area.',
+      'K-Means clustering with centroid refinement produced the site set (silhouette score ≈ 0.4), delivered as an interactive Folium map and cluster spreadsheets alongside an IEEE-formatted writeup and presentation deck.',
     ],
     links: [
       {
@@ -327,11 +276,11 @@ export const projects = [
     slug: 'everything-of-handong',
     title: 'Everything of Handong, from 1995 to 2024',
     description:
-      'A Structural Topic Modeling approach to news about Handong Global University.',
+      'A 30-year Structural Topic Modeling study of Handong’s media coverage.',
     keywords: ['Structural Topic Modeling', 'News analysis', 'Longitudinal'],
     summary: [
-      'A Structural Topic Modeling (STM) analysis of three decades of news coverage about Handong Global University, from the university’s founding in 1995 through 2024.',
-      'The project traces how dominant topics in reporting about the institution shift over time and how external events reshape media attention.',
+      'A text-mining study of 7,857 news articles about Handong Global University drawn from BIGKINDS and spanning 1995–2024, combining TF-IDF frequency analysis, lexicon-based sentiment scoring, and Structural Topic Modeling (STM) in R.',
+      'It surfaces six recurring topics — Christian identity, legal matters, faculty diplomatic commentary, admissions, personnel news, and outside recognition — finds coverage skews positive overall, and shows conservative outlets covering the university’s Christian identity more often than other outlets do.',
     ],
     links: [
       {
@@ -345,10 +294,11 @@ export const projects = [
     slug: 'attrition-analysis',
     title: 'Attrition Analysis',
     description:
-      'A statistical analysis of HR data to reduce employee attrition.',
+      'A survival-analysis study of what drives employee attrition.',
     keywords: ['People analytics', 'Statistical modeling'],
     summary: [
-      'A people-analytics project that statistically models employee attrition from HR data to identify the factors most associated with turnover.',
+      'A statistical study of HR data from 310 employees (37.4% attrition) combining descriptive statistics, ANOVA, and Kaplan–Meier survival analysis to trace when and why employees leave.',
+      'It finds early-career departures dominate — 15% leave within the first year and 30% by year five, with departed staff at a median tenure of about 2 years versus 7+ for those retained — while performance ratings show no significant gap by gender, department, or race, and vendor-referral or website hires retain and perform best.',
     ],
     links: [
       {
@@ -361,14 +311,66 @@ export const projects = [
   {
     slug: 'satisfaction-survey-analysis',
     title: 'Satisfaction Survey Analysis',
-    description: 'A statistical analysis of survey data for people analytics.',
+    description: 'A correlation study of what drives employee job satisfaction.',
     keywords: ['Survey analysis', 'People analytics'],
     summary: [
-      'A statistical analysis of employee satisfaction survey data for people-analytics use.',
+      'A statistical analysis of 3,025 employee survey responses across 23 items covering job satisfaction, work environment, stress, and work-life balance.',
+      'Correlation and probability-impact modeling show satisfaction rising with better work-life balance, a better work environment, and more sleep, while it falls with more stress, heavier workload, and overtime (roughly -51% for overtime present) — evidence that satisfaction is driven mainly by organizational conditions management can change, not individual traits.',
     ],
     links: [
       {
         href: 'https://github.com/Analytics-for-People/Satisfaction-Survey-Analysis',
+        icon: ICON_GITHUB,
+        label: 'GitHub',
+      },
+    ],
+  },
+  {
+    slug: 'slack-weather-message',
+    title: 'Slack Weather Message',
+    description: 'A scheduled bot that posts Naver weather updates to Slack.',
+    keywords: ['Go', 'Web scraping', 'Slack', 'GitHub Actions'],
+    summary: [
+      'A small Go program that scrapes the current weather from Naver and posts it to a Slack channel through an incoming webhook.',
+      'It runs unattended on a GitHub Actions cron schedule (weekday mornings, 8 AM KST) and can be retimed by editing the cron expression in the workflow file; a Makefile supports running it locally for development.',
+    ],
+    links: [
+      {
+        href: 'https://github.com/sorrychoe/slack-weather-message',
+        icon: ICON_GITHUB,
+        label: 'GitHub',
+      },
+    ],
+  },
+  {
+    slug: 'syllabus-crawler',
+    title: 'Syllabus Crawler',
+    description: 'A CLI crawler that surfaces syllabus data from Handong’s HISNet.',
+    keywords: ['Python', 'Selenium', 'Web scraping'],
+    summary: [
+      'A command-line scraper that logs into Handong Global University’s academic information system (HISNet) with credentials entered at runtime, then filters course listings by year, semester, and faculty to find which courses have an uploaded syllabus.',
+      'For each match it prints the course code, title, and instructor in the terminal, and can pull the full course overview, recognized-major details, and grading weights on request. It auto-installs a matching ChromeDriver and stores no credentials, though it depends on HISNet’s current page structure and needs updating if the university redesigns it.',
+    ],
+    links: [
+      {
+        href: 'https://github.com/sorrychoe/syllabus-crawler',
+        icon: ICON_GITHUB,
+        label: 'GitHub',
+      },
+    ],
+  },
+  {
+    slug: 'creationism-chatbot',
+    title: 'Creationism Chatbot',
+    description: 'A retrieval-augmented LLM chatbot for a Creation and Evolution course.',
+    keywords: ['LLM', 'Retrieval-augmented generation', 'Education'],
+    summary: [
+      'A retrieval-augmented chatbot built on the OpenAI API for Handong Global University’s "Creation and Evolution" course, grounding its answers in course materials gathered by its own crawler and indexed in a vector store rather than the model’s general knowledge.',
+      'A Makefile-driven pipeline (make init, make crawling, make run) collects and preprocesses the source material, builds the embeddings, and launches the Q&A interface. The author notes explicitly that the project stays neutral on the underlying debate and exists purely as course support.',
+    ],
+    links: [
+      {
+        href: 'https://github.com/sorrychoe/Creationism_Chatbot',
         icon: ICON_GITHUB,
         label: 'GitHub',
       },
