@@ -309,23 +309,6 @@ export const projects = [
     ],
   },
   {
-    slug: 'topic-modeling-theory',
-    title: 'Topic Modeling Theories',
-    description: 'Seven notebooks covering the theory behind major topic models.',
-    keywords: ['Topic modeling', 'Methodology notes'],
-    summary: [
-      'A study repository pairing theoretical notes with runnable Jupyter notebooks for seven topic-modeling approaches: Latent Dirichlet Allocation, Dynamic Topic Model, Topics Over Time, Correlated Topic Model, Structural Topic Model, Biterm Topic Model, and BERTopic.',
-      'Each notebook is self-contained and moves from foundational LDA concepts to neural, embedding-based methods, so it doubles as a reference for the assumptions behind each model and a working code example, rather than only a description of its software interface.',
-    ],
-    links: [
-      {
-        href: 'https://github.com/sorrychoe/topic-modeling-theory',
-        icon: ICON_GITHUB,
-        label: 'GitHub',
-      },
-    ],
-  },
-  {
     slug: 'slack-weather-message',
     title: 'Slack Weather Message',
     description: 'A scheduled bot that posts Naver weather updates to Slack.',
@@ -343,6 +326,23 @@ export const projects = [
     ],
   },
   {
+    slug: 'syllabus-crawler',
+    title: 'Syllabus Crawler',
+    description: 'A CLI crawler that surfaces syllabus data from Handong’s HISNet.',
+    keywords: ['Python', 'Selenium', 'Web scraping'],
+    summary: [
+      'A command-line scraper that logs into Handong Global University’s academic information system (HISNet) with credentials entered at runtime, then filters course listings by year, semester, and faculty to find which courses have an uploaded syllabus.',
+      'For each match it prints the course code, title, and instructor in the terminal, and can pull the full course overview, recognized-major details, and grading weights on request. It auto-installs a matching ChromeDriver and stores no credentials, though it depends on HISNet’s current page structure and needs updating if the university redesigns it.',
+    ],
+    links: [
+      {
+        href: 'https://github.com/sorrychoe/syllabus-crawler',
+        icon: ICON_GITHUB,
+        label: 'GitHub',
+      },
+    ],
+  },
+  {
     slug: 'creationism-chatbot',
     title: 'Creationism Chatbot',
     description: 'A retrieval-augmented LLM chatbot for a Creation and Evolution course.',
@@ -354,6 +354,23 @@ export const projects = [
     links: [
       {
         href: 'https://github.com/sorrychoe/Creationism_Chatbot',
+        icon: ICON_GITHUB,
+        label: 'GitHub',
+      },
+    ],
+  },
+  {
+    slug: 'topic-modeling-theory',
+    title: 'Topic Modeling Theories',
+    description: 'Seven notebooks covering the theory behind major topic models.',
+    keywords: ['Topic modeling', 'Methodology notes'],
+    summary: [
+      'A study repository pairing theoretical notes with runnable Jupyter notebooks for seven topic-modeling approaches: Latent Dirichlet Allocation, Dynamic Topic Model, Topics Over Time, Correlated Topic Model, Structural Topic Model, Biterm Topic Model, and BERTopic.',
+      'Each notebook is self-contained and moves from foundational LDA concepts to neural, embedding-based methods, so it doubles as a reference for the assumptions behind each model and a working code example, rather than only a description of its software interface.',
+    ],
+    links: [
+      {
+        href: 'https://github.com/sorrychoe/topic-modeling-theory',
         icon: ICON_GITHUB,
         label: 'GitHub',
       },
