@@ -237,41 +237,6 @@ export const projects = [
       },
     ],
   },
-  // {
-  //   slug: 'topic-modeling-theory',
-  //   title: 'About Topic Modeling Theory',
-  //   description: 'Seven notebooks covering the theory behind major topic models.',
-  //   keywords: ['Topic modeling', 'Methodology notes'],
-  //   summary: [
-  //     'A study repository pairing theoretical notes with runnable Jupyter notebooks for seven topic-modeling approaches: Latent Dirichlet Allocation, Dynamic Topic Model, Topics Over Time, Correlated Topic Model, Structural Topic Model, Biterm Topic Model, and BERTopic.',
-  //     'Each notebook is self-contained and moves from foundational LDA concepts to neural, embedding-based methods, so it doubles as a reference for the assumptions behind each model and a working code example, rather than only a description of its software interface.',
-  //   ],
-  //   links: [
-  //     {
-  //       href: 'https://github.com/sorrychoe/topic-modeling-theory',
-  //       icon: ICON_GITHUB,
-  //       label: 'GitHub',
-  //     },
-  //   ],
-  // },
-  {
-    slug: 'optimal-vertiport-locations-seoul',
-    title: 'Finding Optimal Vertiport Locations in the Seoul Metropolitan Area',
-    description:
-      'A K-Means clustering study siting 100 vertiports across Seoul.',
-    keywords: ['Clustering', 'Urban Air Mobility', 'Geospatial analysis'],
-    summary: [
-      'A spatial clustering study that combines GIS-based land-use filtering with weighted demand points from commuting patterns and worker population to site 100 candidate vertiports for urban air mobility across the Seoul metropolitan area.',
-      'K-Means clustering with centroid refinement produced the site set (silhouette score ≈ 0.4), delivered as an interactive Folium map and cluster spreadsheets alongside an IEEE-formatted writeup and presentation deck.',
-    ],
-    links: [
-      {
-        href: 'https://github.com/sorrychoe/Finding-Optimal-Vertiport',
-        icon: ICON_GITHUB,
-        label: 'GitHub',
-      },
-    ],
-  },
   {
     slug: 'everything-of-handong',
     title: 'Everything of Handong, from 1995 to 2024',
@@ -285,6 +250,24 @@ export const projects = [
     links: [
       {
         href: 'https://github.com/TMT2/Everything-of-Handong',
+        icon: ICON_GITHUB,
+        label: 'GitHub',
+      },
+    ],
+  },
+  {
+    slug: 'optimal-vertiport-locations-seoul',
+    title: 'Finding Optimal Vertiport Locations in the Seoul Metropolitan Area',
+    description:
+      'A K-Means clustering study siting 100 vertiports across Seoul.',
+    keywords: ['Clustering', 'Urban Air Mobility', 'Geospatial analysis'],
+    summary: [
+      'A spatial clustering study that combines GIS-based land-use filtering with weighted demand points from commuting patterns and worker population to site 100 candidate vertiports for urban air mobility across the Seoul metropolitan area.',
+      'K-Means clustering with centroid refinement produced the site set (silhouette score ≈ 0.4), delivered as an interactive Folium map and cluster spreadsheets alongside an IEEE-formatted writeup and presentation deck.',
+    ],
+    links: [
+      {
+        href: 'https://github.com/sorrychoe/Finding-Optimal-Vertiport',
         icon: ICON_GITHUB,
         label: 'GitHub',
       },
@@ -326,6 +309,23 @@ export const projects = [
     ],
   },
   {
+    slug: 'topic-modeling-theory',
+    title: 'Topic Modeling Theories',
+    description: 'Seven notebooks covering the theory behind major topic models.',
+    keywords: ['Topic modeling', 'Methodology notes'],
+    summary: [
+      'A study repository pairing theoretical notes with runnable Jupyter notebooks for seven topic-modeling approaches: Latent Dirichlet Allocation, Dynamic Topic Model, Topics Over Time, Correlated Topic Model, Structural Topic Model, Biterm Topic Model, and BERTopic.',
+      'Each notebook is self-contained and moves from foundational LDA concepts to neural, embedding-based methods, so it doubles as a reference for the assumptions behind each model and a working code example, rather than only a description of its software interface.',
+    ],
+    links: [
+      {
+        href: 'https://github.com/sorrychoe/topic-modeling-theory',
+        icon: ICON_GITHUB,
+        label: 'GitHub',
+      },
+    ],
+  },
+  {
     slug: 'slack-weather-message',
     title: 'Slack Weather Message',
     description: 'A scheduled bot that posts Naver weather updates to Slack.',
@@ -337,23 +337,6 @@ export const projects = [
     links: [
       {
         href: 'https://github.com/sorrychoe/slack-weather-message',
-        icon: ICON_GITHUB,
-        label: 'GitHub',
-      },
-    ],
-  },
-  {
-    slug: 'syllabus-crawler',
-    title: 'Syllabus Crawler',
-    description: 'A CLI crawler that surfaces syllabus data from Handong’s HISNet.',
-    keywords: ['Python', 'Selenium', 'Web scraping'],
-    summary: [
-      'A command-line scraper that logs into Handong Global University’s academic information system (HISNet) with credentials entered at runtime, then filters course listings by year, semester, and faculty to find which courses have an uploaded syllabus.',
-      'For each match it prints the course code, title, and instructor in the terminal, and can pull the full course overview, recognized-major details, and grading weights on request. It auto-installs a matching ChromeDriver and stores no credentials, though it depends on HISNet’s current page structure and needs updating if the university redesigns it.',
-    ],
-    links: [
-      {
-        href: 'https://github.com/sorrychoe/syllabus-crawler',
         icon: ICON_GITHUB,
         label: 'GitHub',
       },
