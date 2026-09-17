@@ -241,10 +241,10 @@ export const projects = [
     slug: 'everything-of-handong',
     title: 'Everything of Handong, from 1995 to 2024',
     description:
-      'A 30-year Structural Topic Modeling study of Handong’s media coverage.',
+      'A Time-Series News Analysis about Handong Global University',
     keywords: ['Structural Topic Modeling', 'News analysis', 'Longitudinal'],
-    summary: [
-      'A text-mining study of 7,857 news articles about Handong Global University drawn from BIGKINDS and spanning 1995–2024, combining TF-IDF frequency analysis, lexicon-based sentiment scoring, and Structural Topic Modeling (STM) in R.',
+    summary: [  
+      'A text-mining of 7,857 news articles about Handong Global University drawn from BigKinds and spanning 1995–2024, combining TF-IDF frequency analysis, lexicon-based sentiment scoring, and Structural Topic Modeling (STM) in R.',
       'It surfaces six recurring topics — Christian identity, legal matters, faculty diplomatic commentary, admissions, personnel news, and outside recognition — finds coverage skews positive overall, and shows conservative outlets covering the university’s Christian identity more often than other outlets do.',
     ],
     links: [
@@ -328,10 +328,10 @@ export const projects = [
   {
     slug: 'syllabus-crawler',
     title: 'Syllabus Crawler',
-    description: 'A CLI crawler that surfaces syllabus data from Handong’s HISNet.',
+    description: 'A CLI crawler that surfaces syllabus data from HISNet.',
     keywords: ['Python', 'Selenium', 'Web scraping'],
     summary: [
-      'A command-line scraper that logs into Handong Global University’s academic information system (HISNet) with credentials entered at runtime, then filters course listings by year, semester, and faculty to find which courses have an uploaded syllabus.',
+      'A command-line scraper that logs into Handong Global University’s Intranet (HISNet) with credentials entered at runtime, then filters course listings by year, semester, and faculty to find which courses have an uploaded syllabus.',
       'For each match it prints the course code, title, and instructor in the terminal, and can pull the full course overview, recognized-major details, and grading weights on request. It auto-installs a matching ChromeDriver and stores no credentials, though it depends on HISNet’s current page structure and needs updating if the university redesigns it.',
     ],
     links: [
@@ -349,7 +349,7 @@ export const projects = [
     keywords: ['LLM', 'Retrieval-augmented generation', 'Education'],
     summary: [
       'A retrieval-augmented chatbot built on the OpenAI API for Handong Global University’s "Creation and Evolution" course, grounding its answers in course materials gathered by its own crawler and indexed in a vector store rather than the model’s general knowledge.',
-      'A Makefile-driven pipeline (make init, make crawling, make run) collects and preprocesses the source material, builds the embeddings, and launches the Q&A interface. The author notes explicitly that the project stays neutral on the underlying debate and exists purely as course support.',
+      'A Makefile-driven pipeline collects and preprocesses the source material, builds the embeddings, and launches the Q&A interface. The author notes explicitly that the project stays neutral on the underlying debate and exists purely as course support.',
     ],
     links: [
       {
@@ -362,7 +362,7 @@ export const projects = [
   {
     slug: 'topic-modeling-theory',
     title: 'Topic Modeling Theories',
-    description: 'Seven notebooks covering the theory behind major topic models.',
+    description: 'A notebooks covering the theory behind major topic models.',
     keywords: ['Topic modeling', 'Methodology notes'],
     summary: [
       'A study repository pairing theoretical notes with runnable Jupyter notebooks for seven topic-modeling approaches: Latent Dirichlet Allocation, Dynamic Topic Model, Topics Over Time, Correlated Topic Model, Structural Topic Model, Biterm Topic Model, and BERTopic.',
