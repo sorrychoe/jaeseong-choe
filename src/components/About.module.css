@@ -33,6 +33,38 @@
   color: #ffffff;
 }
 
+.interestsContainer {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.interestsHeading {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #9ca3af;
+  margin-bottom: 0.875rem;
+}
+
+.interests {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.interest {
+  background-color: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 9999px;
+  padding: 0.3rem 0.875rem;
+  font-size: 0.85rem;
+  color: #c4b5fd;
+}
+
 .buttonContainer {
   margin-top: 2.5rem;
   display: flex;
