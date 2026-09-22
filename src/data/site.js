@@ -31,6 +31,14 @@ export const PERSON = {
   ],
 };
 
+// Research interests as listed on the CV, surfaced in the About section.
+export const RESEARCH_INTERESTS = [
+  'Computational Social Science',
+  'Computational Discourse Analysis',
+  'Political Communication',
+  'Media Representation',
+];
+
 export const SOCIAL_LINKS = [
   'https://github.com/sorrychoe',
   'https://www.linkedin.com/in/sorrychoe/',
@@ -196,10 +204,10 @@ export const projects = [
   {
     slug: 'pybigkinds',
     title: 'PyBigKinds',
-    description: 'A low-code Python toolkit for analyzing BigKinds news exports.',
+    description: 'A low-code Python library for analyzing BigKinds news exports.',
     keywords: ['Python', 'Text mining', 'BIGKINDS', 'Open source'],
     summary: [
-      'An open-source Python library that turns exports from BIGKINDS — the Korea Press Foundation’s news database — into ready-to-use dataframes, with utilities for cleaning, tokenizing, and reshaping the raw data for downstream text analysis and topic modeling.',
+      'An open-source Python library that turns exports from BigKinds — the Korea Press Foundation’s news database — into ready-to-use dataframes, with utilities for cleaning, tokenizing, and reshaping the raw data for downstream text analysis and topic modeling.',
       'Built-in functions such as press_counter() and keywords_wordcloud() chart outlet-level publication counts and keyword word clouds with Korean-font support out of the box, so a raw export becomes a visualization in a few lines. Published on PyPI.',
     ],
     links: [
@@ -244,7 +252,7 @@ export const projects = [
       'A Time-Series News Analysis about Handong Global University',
     keywords: ['Structural Topic Modeling', 'News analysis', 'Longitudinal'],
     summary: [  
-      'A text-mining of 7,857 news articles about Handong Global University drawn from BigKinds and spanning 1995–2024, combining TF-IDF frequency analysis, lexicon-based sentiment scoring, and Structural Topic Modeling (STM) in R.',
+      'A text-mining of 7,857 news articles about Handong Global University drawn from BigKinds and spanning 1995-2024, combining TF-IDF frequency analysis, lexicon-based sentiment scoring, and Structural Topic Modeling (STM) in R.',
       'It surfaces six recurring topics — Christian identity, legal matters, faculty diplomatic commentary, admissions, personnel news, and outside recognition — finds coverage skews positive overall, and shows conservative outlets covering the university’s Christian identity more often than other outlets do.',
     ],
     links: [
@@ -280,7 +288,7 @@ export const projects = [
       'A survival-analysis study of what drives employee attrition.',
     keywords: ['People analytics', 'Statistical modeling'],
     summary: [
-      'A statistical study of HR data from 310 employees (37.4% attrition) combining descriptive statistics, ANOVA, and Kaplan–Meier survival analysis to trace when and why employees leave.',
+      'A statistical study of HR data from 310 employees (37.4% attrition) combining descriptive statistics, ANOVA, and Kaplan-Meier survival analysis to trace when and why employees leave.',
       'It finds early-career departures dominate — 15% leave within the first year and 30% by year five, with departed staff at a median tenure of about 2 years versus 7+ for those retained — while performance ratings show no significant gap by gender, department, or race, and vendor-referral or website hires retain and perform best.',
     ],
     links: [

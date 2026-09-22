@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 import styles from './About.module.css';
 import { FaGithub, FaLinkedin, FaEnvelope, FaFilePdf } from 'react-icons/fa';
 import { BsMortarboardFill } from 'react-icons/bs';
+import { RESEARCH_INTERESTS } from '../data/site';
 
 function About() {
   useEffect(() => {
@@ -43,14 +44,27 @@ function About() {
         <div className={`card ${styles.content}`}>
           <div className={styles.textContainer}>
             <p className={styles.text}>
-              <strong className={styles.strong}>Data-driven professional</strong> with experience across Education, Marketing and Communication Research.
+              <strong className={styles.strong}>Computational Communication Researcher and Data Analyst</strong> who moves between academic research and industry analytics, turning discourse, behavioral, and business data into decisions people can act on.
             </p>
             <p className={styles.text}>
-              <strong className={styles.strong}>Specialized in computational methods</strong> to uncover patterns in media discourse, public opinion, and social behavior.
+              <strong className={styles.strong}>As a researcher</strong>, I apply NLP and topic modeling — STM, sBERT, and BERTopic — to media discourse and public opinion, with three studies accepted at KCI-listed journals and national conferences, spanning psychiatric stigma in Korean newspapers to neo-nationalist discourse on YouTube.
             </p>
             <p className={styles.text}>
-              Passionate about integrating theoretical frameworks with practical applications to drive insights from real-world data.
+              <strong className={styles.strong}>As an analyst</strong>, I&apos;ve designed KPI systems, forecasting pipelines, and dashboards for marketing teams at NOL·Interpark·Triple and Ascent AI — consolidating a three-brand KPI dashboard onto Databricks to cut upkeep by 90%, building demand-forecasting models reaching 93% accuracy, and designing a GEO (Generative Engine Optimization) framework to measure brand visibility in LLM responses.
             </p>
+            <p className={styles.text}>
+              Across both, the throughline is the same: analysis rigorous enough to publish, and practical enough to ship.
+            </p>
+          </div>
+          <div className={styles.interestsContainer} data-aos="fade-up">
+            <h3 className={styles.interestsHeading}>Research Interests</h3>
+            <ul className={styles.interests} aria-label="Research interests">
+              {RESEARCH_INTERESTS.map((interest) => (
+                <li key={interest} className={styles.interest}>
+                  {interest}
+                </li>
+              ))}
+            </ul>
           </div>
           <div className={styles.buttonContainer} data-aos="fade-up">
             <div className={styles.socialButtons}>
