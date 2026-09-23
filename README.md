@@ -75,14 +75,6 @@ All page content lives in [`src/data/site.js`](src/data/site.js). Adding a
 publication or project there automatically creates its detail page, sitemap
 entry, and structured‑data node — no component changes required.
 
-## SEO
-
-- Per‑page canonical URLs, Open Graph, and Twitter Card metadata
-- `schema.org` JSON‑LD graph (`Person`, `WebSite`, `ScholarlyArticle`)
-- Generated `sitemap.xml` and static `robots.txt`
-- Non‑production Vercel deployments send `X-Robots-Tag: noindex` and are kept
-  out of search indexes
-
 ## License
 
 Source code is released under the [MIT License](LICENSE).
