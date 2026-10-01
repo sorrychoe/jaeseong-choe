@@ -108,7 +108,7 @@ export const publications = [
         label: 'KCI',
       },
       {
-        href: 'https://github.com/sorrychoe/Media_Coverage_of_Mental_Illness',
+        href: 'https://github.com/sorrychoe/media_coverage_of_mental_illness',
         icon: ICON_GITHUB,
         label: 'GitHub',
       },
