@@ -1,7 +1,6 @@
 # Jaeseong Choe — Personal Website
 
-Personal academic portfolio of **Jaeseong Choe (최재성)**, a computational
-communication researcher. The site presents a short bio, peer‑reviewed
+Personal portfolio of **Jaeseong Choe (최재성)**. The site presents a short bio, peer‑reviewed
 publications, and selected research/engineering projects, each with its own
 detail page.
 
