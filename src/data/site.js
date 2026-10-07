@@ -206,6 +206,51 @@ export const projects = [
     ],
   },
   {
+    slug: 'everything-of-handong',
+    category: 'data',
+    title: 'Everything of Handong, from 1995 to 2024',
+    description:
+      'A Time-Series News Analysis about Handong Global University',
+    keywords: ['Structural Topic Modeling', 'News analysis', 'Longitudinal'],
+    summary: [  
+      'A text-mining of 7,857 news articles about Handong Global University drawn from BigKinds and spanning 1995-2024, combining TF-IDF frequency analysis, lexicon-based sentiment scoring, and Structural Topic Modeling (STM) in R.',
+      'It surfaces six recurring topics — Christian identity, legal matters, faculty diplomatic commentary, admissions, personnel news, and outside recognition — finds coverage skews positive overall, and shows conservative outlets covering the university’s Christian identity more often than other outlets do.',
+    ],
+    summaryKo: [
+      '1995년부터 2024년까지 BigKinds에서 수집한 한동대학교 관련 뉴스 기사 7,857건을 분석한 텍스트 마이닝 연구입니다. TF-IDF 빈도 분석, 사전 기반 감성 점수, R의 구조적 토픽 모델(STM)을 함께 사용했습니다.',
+      '반복적으로 등장하는 여섯 개 토픽(기독교 정체성, 법적 사안, 교수진의 외교적 발언, 입학, 인사 소식, 외부 평가)을 도출했습니다. 전반적으로 보도는 긍정적 경향을 보였으며, 보수 성향 언론이 다른 언론보다 대학의 기독교 정체성을 더 자주 다뤘습니다.',
+    ],
+    links: [
+      {
+        href: 'https://github.com/TMT2/Everything-of-Handong',
+        icon: ICON_GITHUB,
+        label: 'GitHub',
+      },
+    ],
+  },
+  {
+    slug: 'topic-modeling-theory',
+    category: 'data',
+    title: 'Topic Modeling Theories',
+    description: 'A set of notebooks covering the theory behind major topic models.',
+    keywords: ['Topic modeling', 'Methodology notes'],
+    summary: [
+      'A study repository pairing theoretical notes with runnable Jupyter notebooks for seven topic-modeling approaches: Latent Dirichlet Allocation, Dynamic Topic Model, Topics Over Time, Correlated Topic Model, Structural Topic Model, Biterm Topic Model, and BERTopic.',
+      'Each notebook is self-contained and moves from foundational LDA concepts to neural, embedding-based methods, so it doubles as a reference for the assumptions behind each model and a working code example, rather than only a description of its software interface.',
+    ],
+    summaryKo: [
+      '토픽 모델 이론 설명과 실행 가능한 Jupyter 노트북을 함께 정리한 학습 저장소로, 7가지 토픽 모델링 기법(LDA, DTM, ToT, CTM, STM, BTM, BERTopic)을 다룹니다.',
+      '각 노트북은 독립적으로 구성되어 있으며, 기초적인 LDA 개념에서 임베딩 기반 신경망 방법까지 순서대로 다룹니다. 각 모델의 가정을 이해하는 참고 자료이자 실행 가능한 코드 예제로 활용할 수 있습니다.',
+    ],
+    links: [
+      {
+        href: 'https://github.com/sorrychoe/topic-modeling-theory',
+        icon: ICON_GITHUB,
+        label: 'GitHub',
+      },
+    ],
+  },
+  {
     slug: 'attrition-analysis',
     category: 'data',
     title: 'Attrition Analysis',
@@ -245,29 +290,6 @@ export const projects = [
     links: [
       {
         href: 'https://github.com/Analytics-for-People/Satisfaction-Survey-Analysis',
-        icon: ICON_GITHUB,
-        label: 'GitHub',
-      },
-    ],
-  },
-  {
-    slug: 'everything-of-handong',
-    category: 'data',
-    title: 'Everything of Handong, from 1995 to 2024',
-    description:
-      'A Time-Series News Analysis about Handong Global University',
-    keywords: ['Structural Topic Modeling', 'News analysis', 'Longitudinal'],
-    summary: [  
-      'A text-mining of 7,857 news articles about Handong Global University drawn from BigKinds and spanning 1995-2024, combining TF-IDF frequency analysis, lexicon-based sentiment scoring, and Structural Topic Modeling (STM) in R.',
-      'It surfaces six recurring topics — Christian identity, legal matters, faculty diplomatic commentary, admissions, personnel news, and outside recognition — finds coverage skews positive overall, and shows conservative outlets covering the university’s Christian identity more often than other outlets do.',
-    ],
-    summaryKo: [
-      '1995년부터 2024년까지 BigKinds에서 수집한 한동대학교 관련 뉴스 기사 7,857건을 분석한 텍스트 마이닝 연구입니다. TF-IDF 빈도 분석, 사전 기반 감성 점수, R의 구조적 토픽 모델(STM)을 함께 사용했습니다.',
-      '반복적으로 등장하는 여섯 개 토픽(기독교 정체성, 법적 사안, 교수진의 외교적 발언, 입학, 인사 소식, 외부 평가)을 도출했습니다. 전반적으로 보도는 긍정적 경향을 보였으며, 보수 성향 언론이 다른 언론보다 대학의 기독교 정체성을 더 자주 다뤘습니다.',
-    ],
-    links: [
-      {
-        href: 'https://github.com/TMT2/Everything-of-Handong',
         icon: ICON_GITHUB,
         label: 'GitHub',
       },
@@ -325,6 +347,24 @@ export const projects = [
         icon: ICON_GITHUB,
         label: 'GitHub',
       },
+    ],
+  },
+  {
+    slug: 'slack-weather-message',
+    category: 'tech',
+    title: 'Slack Weather Message',
+    description: 'A scheduled bot that posts Naver weather updates to Slack.',
+    keywords: ['Go', 'Slack API', 'GitHub Actions'],
+    summary: [
+      'A small Go program that scrapes the current weather from Naver and posts it to a Slack channel through an incoming webhook.',
+      'It runs unattended on a GitHub Actions cron schedule and can be retimed by editing the cron expression in the workflow file.',
+    ],
+    summaryKo: [
+      '네이버 날씨 정보를 크롤링해 Slack 채널에 incoming webhook으로 전송하는 Go 프로그램입니다.',
+      'GitHub Actions cron 스케줄로 무인 실행되며, 워크플로 파일의 cron 표현식을 수정해 실행 시간을 바꿀 수 있습니다.',
+    ],
+    links: [
+      { href: 'https://github.com/sorrychoe/slack-weather-message', icon: ICON_GITHUB, label: 'GitHub' },
     ],
   },
   {
