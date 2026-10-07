@@ -43,7 +43,7 @@ function Footer() {
               key={profile.href}
               href={profile.href}
               target="_blank"
-              rel="me noopener noreferrer"
+              rel="noopener noreferrer"
               className={styles.iconLink}
               aria-label={profile.label}
               title={profile.label}

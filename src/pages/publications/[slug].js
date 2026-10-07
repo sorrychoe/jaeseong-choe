@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import { SITE_URL, PERSON, publications } from '../../data/site';
+import { SITE_URL, publications } from '../../data/site';
 import styles from '../../styles/detail.module.css';
 
 const OG_IMAGE = `${SITE_URL}/api/og`;
@@ -22,59 +22,9 @@ export async function getStaticProps({ params }) {
 function PublicationPage({ publication }) {
   const [showKo, setShowKo] = useState(false);
   const paragraphs = showKo && publication.summaryKo ? publication.summaryKo : publication.summary;
-  const canonical = `${SITE_URL}/publications/${publication.slug}`;
+  const pageUrl = `${SITE_URL}/publications/${publication.slug}`;
   const metaDescription = publication.summary[0].slice(0, 300);
   const isConference = publication.type === 'conference';
-
-  const authors = publication.authors.map((name) =>
-    name === PERSON.name
-      ? { '@type': 'Person', '@id': `${SITE_URL}/#person`, name }
-      : { '@type': 'Person', name }
-  );
-
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@graph': [
-      {
-        '@type': 'ScholarlyArticle',
-        '@id': `${canonical}#article`,
-        headline: publication.title,
-        name: publication.title,
-        alternativeHeadline: publication.titleKo,
-        abstract: publication.summary.join(' '),
-        inLanguage: publication.inLanguage || 'ko',
-        datePublished: String(publication.year),
-        url: canonical,
-        sameAs: publication.url,
-        keywords: publication.keywords.join(', '),
-        author: authors,
-        isPartOf: {
-          '@type': isConference ? 'PublicationEvent' : 'Periodical',
-          name: publication.venue,
-          alternateName: publication.venueKo,
-        },
-        mainEntityOfPage: canonical,
-      },
-      {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
-          {
-            '@type': 'ListItem',
-            position: 2,
-            name: 'Publications',
-            item: `${SITE_URL}/#publication`,
-          },
-          {
-            '@type': 'ListItem',
-            position: 3,
-            name: publication.title,
-            item: canonical,
-          },
-        ],
-      },
-    ],
-  };
 
   const metaParts = [
     publication.authors.join(', '),
@@ -88,22 +38,16 @@ function PublicationPage({ publication }) {
       <Head>
         <title>{`${publication.title} — Jaeseong Choe`}</title>
         <meta name="description" content={metaDescription} />
-        <meta name="author" content="Jaeseong Choe (최재성)" />
-        <link rel="canonical" href={canonical} />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="Jaeseong Choe" />
         <meta property="og:title" content={publication.title} />
         <meta property="og:description" content={metaDescription} />
-        <meta property="og:url" content={canonical} />
+        <meta property="og:url" content={pageUrl} />
         <meta property="og:image" content={OG_IMAGE} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={publication.title} />
         <meta name="twitter:description" content={metaDescription} />
         <meta name="twitter:image" content={OG_IMAGE} />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
       </Head>
       <div className="container">
         <article className={styles.article}>

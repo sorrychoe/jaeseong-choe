@@ -10,26 +10,6 @@ export const TITLE =
 export const DESCRIPTION =
   'Jaeseong Choe (최재성) is a data-driven researcher applying computational methods to uncover patterns in media discourse, public opinion, and social behavior.';
 
-// Bump when page content meaningfully changes (used for sitemap <lastmod>).
-export const LAST_MODIFIED = '2026-09-12';
-
-// Identity data. alternateName ties the romanizations and the Korean name to a
-// single person so search engines and knowledge graphs resolve them together.
-export const PERSON = {
-  name: 'Jaeseong Choe',
-  alternateName: ['최재성', 'Jaeseong Choe', 'Choe Jaeseong'],
-  jobTitle: 'Computational Communication Researcher & Data Analyst',
-  email: 'cjssoote@gmail.com',
-  affiliation: 'Handong Global University',
-  knowsLanguage: ['ko', 'en'],
-  knowsAbout: [
-    'Computational Social Science',
-    'Topic Modeling',
-    'Media Discourse Analysis',
-    'Public Opinion Research',
-    'Natural Language Processing',
-  ],
-};
 
 // Research interests as listed on the CV, surfaced in the About section.
 export const RESEARCH_INTERESTS = [
@@ -39,13 +19,7 @@ export const RESEARCH_INTERESTS = [
   'Media Representation',
 ];
 
-export const SOCIAL_LINKS = [
-  'https://github.com/sorrychoe',
-  'https://www.linkedin.com/in/sorrychoe/',
-  'https://www.dbpia.co.kr/author/authorDetail?ancId=723491585',
-];
-
-// Identity links surfaced in the UI with rel="me" for entity association.
+// Profile links shown in the footer.
 export const PROFILE_LINKS = [
   { href: 'https://github.com/sorrychoe', label: 'GitHub', icon: 'github' },
   {
@@ -77,12 +51,10 @@ export const publications = [
       'An analysis of coverage of bipolar disorder, depression, and schizophrenia in major Korean newspapers.',
     authors: ['Jaewon Joo', 'Jaeseong Choe'],
     venue: 'Korean Journal of Journalism & Communication Studies',
-    venueKo: '한국언론학보',
     year: 2026,
     volume: 'Vol. 70, No. 3',
     pages: '271-312',
     type: 'journal',
-    inLanguage: 'ko',
     keywords: [
       'Mental illness',
       'Bipolar Disorder',
@@ -131,12 +103,10 @@ export const publications = [
       'An analysis of YouTube Shorts comments using sBERT embeddings and K-means clustering.',
     authors: ['Jaewon Joo', 'Jaeseong Choe', 'Jisoo Kim'],
     venue: 'The Journal of the Korea Contents Association',
-    venueKo: '한국콘텐츠학회논문지',
     year: 2026,
     volume: 'Vol. 26, No. 3',
     pages: '421-434',
     type: 'journal',
-    inLanguage: 'ko',
     keywords: [
       'Nationalism',
       'YouTube Shorts',
@@ -180,12 +150,10 @@ export const publications = [
       'An analysis of news editorials using Structural Topic Modeling (STM).',
     authors: ['Jaewon Joo', 'Jaeseong Choe'],
     venue: 'Korean Association for Broadcasting & Telecommunication Studies Fall Conference',
-    venueKo: '한국방송학회 2025 가을철 정기학술대회',
     year: 2025,
     volume: '',
     pages: '30-31',
     type: 'conference',
-    inLanguage: 'ko',
     keywords: [
       'Public service broadcasting',
       'Publicness',

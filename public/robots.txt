@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://jaeseongchoe.vercel.app/sitemap.xml

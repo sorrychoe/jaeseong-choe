@@ -41,18 +41,17 @@ Set these in `.env.local` (and in the Vercel project settings):
 
 | Variable                       | Purpose                                                        |
 | ------------------------------ | ------------------------------------------------------------- |
-| `NEXT_PUBLIC_SITE_URL`         | Canonical origin; overrides the default per environment       |
+| `NEXT_PUBLIC_SITE_URL`         | Site origin for Open Graph URLs; overrides the default         |
 | `NEXT_PUBLIC_GA_MEASUREMENT_ID`| Google Analytics measurement ID (analytics is skipped if unset) |
 
 ## Project Structure
 
 ```text
 jaeseong-choe/
-├── next.config.mjs          # Security headers, CSP, noindex for preview deploys
+├── next.config.mjs          # Security headers, CSP
 ├── public/
 │   ├── cv.pdf
-│   ├── favicon.svg
-│   └── robots.txt
+│   └── favicon.svg
 └── src/
     ├── components/          # About, Header, Navbar, Publication, Projects, Footer
     ├── data/
@@ -60,19 +59,18 @@ jaeseong-choe/
     ├── pages/
     │   ├── _app.js
     │   ├── _document.js
-    │   ├── index.js         # Home page + JSON-LD structured data
+    │   ├── index.js         # Home page
     │   ├── api/og.jsx       # Open Graph image endpoint
     │   ├── publications/[slug].js
-    │   ├── projects/[slug].js
-    │   └── sitemap.xml.js   # Server-rendered sitemap
+    │   └── projects/[slug].js
     └── styles/              # Global and detail-page styles
 ```
 
 ## Content
 
 All page content lives in [`src/data/site.js`](src/data/site.js). Adding a
-publication or project there automatically creates its detail page, sitemap
-entry, and structured‑data node — no component changes required.
+publication or project there automatically creates its detail page —
+no component changes required.
 
 ## License
 
