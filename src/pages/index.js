@@ -38,8 +38,8 @@ function App() {
       <Header />
       <About />
       <Publication />
-      <Projects category="data" title="Data Analysis Projects" />
       <Projects category="tech" title="Development Projects" />
+      <Projects category="data" title="Data Analysis Projects" />
       <Footer />
     </div>
   );

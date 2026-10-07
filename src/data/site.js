@@ -183,83 +183,6 @@ export const publications = [
 
 export const projects = [
   {
-    slug: 'pybigkinds',
-    category: 'data',
-    title: 'PyBigKinds',
-    description: 'A low-code Python library for analyzing BigKinds news exports.',
-    keywords: ['Python', 'Text mining', 'BIGKINDS', 'Open source'],
-    summary: [
-      'An open-source Python library that turns exports from BigKinds — the Korea Press Foundation’s news database — into ready-to-use dataframes, with utilities for cleaning, tokenizing, and reshaping the raw data for downstream text analysis and topic modeling.',
-      'Built-in functions such as press_counter() and keywords_wordcloud() chart outlet-level publication counts and keyword word clouds with Korean-font support out of the box, so a raw export becomes a visualization in a few lines. Published on PyPI.',
-    ],
-    summaryKo: [
-      '한국언론진흥재단의 뉴스 데이터베이스 BigKinds에서 내려받은 데이터를 분석용 데이터프레임으로 변환하는 오픈소스 Python 라이브러리입니다. 텍스트 분석과 토픽 모델링에 앞서 원자료를 정제·토큰화·재구조화하는 기능을 제공합니다.',
-      'press_counter()와 keywords_wordcloud() 같은 내장 함수로 언론사별 기사 수와 키워드 워드클라우드를 한글 폰트 지원과 함께 몇 줄의 코드로 시각화할 수 있습니다. PyPI에 배포되어 있습니다.',
-    ],
-    links: [
-      {
-        href: 'https://pypi.org/project/pyBigKinds/',
-        icon: ICON_PYPI,
-        label: 'PyPI',
-      },
-      {
-        href: 'https://github.com/sorrychoe/pyBigKinds',
-        icon: ICON_GITHUB,
-        label: 'GitHub',
-      },
-    ],
-  },
-  {
-    slug: 'rbigkinds',
-    category: 'data',
-    title: 'RBigKinds',
-    description: 'A low-code R package for analyzing BigKinds news exports.',
-    keywords: ['R', 'Text mining', 'BIGKINDS', 'Open source'],
-    summary: [
-      'An R package that mirrors PyBigKinds for the R ecosystem, giving researchers a tidy, low-code workflow for importing and preprocessing BIGKINDS news exports straight from Excel.',
-      'Functions such as press_counter() and keyword_dataframe() summarize article counts by outlet and rank keyword frequencies, preparing corpora for text mining and topic modeling. The package ships a documentation site generated with pkgdown.',
-    ],
-    summaryKo: [
-      'pyBigKinds와 같은 기능을 R 생태계에 맞게 구현한 R 패키지입니다. 연구자가 엑셀로 내려받은 BigKinds 뉴스 데이터를 로우코드 방식으로 불러오고 전처리할 수 있습니다.',
-      'press_counter()와 keyword_dataframe() 등으로 언론사별 기사 수를 집계하고 키워드 빈도를 순위화해, 텍스트 마이닝과 토픽 모델링을 위한 코퍼스를 준비합니다. pkgdown으로 생성한 문서 사이트를 함께 제공합니다.',
-    ],
-    links: [
-      {
-        href: 'https://sorrychoe.github.io/RBigKinds/',
-        icon: ICON_GITBOOK,
-        label: 'Documentation',
-      },
-      {
-        href: 'https://github.com/sorrychoe/RBigKinds',
-        icon: ICON_GITHUB,
-        label: 'GitHub',
-      },
-    ],
-  },
-  {
-    slug: 'everything-of-handong',
-    category: 'data',
-    title: 'Everything of Handong, from 1995 to 2024',
-    description:
-      'A Time-Series News Analysis about Handong Global University',
-    keywords: ['Structural Topic Modeling', 'News analysis', 'Longitudinal'],
-    summary: [  
-      'A text-mining of 7,857 news articles about Handong Global University drawn from BigKinds and spanning 1995-2024, combining TF-IDF frequency analysis, lexicon-based sentiment scoring, and Structural Topic Modeling (STM) in R.',
-      'It surfaces six recurring topics — Christian identity, legal matters, faculty diplomatic commentary, admissions, personnel news, and outside recognition — finds coverage skews positive overall, and shows conservative outlets covering the university’s Christian identity more often than other outlets do.',
-    ],
-    summaryKo: [
-      '1995년부터 2024년까지 BigKinds에서 수집한 한동대학교 관련 뉴스 기사 7,857건을 분석한 텍스트 마이닝 연구입니다. TF-IDF 빈도 분석, 사전 기반 감성 점수, R의 구조적 토픽 모델(STM)을 함께 사용했습니다.',
-      '반복적으로 등장하는 여섯 개 토픽(기독교 정체성, 법적 사안, 교수진의 외교적 발언, 입학, 인사 소식, 외부 평가)을 도출했습니다. 전반적으로 보도는 긍정적 경향을 보였으며, 보수 성향 언론이 다른 언론보다 대학의 기독교 정체성을 더 자주 다뤘습니다.',
-    ],
-    links: [
-      {
-        href: 'https://github.com/TMT2/Everything-of-Handong',
-        icon: ICON_GITHUB,
-        label: 'GitHub',
-      },
-    ],
-  },
-  {
     slug: 'optimal-vertiport-locations-seoul',
     category: 'data',
     title: 'Finding Optimal Vertiport Locations in the Seoul Metropolitan Area',
@@ -271,7 +194,7 @@ export const projects = [
       'K-Means clustering with centroid refinement produced the site set (silhouette score ≈ 0.4), delivered as an interactive Folium map and cluster spreadsheets alongside an IEEE-formatted writeup and presentation deck.',
     ],
     summaryKo: [
-      '도시항공교통(UAM)을 위해 서울 수도권에 수직이착륙장(버티포트) 100곳을 입지시키는 공간 군집 분석입니다. GIS 기반 토지이용 필터링과 통근 패턴·근로자 인구로 가중한 수요 지점을 결합했습니다.',
+      '도시항공교통(UAM)을 위해 서울 수도권에 수직이착륙장(Vertiport) 100곳을 입지시키는 공간 군집 분석 연구입니다. GIS 기반 토지이용 필터링과 통근 패턴·근로자 인구로 가중한 수요 지점을 결합했습니다.',
       'K-Means 군집화와 중심점 보정으로 입지 후보를 도출했고(실루엣 점수 약 0.4), 결과는 인터랙티브 Folium 지도와 군집 스프레드시트, IEEE 형식 보고서 및 발표 자료로 정리했습니다.',
     ],
     links: [
@@ -328,22 +251,77 @@ export const projects = [
     ],
   },
   {
-    slug: 'topic-modeling-theory',
+    slug: 'everything-of-handong',
     category: 'data',
-    title: 'Topic Modeling Theories',
-    description: 'A set of notebooks covering the theory behind major topic models.',
-    keywords: ['Topic modeling', 'Methodology notes'],
-    summary: [
-      'A study repository pairing theoretical notes with runnable Jupyter notebooks for seven topic-modeling approaches: Latent Dirichlet Allocation, Dynamic Topic Model, Topics Over Time, Correlated Topic Model, Structural Topic Model, Biterm Topic Model, and BERTopic.',
-      'Each notebook is self-contained and moves from foundational LDA concepts to neural, embedding-based methods, so it doubles as a reference for the assumptions behind each model and a working code example, rather than only a description of its software interface.',
+    title: 'Everything of Handong, from 1995 to 2024',
+    description:
+      'A Time-Series News Analysis about Handong Global University',
+    keywords: ['Structural Topic Modeling', 'News analysis', 'Longitudinal'],
+    summary: [  
+      'A text-mining of 7,857 news articles about Handong Global University drawn from BigKinds and spanning 1995-2024, combining TF-IDF frequency analysis, lexicon-based sentiment scoring, and Structural Topic Modeling (STM) in R.',
+      'It surfaces six recurring topics — Christian identity, legal matters, faculty diplomatic commentary, admissions, personnel news, and outside recognition — finds coverage skews positive overall, and shows conservative outlets covering the university’s Christian identity more often than other outlets do.',
     ],
     summaryKo: [
-      '토픽 모델 이론 설명과 실행 가능한 Jupyter 노트북을 함께 정리한 학습 저장소로, 7가지 토픽 모델링 기법(LDA, DTM, ToT, CTM, STM, BTM, BERTopic)을 다룹니다.',
-      '각 노트북은 독립적으로 구성되어 있으며, 기초적인 LDA 개념에서 임베딩 기반 신경망 방법까지 순서대로 다룹니다. 각 모델의 가정을 이해하는 참고 자료이자 실행 가능한 코드 예제로 활용할 수 있습니다.',
+      '1995년부터 2024년까지 BigKinds에서 수집한 한동대학교 관련 뉴스 기사 7,857건을 분석한 텍스트 마이닝 연구입니다. TF-IDF 빈도 분석, 사전 기반 감성 점수, R의 구조적 토픽 모델(STM)을 함께 사용했습니다.',
+      '반복적으로 등장하는 여섯 개 토픽(기독교 정체성, 법적 사안, 교수진의 외교적 발언, 입학, 인사 소식, 외부 평가)을 도출했습니다. 전반적으로 보도는 긍정적 경향을 보였으며, 보수 성향 언론이 다른 언론보다 대학의 기독교 정체성을 더 자주 다뤘습니다.',
     ],
     links: [
       {
-        href: 'https://github.com/sorrychoe/topic-modeling-theory',
+        href: 'https://github.com/TMT2/Everything-of-Handong',
+        icon: ICON_GITHUB,
+        label: 'GitHub',
+      },
+    ],
+  },
+  {
+    slug: 'pybigkinds',
+    category: 'tech',
+    title: 'PyBigKinds',
+    description: 'A low-code Python library for analyzing BigKinds news exports.',
+    keywords: ['Python', 'Text mining', 'BigKinds', 'Open source'],
+    summary: [
+      'An open-source Python library that turns exports from BigKinds — the Korea Press Foundation’s news database — into ready-to-use dataframes, with utilities for cleaning, tokenizing, and reshaping the raw data for downstream text analysis and topic modeling.',
+      'Built-in functions such as press_counter() and keywords_wordcloud() chart outlet-level publication counts and keyword word clouds with Korean-font support out of the box, so a raw export becomes a visualization in a few lines. Published on PyPI.',
+    ],
+    summaryKo: [
+      '한국언론진흥재단의 뉴스 데이터베이스 BigKinds에서 내려받은 데이터를 분석용 데이터프레임으로 변환하는 오픈소스 Python 라이브러리입니다. 텍스트 분석과 토픽 모델링에 앞서 원자료를 정제·토큰화·재구조화하는 기능을 제공합니다.',
+      'press_counter()와 keywords_wordcloud() 같은 내장 함수로 언론사별 기사 수와 키워드 워드클라우드를 한글 폰트 지원과 함께 몇 줄의 코드로 시각화할 수 있습니다. PyPI에 배포되어 있습니다.',
+    ],
+    links: [
+      {
+        href: 'https://pypi.org/project/pyBigKinds/',
+        icon: ICON_PYPI,
+        label: 'PyPI',
+      },
+      {
+        href: 'https://github.com/sorrychoe/pyBigKinds',
+        icon: ICON_GITHUB,
+        label: 'GitHub',
+      },
+    ],
+  },
+  {
+    slug: 'rbigkinds',
+    category: 'tech',
+    title: 'RBigKinds',
+    description: 'A low-code R package for analyzing BigKinds news exports.',
+    keywords: ['R', 'Text mining', 'BigKinds', 'Open source'],
+    summary: [
+      'An R package that mirrors PyBigKinds for the R ecosystem, giving researchers a tidy, low-code workflow for importing and preprocessing BIGKINDS news exports straight from Excel.',
+      'Functions such as press_counter() and keyword_dataframe() summarize article counts by outlet and rank keyword frequencies, preparing corpora for text mining and topic modeling. The package ships a documentation site generated with pkgdown.',
+    ],
+    summaryKo: [
+      'pyBigKinds와 같은 기능을 R 생태계에 맞게 구현한 R 패키지입니다. 연구자가 엑셀로 내려받은 BigKinds 뉴스 데이터를 로우코드 방식으로 불러오고 전처리할 수 있습니다.',
+      'press_counter()와 keyword_dataframe() 등으로 언론사별 기사 수를 집계하고 키워드 빈도를 순위화해, 텍스트 마이닝과 토픽 모델링을 위한 코퍼스를 준비합니다. pkgdown으로 생성한 문서 사이트를 함께 제공합니다.',
+    ],
+    links: [
+      {
+        href: 'https://sorrychoe.github.io/RBigKinds/',
+        icon: ICON_GITBOOK,
+        label: 'Documentation',
+      },
+      {
+        href: 'https://github.com/sorrychoe/RBigKinds',
         icon: ICON_GITHUB,
         label: 'GitHub',
       },
@@ -361,7 +339,7 @@ export const projects = [
     ],
     summaryKo: [
       '한동대학교 교과목 "창조와 진화" Q&A를 위해 OpenAI API로 구현한 검색 증강(RAG) 챗봇입니다. 모델의 일반 지식이 아니라, 자체 크롤러로 수집해 벡터 저장소에 색인한 강의 자료에 근거해 답변합니다.',
-      'Makefile 기반 파이프라인(make init, make crawling, make run)으로 자료 수집·전처리, 임베딩 생성, 질의응답 인터페이스 실행을 한 번에 처리합니다.',
+      'Makefile 기반 파이프라인으로 자료 수집·전처리, 임베딩 생성, 질의응답 인터페이스 실행을 한 번에 처리합니다.',
     ],
     links: [
       {
@@ -375,15 +353,15 @@ export const projects = [
     slug: 'bible-ai',
     category: 'tech',
     title: 'Bible AI',
-    description: 'An AI that recommends Bible verses for a worry or concern you enter.',
-    keywords: ['LLM', 'Streamlit', 'Bible'],
+    description: 'A retrieval-augmented chatbot that recommends Bible verses for a worry you describe.',
+    keywords: ['LLM', 'Retrieval-augmented generation', 'Bible'],
     summary: [
-      'A Streamlit app that takes a worry or concern typed in by the user and recommends Bible verses that speak to it.',
-      'The source code is kept private; only the deployed app is public.',
+      'A retrieval-augmented chatbot planned for deployment on the Heaven’s Voice Church website. It embeds verses from the Bible and, given a worry or concern typed in by the user, retrieves the passages that speak to it most closely before an LLM composes a response grounded in them.',
+      'The source code is kept private; only the deployed Streamlit app is public.',
     ],
     summaryKo: [
-      '사용자가 적은 고민을 입력하면, 그에 맞는 성경 구절을 추천해주는 Streamlit 앱입니다.',
-      '소스 코드는 비공개이며, 배포된 사이트만 공개합니다.',
+      '하늘소리교회 웹페이지에 배포 예정인 검색 증강(RAG) 챗봇입니다. 성경 구절을 임베딩해 두고, 사용자가 적은 고민과 가장 가까운 구절을 검색한 뒤 그 구절에 근거해 LLM이 답변을 구성합니다.',
+      '소스 코드는 비공개이며, 배포된 Streamlit 앱만 공개합니다.',
     ],
     links: [
       { href: 'https://bible-ai-sczqrmuesjcfqzcsmjytkf.streamlit.app/', icon: ICON_CHROME, label: 'Website' },
@@ -394,7 +372,7 @@ export const projects = [
     category: 'tech',
     title: 'WordCard',
     description: 'A desktop app that turns sermon summaries into Instagram card news and posts them.',
-    keywords: ['Python', 'PySide6', 'Automation', 'Instagram Graph API'],
+    keywords: ['Python', 'Automation', 'Instagram Graph API'],
     summary: [
       'A native desktop app that splits pasted sermon text and Bible verses into a series of 4:5 or 1:1 card images using church templates, then publishes them to the church Instagram account as a carousel.',
       'Handles Bible book names and abbreviations, Korean line breaking, and automatic font sizing; it works offline for card creation and uses only the official Instagram API when posting, with autosave and crash recovery.',
@@ -411,10 +389,10 @@ export const projects = [
     slug: 'insta-uploader',
     category: 'tech',
     title: 'Instagram Uploader',
-    description: 'A Windows desktop app that drafts and publishes shopping-mall Instagram posts.',
-    keywords: ['Python', 'PySide6', 'OpenAI API', 'Instagram Graph API', 'Automation'],
+    description: 'A desktop app that drafts and publishes shopping-mall Instagram posts.',
+    keywords: ['Python', 'Automation','OpenAI API', 'Instagram Graph API'],
     summary: [
-      'A Windows desktop program that helps a Naver SmartStore seller publish product photos to Instagram: it converts 1 to 10 images to Instagram specifications, generates an editable product description and hashtags with the OpenAI API, and posts through the official Instagram API.',
+      'A desktop program that helps a Naver SmartStore seller publish product photos to Instagram: it converts 1 to 10 images to Instagram specifications, generates an editable product description and hashtags with the OpenAI API, and posts through the official Instagram API.',
       'Built with Python 3.12, PySide6, and Pillow, with API keys stored in the Windows Credential Manager, a local SQLite history of past posts, and PyInstaller packaging through GitHub Actions.',
     ],
     summaryKo: [
