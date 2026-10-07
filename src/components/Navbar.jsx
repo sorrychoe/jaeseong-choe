@@ -7,7 +7,8 @@ function Navbar() {
       <ul className={styles.list}>
         <li><a href="#about" className={styles.link}>About me</a></li>
         <li><a href="#publication" className={styles.link}>Publications</a></li>
-        <li><a href="#projects" className={styles.link}>Projects</a></li>
+        <li><a href="#projects-data" className={styles.link}>Data Analysis Project</a></li>
+        <li><a href="#projects-tech" className={styles.link}>Technical Projects</a></li>
       </ul>
     </nav>
   );  

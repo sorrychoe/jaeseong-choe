@@ -106,7 +106,8 @@ function App() {
       <Header />
       <About />
       <Publication />
-      <Projects />
+      <Projects category="data" title="Data Analysis Projects" />
+      <Projects category="tech" title="Technical Projects" />
       <Footer />
     </div>
   );

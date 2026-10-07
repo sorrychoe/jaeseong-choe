@@ -102,3 +102,28 @@
 .linkBtn:hover {
   background-color: #7c3aed;
 }
+
+.langToggle {
+  margin: 0 0 1.25rem;
+  background-color: transparent;
+  color: #a855f7;
+  border: 1px solid #a855f7;
+  border-radius: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.langToggle:hover {
+  background-color: rgba(168, 85, 247, 0.15);
+}
+
+.langLabel {
+  margin: 0 0 0.5rem;
+  color: #a855f7;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}

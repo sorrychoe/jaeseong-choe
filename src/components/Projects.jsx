@@ -6,17 +6,17 @@ import Link from 'next/link';
 import styles from './Projects.module.css';
 import { projects } from '../data/site';
 
-function Projects() {
+function Projects({ category, title }) {
   useEffect(() => {
     AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
   }, []);
 
   return (
-    <section id="projects" className="section" data-aos="fade-up">
+    <section id={`projects-${category}`} className="section" data-aos="fade-up">
       <div className="container">
-        <h2 className="section-title">Projects</h2>
+        <h2 className="section-title">{title}</h2>
         <div className={styles.grid}>
-          {projects.map((project) => (
+          {projects.filter((project) => project.category === category).map((project) => (
             <div className={`card ${styles.card}`} key={project.slug}>
               <h3 className={styles.cardTitle}>
                 <Link

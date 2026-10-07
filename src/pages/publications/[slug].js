@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import { SITE_URL, PERSON, publications } from '../../data/site';
@@ -20,6 +20,8 @@ export async function getStaticProps({ params }) {
 }
 
 function PublicationPage({ publication }) {
+  const [showKo, setShowKo] = useState(false);
+  const paragraphs = showKo && publication.summaryKo ? publication.summaryKo : publication.summary;
   const canonical = `${SITE_URL}/publications/${publication.slug}`;
   const metaDescription = publication.summary[0].slice(0, 300);
   const isConference = publication.type === 'conference';
@@ -116,8 +118,18 @@ function PublicationPage({ publication }) {
             {publication.titleKo}
           </p>
           <p className={styles.meta}>{metaParts.join(' · ')}</p>
-          <div className={styles.body}>
-            {publication.summary.map((para) => (
+          {publication.summaryKo ? (
+            <button
+              type="button"
+              className={styles.langToggle}
+              aria-pressed={showKo}
+              onClick={() => setShowKo((value) => !value)}
+            >
+              {showKo ? 'Show in English' : '한국어로 보기'}
+            </button>
+          ) : null}
+          <div className={styles.body} lang={showKo ? 'ko' : 'en'}>
+            {paragraphs.map((para) => (
               <p key={para.slice(0, 40)}>{para}</p>
             ))}
           </div>

@@ -50,7 +50,7 @@ function ProjectPage({ project }) {
             '@type': 'ListItem',
             position: 2,
             name: 'Projects',
-            item: `${SITE_URL}/#projects`,
+            item: `${SITE_URL}/#projects-${project.category}`,
           },
           {
             '@type': 'ListItem',
@@ -87,17 +87,28 @@ function ProjectPage({ project }) {
       </Head>
       <div className="container">
         <article className={styles.article}>
-          <Link href="/#projects" className={styles.back}>
+          <Link href={`/#projects-${project.category}`} className={styles.back}>
             ← All projects
           </Link>
           <p className={styles.kicker}>Project</p>
           <h1 className={styles.title}>{project.title}</h1>
           <p className={styles.meta}>{project.description}</p>
+          <p className={styles.langLabel}>English</p>
           <div className={styles.body}>
             {project.summary.map((para) => (
               <p key={para.slice(0, 40)}>{para}</p>
             ))}
           </div>
+          {project.summaryKo ? (
+            <>
+              <p className={styles.langLabel}>국문</p>
+              <div className={styles.body} lang="ko">
+              {project.summaryKo.map((para) => (
+                <p key={para.slice(0, 40)}>{para}</p>
+              ))}
+              </div>
+            </>
+          ) : null}
           {project.keywords?.length ? (
             <ul className={styles.keywords} aria-label="Keywords">
               {project.keywords.map((keyword) => (
