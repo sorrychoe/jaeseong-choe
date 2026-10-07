@@ -404,6 +404,60 @@ export const projects = [
     ],
   },
   {
+    slug: 'bible-ai',
+    category: 'tech',
+    title: 'Bible AI',
+    description: 'An AI that recommends Bible verses for a worry or concern you enter.',
+    keywords: ['LLM', 'Streamlit', 'Bible'],
+    summary: [
+      'A Streamlit app that takes a worry or concern typed in by the user and recommends Bible verses that speak to it.',
+      'The source code is kept private; only the deployed app is public.',
+    ],
+    summaryKo: [
+      '사용자가 적은 고민을 입력하면, 그에 맞는 성경 구절을 추천해주는 Streamlit 앱입니다.',
+      '소스 코드는 비공개이며, 배포된 사이트만 공개합니다.',
+    ],
+    links: [
+      { href: 'https://bible-ai-sczqrmuesjcfqzcsmjytkf.streamlit.app/', icon: ICON_CHROME, label: 'Website' },
+    ],
+  },
+{
+    slug: 'wordcard',
+    category: 'tech',
+    title: 'WordCard',
+    description: 'A desktop app that turns sermon summaries into Instagram card news and posts them.',
+    keywords: ['Python', 'PySide6', 'Automation', 'Instagram Graph API'],
+    summary: [
+      'A native desktop app that splits pasted sermon text and Bible verses into a series of 4:5 or 1:1 card images using church templates, then publishes them to the church Instagram account as a carousel.',
+      'Handles Bible book names and abbreviations, Korean line breaking, and automatic font sizing; it works offline for card creation and uses only the official Instagram API when posting, with autosave and crash recovery.',
+    ],
+    summaryKo: [
+      '설교 요약과 성경 구절을 붙여넣으면 교회 템플릿에 맞춘 카드뉴스 이미지 여러 장을 만들고, 교회 인스타그램 계정에 캐러셀로 게시하는 네이티브 데스크톱 앱입니다. 4:5 또는 1:1 비율을 지원합니다.',
+      '성경 책명과 약칭 인식, 한글 줄바꿈, 글자 크기 자동 조정을 지원하며, 카드 생성은 오프라인으로 동작하고 게시할 때만 공식 Instagram API를 사용합니다. 자동 저장과 비정상 종료 후 복구 기능이 있습니다.',
+    ],
+    links: [
+      { href: 'https://github.com/sorrychoe/WordCard', icon: ICON_GITHUB, label: 'GitHub' },
+    ],
+  },
+  {
+    slug: 'insta-uploader',
+    category: 'tech',
+    title: 'Instagram Uploader',
+    description: 'A Windows desktop app that drafts and publishes shopping-mall Instagram posts.',
+    keywords: ['Python', 'PySide6', 'OpenAI API', 'Instagram Graph API', 'Automation'],
+    summary: [
+      'A Windows desktop program that helps a Naver SmartStore seller publish product photos to Instagram: it converts 1 to 10 images to Instagram specifications, generates an editable product description and hashtags with the OpenAI API, and posts through the official Instagram API.',
+      'Built with Python 3.12, PySide6, and Pillow, with API keys stored in the Windows Credential Manager, a local SQLite history of past posts, and PyInstaller packaging through GitHub Actions.',
+    ],
+    summaryKo: [
+      '네이버 스마트스토어 판매자가 자사 제품 사진을 인스타그램에 쉽게 올릴 수 있도록 돕는 Windows 데스크톱 프로그램입니다. 사진 1~10장을 인스타 규격으로 변환하고, OpenAI API로 수정 가능한 소개글과 해시태그를 생성하며, 공식 Instagram API로 게시합니다.',
+      'Python 3.12, PySide6, Pillow로 개발했습니다. API 키는 Windows 자격 증명 관리자에 저장하고, 과거 게시 내역은 로컬 SQLite에 기록하며, GitHub Actions로 PyInstaller 빌드를 자동화했습니다.',
+    ],
+    links: [
+      { href: 'https://github.com/sorrychoe/insta-uploader', icon: ICON_GITHUB, label: 'GitHub' },
+    ],
+  },
+  {
     slug: 'shop-nanda',
     category: 'tech',
     title: 'Shop Nanda Website',
@@ -439,42 +493,6 @@ export const projects = [
     links: [
       { href: 'https://heavens-voice-church.github.io/', icon: ICON_CHROME, label: 'Website' },
       { href: 'https://github.com/heavens-voice-church/heavens-voice-church.github.io', icon: ICON_GITHUB, label: 'GitHub' },
-    ],
-  },
-  {
-    slug: 'insta-uploader',
-    category: 'tech',
-    title: 'Instagram Uploader',
-    description: 'A Windows desktop app that drafts and publishes shopping-mall Instagram posts.',
-    keywords: ['Python', 'PySide6', 'OpenAI API', 'Instagram Graph API', 'Automation'],
-    summary: [
-      'A Windows desktop program that helps a Naver SmartStore seller publish product photos to Instagram: it converts 1 to 10 images to Instagram specifications, generates an editable product description and hashtags with the OpenAI API, and posts through the official Instagram API.',
-      'Built with Python 3.12, PySide6, and Pillow, with API keys stored in the Windows Credential Manager, a local SQLite history of past posts, and PyInstaller packaging through GitHub Actions.',
-    ],
-    summaryKo: [
-      '네이버 스마트스토어 판매자가 자사 제품 사진을 인스타그램에 쉽게 올릴 수 있도록 돕는 Windows 데스크톱 프로그램입니다. 사진 1~10장을 인스타 규격으로 변환하고, OpenAI API로 수정 가능한 소개글과 해시태그를 생성하며, 공식 Instagram API로 게시합니다.',
-      'Python 3.12, PySide6, Pillow로 개발했습니다. API 키는 Windows 자격 증명 관리자에 저장하고, 과거 게시 내역은 로컬 SQLite에 기록하며, GitHub Actions로 PyInstaller 빌드를 자동화했습니다.',
-    ],
-    links: [
-      { href: 'https://github.com/sorrychoe/insta-uploader', icon: ICON_GITHUB, label: 'GitHub' },
-    ],
-  },
-  {
-    slug: 'wordcard',
-    category: 'tech',
-    title: 'WordCard',
-    description: 'A desktop app that turns sermon summaries into Instagram card news and posts them.',
-    keywords: ['Python', 'PySide6', 'Automation', 'Instagram Graph API'],
-    summary: [
-      'A native desktop app that splits pasted sermon text and Bible verses into a series of 4:5 or 1:1 card images using church templates, then publishes them to the church Instagram account as a carousel.',
-      'Handles Bible book names and abbreviations, Korean line breaking, and automatic font sizing; it works offline for card creation and uses only the official Instagram API when posting, with autosave and crash recovery.',
-    ],
-    summaryKo: [
-      '설교 요약과 성경 구절을 붙여넣으면 교회 템플릿에 맞춘 카드뉴스 이미지 여러 장을 만들고, 교회 인스타그램 계정에 캐러셀로 게시하는 네이티브 데스크톱 앱입니다. 4:5 또는 1:1 비율을 지원합니다.',
-      '성경 책명과 약칭 인식, 한글 줄바꿈, 글자 크기 자동 조정을 지원하며, 카드 생성은 오프라인으로 동작하고 게시할 때만 공식 Instagram API를 사용합니다. 자동 저장과 비정상 종료 후 복구 기능이 있습니다.',
-    ],
-    links: [
-      { href: 'https://github.com/sorrychoe/WordCard', icon: ICON_GITHUB, label: 'GitHub' },
     ],
   },
 ];
