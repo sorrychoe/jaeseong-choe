@@ -400,14 +400,33 @@ export const projects = [
       'The source code is kept private; only the deployed Streamlit app is public.',
     ],
     summaryKo: [
-      '하늘소리교회 웹페이지에 배포 예정인 검색 증강(RAG) 챗봇입니다. 성경 구절을 임베딩해 두고, 사용자가 적은 고민과 가장 가까운 구절을 검색한 뒤 그 구절에 근거해 LLM이 답변을 구성합니다.',
-      '소스 코드는 비공개이며, 배포된 Streamlit 앱만 공개합니다.',
+      '하늘소리교회 웹페이지에 연결된 검색 증강(RAG) 챗봇입니다. 성경 구절을 임베딩해 두고, 사용자가 적은 고민과 가장 가까운 구절을 검색한 뒤 그 구절에 근거해 LLM이 답변을 구성합니다.',
+      '저작권 이슈로 인해 소스 코드는 비공개이며, 배포된 Streamlit 앱만 공개합니다.',
     ],
     links: [
       { href: 'https://bible-ai-sczqrmuesjcfqzcsmjytkf.streamlit.app/', icon: ICON_CHROME, label: 'Website' },
     ],
   },
-{
+  {
+    slug: 'heavens-voice-church',
+    category: 'tech',
+    title: 'Heaven’s Voice Church Website',
+    description: 'The official website for Heaven’s Voice Church, currently in development.',
+    keywords: ['React', 'TypeScript', 'Tailwind CSS', 'Web development'],
+    summary: [
+      'The official website for Heaven’s Voice Church, a congregation of the Korean Gospel Church, built with React, TypeScript, Vite, and Tailwind CSS.',
+      'The site is still under development.',
+    ],
+    summaryKo: [
+      '기독교대한복음교회 하늘소리교회의 공식 웹사이트입니다. React, TypeScript, Vite, Tailwind CSS로 구축했습니다.',
+      '사이트는 아직 개발 중입니다. 교회 측 요청에 근거하여 개발하고 있습니다.',
+    ],
+    links: [
+      { href: 'https://www.heavensvoicechurch.com/', icon: ICON_CHROME, label: 'Website' },
+      { href: 'https://github.com/heavens-voice-church/heavens-voice-church.github.io', icon: ICON_GITHUB, label: 'GitHub' },
+    ],
+  },
+  {
     slug: 'wordcard',
     category: 'tech',
     title: 'WordCard',
@@ -433,11 +452,11 @@ export const projects = [
     keywords: ['Python', 'Automation','OpenAI API', 'Instagram Graph API'],
     summary: [
       'A desktop program that helps a Naver SmartStore seller publish product photos to Instagram: it converts 1 to 10 images to Instagram specifications, generates an editable product description and hashtags with the OpenAI API, and posts through the official Instagram API.',
-      'Built with Python 3.12, PySide6, and Pillow, with API keys stored in the Windows Credential Manager, a local SQLite history of past posts, and PyInstaller packaging through GitHub Actions.',
+      'Built with Python, PySide6, and Pillow, with API keys stored in the Windows Credential Manager, a local SQLite history of past posts, and PyInstaller packaging through GitHub Actions.',
     ],
     summaryKo: [
-      '네이버 스마트스토어 판매자가 자사 제품 사진을 인스타그램에 쉽게 올릴 수 있도록 돕는 Windows 데스크톱 프로그램입니다. 사진 1~10장을 인스타 규격으로 변환하고, OpenAI API로 수정 가능한 소개글과 해시태그를 생성하며, 공식 Instagram API로 게시합니다.',
-      'Python 3.12, PySide6, Pillow로 개발했습니다. API 키는 Windows 자격 증명 관리자에 저장하고, 과거 게시 내역은 로컬 SQLite에 기록하며, GitHub Actions로 PyInstaller 빌드를 자동화했습니다.',
+      '네이버 스마트스토어 판매자가 자사 제품 사진을 인스타그램에 쉽게 올릴 수 있도록 돕는 데스크톱 프로그램입니다. 사진 1~10장을 인스타 규격으로 변환하고, OpenAI API로 수정 가능한 소개글과 해시태그를 생성하며, 공식 Instagram API로 게시합니다.',
+      'Python, PySide6, Pillow로 개발했습니다. API 키는 Windows 자격 증명 관리자에 저장하고, 과거 게시 내역은 로컬 SQLite에 기록하며, GitHub Actions로 PyInstaller 빌드를 자동화했습니다.',
     ],
     links: [
       { href: 'https://github.com/sorrychoe/insta-uploader', icon: ICON_GITHUB, label: 'GitHub' },
@@ -446,11 +465,11 @@ export const projects = [
   {
     slug: 'shop-nanda',
     category: 'tech',
-    title: 'Shop Nanda Website',
-    description: 'A static Astro website for the Shop Nanda online store.',
+    title: 'ShopNanda Website',
+    description: 'The official website for the ShopNanda online shopping mall.',
     keywords: ['Astro', 'Web development', 'E-commerce'],
     summary: [
-      'The official website for the Shop Nanda online shopping mall, built as a static site with Astro and deployed to shopnanda.com.',
+      'The official website for the ShopNanda online shopping mall, built as a static site with Astro.',
       'Developed on request for the store.',
     ],
     summaryKo: [
@@ -460,25 +479,6 @@ export const projects = [
     links: [
       { href: 'https://www.shopnanda.com/', icon: ICON_CHROME, label: 'Website' },
       { href: 'https://github.com/passion-story/shop-nanda', icon: ICON_GITHUB, label: 'GitHub' },
-    ],
-  },
-  {
-    slug: 'heavens-voice-church',
-    category: 'tech',
-    title: 'Heaven’s Voice Church Website',
-    description: 'The official website for Heaven’s Voice Church, currently in development.',
-    keywords: ['React', 'TypeScript', 'Tailwind CSS', 'Web development'],
-    summary: [
-      'The official website for Heaven’s Voice Church, a congregation of the Korean Gospel Church, built with React 19, TypeScript, Vite, and Tailwind CSS.',
-      'The site is still under development.',
-    ],
-    summaryKo: [
-      '기독교대한복음교회 하늘소리교회의 공식 웹사이트입니다. React 19, TypeScript, Vite, Tailwind CSS로 구축했습니다.',
-      '사이트는 아직 개발 중입니다. 교회 측 요청에 근거하여 개발하고 있습니다.',
-    ],
-    links: [
-      { href: 'https://heavens-voice-church.github.io/', icon: ICON_CHROME, label: 'Website' },
-      { href: 'https://github.com/heavens-voice-church/heavens-voice-church.github.io', icon: ICON_GITHUB, label: 'GitHub' },
     ],
   },
 ];
