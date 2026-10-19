@@ -348,25 +348,7 @@ export const projects = [
         label: 'GitHub',
       },
     ],
-  },
-  {
-    slug: 'slack-weather-message',
-    category: 'tech',
-    title: 'Slack Weather Message',
-    description: 'A scheduled bot that posts Naver weather updates to Slack.',
-    keywords: ['Go', 'Slack API', 'GitHub Actions'],
-    summary: [
-      'A small Go program that scrapes the current weather from Naver and posts it to a Slack channel through an incoming webhook.',
-      'It runs unattended on a GitHub Actions cron schedule and can be retimed by editing the cron expression in the workflow file.',
-    ],
-    summaryKo: [
-      '네이버 날씨 정보를 크롤링해 Slack 채널에 incoming webhook으로 전송하는 Go 프로그램입니다.',
-      'GitHub Actions cron 스케줄로 무인 실행되며, 워크플로 파일의 cron 표현식을 수정해 실행 시간을 바꿀 수 있습니다.',
-    ],
-    links: [
-      { href: 'https://github.com/sorrychoe/slack-weather-message', icon: ICON_GITHUB, label: 'GitHub' },
-    ],
-  },
+  },  
   {
     slug: 'creationism-chatbot',
     category: 'tech',
@@ -382,11 +364,7 @@ export const projects = [
       'Makefile 기반 파이프라인으로 자료 수집·전처리, 임베딩 생성, 질의응답 인터페이스 실행을 한 번에 처리합니다.',
     ],
     links: [
-      {
-        href: 'https://github.com/sorrychoe/Creationism_Chatbot',
-        icon: ICON_GITHUB,
-        label: 'GitHub',
-      },
+      { href: 'https://github.com/sorrychoe/Creationism_Chatbot', icon: ICON_GITHUB, label: 'GitHub' },
     ],
   },
   {
@@ -408,10 +386,29 @@ export const projects = [
     ],
   },
   {
+    slug: 'versetype',
+    category: 'tech',
+    title: 'VerseType',
+    description: 'A typing web app for memorizing the church’s monthly Bible verse.',
+    keywords: ['TypeScript', 'PWA', 'Web development'],
+    summary: [
+      'A progressive web app for Heaven’s Voice Church members to memorize the monthly Bible verse by typing it out, highlighting mistyped characters in real time and offering a mode that hides the verse text for unassisted practice.',
+      'It works offline after the first load, records daily attendance once a verse is typed correctly in full, and ships a new year of verses every January; it installs to the home screen directly from the browser, with no app store needed.',
+    ],
+    summaryKo: [
+      '하늘소리교회 교인들이 이달의 성경 말씀을 타이핑하며 암송하도록 돕는 PWA입니다. 틀린 글자를 실시간으로 표시하고, 원문을 가리고 연습하는 모드를 지원합니다.',
+      '처음 접속한 뒤에는 오프라인으로도 사용할 수 있으며, 말씀을 끝까지 맞게 입력하면 출석이 기록됩니다. 매년 1월에 한 해 치 말씀이 새로 배포되고, 앱스토어 없이 브라우저에서 바로 홈 화면에 설치할 수 있습니다.',
+    ],
+    links: [
+      { href: 'https://www.heavensvoicechurch.com/VerseType/', icon: ICON_CHROME, label: 'Website' },
+      { href: 'https://github.com/sorrychoe/VerseType', icon: ICON_GITHUB, label: 'GitHub' },
+    ],
+  },
+  {
     slug: 'heavens-voice-church',
     category: 'tech',
     title: 'Heaven’s Voice Church Website',
-    description: 'The official website for Heaven’s Voice Church, currently in development.',
+    description: 'The official website for Heaven’s Voice Church.',
     keywords: ['React', 'TypeScript', 'Tailwind CSS', 'Web development'],
     summary: [
       'The official website for Heaven’s Voice Church, a congregation of the Korean Gospel Church, built with React, TypeScript, Vite, and Tailwind CSS.',
@@ -481,4 +478,22 @@ export const projects = [
       { href: 'https://github.com/passion-story/shop-nanda', icon: ICON_GITHUB, label: 'GitHub' },
     ],
   },
+    {
+    slug: 'slack-weather-message',
+    category: 'tech',
+    title: 'Slack Weather Message',
+    description: 'A scheduled bot that posts Naver weather updates to Slack.',
+    keywords: ['Go', 'Slack API', 'GitHub Actions'],
+    summary: [
+      'A small Go program that scrapes the current weather from Naver and posts it to a Slack channel through an incoming webhook.',
+      'It runs unattended on a GitHub Actions cron schedule and can be retimed by editing the cron expression in the workflow file.',
+    ],
+    summaryKo: [
+      '네이버 날씨 정보를 크롤링해 Slack 채널에 incoming webhook으로 전송하는 Go 프로그램입니다.',
+      'GitHub Actions cron 스케줄로 무인 실행되며, 워크플로 파일의 cron 표현식을 수정해 실행 시간을 바꿀 수 있습니다.',
+    ],
+    links: [
+      { href: 'https://github.com/sorrychoe/slack-weather-message', icon: ICON_GITHUB, label: 'GitHub' },
+    ],
+  }
 ];
