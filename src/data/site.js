@@ -415,11 +415,11 @@ export const projects = [
     keywords: ['React', 'TypeScript', 'Tailwind CSS', 'Web development'],
     summary: [
       'The official website for Heaven’s Voice Church, a congregation of the Korean Gospel Church, built with React, TypeScript, Vite, and Tailwind CSS.',
-      'The site is still under development.',
+      'The site is being developed on request from the church.',
     ],
     summaryKo: [
       '기독교대한복음교회 하늘소리교회의 공식 웹사이트입니다. React, TypeScript, Vite, Tailwind CSS로 구축했습니다.',
-      '사이트는 아직 개발 중입니다. 교회 측 요청에 근거하여 개발하고 있습니다.',
+      '교회 측 요청에 근거하여 개발되었습니다..',
     ],
     links: [
       { href: 'https://www.heavensvoicechurch.com/', icon: ICON_CHROME, label: 'Website' },
