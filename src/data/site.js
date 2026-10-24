@@ -183,119 +183,6 @@ export const publications = [
 
 export const projects = [
   {
-    slug: 'optimal-vertiport-locations-seoul',
-    category: 'data',
-    title: 'Finding Optimal Vertiport Locations in the Seoul Metropolitan Area',
-    description:
-      'A K-Means clustering study siting 100 vertiports across Seoul.',
-    keywords: ['Clustering', 'Urban Air Mobility', 'Geospatial analysis'],
-    summary: [
-      'A spatial clustering study that combines GIS-based land-use filtering with weighted demand points from commuting patterns and worker population to site 100 candidate vertiports for urban air mobility across the Seoul metropolitan area.',
-      'K-Means clustering with centroid refinement produced the site set (silhouette score ≈ 0.4), delivered as an interactive Folium map and cluster spreadsheets alongside an IEEE-formatted writeup and presentation deck.',
-    ],
-    summaryKo: [
-      '도시항공교통(UAM)을 위해 서울 수도권에 수직이착륙장(Vertiport) 100곳을 입지시키는 공간 군집 분석 연구입니다. GIS 기반 토지이용 필터링과 통근 패턴·근로자 인구로 가중한 수요 지점을 결합했습니다.',
-      'K-Means 군집화와 중심점 보정으로 입지 후보를 도출했고(실루엣 점수 약 0.4), 결과는 인터랙티브 Folium 지도와 군집 스프레드시트, IEEE 형식 보고서 및 발표 자료로 정리했습니다.',
-    ],
-    links: [
-      {
-        href: 'https://github.com/sorrychoe/Finding-Optimal-Vertiport',
-        icon: ICON_GITHUB,
-        label: 'GitHub',
-      },
-    ],
-  },
-  {
-    slug: 'everything-of-handong',
-    category: 'data',
-    title: 'Everything of Handong, from 1995 to 2024',
-    description:
-      'A Time-Series News Analysis about Handong Global University',
-    keywords: ['Structural Topic Modeling', 'News analysis', 'Longitudinal'],
-    summary: [  
-      'A text-mining of 7,857 news articles about Handong Global University drawn from BigKinds and spanning 1995-2024, combining TF-IDF frequency analysis, lexicon-based sentiment scoring, and Structural Topic Modeling (STM) in R.',
-      'It surfaces six recurring topics — Christian identity, legal matters, faculty diplomatic commentary, admissions, personnel news, and outside recognition — finds coverage skews positive overall, and shows conservative outlets covering the university’s Christian identity more often than other outlets do.',
-    ],
-    summaryKo: [
-      '1995년부터 2024년까지 BigKinds에서 수집한 한동대학교 관련 뉴스 기사 7,857건을 분석한 텍스트 마이닝 연구입니다. TF-IDF 빈도 분석, 사전 기반 감성 점수, R의 구조적 토픽 모델(STM)을 함께 사용했습니다.',
-      '반복적으로 등장하는 여섯 개 토픽(기독교 정체성, 법적 사안, 교수진의 외교적 발언, 입학, 인사 소식, 외부 평가)을 도출했습니다. 전반적으로 보도는 긍정적 경향을 보였으며, 보수 성향 언론이 다른 언론보다 대학의 기독교 정체성을 더 자주 다뤘습니다.',
-    ],
-    links: [
-      {
-        href: 'https://github.com/TMT2/Everything-of-Handong',
-        icon: ICON_GITHUB,
-        label: 'GitHub',
-      },
-    ],
-  },
-  {
-    slug: 'topic-modeling-theory',
-    category: 'data',
-    title: 'Topic Modeling Theories',
-    description: 'A set of notebooks covering the theory behind major topic models.',
-    keywords: ['Topic modeling', 'Methodology notes'],
-    summary: [
-      'A study repository pairing theoretical notes with runnable Jupyter notebooks for seven topic-modeling approaches: Latent Dirichlet Allocation, Dynamic Topic Model, Topics Over Time, Correlated Topic Model, Structural Topic Model, Biterm Topic Model, and BERTopic.',
-      'Each notebook is self-contained and moves from foundational LDA concepts to neural, embedding-based methods, so it doubles as a reference for the assumptions behind each model and a working code example, rather than only a description of its software interface.',
-    ],
-    summaryKo: [
-      '토픽 모델 이론 설명과 실행 가능한 Jupyter 노트북을 함께 정리한 학습 저장소로, 7가지 토픽 모델링 기법(LDA, DTM, ToT, CTM, STM, BTM, BERTopic)을 다룹니다.',
-      '각 노트북은 독립적으로 구성되어 있으며, 기초적인 LDA 개념에서 임베딩 기반 신경망 방법까지 순서대로 다룹니다. 각 모델의 가정을 이해하는 참고 자료이자 실행 가능한 코드 예제로 활용할 수 있습니다.',
-    ],
-    links: [
-      {
-        href: 'https://github.com/sorrychoe/topic-modeling-theory',
-        icon: ICON_GITHUB,
-        label: 'GitHub',
-      },
-    ],
-  },
-  {
-    slug: 'attrition-analysis',
-    category: 'data',
-    title: 'Attrition Analysis',
-    description:
-      'A survival-analysis study of what drives employee attrition.',
-    keywords: ['People analytics', 'Statistical modeling'],
-    summary: [
-      'A statistical study of HR data from 310 employees (37.4% attrition) combining descriptive statistics, ANOVA, and Kaplan-Meier survival analysis to trace when and why employees leave.',
-      'It finds early-career departures dominate — 15% leave within the first year and 30% by year five, with departed staff at a median tenure of about 2 years versus 7+ for those retained — while performance ratings show no significant gap by gender, department, or race, and vendor-referral or website hires retain and perform best.',
-    ],
-    summaryKo: [
-      '인사 데이터(직원 310명, 이직률 37.4%)를 대상으로 기술통계, ANOVA, Kaplan-Meier 생존분석을 결합해 직원이 언제, 왜 떠나는지 분석한 통계 연구입니다.',
-      '초기 경력 이탈이 두드러졌습니다. 입사 1년 내 15%, 5년 내 30%가 떠났고, 퇴사자의 중위 재직 기간은 약 2년인 반면 잔류자는 7년 이상이었습니다. 성과 평가는 성별·부서·인종 간에 유의한 차이가 없었으며, 협력업체 추천이나 웹사이트를 통해 채용된 직원의 잔류율과 성과가 가장 높았습니다.',
-    ],
-    links: [
-      {
-        href: 'https://github.com/Analytics-for-People/Attrition-Analysis',
-        icon: ICON_GITHUB,
-        label: 'GitHub',
-      },
-    ],
-  },
-  {
-    slug: 'satisfaction-survey-analysis',
-    category: 'data',
-    title: 'Satisfaction Survey Analysis',
-    description: 'A correlation study of what drives employee job satisfaction.',
-    keywords: ['Survey analysis', 'People analytics'],
-    summary: [
-      'A statistical analysis of 3,025 employee survey responses across 23 items covering job satisfaction, work environment, stress, and work-life balance.',
-      'Correlation and probability-impact modeling show satisfaction rising with better work-life balance, a better work environment, and more sleep, while it falls with more stress, heavier workload, and overtime (roughly -51% for overtime present) — evidence that satisfaction is driven mainly by organizational conditions management can change, not individual traits.',
-    ],
-    summaryKo: [
-      '직무 만족도, 근무 환경, 스트레스, 워라밸 등 23개 문항에 응답한 직원 설문 3,025건을 분석한 통계 연구입니다.',
-      '상관분석과 확률 영향 모델링 결과, 워라밸·근무 환경이 좋을수록, 수면 시간이 길수록 만족도가 높았고, 스트레스·업무량·초과근무가 많을수록 낮았습니다(초과근무 존재 시 약 -51%). 만족도는 개인 특성보다 경영진이 바꿀 수 있는 조직 여건에 주로 좌우된다는 근거를 제시합니다.',
-    ],
-    links: [
-      {
-        href: 'https://github.com/Analytics-for-People/Satisfaction-Survey-Analysis',
-        icon: ICON_GITHUB,
-        label: 'GitHub',
-      },
-    ],
-  },
-  {
     slug: 'pybigkinds',
     category: 'tech',
     title: 'PyBigKinds',
@@ -478,7 +365,7 @@ export const projects = [
       { href: 'https://github.com/passion-story/shop-nanda', icon: ICON_GITHUB, label: 'GitHub' },
     ],
   },
-    {
+  {
     slug: 'slack-weather-message',
     category: 'tech',
     title: 'Slack Weather Message',
@@ -494,6 +381,119 @@ export const projects = [
     ],
     links: [
       { href: 'https://github.com/sorrychoe/slack-weather-message', icon: ICON_GITHUB, label: 'GitHub' },
+    ],
+  },
+  {
+    slug: 'optimal-vertiport-locations-seoul',
+    category: 'data',
+    title: 'Finding Optimal Vertiport Locations in the Seoul Metropolitan Area',
+    description:
+      'A K-Means clustering study siting 100 vertiports across Seoul.',
+    keywords: ['Clustering', 'Urban Air Mobility', 'Geospatial analysis'],
+    summary: [
+      'A spatial clustering study that combines GIS-based land-use filtering with weighted demand points from commuting patterns and worker population to site 100 candidate vertiports for urban air mobility across the Seoul metropolitan area.',
+      'K-Means clustering with centroid refinement produced the site set (silhouette score ≈ 0.4), delivered as an interactive Folium map and cluster spreadsheets alongside an IEEE-formatted writeup and presentation deck.',
+    ],
+    summaryKo: [
+      '도시항공교통(UAM)을 위해 서울 수도권에 수직이착륙장(Vertiport) 100곳을 입지시키는 공간 군집 분석 연구입니다. GIS 기반 토지이용 필터링과 통근 패턴·근로자 인구로 가중한 수요 지점을 결합했습니다.',
+      'K-Means 군집화와 중심점 보정으로 입지 후보를 도출했고(실루엣 점수 약 0.4), 결과는 인터랙티브 Folium 지도와 군집 스프레드시트, IEEE 형식 보고서 및 발표 자료로 정리했습니다.',
+    ],
+    links: [
+      {
+        href: 'https://github.com/sorrychoe/Finding-Optimal-Vertiport',
+        icon: ICON_GITHUB,
+        label: 'GitHub',
+      },
+    ],
+  },
+  {
+    slug: 'everything-of-handong',
+    category: 'data',
+    title: 'Everything of Handong, from 1995 to 2024',
+    description:
+      'A Time-Series News Analysis about Handong Global University',
+    keywords: ['Structural Topic Modeling', 'News analysis', 'Longitudinal'],
+    summary: [  
+      'A text-mining of 7,857 news articles about Handong Global University drawn from BigKinds and spanning 1995-2024, combining TF-IDF frequency analysis, lexicon-based sentiment scoring, and Structural Topic Modeling (STM) in R.',
+      'It surfaces six recurring topics — Christian identity, legal matters, faculty diplomatic commentary, admissions, personnel news, and outside recognition — finds coverage skews positive overall, and shows conservative outlets covering the university’s Christian identity more often than other outlets do.',
+    ],
+    summaryKo: [
+      '1995년부터 2024년까지 BigKinds에서 수집한 한동대학교 관련 뉴스 기사 7,857건을 분석한 텍스트 마이닝 연구입니다. TF-IDF 빈도 분석, 사전 기반 감성 점수, R의 구조적 토픽 모델(STM)을 함께 사용했습니다.',
+      '반복적으로 등장하는 여섯 개 토픽(기독교 정체성, 법적 사안, 교수진의 외교적 발언, 입학, 인사 소식, 외부 평가)을 도출했습니다. 전반적으로 보도는 긍정적 경향을 보였으며, 보수 성향 언론이 다른 언론보다 대학의 기독교 정체성을 더 자주 다뤘습니다.',
+    ],
+    links: [
+      {
+        href: 'https://github.com/TMT2/Everything-of-Handong',
+        icon: ICON_GITHUB,
+        label: 'GitHub',
+      },
+    ],
+  },
+  {
+    slug: 'topic-modeling-theory',
+    category: 'data',
+    title: 'Topic Modeling Theories',
+    description: 'A set of notebooks covering the theory behind major topic models.',
+    keywords: ['Topic modeling', 'Methodology notes'],
+    summary: [
+      'A study repository pairing theoretical notes with runnable Jupyter notebooks for seven topic-modeling approaches: Latent Dirichlet Allocation, Dynamic Topic Model, Topics Over Time, Correlated Topic Model, Structural Topic Model, Biterm Topic Model, and BERTopic.',
+      'Each notebook is self-contained and moves from foundational LDA concepts to neural, embedding-based methods, so it doubles as a reference for the assumptions behind each model and a working code example, rather than only a description of its software interface.',
+    ],
+    summaryKo: [
+      '토픽 모델 이론 설명과 실행 가능한 Jupyter 노트북을 함께 정리한 학습 저장소로, 7가지 토픽 모델링 기법(LDA, DTM, ToT, CTM, STM, BTM, BERTopic)을 다룹니다.',
+      '각 노트북은 독립적으로 구성되어 있으며, 기초적인 LDA 개념에서 임베딩 기반 신경망 방법까지 순서대로 다룹니다. 각 모델의 가정을 이해하는 참고 자료이자 실행 가능한 코드 예제로 활용할 수 있습니다.',
+    ],
+    links: [
+      {
+        href: 'https://github.com/sorrychoe/topic-modeling-theory',
+        icon: ICON_GITHUB,
+        label: 'GitHub',
+      },
+    ],
+  },
+  {
+    slug: 'attrition-analysis',
+    category: 'data',
+    title: 'Attrition Analysis',
+    description:
+      'A survival-analysis study of what drives employee attrition.',
+    keywords: ['People analytics', 'Statistical modeling'],
+    summary: [
+      'A statistical study of HR data from 310 employees (37.4% attrition) combining descriptive statistics, ANOVA, and Kaplan-Meier survival analysis to trace when and why employees leave.',
+      'It finds early-career departures dominate — 15% leave within the first year and 30% by year five, with departed staff at a median tenure of about 2 years versus 7+ for those retained — while performance ratings show no significant gap by gender, department, or race, and vendor-referral or website hires retain and perform best.',
+    ],
+    summaryKo: [
+      '인사 데이터(직원 310명, 이직률 37.4%)를 대상으로 기술통계, ANOVA, Kaplan-Meier 생존분석을 결합해 직원이 언제, 왜 떠나는지 분석한 통계 연구입니다.',
+      '초기 경력 이탈이 두드러졌습니다. 입사 1년 내 15%, 5년 내 30%가 떠났고, 퇴사자의 중위 재직 기간은 약 2년인 반면 잔류자는 7년 이상이었습니다. 성과 평가는 성별·부서·인종 간에 유의한 차이가 없었으며, 협력업체 추천이나 웹사이트를 통해 채용된 직원의 잔류율과 성과가 가장 높았습니다.',
+    ],
+    links: [
+      {
+        href: 'https://github.com/Analytics-for-People/Attrition-Analysis',
+        icon: ICON_GITHUB,
+        label: 'GitHub',
+      },
+    ],
+  },
+  {
+    slug: 'satisfaction-survey-analysis',
+    category: 'data',
+    title: 'Satisfaction Survey Analysis',
+    description: 'A correlation study of what drives employee job satisfaction.',
+    keywords: ['Survey analysis', 'People analytics'],
+    summary: [
+      'A statistical analysis of 3,025 employee survey responses across 23 items covering job satisfaction, work environment, stress, and work-life balance.',
+      'Correlation and probability-impact modeling show satisfaction rising with better work-life balance, a better work environment, and more sleep, while it falls with more stress, heavier workload, and overtime (roughly -51% for overtime present) — evidence that satisfaction is driven mainly by organizational conditions management can change, not individual traits.',
+    ],
+    summaryKo: [
+      '직무 만족도, 근무 환경, 스트레스, 워라밸 등 23개 문항에 응답한 직원 설문 3,025건을 분석한 통계 연구입니다.',
+      '상관분석과 확률 영향 모델링 결과, 워라밸·근무 환경이 좋을수록, 수면 시간이 길수록 만족도가 높았고, 스트레스·업무량·초과근무가 많을수록 낮았습니다(초과근무 존재 시 약 -51%). 만족도는 개인 특성보다 경영진이 바꿀 수 있는 조직 여건에 주로 좌우된다는 근거를 제시합니다.',
+    ],
+    links: [
+      {
+        href: 'https://github.com/Analytics-for-People/Satisfaction-Survey-Analysis',
+        icon: ICON_GITHUB,
+        label: 'GitHub',
+      },
     ],
   }
 ];
