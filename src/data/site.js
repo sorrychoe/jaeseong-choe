@@ -1,3 +1,6 @@
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { BsMortarboardFill } from 'react-icons/bs';
+
 // Single source of truth for site-wide metadata.
 // Override the domain per-environment with NEXT_PUBLIC_SITE_URL.
 export const SITE_URL = (
@@ -5,10 +8,10 @@ export const SITE_URL = (
 ).replace(/\/$/, '');
 
 export const TITLE =
-  'Jaeseong Choe | Data Analyst & Computational Communication Researcher';
+  'Jaeseong Choe | Data Engineer & Computational Communication Researcher';
 
 export const DESCRIPTION =
-  'Jaeseong Choe (최재성) is a data-driven researcher applying computational methods to uncover patterns in media discourse, public opinion, and social behavior.';
+  'Jaeseong Choe (최재성) is a data engineer with a background in analytics and computational communication research, building data pipelines and applying computational methods to media discourse and public opinion.';
 
 
 // Research interests as listed on the CV, surfaced in the About section.
@@ -19,18 +22,20 @@ export const RESEARCH_INTERESTS = [
   'Media Representation',
 ];
 
-// Profile links shown in the footer.
+// Profile links shown in the About section and the footer.
 export const PROFILE_LINKS = [
-  { href: 'https://github.com/sorrychoe', label: 'GitHub', icon: 'github' },
+  { href: 'https://github.com/sorrychoe', label: 'GitHub', icon: 'github', Icon: FaGithub },
   {
     href: 'https://www.linkedin.com/in/sorrychoe/',
     label: 'LinkedIn',
     icon: 'linkedin',
+    Icon: FaLinkedin,
   },
   {
     href: 'https://www.dbpia.co.kr/author/authorDetail?ancId=723491585',
     label: 'DBpia',
     icon: 'dbpia',
+    Icon: BsMortarboardFill,
   },
 ];
 
@@ -69,12 +74,11 @@ export const publications = [
       'These reporting patterns risk reinforcing social stigma and distancing individuals with mental illness from appropriate treatment and social support. This study highlights the importance of examining how media representations of mental illness are structured over time, and urges a shift toward more balanced, rights-based, and medically informed reporting on mental health in Korea.',
     ],
     summaryKo: [
-      '최근 한국사회에서는 정신질환과 관련된 사건·사고 소식이 끊이지 않고 보도된다. 이러한 언론보도는 자칫 특정 질병에 대한 편향된 담론을 형성할 수 있다는 점에서 주목할 만하다. 이에 본 연구는 현대식 정신의학 체계가 도입된 1960년부터 2024년까지 대한민국 주요 언론사 6곳(조선일보, 동아일보, 한겨레, 경향신문, 한국일보, 서울신문)에서 보도된 정신질환 특히 양극성 장애, 우울증, 조현병 관련 기사에 대한 언론의 재현 양상과 그 변화를 심층적으로 살펴보았다. 이를 위해 빅카인즈, 네이버 뉴스 라이브러리, 언론사 웹페이지 크롤링을 활용하여 총 53,051건의 기사(양극성 장애 2,907건, 우울증 43,719건, 조현병 6,425건)를 수집하였으며, 이후에는 TF-IDF 기반의 단어 빈도 분석과 딥러닝 기반의 토픽 모델링(BERTopic)을 시행하였다',
-      '분석 결과, 세 질환 모두 언론보도에서 ‘정신’, ‘치료’, ‘환자’ 등 의학적 맥락과 함께 ‘범죄’, ‘자살’, ‘사건’과 같은 부정적인 키워드가 높은 빈도를 보였다. 특히 양극성 장애와 조현병은 강력범죄 및 사건 사고 중심의 보도가 두드러졌고, 우울증은 자살과 연관된 보도가 높은 비율을 차지했다',
-      'BERTopic 모델을 통해 양극성 장애는 사건·사고 및 연예인 관련 토픽으로, 우울증은 예술, 의약물, 사회적 트라우마 및 성폭력 등 보다 다양한 사회적 맥락에서, 조현병은 범죄 관련 재판, 강력범죄, 예술 및 사회보건 이슈 등으로 보도되는 경향을 밝혀냈다. 또한, 언론의 정파성과 정신질환의 부정적 재현 간 연관 양상을 분석한 결과, 양극성 장애와 우울증 보도에서는 보수 성향 언론에서 범죄 및 사건·사고 중심 토픽이 상대적으로 두드러졌으며, 조현병 보도에서는 정파성과 무관하게 전체적으로 범죄 관련 토픽의 순위가 상대적으로 높게 나타났다',
+      '최근 한국사회에서는 정신질환과 관련된 사건·사고 소식이 끊이지 않고 보도된다. 이러한 언론보도는 자칫 특정 질병에 대한 편향된 담론을 형성할 수 있다는 점에서 주목할 만하다. 이에 본 연구는 현대식 정신의학 체계가 도입된 1960년부터 2024년까지 대한민국 주요 언론사 6곳(조선일보, 동아일보, 한겨레, 경향신문, 한국일보, 서울신문)에서 보도된 정신질환 특히 양극성 장애, 우울증, 조현병 관련 기사에 대한 언론의 재현 양상과 그 변화를 심층적으로 살펴보았다. 이를 위해 빅카인즈, 네이버 뉴스 라이브러리, 언론사 웹페이지 크롤링을 활용하여 총 53,051건의 기사(양극성 장애 2,907건, 우울증 43,719건, 조현병 6,425건)를 수집하였으며, 이후에는 TF-IDF 기반의 단어 빈도 분석과 딥러닝 기반의 토픽 모델링(BERTopic)을 시행하였다.',
+      '분석 결과, 세 질환 모두 언론보도에서 ‘정신’, ‘치료’, ‘환자’ 등 의학적 맥락과 함께 ‘범죄’, ‘자살’, ‘사건’과 같은 부정적인 키워드가 높은 빈도를 보였다. 특히 양극성 장애와 조현병은 강력범죄 및 사건 사고 중심의 보도가 두드러졌고, 우울증은 자살과 연관된 보도가 높은 비율을 차지했다.',
+      'BERTopic 모델을 통해 양극성 장애는 사건·사고 및 연예인 관련 토픽으로, 우울증은 예술, 의약물, 사회적 트라우마 및 성폭력 등 보다 다양한 사회적 맥락에서, 조현병은 범죄 관련 재판, 강력범죄, 예술 및 사회보건 이슈 등으로 보도되는 경향을 밝혀냈다. 또한, 언론의 정파성과 정신질환의 부정적 재현 간 연관 양상을 분석한 결과, 양극성 장애와 우울증 보도에서는 보수 성향 언론에서 범죄 및 사건·사고 중심 토픽이 상대적으로 두드러졌으며, 조현병 보도에서는 정파성과 무관하게 전체적으로 범죄 관련 토픽의 순위가 상대적으로 높게 나타났다.',
       '이러한 보도 행태는 정신질환에 대한 사회적 낙인을 강화하여 정신질환자들이 적절한 치료와 사회적 지원으로부터 멀어지게 할 수 있다는 점에서 사회적 문제를 내포한다. 본 연구는 언론이 정신질환을 다루는 방식이 사회적 인식과 태도 형성에 강력한 영향을 미친다는 점을 강조하며, 정신질환에 대한 균형 잡히고 책임 있는 보도의 필요성을 제언한다.',
     ],
-    url: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12889989',
     links: [
       {
         href: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12889989',
@@ -111,7 +115,7 @@ export const publications = [
       'Nationalism',
       'YouTube Shorts',
       'Comment',
-      'Gukbbong',
+      'Gukppong',
       'sBERT',
       'K-Means clustering'
     ],
@@ -121,7 +125,6 @@ export const publications = [
     summaryKo: [
       '본 연구는 최근 한국 사회에서 유튜브를 통해 확산되는 이른바 ‘국뽕’ 콘텐츠에 내재한 연성화된 민족주의 담론이 댓글 공간에서 어떻게 확대·재생산되는지 수용자의 참여 양식을 중심으로 분석하고자 한다. 이를 위해 유튜브 쇼츠 채널 10곳에서 수집한 상위 댓글 데이터를 대상으로 Sentence-BERT(sBERT) 기반 임베딩과 K-Means 클러스터링 분석을 수행하였다. 분석 결과, ‘문화 전쟁/혐중 정서’ 군집이 가장 큰 비중을 차지하며, 오늘날 한국의 신민족주의가 긍정적 자기 정체성보다는 외부의 ‘타자’와의 대립을 통해 형성되고 있음을 확인 하였다. 특히 ‘개별 영웅 서사’ 군집은 평균 댓글 길이와 댓글 길이 KL Divergence 지표에서 극단적 특성을 보여, 짧고 반복적인 찬사를 통해 이데올로기가 효율적으로 재생산되는 숏폼 플랫폼 친화적 소통 방식임을 시사한다. 또한 ‘문화 전쟁/혐중 정서’와 ‘역사·정치적 민족주의’ 군집에서는 높은 작성자 재방문율이 관찰되어, 해당 담론을 지속적으로 주도하는 핵심 이용자층의 존재가 확인되었다. 이러한 결과는 플랫폼 환경에서 정체성의 문화정치가 감각적·정동적 참여를 중심으로 재구성되며, 비판적 사고의 개입 없이 신민족주의 담론이 확산·고착화되는 양상을 보여준다.',
     ],
-    url: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12731248',
     links: [
       {
         href: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12731248',
@@ -162,15 +165,14 @@ export const publications = [
       'Media policy',
     ],
     summary: [
-      'Presented at the 2025 Fall Conference of Korean Association for Broadcasting & Telecommunication Studies (with prof. Jaewon Joo).',
-      'this paper studies how "publicness"(공공성) is discursively constructed in the debate over the future of Korean public service broadcasting.',
+      'Presented at the 2025 Fall Conference of the Korean Association for Broadcasting & Telecommunication Studies (with Prof. Jaewon Joo).',
+      'This paper applies Structural Topic Modeling (STM) to Korean newspaper editorials to examine how "publicness" (공공성) is discursively constructed in the debate over the future of Korean public service broadcasting.',
 
     ],
     summaryKo: [
       '2025년 한국방송학회 가을철 학술대회에서 발표한 논문입니다(주재원 교수와 공동 연구).',
-      '본 연구는 한국 공영방송의 미래를 둘러싼 논쟁에서 \'공공성(publicness)\'이 담론적으로 어떻게 구성되는지를 분석합니다.',
+      '본 연구는 언론사 사설에 구조적 토픽모델링(STM)을 적용하여, 한국 공영방송의 미래를 둘러싼 논쟁에서 \'공공성(publicness)\'이 담론적으로 어떻게 구성되는지를 분석합니다.',
     ],
-    url: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12480933',
     links: [
       {
         href: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12480933',
@@ -183,11 +185,33 @@ export const publications = [
 
 export const projects = [
   {
+    slug: 'real-estate-predict',
+    category: 'tech',
+    title: 'Real Estate Price Prediction',
+    description: 'A CLI tool that estimates multi-family housing sale prices in Seoul from real transaction data.',
+    keywords: ['Price prediction', 'Real estate', 'Public data API'],
+    summary: [
+      'A command-line program that estimates sale prices for multi-family housing in Seoul’s Hwagok-dong (Gangseo-gu), Gangnam-gu, and Gwanak-gu. Given a lot number, floor, and unit, it returns an estimated price, a price range, a confidence score, and the basis for the estimate as CSV.',
+      'It works out of the box on bundled historical transaction data, and can optionally query Korea’s public building registry and the Kakao Maps API at runtime for building area, completion year, and proximity to subway stations to refine the estimate.',
+    ],
+    summaryKo: [
+      '서울 강서구 화곡동, 강남구, 관악구의 다세대주택 매매 시세를 추정하는 명령행 프로그램입니다. 지번·층·호를 입력하면 추정 시세, 가격 범위, 신뢰도, 산출 근거를 CSV로 반환합니다.',
+      '저장소에 포함된 실거래 수집 자료만으로도 동작하며, API 키가 있으면 건축물대장(면적·준공 연도)과 카카오맵(건물·지하철역 위치)을 실행 중에 조회해 추정치를 보정합니다.',
+    ],
+    links: [
+      {
+        href: 'https://github.com/sorrychoe/real-estate-predict',
+        icon: ICON_GITHUB,
+        label: 'GitHub',
+      },
+    ],
+  },
+  {
     slug: 'pybigkinds',
     category: 'tech',
     title: 'PyBigKinds',
-    description: 'A low-code Python library for analyzing BigKinds news exports.',
-    keywords: ['Python', 'Text mining', 'BigKinds', 'Open source'],
+    description: 'Research software: a low-code Python library for analyzing BigKinds news exports.',
+    keywords: ['Python', 'Research software', 'Text mining', 'BigKinds', 'Open source'],
     summary: [
       'An open-source Python library that turns exports from BigKinds — the Korea Press Foundation’s news database — into ready-to-use dataframes, with utilities for cleaning, tokenizing, and reshaping the raw data for downstream text analysis and topic modeling.',
       'Built-in functions such as press_counter() and keywords_wordcloud() chart outlet-level publication counts and keyword word clouds with Korean-font support out of the box, so a raw export becomes a visualization in a few lines. Published on PyPI.',
@@ -213,8 +237,8 @@ export const projects = [
     slug: 'rbigkinds',
     category: 'tech',
     title: 'RBigKinds',
-    description: 'A low-code R package for analyzing BigKinds news exports.',
-    keywords: ['R', 'Text mining', 'BigKinds', 'Open source'],
+    description: 'Research software: a low-code R package for analyzing BigKinds news exports.',
+    keywords: ['R', 'Research software', 'Text mining', 'BigKinds', 'Open source'],
     summary: [
       'An R package that mirrors PyBigKinds for the R ecosystem, giving researchers a tidy, low-code workflow for importing and preprocessing BIGKINDS news exports straight from Excel.',
       'Functions such as press_counter() and keyword_dataframe() summarize article counts by outlet and rank keyword frequencies, preparing corpora for text mining and topic modeling. The package ships a documentation site generated with pkgdown.',
@@ -235,7 +259,25 @@ export const projects = [
         label: 'GitHub',
       },
     ],
-  },  
+  },
+  {
+    slug: 'bible-ai',
+    category: 'tech',
+    title: 'Bible AI',
+    description: 'A retrieval-augmented chatbot that recommends Bible verses for a worry you describe.',
+    keywords: ['LLM', 'Retrieval-augmented generation', 'Bible'],
+    summary: [
+      'A retrieval-augmented chatbot linked from the Heaven’s Voice Church website. It embeds verses from the Bible and, given a worry or concern typed in by the user, retrieves the passages that speak to it most closely before an LLM composes a response grounded in them.',
+      'Due to copyright restrictions, the source code is kept private; only the deployed Streamlit app is public.',
+    ],
+    summaryKo: [
+      '하늘소리교회 웹페이지에 연결된 검색 증강(RAG) 챗봇입니다. 성경 구절을 임베딩해 두고, 사용자가 적은 고민과 가장 가까운 구절을 검색한 뒤 그 구절에 근거해 LLM이 답변을 구성합니다.',
+      '저작권 이슈로 인해 소스 코드는 비공개이며, 배포된 Streamlit 앱만 공개합니다.',
+    ],
+    links: [
+      { href: 'https://bible-ai-sczqrmuesjcfqzcsmjytkf.streamlit.app/', icon: ICON_CHROME, label: 'Website' },
+    ],
+  },
   {
     slug: 'creationism-chatbot',
     category: 'tech',
@@ -255,21 +297,21 @@ export const projects = [
     ],
   },
   {
-    slug: 'bible-ai',
+    slug: 'insta-uploader',
     category: 'tech',
-    title: 'Bible AI',
-    description: 'A retrieval-augmented chatbot that recommends Bible verses for a worry you describe.',
-    keywords: ['LLM', 'Retrieval-augmented generation', 'Bible'],
+    title: 'Instagram Uploader',
+    description: 'A desktop app that drafts and publishes shopping-mall Instagram posts.',
+    keywords: ['Python', 'Automation','OpenAI API', 'Instagram Graph API'],
     summary: [
-      'A retrieval-augmented chatbot planned for deployment on the Heaven’s Voice Church website. It embeds verses from the Bible and, given a worry or concern typed in by the user, retrieves the passages that speak to it most closely before an LLM composes a response grounded in them.',
-      'The source code is kept private; only the deployed Streamlit app is public.',
+      'A desktop program that helps a Naver SmartStore seller publish product photos to Instagram: it converts 1 to 10 images to Instagram specifications, generates an editable product description and hashtags with the OpenAI API, and posts through the official Instagram API.',
+      'Built with Python, PySide6, and Pillow, with API keys stored in the Windows Credential Manager, a local SQLite history of past posts, and PyInstaller packaging through GitHub Actions.',
     ],
     summaryKo: [
-      '하늘소리교회 웹페이지에 연결된 검색 증강(RAG) 챗봇입니다. 성경 구절을 임베딩해 두고, 사용자가 적은 고민과 가장 가까운 구절을 검색한 뒤 그 구절에 근거해 LLM이 답변을 구성합니다.',
-      '저작권 이슈로 인해 소스 코드는 비공개이며, 배포된 Streamlit 앱만 공개합니다.',
+      '네이버 스마트스토어 판매자가 자사 제품 사진을 인스타그램에 쉽게 올릴 수 있도록 돕는 데스크톱 프로그램입니다. 사진 1~10장을 인스타 규격으로 변환하고, OpenAI API로 수정 가능한 소개글과 해시태그를 생성하며, 공식 Instagram API로 게시합니다.',
+      'Python, PySide6, Pillow로 개발했습니다. API 키는 Windows 자격 증명 관리자에 저장하고, 과거 게시 내역은 로컬 SQLite에 기록하며, GitHub Actions로 PyInstaller 빌드를 자동화했습니다.',
     ],
     links: [
-      { href: 'https://bible-ai-sczqrmuesjcfqzcsmjytkf.streamlit.app/', icon: ICON_CHROME, label: 'Website' },
+      { href: 'https://github.com/sorrychoe/insta-uploader', icon: ICON_GITHUB, label: 'GitHub' },
     ],
   },
   {
@@ -296,18 +338,37 @@ export const projects = [
     category: 'tech',
     title: 'Heaven’s Voice Church Website',
     description: 'The official website for Heaven’s Voice Church.',
-    keywords: ['React', 'TypeScript', 'Tailwind CSS', 'Web development'],
+    keywords: ['React', 'TypeScript', 'Web development', 'SEO'],
     summary: [
       'The official website for Heaven’s Voice Church, a congregation of the Korean Gospel Church, built with React, TypeScript, Vite, and Tailwind CSS.',
-      'The site is being developed on request from the church.',
+      'Built on request from the church; I handle the entire project on my own — planning, development, SEO, and ongoing operation.',
     ],
     summaryKo: [
       '기독교대한복음교회 하늘소리교회의 공식 웹사이트입니다. React, TypeScript, Vite, Tailwind CSS로 구축했습니다.',
-      '교회 측 요청에 근거하여 개발되었습니다..',
+      '교회 측 요청으로 제작했으며, 기획부터 개발, SEO, 운영까지 1인으로 담당하고 있습니다.',
     ],
     links: [
       { href: 'https://www.heavensvoicechurch.com/', icon: ICON_CHROME, label: 'Website' },
       { href: 'https://github.com/heavens-voice-church/heavens-voice-church.github.io', icon: ICON_GITHUB, label: 'GitHub' },
+    ],
+  },
+  { 
+    slug: 'shop-nanda',
+    category: 'tech',
+    title: 'ShopNanda Website',
+    description: 'The official website for the ShopNanda online shopping mall.',
+    keywords: ['Astro', 'Web development', 'SEO'],
+    summary: [
+      'The official website for the ShopNanda online shopping mall, built as a static site with Astro.',
+      'Built on request for the store; I handle the entire project on my own — planning, development, SEO, and ongoing operation.',
+    ],
+    summaryKo: [
+      '샵난다 온라인 쇼핑몰의 공식 웹사이트입니다. Astro로 구축한 정적 사이트이며 shopnanda.com에 배포되어 있습니다.',
+      '고객사 요청으로 제작했으며, 기획부터 개발, SEO, 운영까지 1인으로 담당하고 있습니다.',
+    ],
+    links: [
+      { href: 'https://www.shopnanda.com/', icon: ICON_CHROME, label: 'Website' },
+      { href: 'https://github.com/passion-story/shop-nanda', icon: ICON_GITHUB, label: 'GitHub' },
     ],
   },
   {
@@ -315,7 +376,7 @@ export const projects = [
     category: 'tech',
     title: 'WordCard',
     description: 'A desktop app that turns sermon summaries into Instagram card news and posts them.',
-    keywords: ['Python', 'Automation', 'Instagram Graph API'],
+    keywords: ['Automation', 'Instagram Graph API'],
     summary: [
       'A native desktop app that splits pasted sermon text and Bible verses into a series of 4:5 or 1:1 card images using church templates, then publishes them to the church Instagram account as a carousel.',
       'Handles Bible book names and abbreviations, Korean line breaking, and automatic font sizing; it works offline for card creation and uses only the official Instagram API when posting, with autosave and crash recovery.',
@@ -329,43 +390,6 @@ export const projects = [
     ],
   },
   {
-    slug: 'insta-uploader',
-    category: 'tech',
-    title: 'Instagram Uploader',
-    description: 'A desktop app that drafts and publishes shopping-mall Instagram posts.',
-    keywords: ['Python', 'Automation','OpenAI API', 'Instagram Graph API'],
-    summary: [
-      'A desktop program that helps a Naver SmartStore seller publish product photos to Instagram: it converts 1 to 10 images to Instagram specifications, generates an editable product description and hashtags with the OpenAI API, and posts through the official Instagram API.',
-      'Built with Python, PySide6, and Pillow, with API keys stored in the Windows Credential Manager, a local SQLite history of past posts, and PyInstaller packaging through GitHub Actions.',
-    ],
-    summaryKo: [
-      '네이버 스마트스토어 판매자가 자사 제품 사진을 인스타그램에 쉽게 올릴 수 있도록 돕는 데스크톱 프로그램입니다. 사진 1~10장을 인스타 규격으로 변환하고, OpenAI API로 수정 가능한 소개글과 해시태그를 생성하며, 공식 Instagram API로 게시합니다.',
-      'Python, PySide6, Pillow로 개발했습니다. API 키는 Windows 자격 증명 관리자에 저장하고, 과거 게시 내역은 로컬 SQLite에 기록하며, GitHub Actions로 PyInstaller 빌드를 자동화했습니다.',
-    ],
-    links: [
-      { href: 'https://github.com/sorrychoe/insta-uploader', icon: ICON_GITHUB, label: 'GitHub' },
-    ],
-  },
-  {
-    slug: 'shop-nanda',
-    category: 'tech',
-    title: 'ShopNanda Website',
-    description: 'The official website for the ShopNanda online shopping mall.',
-    keywords: ['Astro', 'Web development', 'E-commerce'],
-    summary: [
-      'The official website for the ShopNanda online shopping mall, built as a static site with Astro.',
-      'Developed on request for the store.',
-    ],
-    summaryKo: [
-      '샵난다 온라인 쇼핑몰의 공식 웹사이트입니다. Astro로 구축한 정적 사이트이며 shopnanda.com에 배포되어 있습니다.',
-      '고객사의 요청에 따라 개발이 이뤄졌습니다.',
-    ],
-    links: [
-      { href: 'https://www.shopnanda.com/', icon: ICON_CHROME, label: 'Website' },
-      { href: 'https://github.com/passion-story/shop-nanda', icon: ICON_GITHUB, label: 'GitHub' },
-    ],
-  },
-  {
     slug: 'optimal-vertiport-locations-seoul',
     category: 'data',
     title: 'Finding Optimal Vertiport Locations in the Seoul Metropolitan Area',
@@ -375,10 +399,12 @@ export const projects = [
     summary: [
       'A spatial clustering study that combines GIS-based land-use filtering with weighted demand points from commuting patterns and worker population to site 100 candidate vertiports for urban air mobility across the Seoul metropolitan area.',
       'K-Means clustering with centroid refinement produced the site set (silhouette score ≈ 0.4), delivered as an interactive Folium map and cluster spreadsheets alongside an IEEE-formatted writeup and presentation deck.',
+      'A team project that I led as team lead.',
     ],
     summaryKo: [
       '도시항공교통(UAM)을 위해 서울 수도권에 수직이착륙장(Vertiport) 100곳을 입지시키는 공간 군집 분석 연구입니다. GIS 기반 토지이용 필터링과 통근 패턴·근로자 인구로 가중한 수요 지점을 결합했습니다.',
       'K-Means 군집화와 중심점 보정으로 입지 후보를 도출했고(실루엣 점수 약 0.4), 결과는 인터랙티브 Folium 지도와 군집 스프레드시트, IEEE 형식 보고서 및 발표 자료로 정리했습니다.',
+      '팀 프로젝트로, 팀 리더를 맡았습니다.',
     ],
     links: [
       {
@@ -398,10 +424,12 @@ export const projects = [
     summary: [  
       'A text-mining of 7,857 news articles about Handong Global University drawn from BigKinds and spanning 1995-2024, combining TF-IDF frequency analysis, lexicon-based sentiment scoring, and Structural Topic Modeling (STM) in R.',
       'It surfaces six recurring topics — Christian identity, legal matters, faculty diplomatic commentary, admissions, personnel news, and outside recognition — finds coverage skews positive overall, and shows conservative outlets covering the university’s Christian identity more often than other outlets do.',
+      'A team project that I led as team lead.',
     ],
     summaryKo: [
       '1995년부터 2024년까지 BigKinds에서 수집한 한동대학교 관련 뉴스 기사 7,857건을 분석한 텍스트 마이닝 연구입니다. TF-IDF 빈도 분석, 사전 기반 감성 점수, R의 구조적 토픽 모델(STM)을 함께 사용했습니다.',
       '반복적으로 등장하는 여섯 개 토픽(기독교 정체성, 법적 사안, 교수진의 외교적 발언, 입학, 인사 소식, 외부 평가)을 도출했습니다. 전반적으로 보도는 긍정적 경향을 보였으며, 보수 성향 언론이 다른 언론보다 대학의 기독교 정체성을 더 자주 다뤘습니다.',
+      '팀 프로젝트로, 팀 리더를 맡았습니다.',
     ],
     links: [
       {
@@ -443,10 +471,12 @@ export const projects = [
     summary: [
       'A statistical study of HR data from 310 employees (37.4% attrition) combining descriptive statistics, ANOVA, and Kaplan-Meier survival analysis to trace when and why employees leave.',
       'It finds early-career departures dominate — 15% leave within the first year and 30% by year five, with departed staff at a median tenure of about 2 years versus 7+ for those retained — while performance ratings show no significant gap by gender, department, or race, and vendor-referral or website hires retain and perform best.',
+      'A team project that I led as team lead.',
     ],
     summaryKo: [
       '인사 데이터(직원 310명, 이직률 37.4%)를 대상으로 기술통계, ANOVA, Kaplan-Meier 생존분석을 결합해 직원이 언제, 왜 떠나는지 분석한 통계 연구입니다.',
       '초기 경력 이탈이 두드러졌습니다. 입사 1년 내 15%, 5년 내 30%가 떠났고, 퇴사자의 중위 재직 기간은 약 2년인 반면 잔류자는 7년 이상이었습니다. 성과 평가는 성별·부서·인종 간에 유의한 차이가 없었으며, 협력업체 추천이나 웹사이트를 통해 채용된 직원의 잔류율과 성과가 가장 높았습니다.',
+      '팀 프로젝트로, 팀 리더를 맡았습니다.',
     ],
     links: [
       {
@@ -465,10 +495,12 @@ export const projects = [
     summary: [
       'A statistical analysis of 3,025 employee survey responses across 23 items covering job satisfaction, work environment, stress, and work-life balance.',
       'Correlation and probability-impact modeling show satisfaction rising with better work-life balance, a better work environment, and more sleep, while it falls with more stress, heavier workload, and overtime (roughly -51% for overtime present) — evidence that satisfaction is driven mainly by organizational conditions management can change, not individual traits.',
+      'A team project that I led as team lead.',
     ],
     summaryKo: [
       '직무 만족도, 근무 환경, 스트레스, 워라밸 등 23개 문항에 응답한 직원 설문 3,025건을 분석한 통계 연구입니다.',
       '상관분석과 확률 영향 모델링 결과, 워라밸·근무 환경이 좋을수록, 수면 시간이 길수록 만족도가 높았고, 스트레스·업무량·초과근무가 많을수록 낮았습니다(초과근무 존재 시 약 -51%). 만족도는 개인 특성보다 경영진이 바꿀 수 있는 조직 여건에 주로 좌우된다는 근거를 제시합니다.',
+      '팀 프로젝트로, 팀 리더를 맡았습니다.',
     ],
     links: [
       {
@@ -477,5 +509,5 @@ export const projects = [
         label: 'GitHub',
       },
     ],
-  }
+  },
 ];

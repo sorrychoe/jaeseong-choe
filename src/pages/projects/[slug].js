@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import { SITE_URL, projects } from '../../data/site';
@@ -20,6 +20,8 @@ export async function getStaticProps({ params }) {
 }
 
 function ProjectPage({ project }) {
+  const [showKo, setShowKo] = useState(false);
+  const paragraphs = showKo && project.summaryKo ? project.summaryKo : project.summary;
   const pageUrl = `${SITE_URL}/projects/${project.slug}`;
   const metaDescription = project.summary[0].slice(0, 300);
 
@@ -47,22 +49,21 @@ function ProjectPage({ project }) {
           <p className={styles.kicker}>Project</p>
           <h1 className={styles.title}>{project.title}</h1>
           <p className={styles.meta}>{project.description}</p>
-          <p className={styles.langLabel}>English</p>
-          <div className={styles.body}>
-            {project.summary.map((para) => (
+          {project.summaryKo ? (
+            <button
+              type="button"
+              className={styles.langToggle}
+              aria-pressed={showKo}
+              onClick={() => setShowKo((value) => !value)}
+            >
+              {showKo ? 'Show in English' : '한국어로 보기'}
+            </button>
+          ) : null}
+          <div className={styles.body} lang={showKo ? 'ko' : 'en'}>
+            {paragraphs.map((para) => (
               <p key={para.slice(0, 40)}>{para}</p>
             ))}
           </div>
-          {project.summaryKo ? (
-            <>
-              <p className={styles.langLabel}>국문</p>
-              <div className={styles.body} lang="ko">
-              {project.summaryKo.map((para) => (
-                <p key={para.slice(0, 40)}>{para}</p>
-              ))}
-              </div>
-            </>
-          ) : null}
           {project.keywords?.length ? (
             <ul className={styles.keywords} aria-label="Keywords">
               {project.keywords.map((keyword) => (

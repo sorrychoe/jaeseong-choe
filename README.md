@@ -12,8 +12,7 @@ detail page.
 - CSS Modules for component styles, plain CSS for global styles
 - [AOS](https://michalsnik.github.io/aos/) for scroll animations
 - [`react-icons`](https://react-icons.github.io/react-icons/) for iconography
-- [`@vercel/og`](https://vercel.com/docs/functions/og-image-generation) for
-  dynamically generated Open Graph images
+- `next/og` (`ImageResponse`) for dynamically generated Open Graph images
 - Google Analytics via [`@next/third-parties`](https://nextjs.org/docs/app/guides/third-party-libraries)
 - Deployed on [Vercel](https://vercel.com/)
 

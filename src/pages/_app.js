@@ -1,6 +1,9 @@
 import "@/styles/app.css";
 import "@/styles/common.css";
+import { useEffect } from "react";
 import Head from "next/head";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { Inter } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
@@ -12,6 +15,10 @@ const inter = Inter({
 });
 
 export default function App({ Component, pageProps }) {
+  useEffect(() => {
+    AOS.init({ duration: 800, easing: "ease-in-out", once: true });
+  }, []);
+
   return (
     <div className={`${inter.variable} ${inter.className}`}>
       <Head>

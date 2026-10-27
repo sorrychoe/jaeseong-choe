@@ -10,7 +10,7 @@ export default function Document() {
           <style>{`[data-aos]{opacity:1!important;transform:none!important;}`}</style>
         </noscript>
       </Head>
-      <body className="antialiased">
+      <body>
         <Main />
         <NextScript />
       </body>

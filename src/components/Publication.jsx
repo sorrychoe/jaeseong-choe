@@ -1,16 +1,10 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './Publication.module.css';
 import { publications } from '../data/site';
 
 function Publication() {
-  useEffect(() => {
-    AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
-  }, []);
-
   return (
     <section id="publication" className="section" data-aos="fade-up">
       <div className="container">
@@ -51,7 +45,7 @@ function Publication() {
                       height={24}
                       width={24}
                       src={link.icon}
-                      alt={link.label}
+                      alt=""
                       className={styles.icon}
                       unoptimized
                     />

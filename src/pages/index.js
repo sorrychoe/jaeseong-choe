@@ -12,7 +12,7 @@ const OG_IMAGE = `${SITE_URL}/api/og`;
 
 function App() {
   return (
-    <div className="bg-black text-purple-200">
+    <div>
       <Head>
         <title>{TITLE}</title>
         <meta name="description" content={DESCRIPTION} />
@@ -28,7 +28,7 @@ function App() {
         <meta property="og:image:height" content="630" />
         <meta
           property="og:image:alt"
-          content="Jaeseong Choe — Computational Communication Researcher"
+          content="Jaeseong Choe — Data Engineer & Computational Communication Researcher"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={TITLE} />
@@ -38,7 +38,7 @@ function App() {
       <Header />
       <About />
       <Publication />
-      <Projects category="tech" title="Development Projects" />
+      <Projects category="tech" title="Engineering Projects" />
       <Projects category="data" title="Data Analysis Projects" />
       <Footer />
     </div>

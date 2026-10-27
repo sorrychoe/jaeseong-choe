@@ -1,42 +1,9 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React from 'react';
 import styles from './About.module.css';
-import { FaGithub, FaLinkedin, FaEnvelope, FaFilePdf } from 'react-icons/fa';
-import { BsMortarboardFill } from 'react-icons/bs';
-import { RESEARCH_INTERESTS } from '../data/site';
+import { FaEnvelope, FaFilePdf } from 'react-icons/fa';
+import { PROFILE_LINKS, RESEARCH_INTERESTS } from '../data/site';
 
 function About() {
-  useEffect(() => {
-    AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
-  }, []);
-
-  const handleDownload = (e) => {
-    e.preventDefault();
-    fetch('/cv.pdf')
-      .then((response) => response.blob())
-      .then((blob) => {
-        const url = window.URL.createObjectURL(blob);
-        const link = document.createElement('a');
-        link.href = url;
-        link.download = 'Jaeseong_Choe_CV.pdf';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-        window.URL.revokeObjectURL(url);
-      })
-      .catch((err) => {
-        console.error('Error downloading the CV:', err);
-        // Fallback
-        const link = document.createElement('a');
-        link.href = '/cv.pdf';
-        link.download = 'Jaeseong_Choe_CV.pdf';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-      });
-  };
-
   return (
     <section id="about" className="section" data-aos="fade-up">
       <div className="container">
@@ -44,16 +11,16 @@ function About() {
         <div className={`card ${styles.content}`}>
           <div className={styles.textContainer}>
             <p className={styles.text}>
-              <strong className={styles.strong}>Computational Communication Researcher and Data Analyst</strong> who moves between academic research and industry analytics, turning discourse, behavioral, and business data into decisions people can act on.
+              <strong className={styles.strong}>Data Engineer</strong> with a background in data analytics and computational communication research, building the pipelines and data infrastructure that turn raw discourse, behavioral, and business data into something analysts and researchers can trust.
             </p>
             <p className={styles.text}>
-              <strong className={styles.strong}>As a researcher</strong>, I apply NLP and topic modeling — STM, sBERT, and BERTopic — to media discourse and public opinion, with three studies accepted at KCI-listed journals and national conferences, spanning psychiatric stigma in Korean newspapers to neo-nationalist discourse on YouTube.
+              <strong className={styles.strong}>As an engineer</strong>, I develop and maintain the pipelines that collect and load real-estate data at my current company, and build dashboards for analyzing it. Before moving into data engineering, I spent a year as a marketing data analyst. I consolidated a three-brand KPI dashboard onto Databricks, cutting maintenance effort by 90%, and built demand-forecasting models that reached 93% accuracy. I also designed a GEO (Generative Engine Optimization) framework for measuring brand visibility in LLM responses. 
             </p>
             <p className={styles.text}>
-              <strong className={styles.strong}>As an analyst</strong>, I&apos;ve designed KPI systems, forecasting pipelines, and dashboards for marketing teams at NOL·Interpark·Triple and Ascent AI — consolidating a three-brand KPI dashboard onto Databricks to cut upkeep by 90%, building demand-forecasting models reaching 93% accuracy, and designing a GEO (Generative Engine Optimization) framework to measure brand visibility in LLM responses.
+              <strong className={styles.strong}>As a researcher</strong>, I apply NLP and topic modeling — STM, sBERT, and BERTopic — to media discourse and public opinion, with three studies published in KCI-listed journals and presented at national conferences, spanning psychiatric stigma in Korean newspapers to neo-nationalist discourse on YouTube. I also develop research software — PyBigKinds and RBigKinds, open-source Python and R packages that turn BigKinds news exports into analysis-ready data for text mining and topic modeling. Research remains a long-term direction, and I continue this work alongside engineering.
             </p>
             <p className={styles.text}>
-              Across both, the throughline is the same: analysis rigorous enough to publish, and practical enough to ship.
+              Across all of it, the throughline is the same: data infrastructure solid enough to trust, and analysis rigorous enough to publish.
             </p>
           </div>
           <div className={styles.interestsContainer} data-aos="fade-up">
@@ -70,43 +37,26 @@ function About() {
             <div className={styles.socialButtons}>
               <a
                 href="/cv.pdf"
-                onClick={handleDownload}
+                download="Jaeseong_Choe_CV.pdf"
                 className={`${styles.socialButton} ${styles.cv}`}
                 data-tooltip="Download CV (PDF)"
                 aria-label="Download CV"
               >
                 <FaFilePdf />
               </a>
-              <a
-                href="https://github.com/sorrychoe"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`${styles.socialButton} ${styles.github}`}
-                data-tooltip="GitHub"
-                aria-label="GitHub"
-              >
-                <FaGithub />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/sorrychoe/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`${styles.socialButton} ${styles.linkedin}`}
-                data-tooltip="LinkedIn"
-                aria-label="LinkedIn"
-              >
-                <FaLinkedin />
-              </a>
-              <a
-                href="https://www.dbpia.co.kr/author/authorDetail?ancId=723491585"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`${styles.socialButton} ${styles.dbpia}`}
-                data-tooltip="DBpia Profile"
-                aria-label="DBpia Profile"
-              >
-                <BsMortarboardFill />
-              </a>
+              {PROFILE_LINKS.map(({ href, label, icon, Icon }) => (
+                <a
+                  key={href}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${styles.socialButton} ${styles[icon]}`}
+                  data-tooltip={label}
+                  aria-label={label}
+                >
+                  <Icon />
+                </a>
+              ))}
               <a
                 href="mailto:cjssoote@gmail.com"
                 className={`${styles.socialButton} ${styles.email}`}
