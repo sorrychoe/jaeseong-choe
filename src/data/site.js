@@ -366,24 +366,6 @@ export const projects = [
     ],
   },
   {
-    slug: 'slack-weather-message',
-    category: 'tech',
-    title: 'Slack Weather Message',
-    description: 'A scheduled bot that posts Naver weather updates to Slack.',
-    keywords: ['Go', 'Slack API', 'GitHub Actions'],
-    summary: [
-      'A small Go program that scrapes the current weather from Naver and posts it to a Slack channel through an incoming webhook.',
-      'It runs unattended on a GitHub Actions cron schedule and can be retimed by editing the cron expression in the workflow file.',
-    ],
-    summaryKo: [
-      '네이버 날씨 정보를 크롤링해 Slack 채널에 incoming webhook으로 전송하는 Go 프로그램입니다.',
-      'GitHub Actions cron 스케줄로 무인 실행되며, 워크플로 파일의 cron 표현식을 수정해 실행 시간을 바꿀 수 있습니다.',
-    ],
-    links: [
-      { href: 'https://github.com/sorrychoe/slack-weather-message', icon: ICON_GITHUB, label: 'GitHub' },
-    ],
-  },
-  {
     slug: 'optimal-vertiport-locations-seoul',
     category: 'data',
     title: 'Finding Optimal Vertiport Locations in the Seoul Metropolitan Area',
