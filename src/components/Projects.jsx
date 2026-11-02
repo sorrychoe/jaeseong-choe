@@ -4,13 +4,13 @@ import Link from 'next/link';
 import styles from './Projects.module.css';
 import { projects } from '../data/site';
 
-function Projects({ category, title }) {
+function Projects() {
   return (
-    <section id={`projects-${category}`} className="section" data-aos="fade-up">
+    <section className="section">
       <div className="container">
-        <h2 className="section-title">{title}</h2>
+        <h2 className="section-title">Development Projects</h2>
         <div className={styles.grid}>
-          {projects.filter((project) => project.category === category).map((project) => (
+          {projects.map((project) => (
             <div className={`card ${styles.card}`} key={project.slug}>
               <h3 className={styles.cardTitle}>
                 <Link

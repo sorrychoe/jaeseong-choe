@@ -28,6 +28,14 @@ const nextConfig = {
           },
         ],
       },
+      {
+        // The CV tab embeds this PDF, so it alone may be framed by this site.
+        source: "/cv.pdf",
+        headers: [
+          { key: "X-Frame-Options", value: "SAMEORIGIN" },
+          { key: "Content-Security-Policy", value: "frame-ancestors 'self'" },
+        ],
+      },
     ];
   },
 };

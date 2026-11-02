@@ -6,8 +6,8 @@ export default function Document() {
       <Head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <noscript>
-          {/* AOS sets [data-aos] elements to opacity:0 until scroll; keep content visible without JS. */}
-          <style>{`[data-aos]{opacity:1!important;transform:none!important;}`}</style>
+          {/* Tabs need JS to switch; without it, show every panel. */}
+          <style>{`[hidden]{display:block!important;}`}</style>
         </noscript>
       </Head>
       <body>

@@ -6,9 +6,9 @@ import { publications } from '../data/site';
 
 function Publication() {
   return (
-    <section id="publication" className="section" data-aos="fade-up">
+    <section className="section">
       <div className="container">
-        <h2 className="section-title">Publications</h2>
+        <h2 className="section-title">Research</h2>
         <div className={styles.grid}>
           {publications.map((publication) => (
             <div className={`card ${styles.card}`} key={publication.slug}>

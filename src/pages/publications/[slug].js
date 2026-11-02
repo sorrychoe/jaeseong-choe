@@ -51,8 +51,8 @@ function PublicationPage({ publication }) {
       </Head>
       <div className="container">
         <article className={styles.article}>
-          <Link href="/#publication" className={styles.back}>
-            ← All publications
+          <Link href="/#research" className={styles.back}>
+            ← Back to Research
           </Link>
           <p className={styles.kicker}>
             {isConference ? 'Conference Paper' : 'Journal Article'}

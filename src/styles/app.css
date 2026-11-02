@@ -1,9 +1,5 @@
 /* Inter is self-hosted via next/font (see src/pages/_app.js) and exposed as --font-inter. */
 
-html {
-  scroll-behavior: smooth;
-}
-
 /* Box sizing rules */
 *,
 *::before,

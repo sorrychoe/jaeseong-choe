@@ -1,72 +1,107 @@
 import React from 'react';
 import styles from './About.module.css';
-import { FaEnvelope, FaFilePdf } from 'react-icons/fa';
+import { FaEnvelope } from 'react-icons/fa';
+import { TabLink } from './Navbar';
 import { PROFILE_LINKS, RESEARCH_INTERESTS } from '../data/site';
+
+const HIGHLIGHTS = [
+  {
+    period: 'Now',
+    title: 'Data Engineering',
+    items: [
+      'Develop and maintain the pipelines that collect and load real-estate data',
+      'Build dashboards for analyzing that data',
+      'Outside work, build tools end to end, from data collection to deployment',
+    ],
+    link: { href: '/#development', label: 'Development projects →' },
+  },
+  {
+    period: 'Before',
+    title: 'Marketing Analytics',
+    items: [
+      'Consolidated a three-brand KPI dashboard onto Databricks, cutting maintenance effort by 90%',
+      'Built demand-forecasting models that reached 93% accuracy',
+      'Designed a GEO (Generative Engine Optimization) framework for measuring brand visibility in LLM responses',
+    ],
+  },
+  {
+    period: 'Ongoing',
+    title: 'Computational Research',
+    items: [
+      'Apply NLP and topic modeling (STM, sBERT, BERTopic) to media discourse and public opinion',
+      'Three studies published in KCI-listed journals and presented at national conferences',
+      'Develop PyBigKinds and RBigKinds, open-source research software for news data',
+    ],
+    link: { href: '/#research', label: 'Research →' },
+  },
+];
 
 function About() {
   return (
-    <section id="about" className="section" data-aos="fade-up">
+    <section className={styles.about}>
       <div className="container">
-        <h2 className="section-title">About Me</h2>
-        <div className={`card ${styles.content}`}>
-          <div className={styles.textContainer}>
-            <p className={styles.text}>
-              <strong className={styles.strong}>Data Engineer</strong> with a background in data analytics and computational communication research, building the pipelines and data infrastructure that turn raw discourse, behavioral, and business data into something analysts and researchers can trust.
-            </p>
-            <p className={styles.text}>
-              <strong className={styles.strong}>As an engineer</strong>, I develop and maintain the pipelines that collect and load real-estate data at my current company, and build dashboards for analyzing it. Before moving into data engineering, I spent a year as a marketing data analyst. I consolidated a three-brand KPI dashboard onto Databricks, cutting maintenance effort by 90%, and built demand-forecasting models that reached 93% accuracy. I also designed a GEO (Generative Engine Optimization) framework for measuring brand visibility in LLM responses. 
-            </p>
-            <p className={styles.text}>
-              <strong className={styles.strong}>As a researcher</strong>, I apply NLP and topic modeling — STM, sBERT, and BERTopic — to media discourse and public opinion, with three studies published in KCI-listed journals and presented at national conferences, spanning psychiatric stigma in Korean newspapers to neo-nationalist discourse on YouTube. I also develop research software — PyBigKinds and RBigKinds, open-source Python and R packages that turn BigKinds news exports into analysis-ready data for text mining and topic modeling. Research remains a long-term direction, and I continue this work alongside engineering.
-            </p>
-            <p className={styles.text}>
-              Across all of it, the throughline is the same: data infrastructure solid enough to trust, and analysis rigorous enough to publish.
-            </p>
+        <div className={styles.hero}>
+          <h2 className={styles.greeting}>Hi, I&apos;m Jaeseong.</h2>
+          <p className={styles.lead}>
+            I&apos;m a <strong>Data Engineer</strong> with a background in data analytics and computational communication research. I build the pipelines and data infrastructure that turn raw discourse, behavioral, and business data into something analysts and researchers can trust.
+          </p>
+          <div className={styles.actions}>
+            <TabLink href="/#cv" className={styles.primary}>
+              View my CV
+            </TabLink>
+            <TabLink href="/#research" className={styles.secondary}>
+              See my publications
+            </TabLink>
           </div>
-          <div className={styles.interestsContainer} data-aos="fade-up">
-            <h3 className={styles.interestsHeading}>Research Interests</h3>
-            <ul className={styles.interests} aria-label="Research interests">
-              {RESEARCH_INTERESTS.map((interest) => (
-                <li key={interest} className={styles.interest}>
-                  {interest}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className={styles.buttonContainer} data-aos="fade-up">
-            <div className={styles.socialButtons}>
-              <a
-                href="/cv.pdf"
-                download="Jaeseong_Choe_CV.pdf"
-                className={`${styles.socialButton} ${styles.cv}`}
-                data-tooltip="Download CV (PDF)"
-                aria-label="Download CV"
-              >
-                <FaFilePdf />
-              </a>
-              {PROFILE_LINKS.map(({ href, label, icon, Icon }) => (
-                <a
-                  key={href}
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`${styles.socialButton} ${styles[icon]}`}
-                  data-tooltip={label}
-                  aria-label={label}
-                >
-                  <Icon />
+          <ul className={styles.contacts}>
+            {PROFILE_LINKS.map(({ href, label, Icon }) => (
+              <li key={href}>
+                <a href={href} target="_blank" rel="noopener noreferrer" className={styles.contact}>
+                  <Icon aria-hidden="true" />
+                  {label}
                 </a>
-              ))}
-              <a
-                href="mailto:cjssoote@gmail.com"
-                className={`${styles.socialButton} ${styles.email}`}
-                data-tooltip="Email"
-                aria-label="Email"
-              >
-                <FaEnvelope />
+              </li>
+            ))}
+            <li>
+              <a href="mailto:cjssoote@gmail.com" className={styles.contact}>
+                <FaEnvelope aria-hidden="true" />
+                Email
               </a>
-            </div>
-          </div>
+            </li>
+          </ul>
+        </div>
+
+        <div className={styles.grid}>
+          {HIGHLIGHTS.map(({ period, title, items, link }) => (
+            <article key={title} className={styles.highlight}>
+              <p className={styles.period}>{period}</p>
+              <h3 className={styles.highlightTitle}>{title}</h3>
+              <ul className={styles.items}>
+                {items.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+              {link && (
+                <TabLink href={link.href} className={styles.more}>
+                  {link.label}
+                </TabLink>
+              )}
+            </article>
+          ))}
+        </div>
+
+        <div className={styles.closing}>
+          <p className={styles.throughline}>
+            Across all of it, the throughline is the same: data infrastructure solid enough to trust, and analysis rigorous enough to publish. Research remains a long-term direction, and I continue this work alongside engineering.
+          </p>
+          <h3 className={styles.interestsHeading}>Research Interests</h3>
+          <ul className={styles.interests}>
+            {RESEARCH_INTERESTS.map((interest) => (
+              <li key={interest} className={styles.interest}>
+                {interest}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>

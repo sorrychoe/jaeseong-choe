@@ -1,16 +1,19 @@
 import React from 'react';
 import Head from 'next/head';
-import Header from '../components/Header';
 import About from '../components/About';
 import Projects from '../components/Projects';
 import Publication from '../components/Publication';
+import CV from '../components/CV';
 import Footer from '../components/Footer';
+import { useActiveTab } from '../components/Navbar';
 import { SITE_URL, TITLE, DESCRIPTION } from '../data/site';
 
 const HOME_URL = `${SITE_URL}/`;
 const OG_IMAGE = `${SITE_URL}/api/og`;
 
 function App() {
+  const activeTab = useActiveTab();
+
   return (
     <div>
       <Head>
@@ -35,11 +38,16 @@ function App() {
         <meta name="twitter:description" content={DESCRIPTION} />
         <meta name="twitter:image" content={OG_IMAGE} />
       </Head>
-      <Header />
-      <About />
-      <Publication />
-      <Projects category="tech" title="Engineering Projects" />
-      <Projects category="data" title="Data Analysis Projects" />
+      <div hidden={activeTab !== 'about'}>
+        <About />
+      </div>
+      {activeTab === 'cv' && <CV />}
+      <div hidden={activeTab !== 'research'}>
+        <Publication />
+      </div>
+      <div hidden={activeTab !== 'development'}>
+        <Projects />
+      </div>
       <Footer />
     </div>
   );

@@ -10,7 +10,6 @@ detail page.
 
 - [Next.js 16](https://nextjs.org/) (Pages Router) + [React 19](https://react.dev/)
 - CSS Modules for component styles, plain CSS for global styles
-- [AOS](https://michalsnik.github.io/aos/) for scroll animations
 - [`react-icons`](https://react-icons.github.io/react-icons/) for iconography
 - `next/og` (`ImageResponse`) for dynamically generated Open Graph images
 - Google Analytics via [`@next/third-parties`](https://nextjs.org/docs/app/guides/third-party-libraries)
@@ -52,7 +51,7 @@ jaeseong-choe/
 │   ├── cv.pdf
 │   └── favicon.svg
 └── src/
-    ├── components/          # About, Header, Navbar, Publication, Projects, Footer
+    ├── components/          # About, Navbar, Publication, Projects, CV, Footer
     ├── data/
     │   └── site.js          # Single source of truth: metadata, publications, projects
     ├── pages/

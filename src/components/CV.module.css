@@ -1,0 +1,56 @@
+.cv {
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+}
+
+.inner {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.title {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.action {
+  padding: 0.5rem 1rem;
+  border: 1px solid #7c3aed; /* purple-600 */
+  border-radius: 0.5rem;
+  color: #f9fafb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.action:hover {
+  background-color: rgba(124, 58, 237, 0.2);
+}
+
+.viewer {
+  display: block;
+  width: 100%;
+  max-width: 56rem;
+  height: calc(100vh - 9rem);
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #374151;
+  border-radius: 0.5rem;
+}
+
+.fallback {
+  padding: 2rem;
+  text-align: center;
+}
