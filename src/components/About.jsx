@@ -7,10 +7,11 @@ import { PROFILE_LINKS, RESEARCH_INTERESTS } from '../data/site';
 const HIGHLIGHTS = [
   {
     period: 'Now',
-    title: 'Data Engineering',
+    title: 'AI Data Engineering',
     items: [
       'Develop and maintain the pipelines that collect and load real-estate data',
       'Build dashboards for analyzing that data',
+      'Integrate and deploy AI features in the product backend',
       'Outside work, build tools end to end, from data collection to deployment',
     ],
     link: { href: '/#development', label: 'Development projects →' },
@@ -43,7 +44,7 @@ function About() {
         <div className={styles.hero}>
           <h2 className={styles.greeting}>Hi, I&apos;m Jaeseong.</h2>
           <p className={styles.lead}>
-            I&apos;m a <strong>Data Engineer</strong> with a background in data analytics and computational communication research. I build the pipelines and data infrastructure that turn raw discourse, behavioral, and business data into something analysts and researchers can trust.
+            I&apos;m an <strong>AI Data Engineer</strong> with a background in data analytics and computational communication research. I build the pipelines, data infrastructure, and AI integrations that turn raw discourse, behavioral, and business data into something analysts and researchers can trust.
           </p>
           <div className={styles.actions}>
             <TabLink href="/#cv" className={styles.primary}>

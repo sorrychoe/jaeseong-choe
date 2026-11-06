@@ -8,10 +8,10 @@ export const SITE_URL = (
 ).replace(/\/$/, '');
 
 export const TITLE =
-  'Jaeseong Choe | Data Engineer & Computational Communication Researcher';
+  'Jaeseong Choe | AI Data Engineer & Computational Communication Researcher';
 
 export const DESCRIPTION =
-  'Jaeseong Choe (최재성) is a data engineer with a background in analytics and computational communication research, building data pipelines and applying computational methods to media discourse and public opinion.';
+  'Jaeseong Choe (최재성) is an AI data engineer with a background in analytics and computational communication research, building data pipelines, deploying AI in product backends, and applying computational methods to media discourse and public opinion.';
 
 
 // Research interests as listed on the CV, surfaced in the About section.

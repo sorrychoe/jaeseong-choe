@@ -31,7 +31,7 @@ function App() {
         <meta property="og:image:height" content="630" />
         <meta
           property="og:image:alt"
-          content="Jaeseong Choe — Data Engineer & Computational Communication Researcher"
+          content="Jaeseong Choe — AI Data Engineer & Computational Communication Researcher"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={TITLE} />
