@@ -7,18 +7,17 @@ import { PROFILE_LINKS, RESEARCH_INTERESTS } from '../data/site';
 const HIGHLIGHTS = [
   {
     period: 'Now',
-    title: 'AI Data Engineering',
+    title: 'Data Engineering',
     items: [
       'Develop and maintain the pipelines that collect and load real-estate data',
       'Build dashboards for analyzing that data',
-      'Integrate and deploy AI features in the product backend',
       'Outside work, build tools end to end, from data collection to deployment',
     ],
     link: { href: '/#development', label: 'Development projects →' },
   },
   {
     period: 'Before',
-    title: 'Marketing Analytics',
+    title: 'Marketing Data Analytics',
     items: [
       'Consolidated a three-brand KPI dashboard onto Databricks, cutting maintenance effort by 90%',
       'Built demand-forecasting models that reached 93% accuracy',
@@ -27,7 +26,7 @@ const HIGHLIGHTS = [
   },
   {
     period: 'Ongoing',
-    title: 'Computational Research',
+    title: 'Computational Communication Research',
     items: [
       'Apply NLP and topic modeling (STM, sBERT, BERTopic) to media discourse and public opinion',
       'Three studies published in KCI-listed journals and presented at national conferences',
@@ -44,7 +43,7 @@ function About() {
         <div className={styles.hero}>
           <h2 className={styles.greeting}>Hi, I&apos;m Jaeseong.</h2>
           <p className={styles.lead}>
-            I&apos;m an <strong>AI Data Engineer</strong> with a background in data analytics and computational communication research. I build the pipelines, data infrastructure, and AI integrations that turn raw discourse, behavioral, and business data into something analysts and researchers can trust.
+            I&apos;m a <strong>Data Engineer</strong> with a background in data analytics and computational communication research. I build the pipelines and data infrastructure that turn raw discourse, behavioral, and business data into something analysts and researchers can trust.
           </p>
           <div className={styles.actions}>
             <TabLink href="/#cv" className={styles.primary}>
