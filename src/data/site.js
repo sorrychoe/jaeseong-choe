@@ -185,21 +185,91 @@ export const publications = [
 
 export const projects = [
   {
-    slug: 'real-estate-predict',
-    title: 'Real Estate Price Prediction',
-    description: 'A CLI tool that estimates multi-family housing sale prices in Seoul from real transaction data.',
-    keywords: ['Price prediction', 'Real estate', 'Public data API'],
+    slug: 'topicsovertime',
+    title: 'topicsovertime',
+    description: 'Research software: an R package for the Topics over Time continuous-time topic model.',
+    keywords: ['R', 'C++', 'Research software', 'Topic modeling', 'Open source'],
     summary: [
-      'A command-line program that estimates sale prices for multi-family housing in Seoul’s Hwagok-dong (Gangseo-gu), Gangnam-gu, and Gwanak-gu. Given a lot number, floor, and unit, it returns an estimated price, a price range, a confidence score, and the basis for the estimate as CSV.',
-      'It works out of the box on bundled historical transaction data, and can optionally query Korea’s public building registry and the Kakao Maps API at runtime for building area, completion year, and proximity to subway stations to refine the estimate.',
+      'An R implementation of the Topics over Time (TOT) model of Wang and McCallum (2006): an LDA-style topic model in which each topic also has a Beta distribution over continuous time, so topics are shaped by both word co-occurrence and when documents were written — without slicing time into periods or assuming Markov dynamics.',
+      'Inference uses collapsed Gibbs sampling written in C++ via Rcpp. A fitted model plots topic trends over time and predicts the topic proportions and timestamps of new documents. The package accepts quanteda and tm document-term matrices, simulates synthetic corpora, and documents where it departs from a literal reading of the paper.',
     ],
     summaryKo: [
-      '서울 강서구 화곡동, 강남구, 관악구의 다세대주택 매매 시세를 추정하는 명령행 프로그램입니다. 지번·층·호를 입력하면 추정 시세, 가격 범위, 신뢰도, 산출 근거를 CSV로 반환합니다.',
-      '저장소에 포함된 실거래 수집 자료만으로도 동작하며, API 키가 있으면 건축물대장(면적·준공 연도)과 카카오맵(건물·지하철역 위치)을 실행 중에 조회해 추정치를 보정합니다.',
+      'Wang과 McCallum(2006)의 Topics over Time(TOT) 모델을 R로 구현한 패키지입니다. TOT는 각 토픽이 단어 분포와 함께 연속 시간에 대한 베타 분포를 갖는 LDA 계열 토픽 모델로, 시간을 구간으로 나누거나 마르코프 동역학을 가정하지 않고 단어 공기 관계와 문서 작성 시점을 함께 반영해 토픽을 찾습니다.',
+      '추론은 Rcpp 기반 C++로 구현한 collapsed Gibbs 샘플링을 사용합니다. 학습한 모델로 시간에 따른 토픽 추이를 그리고, 새 문서의 토픽 비율과 작성 시점을 예측할 수 있습니다. quanteda와 tm의 문서-단어 행렬을 지원하고, 합성 코퍼스 시뮬레이션 기능과 함께 논문을 그대로 구현하지 않은 부분도 문서로 밝혀 두었습니다.',
     ],
     links: [
+      // TODO: uncomment once published.
+      // {
+      //   href: 'https://CRAN.R-project.org/package=topicsovertime',
+      //   icon: 'https://cdn.simpleicons.org/r/FFFFFF',
+      //   label: 'CRAN',
+      // },
       {
-        href: 'https://github.com/sorrychoe/real-estate-predict',
+        href: 'https://sorrychoe.github.io/topicsovertime/',
+        icon: ICON_GITBOOK,
+        label: 'Documentation',
+      },
+      {
+        href: 'https://github.com/sorrychoe/topicsovertime',
+        icon: ICON_GITHUB,
+        label: 'GitHub',
+      },
+    ],
+  },
+  {
+    slug: 'kiwikorean-jl',
+    title: 'KiwiKorean.jl',
+    description: 'Research software: Korean morphological analysis for Julia, built on the Kiwi analyzer.',
+    keywords: ['Julia', 'Research software', 'Korean NLP', 'Morphological analysis', 'Open source'],
+    summary: [
+      'A Julia package for Korean morphological analysis that calls the C API of Kiwi, an open-source Korean morphological analyzer, directly through ccall, so it needs no Python or Java. Installing it downloads the Kiwi binary and model automatically on Linux and macOS.',
+      'It provides tokenization, part-of-speech tagging, noun extraction, sentence splitting, and spacing correction, along with dictionary-form lemmas, character positions for every token, user dictionaries, typo correction, and unsupervised extraction of new words from a corpus. Its output feeds straight into TextAnalysis.jl for document-term matrices and TF-IDF.',
+    ],
+    summaryKo: [
+      '오픈소스 한국어 형태소 분석기 Kiwi의 C API를 ccall로 직접 호출하는 Julia 형태소 분석 패키지로, Python이나 Java 없이 동작합니다. Linux와 macOS에서는 설치할 때 Kiwi 바이너리와 모델을 자동으로 내려받습니다.',
+      '토큰화, 품사 태깅, 명사 추출, 문장 분리, 띄어쓰기 교정을 제공하며, 기본형(lemma) 복원, 토큰별 원문 위치, 사용자 사전, 오타 교정, 코퍼스 기반 비지도 신조어 추출도 지원합니다. 결과는 TextAnalysis.jl에 바로 넣어 문서-단어 행렬과 TF-IDF를 계산할 수 있습니다.',
+    ],
+    links: [
+      // TODO: uncomment once published.
+      // {
+      //   href: 'https://juliahub.com/ui/Packages/General/KiwiKorean',
+      //   icon: 'https://cdn.simpleicons.org/julia/FFFFFF',
+      //   label: 'JuliaHub',
+      // },
+      {
+        href: 'https://github.com/sorrychoe/KiwiKorean.jl',
+        icon: ICON_GITHUB,
+        label: 'GitHub',
+      },
+    ],
+  },
+  {
+    slug: 'knewsr',
+    title: 'knewsr',
+    description: 'Research software: an R package for collecting, preprocessing, and text-mining Korean news.',
+    keywords: ['R', 'Research software', 'Text mining', 'Korean news', 'Open source'],
+    summary: [
+      'An R package that automates collecting and preprocessing Korean news data and runs basic text analysis in a few lines of code. Excel, CSV, and JSON files (including BigKinds exports), any data frame with title and body columns, the Naver News Search API, and RSS/Atom feeds all go into the same pipeline.',
+      'It computes term and document frequencies, TF-IDF, sparse document-term matrices, n-grams, co-occurrence, keyness between groups, and term trends over time, with a plotting function for each. It succeeds RBigKinds, which handled only BigKinds exports, and comes with a pkgdown documentation site.',
+    ],
+    summaryKo: [
+      '한국어 뉴스 데이터의 수집과 전처리를 자동화하고, 기초 텍스트 분석을 몇 줄의 R 코드로 끝내는 패키지입니다. Excel·CSV·JSON 파일(BigKinds 내보내기 포함), 제목·본문 컬럼이 있는 data.frame, 네이버 뉴스 검색 API, RSS/Atom 피드를 모두 같은 파이프라인에 넣을 수 있습니다.',
+      '단어·문서 빈도, TF-IDF, 희소 문서-단어 행렬(DTM), n-gram, 공기어, 집단 간 키니스(keyness), 기간별 단어 추이를 계산하고 각각을 시각화합니다. BigKinds 데이터만 다루던 RBigKinds를 대체하며, pkgdown 문서 사이트를 함께 제공합니다.',
+    ],
+    links: [
+      // TODO: uncomment once published.
+      // {
+      //   href: 'https://CRAN.R-project.org/package=knewsr',
+      //   icon: 'https://cdn.simpleicons.org/r/FFFFFF',
+      //   label: 'CRAN',
+      // },
+      {
+        href: 'https://sorrychoe.github.io/knewsr/',
+        icon: ICON_GITBOOK,
+        label: 'Documentation',
+      },
+      {
+        href: 'https://github.com/sorrychoe/knewsr',
         icon: ICON_GITHUB,
         label: 'GitHub',
       },
@@ -207,16 +277,16 @@ export const projects = [
   },
   {
     slug: 'pybigkinds',
-    title: 'PyBigKinds',
-    description: 'Research software: a low-code Python library for analyzing BigKinds news exports.',
-    keywords: ['Python', 'Research software', 'Text mining', 'BigKinds', 'Open source'],
+    title: 'pyBigKinds',
+    description: 'Research software: a no-code app and low-code Python toolkit for analyzing BigKinds news exports.',
+    keywords: ['Python', 'Research software', 'Text mining', 'BigKinds', 'Streamlit', 'Open source'],
     summary: [
-      'An open-source Python library that turns exports from BigKinds — the Korea Press Foundation’s news database — into ready-to-use dataframes, with utilities for cleaning, tokenizing, and reshaping the raw data for downstream text analysis and topic modeling.',
-      'Built-in functions such as press_counter() and keywords_wordcloud() chart outlet-level publication counts and keyword word clouds with Korean-font support out of the box, so a raw export becomes a visualization in a few lines. Published on PyPI.',
+      'An open-source Python toolkit for analyzing exports from BigKinds — the Korea Press Foundation’s news database. Version 2.0 adds a no-code web app built on Streamlit: upload BigKinds Excel files and get outlet-level article counts, keyword frequencies and word clouds, TF-IDF, clustering and dimensionality reduction, and LDA and association rules, with every table downloadable as CSV and every chart as PNG.',
+      'BigKinds exports at most 20,000 articles at a time, so read_bigkinds() merges files downloaded over separate periods and removes duplicate articles. The same analyses remain available as low-code Python functions such as press_counter() and keywords_wordcloud(). Heavier dependencies moved into optional extras ([ml], [app]); v1 code runs unchanged except that lda() and association() now need the [ml] extra. Published on PyPI.',
     ],
     summaryKo: [
-      '한국언론진흥재단의 뉴스 데이터베이스 BigKinds에서 내려받은 데이터를 분석용 데이터프레임으로 변환하는 오픈소스 Python 라이브러리입니다. 텍스트 분석과 토픽 모델링에 앞서 원자료를 정제·토큰화·재구조화하는 기능을 제공합니다.',
-      'press_counter()와 keywords_wordcloud() 같은 내장 함수로 언론사별 기사 수와 키워드 워드클라우드를 한글 폰트 지원과 함께 몇 줄의 코드로 시각화할 수 있습니다. PyPI에 배포되어 있습니다.',
+      '한국언론진흥재단의 뉴스 데이터베이스 BigKinds에서 내려받은 데이터를 분석하는 오픈소스 Python 툴킷입니다. 2.0 버전에서 Streamlit 기반 No-Code 웹 앱을 추가했습니다. BigKinds 엑셀 파일을 올리면 언론사별 기사 수, 키워드 빈도와 워드클라우드, TF-IDF, 군집·차원축소, LDA·연관규칙 분석을 제공하며, 모든 표는 CSV로, 그림은 PNG로 내려받을 수 있습니다.',
+      'BigKinds는 한 번에 20,000건까지만 내보낼 수 있어, read_bigkinds()가 기간을 나눠 받은 여러 파일을 하나로 합치고 중복 기사를 제거합니다. 같은 분석을 press_counter(), keywords_wordcloud() 같은 로우코드 Python 함수로도 쓸 수 있습니다. 무거운 의존성은 선택 설치([ml], [app])로 분리했으며, lda()와 association()에 [ml]이 필요해진 것 외에는 v1 코드가 그대로 동작합니다. PyPI에 배포되어 있습니다.',
     ],
     links: [
       {
@@ -226,32 +296,6 @@ export const projects = [
       },
       {
         href: 'https://github.com/sorrychoe/pyBigKinds',
-        icon: ICON_GITHUB,
-        label: 'GitHub',
-      },
-    ],
-  },
-  {
-    slug: 'rbigkinds',
-    title: 'RBigKinds',
-    description: 'Research software: a low-code R package for analyzing BigKinds news exports.',
-    keywords: ['R', 'Research software', 'Text mining', 'BigKinds', 'Open source'],
-    summary: [
-      'An R package that mirrors PyBigKinds for the R ecosystem, giving researchers a tidy, low-code workflow for importing and preprocessing BIGKINDS news exports straight from Excel.',
-      'Functions such as press_counter() and keyword_dataframe() summarize article counts by outlet and rank keyword frequencies, preparing corpora for text mining and topic modeling. The package ships a documentation site generated with pkgdown.',
-    ],
-    summaryKo: [
-      'pyBigKinds와 같은 기능을 R 생태계에 맞게 구현한 R 패키지입니다. 연구자가 엑셀로 내려받은 BigKinds 뉴스 데이터를 로우코드 방식으로 불러오고 전처리할 수 있습니다.',
-      'press_counter()와 keyword_dataframe() 등으로 언론사별 기사 수를 집계하고 키워드 빈도를 순위화해, 텍스트 마이닝과 토픽 모델링을 위한 코퍼스를 준비합니다. pkgdown으로 생성한 문서 사이트를 함께 제공합니다.',
-    ],
-    links: [
-      {
-        href: 'https://sorrychoe.github.io/RBigKinds/',
-        icon: ICON_GITBOOK,
-        label: 'Documentation',
-      },
-      {
-        href: 'https://github.com/sorrychoe/RBigKinds',
         icon: ICON_GITHUB,
         label: 'GitHub',
       },
@@ -292,20 +336,24 @@ export const projects = [
     ],
   },
   {
-    slug: 'insta-uploader',
-    title: 'Instagram Uploader',
-    description: 'A desktop app that drafts and publishes shopping-mall Instagram posts.',
-    keywords: ['Python', 'Automation','OpenAI API', 'Instagram Graph API'],
+    slug: 'real-estate-predict',
+    title: 'Real Estate Price Prediction',
+    description: 'A CLI tool that estimates multi-family housing sale prices in Seoul from real transaction data.',
+    keywords: ['Price prediction', 'Real estate', 'Public data API'],
     summary: [
-      'A desktop program that helps a Naver SmartStore seller publish product photos to Instagram: it converts 1 to 10 images to Instagram specifications, generates an editable product description and hashtags with the OpenAI API, and posts through the official Instagram API.',
-      'Built with Python, PySide6, and Pillow, with API keys stored in the Windows Credential Manager, a local SQLite history of past posts, and PyInstaller packaging through GitHub Actions.',
+      'A command-line program that estimates sale prices for multi-family housing in Seoul’s Hwagok-dong (Gangseo-gu), Gangnam-gu, and Gwanak-gu. Given a lot number, floor, and unit, it returns an estimated price, a price range, a confidence score, and the basis for the estimate as CSV.',
+      'It works out of the box on bundled historical transaction data, and can optionally query Korea’s public building registry and the Kakao Maps API at runtime for building area, completion year, and proximity to subway stations to refine the estimate.',
     ],
     summaryKo: [
-      '네이버 스마트스토어 판매자가 자사 제품 사진을 인스타그램에 쉽게 올릴 수 있도록 돕는 데스크톱 프로그램입니다. 사진 1~10장을 인스타 규격으로 변환하고, OpenAI API로 수정 가능한 소개글과 해시태그를 생성하며, 공식 Instagram API로 게시합니다.',
-      'Python, PySide6, Pillow로 개발했습니다. API 키는 Windows 자격 증명 관리자에 저장하고, 과거 게시 내역은 로컬 SQLite에 기록하며, GitHub Actions로 PyInstaller 빌드를 자동화했습니다.',
+      '서울 강서구 화곡동, 강남구, 관악구의 다세대주택 매매 시세를 추정하는 명령행 프로그램입니다. 지번·층·호를 입력하면 추정 시세, 가격 범위, 신뢰도, 산출 근거를 CSV로 반환합니다.',
+      '저장소에 포함된 실거래 수집 자료만으로도 동작하며, API 키가 있으면 건축물대장(면적·준공 연도)과 카카오맵(건물·지하철역 위치)을 실행 중에 조회해 추정치를 보정합니다.',
     ],
     links: [
-      { href: 'https://github.com/sorrychoe/insta-uploader', icon: ICON_GITHUB, label: 'GitHub' },
+      {
+        href: 'https://github.com/sorrychoe/real-estate-predict',
+        icon: ICON_GITHUB,
+        label: 'GitHub',
+      },
     ],
   },
   {
@@ -377,6 +425,23 @@ export const projects = [
     ],
     links: [
       { href: 'https://github.com/sorrychoe/WordCard', icon: ICON_GITHUB, label: 'GitHub' },
+    ],
+  },
+  {
+    slug: 'insta-uploader',
+    title: 'Instagram Uploader',
+    description: 'A desktop app that drafts and publishes shopping-mall Instagram posts.',
+    keywords: ['Python', 'Automation','OpenAI API', 'Instagram Graph API'],
+    summary: [
+      'A desktop program that helps a Naver SmartStore seller publish product photos to Instagram: it converts 1 to 10 images to Instagram specifications, generates an editable product description and hashtags with the OpenAI API, and posts through the official Instagram API.',
+      'Built with Python, PySide6, and Pillow, with API keys stored in the Windows Credential Manager, a local SQLite history of past posts, and PyInstaller packaging through GitHub Actions.',
+    ],
+    summaryKo: [
+      '네이버 스마트스토어 판매자가 자사 제품 사진을 인스타그램에 쉽게 올릴 수 있도록 돕는 데스크톱 프로그램입니다. 사진 1~10장을 인스타 규격으로 변환하고, OpenAI API로 수정 가능한 소개글과 해시태그를 생성하며, 공식 Instagram API로 게시합니다.',
+      'Python, PySide6, Pillow로 개발했습니다. API 키는 Windows 자격 증명 관리자에 저장하고, 과거 게시 내역은 로컬 SQLite에 기록하며, GitHub Actions로 PyInstaller 빌드를 자동화했습니다.',
+    ],
+    links: [
+      { href: 'https://github.com/sorrychoe/insta-uploader', icon: ICON_GITHUB, label: 'GitHub' },
     ],
   },
 ];

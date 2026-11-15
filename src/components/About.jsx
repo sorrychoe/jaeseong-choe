@@ -30,7 +30,7 @@ const HIGHLIGHTS = [
     items: [
       'Apply NLP and topic modeling (STM, sBERT, BERTopic) to media discourse and public opinion',
       'Three studies published in KCI-listed journals and presented at national conferences',
-      'Develop PyBigKinds and RBigKinds, open-source research software for news data',
+      'Develop open-source research software for Korean text analysis and topic modeling: topicsovertime, knewsr, and KiwiKorean.jl',
     ],
     link: { href: '/#research', label: 'Research →' },
   },
