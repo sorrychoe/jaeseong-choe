@@ -24,7 +24,6 @@ function PublicationPage({ publication }) {
   const paragraphs = showKo && publication.summaryKo ? publication.summaryKo : publication.summary;
   const pageUrl = `${SITE_URL}/publications/${publication.slug}`;
   const metaDescription = publication.summary[0].slice(0, 300);
-  const isConference = publication.type === 'conference';
 
   const metaParts = [
     publication.authors.join(', '),
@@ -54,9 +53,7 @@ function PublicationPage({ publication }) {
           <Link href="/#research" className={styles.back}>
             ← Back to Research
           </Link>
-          <p className={styles.kicker}>
-            {isConference ? 'Conference Paper' : 'Journal Article'}
-          </p>
+          <p className={styles.kicker}>Journal Article</p>
           <h1 className={styles.title}>{publication.title}</h1>
           <p className={styles.titleKo} lang="ko">
             {publication.titleKo}

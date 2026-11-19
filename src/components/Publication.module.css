@@ -1,40 +1,65 @@
-.grid {
-  display: grid;
-  gap: 2rem;
+.groupTitle {
+  width: 100%;
+  max-width: 56rem;
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
 }
 
-@media (min-width: 768px) {
-  .grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (min-width: 1024px) {
-  .grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-}
-
-.card {
-  padding: 1.5rem;
+.list {
   display: flex;
   flex-direction: column;
-
-  /* Add transition for hover effect */
-  transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out, border-color 300ms ease-in-out;
+  gap: 1rem;
+  width: 100%;
+  max-width: 56rem;
+  margin: 0 0 3rem;
+  padding: 0;
+  list-style: none;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 25px -5px rgba(168, 85, 247, 0.2), 0 8px 10px -6px rgba(168, 85, 247, 0.1);
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background-color: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 0.5rem;
+  transition: border-color 200ms;
+}
+
+.row:hover {
   border-color: #a855f7;
 }
 
-.cardTitle {
-  font-size: 1.25rem;
-  font-weight: 700;
+.talk {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.year {
+  flex-shrink: 0;
+  width: 3rem;
+  margin: 0.125rem 0 0;
+  color: #a78bfa;
+  font-weight: 600;
+}
+
+.body {
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.title {
+  margin: 0 0 0.5rem;
   color: #ffffff;
-  margin-bottom: 0.01rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.talk .title {
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .titleLink {
@@ -47,21 +72,29 @@
   text-decoration: underline;
 }
 
-.cardMeta {
+.meta {
+  margin: 0 0 0.75rem;
   color: #9ca3af;
-  font-size: 0.85rem;
-  margin: 0.5rem 0 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
 }
 
-.cardDescription {
+.self {
   color: #d1d5db;
-  margin-bottom: 1rem;
-  flex-grow: 1;
+}
+
+.talk .meta {
+  margin-bottom: 0;
+}
+
+.description {
+  margin: 0 0 0.75rem;
+  color: #d1d5db;
 }
 
 .detailLink {
   display: inline-block;
-  margin-bottom: 1rem;
+  margin-top: 0.5rem;
   color: #a855f7;
   font-weight: 600;
   font-size: 0.9rem;
@@ -74,16 +107,12 @@
 
 .links {
   display: flex;
-  align-items: center;
+  flex-shrink: 0;
+  gap: 1rem;
 }
 
 .link {
   transition: transform 300ms;
-  margin-right: 1rem;
-}
-
-.link:last-child {
-  margin-right: 0;
 }
 
 .link:hover {
@@ -93,4 +122,12 @@
 .icon {
   height: 24px;
   width: 24px;
+}
+
+@media (max-width: 640px) {
+  .row {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.25rem;
+  }
 }

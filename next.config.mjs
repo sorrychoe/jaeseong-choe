@@ -21,7 +21,7 @@ const nextConfig = {
               "default-src 'self'",
               "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com",
               "style-src 'self' 'unsafe-inline'",
-              "img-src 'self' data: https://www.google-analytics.com https://cdn.simpleicons.org",
+              "img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com https://cdn.simpleicons.org",
               "font-src 'self' data:",
               "connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com",
               "frame-ancestors 'none'",
