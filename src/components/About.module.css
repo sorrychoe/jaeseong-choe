@@ -3,10 +3,31 @@
   padding-bottom: 4rem;
 }
 
+/* Korean wraps at word boundaries, not mid-syllable-cluster. */
+.about[lang='ko'] {
+  word-break: keep-all;
+}
+
 .hero {
   width: 100%;
   max-width: 44rem;
   margin-bottom: 3.5rem;
+}
+
+.langToggle {
+  margin: 0 0 1.25rem;
+  padding: 0.35rem 0.9rem;
+  background-color: transparent;
+  border: 1px solid #a855f7;
+  border-radius: 0.5rem;
+  color: #a855f7;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.langToggle:hover {
+  background-color: rgba(168, 85, 247, 0.15);
 }
 
 .greeting {
@@ -132,37 +153,6 @@
 
 .more:hover {
   text-decoration: underline;
-}
-
-.closing {
-  width: 100%;
-  max-width: 44rem;
-}
-
-.throughline {
-  margin: 0 0 2rem;
-  line-height: 1.7;
-}
-
-.interestsHeading {
-  margin: 0 0 0.75rem;
-  font-size: 1rem;
-}
-
-.interests {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.interest {
-  padding: 0.25rem 0.75rem;
-  border: 1px solid #374151;
-  border-radius: 0.5rem;
-  font-size: 0.875rem;
 }
 
 @media (max-width: 900px) {

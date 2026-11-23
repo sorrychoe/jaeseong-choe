@@ -43,7 +43,7 @@ function ProjectPage({ project }) {
       </Head>
       <div className="container">
         <article className={styles.article}>
-          <Link href="/#development" className={styles.back}>
+          <Link href="/#projects" className={styles.back}>
             ← All projects
           </Link>
           <p className={styles.kicker}>Project</p>

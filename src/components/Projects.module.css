@@ -88,3 +88,13 @@
   height: 24px;
   width: 24px;
 }
+
+.groupTitle {
+  width: 100%;
+  margin: 0 0 1.25rem;
+  font-size: 1.25rem;
+}
+
+.grid + .groupTitle {
+  margin-top: 3rem;
+}

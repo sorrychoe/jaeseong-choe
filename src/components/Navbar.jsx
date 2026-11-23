@@ -5,9 +5,9 @@ import styles from './Navbar.module.css';
 
 const TABS = [
   { id: 'about', label: 'About' },
-  { id: 'cv', label: 'CV' },
+  { id: 'projects', label: 'Projects' },
   { id: 'research', label: 'Research' },
-  { id: 'development', label: 'Development' },
+  { id: 'cv', label: 'CV' },
 ];
 
 // next/link changes the hash with pushState, which doesn't fire hashchange;

@@ -8,10 +8,10 @@ export const SITE_URL = (
 ).replace(/\/$/, '');
 
 export const TITLE =
-  'Jaeseong Choe | Data Engineer & Computational Communication Researcher';
+  'Jaeseong Choe | AX & Data Analytics';
 
 export const DESCRIPTION =
-  'Jaeseong Choe (최재성) is a data engineer with a background in analytics and computational communication research, building data pipelines, deploying AI in product backends, and applying computational methods to media discourse and public opinion.';
+  'Jaeseong Choe (최재성) works at the intersection of AI transformation (AX) and data analytics: building AI and automation tools for real business workflows and measuring their impact.';
 
 
 // Research interests as listed on the CV, surfaced in the About section.
@@ -207,9 +207,10 @@ export const conferences = [
 export const projects = [
   {
     slug: 'topicsovertime',
+    group: 'oss',
     title: 'topicsovertime',
-    description: 'Research software: an R package for the Topics over Time continuous-time topic model.',
-    keywords: ['R', 'C++', 'Research software', 'Topic modeling', 'Open source'],
+    description: 'An R package with a C++ (Rcpp) Gibbs sampler for the Topics over Time topic model.',
+    keywords: ['R', 'C++', 'Topic modeling', 'Open source'],
     summary: [
       'An R implementation of the Topics over Time (TOT) model of Wang and McCallum (2006): an LDA-style topic model in which each topic also has a Beta distribution over continuous time, so topics are shaped by both word co-occurrence and when documents were written — without slicing time into periods or assuming Markov dynamics.',
       'Inference uses collapsed Gibbs sampling written in C++ via Rcpp. A fitted model plots topic trends over time and predicts the topic proportions and timestamps of new documents. The package accepts quanteda and tm document-term matrices, simulates synthetic corpora, and documents where it departs from a literal reading of the paper.',
@@ -238,9 +239,10 @@ export const projects = [
   },
   {
     slug: 'knewsr',
+    group: 'oss',
     title: 'knewsr',
-    description: 'Research software: an R package for collecting, preprocessing, and text-mining Korean news.',
-    keywords: ['R', 'Research software', 'Text mining', 'Korean news', 'Open source'],
+    description: 'An R package that collects, preprocesses, and text-mines Korean news from files, APIs, and RSS feeds.',
+    keywords: ['R', 'Text mining', 'Korean news', 'Open source'],
     summary: [
       'An R package that automates collecting and preprocessing Korean news data and runs basic text analysis in a few lines of code. Excel, CSV, and JSON files (including BigKinds exports), any data frame with title and body columns, the Naver News Search API, and RSS/Atom feeds all go into the same pipeline.',
       'It computes term and document frequencies, TF-IDF, sparse document-term matrices, n-grams, co-occurrence, keyness between groups, and term trends over time, with a plotting function for each. It succeeds RBigKinds, which handled only BigKinds exports, and comes with a pkgdown documentation site.',
@@ -269,9 +271,10 @@ export const projects = [
   },
   {
     slug: 'kiwikorean-jl',
+    group: 'oss',
     title: 'KiwiKorean.jl',
-    description: 'Research software: Korean morphological analysis for Julia, built on the Kiwi analyzer.',
-    keywords: ['Julia', 'Research software', 'Korean NLP', 'Morphological analysis', 'Open source'],
+    description: 'A Julia package that calls the Kiwi C API directly for Korean morphological analysis.',
+    keywords: ['Julia', 'Korean NLP', 'Morphological analysis', 'Open source'],
     summary: [
       'A Julia package for Korean morphological analysis that calls the C API of Kiwi, an open-source Korean morphological analyzer, directly through ccall, so it needs no Python or Java. Installing it downloads the Kiwi binary and model automatically on Linux and macOS.',
       'It provides tokenization, part-of-speech tagging, noun extraction, sentence splitting, and spacing correction, along with dictionary-form lemmas, character positions for every token, user dictionaries, typo correction, and unsupervised extraction of new words from a corpus. Its output feeds straight into TextAnalysis.jl for document-term matrices and TF-IDF.',
@@ -295,9 +298,10 @@ export const projects = [
   },
   {
     slug: 'pybigkinds',
+    group: 'oss',
     title: 'pyBigKinds',
-    description: 'Research software: a no-code app and low-code Python toolkit for analyzing BigKinds news exports.',
-    keywords: ['Python', 'Research software', 'Text mining', 'BigKinds', 'Streamlit', 'Open source'],
+    description: 'A PyPI package and no-code Streamlit app for analyzing BigKinds news exports.',
+    keywords: ['Python', 'Text mining', 'BigKinds', 'Streamlit', 'Open source'],
     summary: [
       'An open-source Python toolkit for analyzing exports from BigKinds — the Korea Press Foundation’s news database. Version 2.0 adds a no-code web app built on Streamlit: upload BigKinds Excel files and get outlet-level article counts, keyword frequencies and word clouds, TF-IDF, clustering and dimensionality reduction, and LDA and association rules, with every table downloadable as CSV and every chart as PNG.',
       'BigKinds exports at most 20,000 articles at a time, so read_bigkinds() merges files downloaded over separate periods and removes duplicate articles. The same analyses remain available as low-code Python functions such as press_counter() and keywords_wordcloud(). Heavier dependencies moved into optional extras ([ml], [app]); v1 code runs unchanged except that lda() and association() now need the [ml] extra. Published on PyPI.',
@@ -319,26 +323,9 @@ export const projects = [
       },
     ],
   },
-  {
-    slug: 'heavens-voice-church',
-    title: 'Heaven’s Voice Church Website',
-    description: 'The official website for Heaven’s Voice Church.',
-    keywords: ['React', 'TypeScript', 'Web development', 'SEO'],
-    summary: [
-      'The official website for Heaven’s Voice Church, a congregation of the Korean Gospel Church, built with React, TypeScript, Vite, and Tailwind CSS.',
-      'Built on request from the church; I handle the entire project on my own — planning, development, SEO, and ongoing operation.',
-    ],
-    summaryKo: [
-      '기독교대한복음교회 하늘소리교회의 공식 웹사이트입니다. React, TypeScript, Vite, Tailwind CSS로 구축했습니다.',
-      '교회 측 요청으로 제작했으며, 기획부터 개발, SEO, 운영까지 1인으로 담당하고 있습니다.',
-    ],
-    links: [
-      { href: 'https://www.heavensvoicechurch.com/', icon: ICON_CHROME, label: 'Website' },
-      // { href: 'https://github.com/heavens-voice-church/heavens-voice-church.github.io', icon: ICON_GITHUB, label: 'GitHub' },
-    ],
-  },
   { 
     slug: 'shop-nanda',
+    group: 'web',
     title: 'ShopNanda Website',
     description: 'The official website for the ShopNanda online shopping mall.',
     keywords: ['Astro', 'Web development', 'SEO'],
@@ -356,24 +343,27 @@ export const projects = [
     ],
   },
   {
-    slug: 'bible-ai',
-    title: 'Bible AI',
-    description: 'A retrieval-augmented chatbot that recommends Bible verses for a worry you describe.',
-    keywords: ['LLM', 'Retrieval-augmented generation', 'Bible'],
+    slug: 'heavens-voice-church',
+    group: 'web',
+    title: 'Heaven’s Voice Church Website',
+    description: 'The official website for Heaven’s Voice Church.',
+    keywords: ['React', 'TypeScript', 'Web development', 'SEO'],
     summary: [
-      'A retrieval-augmented chatbot linked from the Heaven’s Voice Church website. It embeds verses from the Bible and, given a worry or concern typed in by the user, retrieves the passages that speak to it most closely before an LLM composes a response grounded in them.',
-      'Due to copyright restrictions, the source code is kept private; only the deployed Streamlit app is public.',
+      'The official website for Heaven’s Voice Church, a congregation of the Korean Gospel Church, built with React, TypeScript, Vite, and Tailwind CSS.',
+      'Built on request from the church; I handle the entire project on my own — planning, development, SEO, and ongoing operation.',
     ],
     summaryKo: [
-      '하늘소리교회 웹페이지에 연결된 검색 증강(RAG) 챗봇입니다. 성경 구절을 임베딩해 두고, 사용자가 적은 고민과 가장 가까운 구절을 검색한 뒤 그 구절에 근거해 LLM이 답변을 구성합니다.',
-      '저작권 이슈로 인해 소스 코드는 비공개이며, 배포된 Streamlit 앱만 공개합니다.',
+      '기독교대한복음교회 하늘소리교회의 공식 웹사이트입니다. React, TypeScript, Vite, Tailwind CSS로 구축했습니다.',
+      '교회 측 요청으로 제작했으며, 기획부터 개발, SEO, 운영까지 1인으로 담당하고 있습니다.',
     ],
     links: [
-      { href: 'https://bible-ai-sczqrmuesjcfqzcsmjytkf.streamlit.app/', icon: ICON_CHROME, label: 'Website' },
+      { href: 'https://www.heavensvoicechurch.com/', icon: ICON_CHROME, label: 'Website' },
+      // { href: 'https://github.com/heavens-voice-church/heavens-voice-church.github.io', icon: ICON_GITHUB, label: 'GitHub' },
     ],
   },
   {
     slug: 'versetype',
+    group: 'web',
     title: 'VerseType',
     description: 'A typing web app for memorizing the church’s monthly Bible verse.',
     keywords: ['TypeScript', 'PWA', 'Web development'],
@@ -390,8 +380,67 @@ export const projects = [
       { href: 'https://github.com/sorrychoe/VerseType', icon: ICON_GITHUB, label: 'GitHub' },
     ],
   },
+  {
+    slug: 'bible-ai',
+    group: 'ai',
+    title: 'Bible AI',
+    description: 'A retrieval-augmented chatbot that recommends Bible verses for a worry you describe.',
+    keywords: ['LLM', 'Retrieval-augmented generation', 'Bible'],
+    summary: [
+      'A retrieval-augmented chatbot linked from the Heaven’s Voice Church website. It embeds verses from the Bible and, given a worry or concern typed in by the user, retrieves the passages that speak to it most closely before an LLM composes a response grounded in them.',
+      'Due to copyright restrictions, the source code is kept private; only the deployed Streamlit app is public.',
+    ],
+    summaryKo: [
+      '하늘소리교회 웹페이지에 연결된 검색 증강(RAG) 챗봇입니다. 성경 구절을 임베딩해 두고, 사용자가 적은 고민과 가장 가까운 구절을 검색한 뒤 그 구절에 근거해 LLM이 답변을 구성합니다.',
+      '저작권 이슈로 인해 소스 코드는 비공개이며, 배포된 Streamlit 앱만 공개합니다.',
+    ],
+    links: [
+      { href: 'https://bible-ai-sczqrmuesjcfqzcsmjytkf.streamlit.app/', icon: ICON_CHROME, label: 'Website' },
+    ],
+  },
+  {
+    slug: 'creationism-chatbot',
+    group: 'ai',
+    title: 'Creationism Chatbot',
+    description: 'A retrieval-augmented LLM chatbot for a Creation and Evolution course.',
+    keywords: ['LLM', 'Retrieval-augmented generation', 'Education'],
+    summary: [
+      'A retrieval-augmented chatbot built on the OpenAI API for Handong Global University’s "Creation and Evolution" course, grounding its answers in course materials gathered by its own crawler and indexed in a vector store rather than the model’s general knowledge.',
+      'A Makefile-driven pipeline collects and preprocesses the source material, builds the embeddings, and launches the Q&A interface.',
+    ],
+    summaryKo: [
+      '한동대학교 교과목 "창조와 진화" Q&A를 위해 OpenAI API로 구현한 검색 증강(RAG) 챗봇입니다. 모델의 일반 지식이 아니라, 자체 크롤러로 수집해 벡터 저장소에 색인한 강의 자료에 근거해 답변합니다.',
+      'Makefile 기반 파이프라인으로 자료 수집·전처리, 임베딩 생성, 질의응답 인터페이스 실행을 한 번에 처리합니다.',
+    ],
+    links: [
+      { href: 'https://github.com/sorrychoe/Creationism_Chatbot', icon: ICON_GITHUB, label: 'GitHub' },
+    ],
+  },
     {
+    slug: 'real-estate-predict',
+    group: 'ai',
+    title: 'Real Estate Price Prediction',
+    description: 'Automates housing-price appraisal in Seoul: a CLI tool that combines real-transaction data with public building-registry and Kakao Maps APIs.',
+    keywords: ['Price prediction', 'Real estate', 'Public data API'],
+    summary: [
+      'A command-line program that estimates sale prices for multi-family housing in Seoul’s Hwagok-dong (Gangseo-gu), Gangnam-gu, and Gwanak-gu. Given a lot number, floor, and unit, it returns an estimated price, a price range, a confidence score, and the basis for the estimate as CSV.',
+      'It works out of the box on bundled historical transaction data, and can optionally query Korea’s public building registry and the Kakao Maps API at runtime for building area, completion year, and proximity to subway stations to refine the estimate.',
+    ],
+    summaryKo: [
+      '서울 강서구 화곡동, 강남구, 관악구의 다세대주택 매매 시세를 추정하는 명령행 프로그램입니다. 지번·층·호를 입력하면 추정 시세, 가격 범위, 신뢰도, 산출 근거를 CSV로 반환합니다.',
+      '저장소에 포함된 실거래 수집 자료만으로도 동작하며, API 키가 있으면 건축물대장(면적·준공 연도)과 카카오맵(건물·지하철역 위치)을 실행 중에 조회해 추정치를 보정합니다.',
+    ],
+    links: [
+      {
+        href: 'https://github.com/sorrychoe/real-estate-predict',
+        icon: ICON_GITHUB,
+        label: 'GitHub',
+      },
+    ],
+  },
+  {
     slug: 'wordcard',
+    group: 'ai',
     title: 'WordCard',
     description: 'A desktop app that turns sermon summaries into Instagram card news and posts them.',
     keywords: ['Automation', 'Instagram Graph API'],
@@ -408,24 +457,8 @@ export const projects = [
     ],
   },
   {
-    slug: 'creationism-chatbot',
-    title: 'Creationism Chatbot',
-    description: 'A retrieval-augmented LLM chatbot for a Creation and Evolution course.',
-    keywords: ['LLM', 'Retrieval-augmented generation', 'Education'],
-    summary: [
-      'A retrieval-augmented chatbot built on the OpenAI API for Handong Global University’s "Creation and Evolution" course, grounding its answers in course materials gathered by its own crawler and indexed in a vector store rather than the model’s general knowledge.',
-      'A Makefile-driven pipeline collects and preprocesses the source material, builds the embeddings, and launches the Q&A interface.',
-    ],
-    summaryKo: [
-      '한동대학교 교과목 "창조와 진화" Q&A를 위해 OpenAI API로 구현한 검색 증강(RAG) 챗봇입니다. 모델의 일반 지식이 아니라, 자체 크롤러로 수집해 벡터 저장소에 색인한 강의 자료에 근거해 답변합니다.',
-      'Makefile 기반 파이프라인으로 자료 수집·전처리, 임베딩 생성, 질의응답 인터페이스 실행을 한 번에 처리합니다.',
-    ],
-    links: [
-      { href: 'https://github.com/sorrychoe/Creationism_Chatbot', icon: ICON_GITHUB, label: 'GitHub' },
-    ],
-  },
-  {
     slug: 'insta-uploader',
+    group: 'ai',
     title: 'Instagram Uploader',
     description: 'A desktop app that drafts and publishes shopping-mall Instagram posts.',
     keywords: ['Python', 'Automation','OpenAI API', 'Instagram Graph API'],
@@ -442,24 +475,21 @@ export const projects = [
     ],
   },
   {
-    slug: 'real-estate-predict',
-    title: 'Real Estate Price Prediction',
-    description: 'A CLI tool that estimates multi-family housing sale prices in Seoul from real transaction data.',
-    keywords: ['Price prediction', 'Real estate', 'Public data API'],
+    slug: 'slack-weather-bot',
+    group: 'ai',
+    title: 'Slack Weather Bot',
+    description: 'A scheduled Go job that scrapes Naver weather and posts a morning forecast to Slack through GitHub Actions.',
+    keywords: ['Go', 'GitHub Actions', 'Slack webhook', 'Automation'],
     summary: [
-      'A command-line program that estimates sale prices for multi-family housing in Seoul’s Hwagok-dong (Gangseo-gu), Gangnam-gu, and Gwanak-gu. Given a lot number, floor, and unit, it returns an estimated price, a price range, a confidence score, and the basis for the estimate as CSV.',
-      'It works out of the box on bundled historical transaction data, and can optionally query Korea’s public building registry and the Kakao Maps API at runtime for building area, completion year, and proximity to subway stations to refine the estimate.',
+      'A small Go program that scrapes the current weather from Naver search with goquery and posts it to a Slack channel through an incoming webhook.',
+      'It runs on a weekday-morning GitHub Actions schedule, starting early to absorb the delays that scheduled runs can have when load peaks on the hour.',
     ],
     summaryKo: [
-      '서울 강서구 화곡동, 강남구, 관악구의 다세대주택 매매 시세를 추정하는 명령행 프로그램입니다. 지번·층·호를 입력하면 추정 시세, 가격 범위, 신뢰도, 산출 근거를 CSV로 반환합니다.',
-      '저장소에 포함된 실거래 수집 자료만으로도 동작하며, API 키가 있으면 건축물대장(면적·준공 연도)과 카카오맵(건물·지하철역 위치)을 실행 중에 조회해 추정치를 보정합니다.',
+      '네이버 검색의 현재 날씨를 goquery로 수집해 Slack 웹훅으로 채널에 보내는 Go 프로그램입니다.',
+      '평일 아침 GitHub Actions 예약 실행으로 동작하며, 정각에 몰리는 예약 실행 지연에 대비해 실행 시각을 앞당겨 두었습니다.',
     ],
     links: [
-      {
-        href: 'https://github.com/sorrychoe/real-estate-predict',
-        icon: ICON_GITHUB,
-        label: 'GitHub',
-      },
+      { href: 'https://github.com/sorrychoe/slack-weather-message', icon: ICON_GITHUB, label: 'GitHub' },
     ],
   },
 ];

@@ -31,7 +31,7 @@ function App() {
         <meta property="og:image:height" content="630" />
         <meta
           property="og:image:alt"
-          content="Jaeseong Choe — Data Engineer & Computational Communication Researcher"
+          content="Jaeseong Choe — AX & Data Analytics"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={TITLE} />
@@ -41,13 +41,13 @@ function App() {
       <div hidden={activeTab !== 'about'}>
         <About />
       </div>
-      {activeTab === 'cv' && <CV />}
+      <div hidden={activeTab !== 'projects'}>
+        <Projects />
+      </div>
       <div hidden={activeTab !== 'research'}>
         <Publication />
       </div>
-      <div hidden={activeTab !== 'development'}>
-        <Projects />
-      </div>
+      {activeTab === 'cv' && <CV />}
       <Footer />
     </div>
   );

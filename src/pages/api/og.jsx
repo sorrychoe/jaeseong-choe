@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/og';
 
 const TITLE = 'Jaeseong Choe';
 const SUBTITLE =
-  'AI Data Engineer · Computational Communication Researcher';
+  'AI Transformation (AX) · Data Analytics · Automation';
 
 // Pages Router API routes use the Node (req, res) model, so render the
 // ImageResponse to a buffer and write it out manually.

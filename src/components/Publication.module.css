@@ -1,3 +1,21 @@
+.interests {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  max-width: 56rem;
+  margin: -2rem 0 3rem;
+  padding: 0;
+  list-style: none;
+}
+
+.interest {
+  padding: 0.25rem 0.75rem;
+  border: 1px solid #374151;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+}
+
 .groupTitle {
   width: 100%;
   max-width: 56rem;

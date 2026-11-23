@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './Publication.module.css';
-import { conferences, publications } from '../data/site';
+import { RESEARCH_INTERESTS, conferences, publications } from '../data/site';
 
 const SELF = 'Jaeseong Choe';
 
@@ -39,6 +39,14 @@ function Publication() {
     <section className="section">
       <div className="container">
         <h2 className="section-title">Research</h2>
+
+        <ul className={styles.interests} aria-label="Research interests">
+          {RESEARCH_INTERESTS.map((interest) => (
+            <li key={interest} className={styles.interest}>
+              {interest}
+            </li>
+          ))}
+        </ul>
 
         <h3 className={styles.groupTitle}>Journal Articles</h3>
         <ul className={styles.list}>

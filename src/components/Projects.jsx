@@ -4,13 +4,22 @@ import Link from 'next/link';
 import styles from './Projects.module.css';
 import { projects } from '../data/site';
 
+const GROUPS = [
+  { id: 'oss', title: 'Open-Source Libraries' },
+  { id: 'ai', title: 'AI & Automation' },
+  { id: 'web', title: 'Webpage' },
+];
+
 function Projects() {
   return (
     <section className="section">
       <div className="container">
-        <h2 className="section-title">Development Projects</h2>
+        <h2 className="section-title">Projects</h2>
+        {GROUPS.map((group) => (
+        <React.Fragment key={group.id}>
+        <h3 className={styles.groupTitle}>{group.title}</h3>
         <div className={styles.grid}>
-          {projects.map((project) => (
+          {projects.filter((project) => project.group === group.id).map((project) => (
             <div className={`card ${styles.card}`} key={project.slug}>
               <h3 className={styles.cardTitle}>
                 <Link
@@ -51,6 +60,8 @@ function Projects() {
             </div>
           ))}
         </div>
+        </React.Fragment>
+        ))}
       </div>
     </section>
   );
