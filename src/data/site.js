@@ -284,11 +284,11 @@ export const projects = [
       '토큰화, 품사 태깅, 명사 추출, 문장 분리, 띄어쓰기 교정을 제공하며, 기본형(lemma) 복원, 토큰별 원문 위치, 사용자 사전, 오타 교정, 코퍼스 기반 비지도 신조어 추출도 지원합니다. 결과는 TextAnalysis.jl에 바로 넣어 문서-단어 행렬과 TF-IDF를 계산할 수 있습니다.',
     ],
     links: [
-      // {
-      //   href: 'https://juliahub.com/ui/Packages/General/KiwiKorean',
-      //   icon: 'https://cdn.simpleicons.org/julia/FFFFFF',
-      //   label: 'JuliaHub',
-      // },
+      {
+        href: 'https://platform.juliahub.com/ui/Packages/General/KiwiKorean',
+        icon: 'https://cdn.simpleicons.org/julia/FFFFFF',
+        label: 'JuliaHub',
+      },
       {
         href: 'https://github.com/sorrychoe/KiwiKorean.jl',
         icon: ICON_GITHUB,
@@ -300,7 +300,7 @@ export const projects = [
     slug: 'pybigkinds',
     group: 'oss',
     title: 'pyBigKinds',
-    description: 'A PyPI package and no-code Streamlit app for analyzing BigKinds news exports.',
+    description: 'A Python package for analyzing BigKinds news exports.',
     keywords: ['Python', 'Text mining', 'BigKinds', 'Streamlit', 'Open source'],
     summary: [
       'An open-source Python toolkit for analyzing exports from BigKinds — the Korea Press Foundation’s news database. Version 2.0 adds a no-code web app built on Streamlit: upload BigKinds Excel files and get outlet-level article counts, keyword frequencies and word clouds, TF-IDF, clustering and dimensionality reduction, and LDA and association rules, with every table downloadable as CSV and every chart as PNG.',
