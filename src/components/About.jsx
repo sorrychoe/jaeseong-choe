@@ -20,7 +20,7 @@ const COPY = {
         period: 'Now',
         title: 'AI & Automation',
         items: [
-          'Content and marketing operations: LLM-written copy, image formatting, and publishing straight to social channels',
+          'AI-assisted web development: planning, building, SEO, and running websites for clients on my own',
           'Knowledge Q&A: retrieval-augmented (RAG) assistants grounded in an organization’s own documents',
           'Repetitive data work: collection, estimation, and reporting jobs that run on a schedule instead of by hand',
         ],
@@ -61,7 +61,7 @@ const COPY = {
         period: '현재',
         title: 'AI & Automation',
         items: [
-          '콘텐츠 & 마케팅 운영: LLM으로 문구를 쓰고, 이미지를 규격에 맞춰 소셜 채널에 바로 게시',
+          'AI를 활용한 웹 개발: 의뢰받은 웹사이트 기획, 개발, SEO, 운영을 1인으로 담당',
           '지식 Q&A: 조직이 가진 문서에 근거해 답하는 검색 증강(RAG) 어시스턴트',
           '데이터 업무 자동화: 사람이 손으로 하던 수집, 추정, 보고 작업을 예약 실행으로 자동화',
         ],
