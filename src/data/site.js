@@ -214,10 +214,12 @@ export const projects = [
     summary: [
       'An R implementation of the Topics over Time (TOT) model of Wang and McCallum (2006): an LDA-style topic model in which each topic also has a Beta distribution over continuous time, so topics are shaped by both word co-occurrence and when documents were written — without slicing time into periods or assuming Markov dynamics.',
       'Inference uses collapsed Gibbs sampling written in C++ via Rcpp. A fitted model plots topic trends over time and predicts the topic proportions and timestamps of new documents. The package accepts quanteda and tm document-term matrices, simulates synthetic corpora, and documents where it departs from a literal reading of the paper.',
+      'Submitted to CRAN and currently under review.',
     ],
     summaryKo: [
       'Wang과 McCallum(2006)의 Topics over Time(TOT) 모델을 R로 구현한 패키지입니다. TOT는 각 토픽이 단어 분포와 함께 연속 시간에 대한 베타 분포를 갖는 LDA 계열 토픽 모델로, 시간을 구간으로 나누거나 마르코프 동역학을 가정하지 않고 단어 공기 관계와 문서 작성 시점을 함께 반영해 토픽을 찾습니다.',
       '추론은 Rcpp 기반 C++로 구현한 collapsed Gibbs 샘플링을 사용합니다. 학습한 모델로 시간에 따른 토픽 추이를 그리고, 새 문서의 토픽 비율과 작성 시점을 예측할 수 있습니다. quanteda와 tm의 문서-단어 행렬을 지원하고, 합성 코퍼스 시뮬레이션 기능과 함께 논문을 그대로 구현하지 않은 부분도 문서로 밝혀 두었습니다.',
+      'CRAN에 제출하여 현재 심사 중입니다.',
     ],
     links: [
       // {
@@ -246,10 +248,12 @@ export const projects = [
     summary: [
       'An R package that automates collecting and preprocessing Korean news data and runs basic text analysis in a few lines of code. Excel, CSV, and JSON files (including BigKinds exports), any data frame with title and body columns, the Naver News Search API, and RSS/Atom feeds all go into the same pipeline.',
       'It computes term and document frequencies, TF-IDF, sparse document-term matrices, n-grams, co-occurrence, keyness between groups, and term trends over time, with a plotting function for each. It succeeds RBigKinds, which handled only BigKinds exports, and comes with a pkgdown documentation site.',
+      'Submitted to CRAN and currently under review.',
     ],
     summaryKo: [
       '한국어 뉴스 데이터의 수집과 전처리를 자동화하고, 기초 텍스트 분석을 몇 줄의 R 코드로 끝내는 패키지입니다. Excel·CSV·JSON 파일(BigKinds 내보내기 포함), 제목·본문 컬럼이 있는 data.frame, 네이버 뉴스 검색 API, RSS/Atom 피드를 모두 같은 파이프라인에 넣을 수 있습니다.',
       '단어·문서 빈도, TF-IDF, 희소 문서-단어 행렬(DTM), n-gram, 공기어, 집단 간 키니스(keyness), 기간별 단어 추이를 계산하고 각각을 시각화합니다. BigKinds 데이터만 다루던 RBigKinds를 대체하며, pkgdown 문서 사이트를 함께 제공합니다.',
+      'CRAN에 제출하여 현재 심사 중입니다.',
     ],
     links: [
       // {
@@ -278,10 +282,12 @@ export const projects = [
     summary: [
       'A Julia package for Korean morphological analysis that calls the C API of Kiwi, an open-source Korean morphological analyzer, directly through ccall, so it needs no Python or Java. Installing it downloads the Kiwi binary and model automatically on Linux and macOS.',
       'It provides tokenization, part-of-speech tagging, noun extraction, sentence splitting, and spacing correction, along with dictionary-form lemmas, character positions for every token, user dictionaries, typo correction, and unsupervised extraction of new words from a corpus. Its output feeds straight into TextAnalysis.jl for document-term matrices and TF-IDF.',
+      'Officially registered as a Julia package in the General registry (v0.1.0), so it installs with Pkg.add("KiwiKorean").',
     ],
     summaryKo: [
       '오픈소스 한국어 형태소 분석기 Kiwi의 C API를 ccall로 직접 호출하는 Julia 형태소 분석 패키지로, Python이나 Java 없이 동작합니다. Linux와 macOS에서는 설치할 때 Kiwi 바이너리와 모델을 자동으로 내려받습니다.',
       '토큰화, 품사 태깅, 명사 추출, 문장 분리, 띄어쓰기 교정을 제공하며, 기본형(lemma) 복원, 토큰별 원문 위치, 사용자 사전, 오타 교정, 코퍼스 기반 비지도 신조어 추출도 지원합니다. 결과는 TextAnalysis.jl에 바로 넣어 문서-단어 행렬과 TF-IDF를 계산할 수 있습니다.',
+      'Julia 공식 레지스트리(General)에 정식 패키지로 등록되어(v0.1.0), Pkg.add("KiwiKorean")로 설치할 수 있습니다.',
     ],
     links: [
       {
@@ -304,11 +310,13 @@ export const projects = [
     keywords: ['Python', 'Text mining', 'BigKinds', 'Streamlit', 'Open source'],
     summary: [
       'An open-source Python toolkit for analyzing exports from BigKinds — the Korea Press Foundation’s news database. Version 2.0 adds a no-code web app built on Streamlit: upload BigKinds Excel files and get outlet-level article counts, keyword frequencies and word clouds, TF-IDF, clustering and dimensionality reduction, and LDA and association rules, with every table downloadable as CSV and every chart as PNG.',
-      'BigKinds exports at most 20,000 articles at a time, so read_bigkinds() merges files downloaded over separate periods and removes duplicate articles. The same analyses remain available as low-code Python functions such as press_counter() and keywords_wordcloud(). Heavier dependencies moved into optional extras ([ml], [app]); v1 code runs unchanged except that lda() and association() now need the [ml] extra. Published on PyPI.',
+      'BigKinds exports at most 20,000 articles at a time, so read_bigkinds() merges files downloaded over separate periods and removes duplicate articles. The same analyses remain available as low-code Python functions such as press_counter() and keywords_wordcloud(). Heavier dependencies moved into optional extras ([ml], [app]); v1 code runs unchanged except that lda() and association() now need the [ml] extra.',
+      'Officially released on PyPI (current version 2.0.0).',
     ],
     summaryKo: [
       '한국언론진흥재단의 뉴스 데이터베이스 BigKinds에서 내려받은 데이터를 분석하는 오픈소스 Python 툴킷입니다. 2.0 버전에서 Streamlit 기반 No-Code 웹 앱을 추가했습니다. BigKinds 엑셀 파일을 올리면 언론사별 기사 수, 키워드 빈도와 워드클라우드, TF-IDF, 군집·차원축소, LDA·연관규칙 분석을 제공하며, 모든 표는 CSV로, 그림은 PNG로 내려받을 수 있습니다.',
-      'BigKinds는 한 번에 20,000건까지만 내보낼 수 있어, read_bigkinds()가 기간을 나눠 받은 여러 파일을 하나로 합치고 중복 기사를 제거합니다. 같은 분석을 press_counter(), keywords_wordcloud() 같은 로우코드 Python 함수로도 쓸 수 있습니다. 무거운 의존성은 선택 설치([ml], [app])로 분리했으며, lda()와 association()에 [ml]이 필요해진 것 외에는 v1 코드가 그대로 동작합니다. PyPI에 배포되어 있습니다.',
+      'BigKinds는 한 번에 20,000건까지만 내보낼 수 있어, read_bigkinds()가 기간을 나눠 받은 여러 파일을 하나로 합치고 중복 기사를 제거합니다. 같은 분석을 press_counter(), keywords_wordcloud() 같은 로우코드 Python 함수로도 쓸 수 있습니다. 무거운 의존성은 선택 설치([ml], [app])로 분리했으며, lda()와 association()에 [ml]이 필요해진 것 외에는 v1 코드가 그대로 동작합니다.',
+      'PyPI에 정식 릴리스되었습니다(현재 버전 2.0.0).',
     ],
     links: [
       {
